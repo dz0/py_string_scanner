@@ -9,10 +9,10 @@
         ],
         "321": "api:accounts:list",
         "322": [
-            "John",
-            "Doe",
             "email",
             "password",
+            "John",
+            "Doe",
             "labadiena1F"
         ]
     },
@@ -119,13 +119,13 @@
         "151": "password"
     },
     "../ta/api/accounts/views.py": {
-        "31": "\n    **/api/accounts/**\n    ",
-        "44": "\n        register\n        ",
-        "51": "\n    **/api/accounts/<pk>/**\n    ",
-        "99": "\n    **/api/accounts/<pk>/**\n    ",
+        "33": "\n    **/api/accounts/**\n    ",
+        "46": "\n        register\n        ",
+        "53": "\n    **/api/accounts/<pk>/**\n    ",
+        "101": "\n    **/api/accounts/<pk>/**\n    ",
         "109": "id",
-        "115": "\n    **/api/accounts/confirm-registration/<hash>/**\n    ",
-        "125": "\n    **/api/accounts/confirm-email-change/<hash>/**\n    ",
+        "117": "\n    **/api/accounts/confirm-registration/<hash>/**\n    ",
+        "127": "\n    **/api/accounts/confirm-email-change/<hash>/**\n    ",
         "143": "email",
         "270": "start"
     },
@@ -510,8 +510,8 @@
         "263": "prefab",
         "264": "identifier",
         "276": "perspective",
-        "281": "\n    Helpers\n    ",
-        "343": "\n    Perspectives\n    ",
+        "283": "\n    Helpers\n    ",
+        "345": "\n    Perspectives\n    ",
         "353": "week",
         "360": "venue",
         "366": "prefab",
@@ -904,7 +904,7 @@
     },
     "../ta/api/bookables/validators/bookable_validator.py": {
         "20": "id",
-        "28": "\n    Primitives\n    ",
+        "30": "\n    Primitives\n    ",
         "33": [
             "#",
             "name"
@@ -1154,7 +1154,7 @@
             "end"
         ],
         "131": "intersecting",
-        "136": "\n    Primitives\n    ",
+        "138": "\n    Primitives\n    ",
         "142": "bookable",
         "143": "bookable",
         "146": [
@@ -1223,7 +1223,7 @@
             "start",
             "end"
         ],
-        "148": "\n    Primitives\n    ",
+        "150": "\n    Primitives\n    ",
         "154": "account",
         "155": "venue",
         "165": "weekdays",
@@ -1385,7 +1385,7 @@
         ]
     },
     "../ta/api/iot/views.py": {
-        "20": "\n    Deprecated\n    ",
+        "22": "\n    Deprecated\n    ",
         "47": "id",
         "54": "id",
         "69": "f"
@@ -1455,7 +1455,7 @@
         "36": "created"
     },
     "../ta/api/logging/views.py": {
-        "12": "\n    **api/logs/**\n    "
+        "14": "\n    **api/logs/**\n    "
     },
     "../ta/api/mux/views.py": {
         "44": "account",
@@ -2024,8 +2024,8 @@
         ],
         "24": [
             "name",
-            "goodname",
             "url",
+            "goodname",
             "goodurl"
         ],
         "27": [
@@ -2038,20 +2038,20 @@
         ],
         "33": [
             "name",
-            "goodname",
             "url",
+            "goodname",
             "someurl"
         ],
         "36": [
             "name",
-            "somename",
             "url",
+            "somename",
             "someurl"
         ],
         "39": [
             "name",
-            "someteam",
             "url",
+            "someteam",
             "goodurl"
         ]
     },
@@ -2109,6 +2109,6 @@
         ]
     },
     "../ta/api/venues/views.py": {
-        "13": "\n    **api/venues/<pk>/tables/**\n    "
+        "15": "\n    **api/venues/<pk>/tables/**\n    "
     }
 }

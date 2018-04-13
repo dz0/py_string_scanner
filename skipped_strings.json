@@ -88,8 +88,8 @@
         "29": "date_joined",
         "30": [
             "confirm_invite",
-            "write_only",
-            "first_usage"
+            "first_usage",
+            "write_only"
         ],
         "46": "old_password",
         "53": "team_url",
@@ -648,7 +648,7 @@
         "64": "team_url"
     },
     "../ta/api/requests/views.py": {
-        "16": "\n    **api/teams/<team_url>/requests/**\n    "
+        "18": "\n    **api/teams/<team_url>/requests/**\n    "
     },
     "../ta/api/room_booking/__init__.py": {
         "1": "ta.api.room_booking.apps.RoomBookingConfig"
@@ -786,7 +786,7 @@
         ]
     },
     "../ta/api/sync/views.py": {
-        "16": "\n    **api/accounts/<account_pk>/sync/**\n    "
+        "18": "\n    **api/accounts/<account_pk>/sync/**\n    "
     },
     "../ta/api/teams/endpoints.py": {
         "31": "team_url",
@@ -813,8 +813,8 @@
         "58": "contact_email"
     },
     "../ta/api/teams/views.py": {
-        "15": "\n    **api/teams/<team_url>/venues/**\n    ",
-        "30": "\n    **api/teams/<team_url>/participants/**\n    ",
+        "17": "\n    **api/teams/<team_url>/venues/**\n    ",
+        "32": "\n    **api/teams/<team_url>/participants/**\n    ",
         "39": "first_name"
     },
     "../ta/api/ui/endpoints.py": {

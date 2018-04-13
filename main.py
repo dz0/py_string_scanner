@@ -87,6 +87,7 @@ def find_strings_tokenize(filename):
             if toktype == tokenize.STRING:
                 string = eval(tokstr)
                 # print (filename, lineno, strrepr)
+                lineno += string.count('\n')
                 yield  (filename, lineno, string)
                 # print ("  File \"%s\", line %d   \"%s\"" % (filename, lineno, string))
 
@@ -97,7 +98,10 @@ def find_strings_ast_visit(filename):
     # https://stackoverflow.com/a/585884/4217317
     class StringsCollector(ast.NodeVisitor):
         def visit_Str(self, node):
-            result.append(  (filename, node.lineno, node.s)  )
+            string = node.s
+            lineno =  node.lineno
+            # lineno -= string.count('\n')  # fails on multiline chunked-spanning string
+            result.append(  (filename, lineno, string)  )
             # print "string at", node.lineno, node.col_offset, repr(node.s)
 
     with open(filename) as f:
@@ -106,7 +110,7 @@ def find_strings_ast_visit(filename):
         return result
 
 
-find_strings = find_strings_tokenize
+find_strings = find_strings_ast_visit
 
 # files = get_files('/home/jurgis/dev/new/tableair/sync_tableair-cloud/ta')
 files = get_files(ROOT_DIR)
@@ -148,28 +152,29 @@ for nr, fname in enumerate(files):
 #      RESULTS
 #
 ####################
-def ordered( adict ):
+def sorted_dict( adict ):
     return OrderedDict(  sorted(adict.items(), key=lambda x: x[0] ) )
-
-
 
 def restructure_by_val(STUFF):
     REZ = defaultdict(list)
-    for file, lines in STUFF.items():
+    for file, lines in sorted( STUFF.items() ):
         for line_nr, strings in lines.items():
             for string in strings:
                 REZ[string].append( "%s :%s" % (file, line_nr ) )
+
+    
     return REZ
 
 # Should go before compact'ing
-with open('found_strings_BY_VAL.json', 'w') as f:    json.dump(ordered( restructure_by_val(FOUND_STR) ), f, indent=4)
-with open('skipped_strings_BY_VAL.json', 'w') as f:    json.dump(ordered( restructure_by_val(SKIPPED_STR)), f, indent=4)
-with open('single_words_BY_VAL.json', 'w') as f:    json.dump(ordered( restructure_by_val(SINGLE_WORDS) ), f, indent=4)
+with open('found_strings_BY_VAL.json', 'w') as f:    json.dump(sorted_dict( restructure_by_val(FOUND_STR) ), f, indent=4)
+with open('skipped_strings_BY_VAL.json', 'w') as f:    json.dump(sorted_dict( restructure_by_val(SKIPPED_STR)), f, indent=4)
+with open('single_words_BY_VAL.json', 'w') as f:    json.dump(sorted_dict( restructure_by_val(SINGLE_WORDS) ), f, indent=4)
 
 
 
 def compact_if_single_in_list( STUFF ):
     for file, lines in STUFF.items():
+        STUFF[file] = lines = sorted_dict( lines ) # sort keys
         for line_nr, strings in lines.items():
             if len(strings) == 1:
                 lines[line_nr] = strings[0]
@@ -183,9 +188,9 @@ compact_if_single_in_list( SKIPPED_STR )
 compact_if_single_in_list( SINGLE_WORDS )
 
 
-with open('found_strings.json', 'w') as f:    json.dump(ordered( FOUND_STR ), f, indent=4)
-with open('skipped_strings.json', 'w') as f:    json.dump(ordered( SKIPPED_STR), f, indent=4)
-with open('single_words.json', 'w') as f:    json.dump(ordered(SINGLE_WORDS), f, indent=4)
+with open('found_strings.json', 'w') as f:    json.dump(sorted_dict( FOUND_STR ), f, indent=4)
+with open('skipped_strings.json', 'w') as f:    json.dump(sorted_dict( SKIPPED_STR), f, indent=4)
+with open('single_words.json', 'w') as f:    json.dump(sorted_dict(SINGLE_WORDS), f, indent=4)
 with open('skipped_files.json', 'w') as f:    json.dump(SKIPPED_FILES, f, indent=4)
 # print("FOUND STRS: \n   ", json.dumps( FOUND_STR , indent=4) ) 
 # print("SKIPPED STRS: \n   ", json.dumps( SKIPPED_STR , indent=4) ) 
