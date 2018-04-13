@@ -1,20 +1,20 @@
 {
     "": [
-        "../ta/api/teams/validators/team_validator.py :21",
-        "../ta/api/teams/validators/team_validator.py :27",
-        "../ta/api/teams/validators/team_validator.py :73",
-        "../ta/api/bookables/validators/prefab_validator.py :35",
+        "../ta/api/iot/views.py :69",
         "../ta/api/venues/validators/venue_image_validator.py :19",
         "../ta/api/venues/validators/venue_image_validator.py :28",
         "../ta/api/venues/validators/venue_image_validator.py :37",
         "../ta/api/bookables/models.py :90",
-        "../ta/api/iot/views.py :69",
-        "../ta/api/analytics/occupancy_analytics.py :529"
+        "../ta/api/analytics/occupancy_analytics.py :529",
+        "../ta/api/bookables/validators/prefab_validator.py :35",
+        "../ta/api/teams/validators/team_validator.py :21",
+        "../ta/api/teams/validators/team_validator.py :27",
+        "../ta/api/teams/validators/team_validator.py :73"
     ],
     "\n": [
-        "../ta/api/accounts/_deprecated_tests_api.py :334",
         "../ta/api/analytics/occupancy_analytics.py :52",
-        "../ta/api/analytics/occupancy_analytics.py :56"
+        "../ta/api/analytics/occupancy_analytics.py :56",
+        "../ta/api/accounts/_deprecated_tests_api.py :334"
     ],
     "\n            jei from yra 1mad -- 0 -trinti-> 5, 6\n            jei from yra 2mad -- 1 -trinti-> 4, 5\n            jei from yra 3mad -- 2 -trinti-> 3, 4\n\n            jei from yra 6mad -- 5 -trinti-> 0, 1\n            jei from yra 7mad -- 6 -trinti-> -1, 0\n            ": [
         "../ta/api/analytics/occupancy_analytics.py :466"
@@ -351,19 +351,19 @@
         "../ta/api/objects/validators.py :24"
     ],
     "At least one weekday is required.": [
+        "../ta/api/booking/validators/repeating_booking_validators.py :188",
         "../ta/api/booking/management.py :64",
-        "../ta/api/booking/management.py :85",
-        "../ta/api/booking/validators/repeating_booking_validators.py :188"
+        "../ta/api/booking/management.py :85"
     ],
     "At one point in the schedule there were no free spots found": [
-        "../ta/api/booking/management.py :194",
-        "../ta/api/booking/management.py :217",
         "../ta/api/booking/validators/repeating_booking_validators.py :117",
-        "../ta/api/booking/validators/repeating_booking_validators.py :142"
+        "../ta/api/booking/validators/repeating_booking_validators.py :142",
+        "../ta/api/booking/management.py :194",
+        "../ta/api/booking/management.py :217"
     ],
     "At one point in the schedule you already have an intersecting booking": [
-        "../ta/api/booking/management.py :188",
-        "../ta/api/booking/validators/repeating_booking_validators.py :112"
+        "../ta/api/booking/validators/repeating_booking_validators.py :112",
+        "../ta/api/booking/management.py :188"
     ],
     "Bluetooth animation selected": [
         "../ta/api/bookables/enums.py :58"
@@ -942,14 +942,14 @@
         "../ta/api/bookables/endpoints.py :150"
     ],
     "This field is required": [
-        "../ta/api/support/views.py :14",
+        "../ta/api/accounts/serializers.py :94",
         "../ta/api/analytics/aggregators.py :170",
         "../ta/api/analytics/aggregators.py :173",
         "../ta/api/analytics/aggregators.py :181",
+        "../ta/api/support/views.py :14",
         "../ta/api/analytics/occupancy_analytics.py :210",
         "../ta/api/analytics/occupancy_analytics.py :213",
-        "../ta/api/analytics/occupancy_analytics.py :221",
-        "../ta/api/accounts/serializers.py :94"
+        "../ta/api/analytics/occupancy_analytics.py :221"
     ],
     "This field is required.": [
         "../ta/api/booking/management.py :86",
@@ -1045,8 +1045,8 @@
         "../ta/api/analytics/models.py :34"
     ],
     "Use hh:mm format for time": [
-        "../ta/api/booking/management.py :34",
-        "../ta/api/booking/validators/repeating_booking_validators.py :43"
+        "../ta/api/booking/validators/repeating_booking_validators.py :43",
+        "../ta/api/booking/management.py :34"
     ],
     "Used when generating identifiers, \"#\" denotes generated part. ": [
         "../ta/api/bookables/models.py :15"
@@ -1076,8 +1076,8 @@
         "../ta/api/ui/validators.py :19"
     ],
     "Visit shoptableair.com to purchase a new license.": [
-        "../ta/api/kiosk/validators.py :51",
-        "../ta/api/rooms/validators.py :103"
+        "../ta/api/rooms/validators.py :103",
+        "../ta/api/kiosk/validators.py :51"
     ],
     "Visit the cloud system to manage pending requests:\n{}": [
         "../ta/api/requests/serializers.py :62"
@@ -1119,9 +1119,9 @@
         "../ta/api/teams/validators/invitation_validator.py :26"
     ],
     "You cannot book for more thant {0} days into the future": [
+        "../ta/api/booking/validators/repeating_booking_validators.py :73",
         "../ta/api/booking/management.py :96",
-        "../ta/api/booking/management.py :148",
-        "../ta/api/booking/validators/repeating_booking_validators.py :73"
+        "../ta/api/booking/management.py :148"
     ],
     "You cannot change booking details after it has started": [
         "../ta/api/booking/validators/booking_validators.py :174"
@@ -1298,10 +1298,10 @@
         "../ta/api/bookables/endpoints.py :132"
     ],
     "get, patch, delete": [
-        "../ta/api/booking/endpoints.py :35",
-        "../ta/api/room_booking/endpoints.py :43",
+        "../ta/api/venues/endpoints.py :22",
         "../ta/api/teams/endpoints.py :30",
-        "../ta/api/venues/endpoints.py :22"
+        "../ta/api/booking/endpoints.py :35",
+        "../ta/api/room_booking/endpoints.py :43"
     ],
     "gets date in parameter \"from\"\n        if <duration> is week: imagines week starts on it (though it might be not monday)\n        ": [
         "../ta/api/analytics/occupancy_analytics.py :491"
@@ -1375,11 +1375,11 @@
         "../ta/api/teams/models.py :111"
     ],
     "patch, delete": [
-        "../ta/api/kiosk/endpoints.py :23",
-        "../ta/api/broker/endpoints.py :14",
+        "../ta/api/groups/endpoints.py :22",
         "../ta/api/objects/endpoints.py :42",
         "../ta/api/rooms/endpoints.py :46",
-        "../ta/api/groups/endpoints.py :22"
+        "../ta/api/broker/endpoints.py :14",
+        "../ta/api/kiosk/endpoints.py :23"
     ],
     "post, delete": [
         "../ta/api/room_booking/endpoints.py :128"
@@ -1437,12 +1437,12 @@
         "../ta/api/booking/validators/booking_validators.py :56"
     ],
     "start_time end_time": [
-        "../ta/api/booking/management.py :216",
-        "../ta/api/booking/validators/repeating_booking_validators.py :141"
+        "../ta/api/booking/validators/repeating_booking_validators.py :141",
+        "../ta/api/booking/management.py :216"
     ],
     "start_time, end_time": [
-        "../ta/api/booking/management.py :194",
-        "../ta/api/booking/validators/repeating_booking_validators.py :117"
+        "../ta/api/booking/validators/repeating_booking_validators.py :117",
+        "../ta/api/booking/management.py :194"
     ],
     "team access request": [
         "../ta/api/requests/models.py :37"

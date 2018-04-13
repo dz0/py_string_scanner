@@ -1,7 +1,6 @@
 import sys
 import os
 # from pathlib import Path
-import tokenize
 from collections import defaultdict, OrderedDict
 import json
 import itertools
@@ -80,25 +79,34 @@ def skip_string( string ):
 
         # return True
 
-def find_strings(filename):
+def find_strings_tokenize(filename):
+    import tokenize
     with open(filename) as f:
+        # https://stackoverflow.com/a/603736/4217317
         for toktype, tokstr, (lineno, _), _, _ in tokenize.generate_tokens(f.readline):
             if toktype == tokenize.STRING:
                 string = eval(tokstr)
-
-                if skip_string( string ):
-                    SKIPPED_STR[ filename ][lineno].append( string )
-                    # SKIPPED_STR[ filename ][lineno] = string
-                    continue
-
-                if len( string.split() ) == 1: # actually ALSO SKIP
-                    SINGLE_WORDS[ filename ][lineno].append( string )
-                    continue
-
                 # print (filename, lineno, strrepr)
                 yield  (filename, lineno, string)
                 # print ("  File \"%s\", line %d   \"%s\"" % (filename, lineno, string))
 
+def find_strings_ast_visit(filename):
+    import ast
+    result = []
+
+    # https://stackoverflow.com/a/585884/4217317
+    class StringsCollector(ast.NodeVisitor):
+        def visit_Str(self, node):
+            result.append(  (filename, node.lineno, node.s)  )
+            # print "string at", node.lineno, node.col_offset, repr(node.s)
+
+    with open(filename) as f:
+        root = ast.parse( f.read() )
+        StringsCollector().visit( root )
+        return result
+
+
+find_strings = find_strings_tokenize
 
 # files = get_files('/home/jurgis/dev/new/tableair/sync_tableair-cloud/ta')
 files = get_files(ROOT_DIR)
@@ -115,8 +123,17 @@ files = get_files(ROOT_DIR)
 for nr, fname in enumerate(files):
     print(nr, fname)
     for filename, lineno, string in find_strings( fname ):
+
+        if skip_string( string ):
+            SKIPPED_STR[ filename ][lineno].append( string )
+            # SKIPPED_STR[ filename ][lineno] = string
+            continue
+
+        if len( string.split() ) == 1: # actually ALSO SKIP
+            SINGLE_WORDS[ filename ][lineno].append( string )
+            continue        
+        
         FOUND_STR[ filename ][lineno].append( string )
-        # FOUND_STR[ filename ][lineno] = string
         # print ("  File \"%s\", line %d   \"%s\"" % (filename, lineno, string))
 
 
@@ -126,9 +143,11 @@ for nr, fname in enumerate(files):
 
 
 
-
-
-######### RESULTS ##########
+#########################
+#
+#      RESULTS
+#
+####################
 def ordered( adict ):
     return OrderedDict(  sorted(adict.items(), key=lambda x: x[0] ) )
 
