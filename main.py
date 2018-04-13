@@ -41,6 +41,9 @@ SKIPPED_FILES = []
 SKIPPED_STR = defaultdict( OrderedDefaultListDict )
 FOUND_STR =  defaultdict( OrderedDefaultListDict )
 SINGLE_WORDS = defaultdict( OrderedDefaultListDict )
+ALREADY_GETTEXTED = defaultdict( OrderedDefaultListDict )
+
+
 # SKIPPED_STR = defaultdict(OrderedDict)
 # FOUND_STR =  defaultdict(OrderedDict)
 from fnmatch import fnmatch
@@ -96,22 +99,57 @@ def find_strings_ast_visit(filename):
     import ast
     result = []
 
+    # from astmonkey import utils, transformers
+    # root = transformers.ParentChildNodeTransformer().visit(root)
+    # docstring_node = node.body[0].body[0].value
+    # assert(not utils.is_docstring(node))
+
+
     # https://stackoverflow.com/a/585884/4217317
     class StringsCollector(ast.NodeVisitor):
         def visit_Str(self, node):
+            def check_gettext_wrap():
+                parent = node.parent
+                if isinstance(parent, ast.Call):
+                    func = parent.func
+                    if isinstance(func, ast.Name):
+                        caller_name = func.id
+                    if isinstance(func, ast.Attribute):
+                        caller_name = func.attr
+                    
+                    if caller_name == '_' \
+                    or 'gettext' in caller_name:
+                        return True
+
+
             string = node.s
             lineno =  node.lineno
             # lineno -= string.count('\n')  # fails on multiline chunked-spanning string
-            result.append(  (filename, lineno, string)  )
+
+            if check_gettext_wrap():  # a bit dirty hook (not in Main) 
+                ALREADY_GETTEXTED[ filename ][lineno].append( string )
+    
+            else:
+
+                result.append(  (filename, lineno, string)  )
+
+
             # print "string at", node.lineno, node.col_offset, repr(node.s)
 
     with open(filename) as f:
         root = ast.parse( f.read() )
+
+        # https://stackoverflow.com/a/43311383/4217317
+        for node in ast.walk(root):
+            for child in ast.iter_child_nodes(node):
+                child.parent = node
+
         StringsCollector().visit( root )
         return result
 
 
-find_strings = find_strings_tokenize
+find_strings = find_strings_ast_visit
+# find_strings = find_strings_tokenize
 
 # files = get_files('/home/jurgis/dev/new/tableair/sync_tableair-cloud/ta')
 files = get_files(ROOT_DIR)
@@ -167,6 +205,7 @@ def restructure_by_val(STUFF):
     return REZ
 
 # Should go before compact'ing
+with open('already_gettexed_BY_VAL.json', 'w') as f:    json.dump(sorted_dict( restructure_by_val(ALREADY_GETTEXTED) ), f, indent=4)
 with open('found_strings_BY_VAL.json', 'w') as f:    json.dump(sorted_dict( restructure_by_val(FOUND_STR) ), f, indent=4)
 with open('skipped_strings_BY_VAL.json', 'w') as f:    json.dump(sorted_dict( restructure_by_val(SKIPPED_STR)), f, indent=4)
 with open('single_words_BY_VAL.json', 'w') as f:    json.dump(sorted_dict( restructure_by_val(SINGLE_WORDS) ), f, indent=4)
@@ -187,11 +226,13 @@ def compact_if_single_in_list( STUFF ):
 compact_if_single_in_list( FOUND_STR )
 compact_if_single_in_list( SKIPPED_STR )
 compact_if_single_in_list( SINGLE_WORDS )
+compact_if_single_in_list( ALREADY_GETTEXTED )
 
-
+with open('already_gettexed.json', 'w') as f:    json.dump(sorted_dict( ALREADY_GETTEXTED ), f, indent=4)
 with open('found_strings.json', 'w') as f:    json.dump(sorted_dict( FOUND_STR ), f, indent=4)
 with open('skipped_strings.json', 'w') as f:    json.dump(sorted_dict( SKIPPED_STR), f, indent=4)
 with open('single_words.json', 'w') as f:    json.dump(sorted_dict(SINGLE_WORDS), f, indent=4)
+
 with open('skipped_files.json', 'w') as f:    json.dump(SKIPPED_FILES, f, indent=4)
 # print("FOUND STRS: \n   ", json.dumps( FOUND_STR , indent=4) ) 
 # print("SKIPPED STRS: \n   ", json.dumps( SKIPPED_STR , indent=4) ) 

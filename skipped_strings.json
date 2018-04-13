@@ -88,8 +88,8 @@
         "29": "date_joined",
         "30": [
             "confirm_invite",
-            "write_only",
-            "first_usage"
+            "first_usage",
+            "write_only"
         ],
         "46": "old_password",
         "53": "team_url",

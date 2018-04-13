@@ -9,10 +9,10 @@
         ],
         "321": "api:accounts:list",
         "322": [
-            "John",
-            "Doe",
             "email",
             "password",
+            "John",
+            "Doe",
             "labadiena1F"
         ]
     },
@@ -22,10 +22,7 @@
             "email",
             "password"
         ],
-        "16": [
-            "Permissions",
-            "fields"
-        ],
+        "16": "fields",
         "17": "groups",
         "18": "fields",
         "22": [
@@ -48,13 +45,11 @@
         "6": "ta.api.accounts"
     },
     "../ta/api/accounts/forms.py": {
-        "20": "Password",
         "29": "email",
         "40": "email",
         "57": "password1",
         "58": "password2",
         "75": "password1",
-        "89": "Password",
         "115": "password"
     },
     "../ta/api/accounts/models.py": {
@@ -67,8 +62,6 @@
         ],
         "38": "password",
         "100": "email",
-        "104": "account",
-        "105": "accounts",
         "139": "registration"
     },
     "../ta/api/accounts/serializers.py": {
@@ -753,8 +746,6 @@
             ")"
         ],
         "31": "prefabs",
-        "40": "prefab",
-        "41": "prefabs",
         "42": "identifier",
         "45": [
             " (",
@@ -763,8 +754,6 @@
         "73": "bookables",
         "74": "bookables",
         "75": "bookable",
-        "86": "bookable",
-        "87": "bookables",
         "90": [
             " (",
             ")"
@@ -2024,8 +2013,8 @@
         ],
         "24": [
             "name",
-            "goodname",
             "url",
+            "goodname",
             "goodurl"
         ],
         "27": [
@@ -2038,20 +2027,20 @@
         ],
         "33": [
             "name",
-            "goodname",
             "url",
+            "goodname",
             "someurl"
         ],
         "36": [
             "name",
-            "somename",
             "url",
+            "somename",
             "someurl"
         ],
         "39": [
             "name",
-            "someteam",
             "url",
+            "someteam",
             "goodurl"
         ]
     },

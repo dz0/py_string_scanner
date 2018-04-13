@@ -1,0 +1,61 @@
+{
+    "../ta/api/accounts/admin.py": {
+        "16": "Permissions",
+        "18": "Important dates"
+    },
+    "../ta/api/accounts/apps.py": {
+        "8": "Account Service"
+    },
+    "../ta/api/accounts/forms.py": {
+        "15": "A user with that email already exists.",
+        "16": "The two password fields didn't match.",
+        "20": "Password",
+        "23": "Password confirmation",
+        "25": "Enter the same password as above, for verification.",
+        "89": "Password",
+        "90": "Raw passwords are not stored, so there is no way to see this user's password, but you can change the password using <a href=\"password/\">this form</a>."
+    },
+    "../ta/api/accounts/models.py": {
+        "68": "email address",
+        "72": "first name",
+        "75": "last name",
+        "78": "first usage",
+        "81": "staff status",
+        "83": "Designates whether the user can log into this admin site.",
+        "85": "active status",
+        "87": "Designates whether this user should be treated as active. Deselect this instead of deleting accounts.",
+        "90": "date joined",
+        "93": [
+            "deleted status",
+            "Designates whether this account was previously removed"
+        ],
+        "104": "account",
+        "105": "accounts"
+    },
+    "../ta/api/bookables/models.py": {
+        "22": "prefab type",
+        "23": "prefab types",
+        "40": "prefab",
+        "41": "prefabs",
+        "56": "prefab usage",
+        "57": "prefab usage",
+        "86": "bookable",
+        "87": "bookables"
+    },
+    "../ta/api/logging/apps.py": {
+        "12": "Logging Service"
+    },
+    "../ta/api/logging/models.py": {
+        "25": "logged content type",
+        "28": "logged object"
+    },
+    "../ta/api/sync/apps.py": {
+        "6": "Settings Synchronization Service"
+    },
+    "../ta/api/teams/apps.py": {
+        "6": "Team Service"
+    },
+    "../ta/api/ui/apps.py": {
+        "6": "UI Settings Service"
+    }
+}

@@ -12,9 +12,9 @@
         "../ta/api/venues/validators/venue_image_validator.py :37"
     ],
     "\n": [
-        "../ta/api/accounts/_deprecated_tests_api.py :335",
-        "../ta/api/analytics/occupancy_analytics.py :53",
-        "../ta/api/analytics/occupancy_analytics.py :57"
+        "../ta/api/accounts/_deprecated_tests_api.py :334",
+        "../ta/api/analytics/occupancy_analytics.py :52",
+        "../ta/api/analytics/occupancy_analytics.py :56"
     ],
     "\n            jei from yra 1mad -- 0 -trinti-> 5, 6\n            jei from yra 2mad -- 1 -trinti-> 4, 5\n            jei from yra 3mad -- 2 -trinti-> 3, 4\n\n            jei from yra 6mad -- 5 -trinti-> 0, 1\n            jei from yra 7mad -- 6 -trinti-> -1, 0\n            ": [
         "../ta/api/analytics/occupancy_analytics.py :473"
@@ -78,12 +78,6 @@
     ],
     "\n       **/api/accounts/<pk>/teams/<url>/**\n        manages account's participation in team\n    ": [
         "../ta/api/accounts/views.py :203"
-    ],
-    "\n      Partition counts: %s": [
-        "../ta/api/analytics/occupancy_analytics.py :330"
-    ],
-    "\n      timewindow_start: %s, part_count: %s, part_size: %s": [
-        "../ta/api/analytics/occupancy_analytics.py :331"
     ],
     "\n    **/api/accounts/<account_id>/teams/**\n    gets teams that the account participates in\n    ": [
         "../ta/api/accounts/views.py :167"
@@ -157,9 +151,6 @@
     "\n    Validates participant invitation (invite/remove)\n    ": [
         "../ta/api/room_booking/validators.py :74"
     ],
-    "\n   relative_day_nr: %s, weekday__of_start: %s": [
-        "../ta/api/analytics/occupancy_analytics.py :482"
-    ],
     "\n<!doctype html><html><head>\n<!--[if !mso]><!-- -->\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&subset=latin\">\n<!--<![endif]-->\n<style>{style}</style>\n</head><body>{content}</body></html>\n": [
         "../ta/api/room_booking/emails.py :14"
     ],
@@ -213,10 +204,7 @@
         "../ta/api/ui/models.py :34"
     ],
     " too many prefabs...\n%s": [
-        "../ta/api/analytics/occupancy_analytics.py :599"
-    ],
-    " was previously removed": [
-        "../ta/api/accounts/models.py :94"
+        "../ta/api/analytics/occupancy_analytics.py :598"
     ],
     "\"\n            if missing the very first interval start\n            or very last interval end\n            delete them or\n\n            replace with week start and end respectively (with idea, that timestamps were outside query)\n            but should keep in mind to substract weekends... # TODO\n            ": [
         "../ta/api/analytics/occupancy_analytics.py :814"
@@ -277,17 +265,11 @@
     "A tile at this location is occupied": [
         "../ta/api/rooms/validators.py :28"
     ],
-    "A user with that email already exists.": [
-        "../ta/api/accounts/forms.py :15"
-    ],
     "API Error": [
         "../ta/api/logging/models.py :20"
     ],
     "API settings of ": [
         "../ta/api/accounts/models.py :183"
-    ],
-    "Account Service": [
-        "../ta/api/accounts/apps.py :8"
     ],
     "Account is already in the team": [
         "../ta/api/teams/validators/invitation_validator.py :20"
@@ -450,13 +432,13 @@
         "../ta/api/accounts/forms.py :114"
     ],
     "Click the link below to accept this invitation\n{}": [
-        "../ta/api/teams/validators/invitation_validator.py :39"
+        "../ta/api/teams/validators/invitation_validator.py :38"
     ],
     "Click the link below to confirm your email change\n{}": [
-        "../ta/api/accounts/serializers.py :145"
+        "../ta/api/accounts/serializers.py :144"
     ],
     "Click the link below to confirm your registration.\n{0}": [
-        "../ta/api/accounts/serializers.py :128"
+        "../ta/api/accounts/serializers.py :127"
     ],
     "Confirm your TableAir Email Change": [
         "../ta/api/accounts/serializers.py :143"
@@ -476,17 +458,8 @@
     "Deleting incorrect data intervals for": [
         "../ta/api/analytics/occupancy_analytics.py :799"
     ],
-    "Deleting meaningfull info: when excluding weekend from results. ": [
+    "Deleting meaningfull info: when excluding weekend from results. \n   relative_day_nr: %s, weekday__of_start: %s": [
         "../ta/api/analytics/occupancy_analytics.py :480"
-    ],
-    "Designates whether the user can log into this admin site.": [
-        "../ta/api/accounts/models.py :83"
-    ],
-    "Designates whether this account": [
-        "../ta/api/accounts/models.py :93"
-    ],
-    "Designates whether this user should be treated as ": [
-        "../ta/api/accounts/models.py :87"
     ],
     "EP1 by Rokas\n        https://tableair.slack.com/files/U8YH9D5K6/F8YKP6DU2/workoccupancy_endpoint_spec_description.txt\n        ": [
         "../ta/api/analytics/occupancy_analytics.py :352"
@@ -494,7 +467,7 @@
     "EP2 by Rokas\n        https://tableair.slack.com/files/U8YH9D5K6/F8YKP6DU2/workoccupancy_endpoint_spec_description.txt\n        ": [
         "../ta/api/analytics/occupancy_analytics.py :505"
     ],
-    "ERROR when partitioning. Interval #%s/%s  (%s); ": [
+    "ERROR when partitioning. Interval #%s/%s  (%s); \n      Partition counts: %s\n      timewindow_start: %s, part_count: %s, part_size: %s": [
         "../ta/api/analytics/occupancy_analytics.py :328"
     ],
     "Either select to randomize tables or choose a table from the map.": [
@@ -506,9 +479,6 @@
     "End date must be greater than start date": [
         "../ta/api/booking/validators/repeating_booking_validators.py :176"
     ],
-    "Enter the same password as above, for verification.": [
-        "../ta/api/accounts/forms.py :25"
-    ],
     "Error: Overlaping time intervals for prefab %s, end (%s) is more than start (%s) of next (nr %s).": [
         "../ta/api/analytics/occupancy_analytics.py :769"
     ],
@@ -517,9 +487,6 @@
     ],
     "Event list overload": [
         "../ta/api/bookables/enums.py :77"
-    ],
-    "Example: \"SB1######\"": [
-        "../ta/api/bookables/models.py :16"
     ],
     "External calendar integration link with {0} with room {1}": [
         "../ta/api/integration/models.py :19"
@@ -583,9 +550,6 @@
     "If include_empty_days=False, skip days with no info (should be weekends and so)  ": [
         "../ta/api/analytics/occupancy_analytics.py :549"
     ],
-    "Important dates": [
-        "../ta/api/accounts/admin.py :18"
-    ],
     "In millimetres": [
         "../ta/api/venues/models.py :38"
     ],
@@ -645,9 +609,6 @@
     ],
     "Log out": [
         "../ta/api/analytics/models.py :30"
-    ],
-    "Logging Service": [
-        "../ta/api/logging/apps.py :12"
     ],
     "Lotus Notes": [
         "../ta/api/integration/choices.py :9"
@@ -765,23 +726,14 @@
     "Partition intervals to weekdays (or hours)\n        expects that intervals doesn't span over few parts...\n        ": [
         "../ta/api/analytics/occupancy_analytics.py :289"
     ],
-    "Password confirmation": [
-        "../ta/api/accounts/forms.py :23"
-    ],
     "Password reset request for {0}": [
         "../ta/api/accounts/models.py :157"
-    ],
-    "Please choose another time.": [
-        "../ta/api/booking/validators/booking_validators.py :113"
     ],
     "Prefab %s is still occupied (no=po=1)": [
         "../ta/api/bookables/validators/prefab_usage_validator.py :56"
     ],
     "Prefab %s is still vacang (no=po=0)": [
         "../ta/api/bookables/validators/prefab_usage_validator.py :61"
-    ],
-    "Raw passwords are not stored, so there is no way to see ": [
-        "../ta/api/accounts/forms.py :90"
     ],
     "Registration confirmation for {0}": [
         "../ta/api/accounts/models.py :146"
@@ -829,9 +781,6 @@
     "Sensor reset": [
         "../ta/api/bookables/enums.py :45"
     ],
-    "Settings Synchronization Service": [
-        "../ta/api/sync/apps.py :6"
-    ],
     "Settings of {0}": [
         "../ta/api/sync/models.py :57"
     ],
@@ -852,9 +801,6 @@
     ],
     "Take work starts and ends in each partition (weekday)": [
         "../ta/api/analytics/occupancy_analytics.py :548"
-    ],
-    "Team Service": [
-        "../ta/api/teams/apps.py :6"
     ],
     "Team URL was not provided": [
         "../ta/api/requests/serializers.py :24"
@@ -880,21 +826,11 @@
     "Temperature step 8C": [
         "../ta/api/bookables/enums.py :74"
     ],
-    "The meeting was to take place on {0} until {1} at {2}.": [
-        "../ta/api/booking/confirmation.py :49"
+    "The meeting you have been invited to was canceled.\nThe meeting was to take place on {0} until {1} at {2}.": [
+        "../ta/api/booking/confirmation.py :48"
     ],
-    "The meeting will take place on {0} until {1} at {2}.": [
-        "../ta/api/booking/confirmation.py :36"
-    ],
-    "The meeting will take place on {} until {} at {}.": [
-        "../ta/api/booking/confirmation.py :12",
-        "../ta/api/booking/confirmation.py :23"
-    ],
-    "The meeting you have been invited to was canceled.\n": [
-        "../ta/api/booking/confirmation.py :49"
-    ],
-    "The meeting you have been invited to was rescheduled.\n": [
-        "../ta/api/booking/confirmation.py :23"
+    "The meeting you have been invited to was rescheduled.\nThe meeting will take place on {} until {} at {}.": [
+        "../ta/api/booking/confirmation.py :22"
     ],
     "The provided URL is already taken": [
         "../ta/api/teams/validators/team_validator.py :41"
@@ -905,16 +841,13 @@
     "The provided name or URL is already taken": [
         "../ta/api/teams/validators/team_validator.py :39"
     ],
-    "The two password fields didn't match.": [
-        "../ta/api/accounts/forms.py :16"
-    ],
     "There is a bookable on this tile": [
         "../ta/api/rooms/validators.py :33"
     ],
     "There must be at least one participant": [
         "../ta/api/room_booking/validators.py :156"
     ],
-    "There's a booking at that time. Please choose another time. ": [
+    "There's a booking at that time. Please choose another time. Visit the dashboard to manage your bookings.": [
         "../ta/api/booking/validators/booking_validators.py :110"
     ],
     "This URL cannot be used": [
@@ -1010,9 +943,6 @@
     "UI Settings": [
         "../ta/api/ui/models.py :21"
     ],
-    "UI Settings Service": [
-        "../ta/api/ui/apps.py :6"
-    ],
     "UI Team Settings": [
         "../ta/api/ui/models.py :31"
     ],
@@ -1048,11 +978,11 @@
         "../ta/api/booking/management.py :34",
         "../ta/api/booking/validators/repeating_booking_validators.py :43"
     ],
-    "Used when generating identifiers, \"#\" denotes generated part. ": [
+    "Used when generating identifiers, \"#\" denotes generated part. Example: \"SB1######\"": [
         "../ta/api/bookables/models.py :15"
     ],
     "User: {0}\nEmail: {1}\nMessage: {2}": [
-        "../ta/api/support/views.py :19"
+        "../ta/api/support/views.py :17"
     ],
     "Value in days": [
         "../ta/api/rooms/models.py :11"
@@ -1075,15 +1005,8 @@
     "Venue does not belong to team with url `{}`": [
         "../ta/api/ui/validators.py :19"
     ],
-    "Visit shoptableair.com to purchase a new license.": [
-        "../ta/api/kiosk/validators.py :51",
-        "../ta/api/rooms/validators.py :103"
-    ],
     "Visit the cloud system to manage pending requests:\n{}": [
-        "../ta/api/requests/serializers.py :63"
-    ],
-    "Visit the dashboard to manage your bookings.": [
-        "../ta/api/booking/validators/booking_validators.py :111"
+        "../ta/api/requests/serializers.py :62"
     ],
     "WARNING! Changing this might affect DB integrity": [
         "../ta/api/bookables/models.py :18"
@@ -1102,9 +1025,6 @@
     ],
     "You are {1} minutes late for your booking at table {0}.": [
         "../ta/api/booking/notifications.py :27"
-    ],
-    "You can easily do that by visiting shoptableair.com": [
-        "../ta/api/kiosk/validators.py :48"
     ],
     "You can only check-in once": [
         "../ta/api/booking/validators/booking_validators.py :26"
@@ -1150,19 +1070,19 @@
     "You have been invited to join \"{0}\" on TableAir Cloud!": [
         "../ta/api/teams/validators/invitation_validator.py :35"
     ],
-    "You have been invited to participate at a meeting.\n": [
-        "../ta/api/booking/confirmation.py :12"
+    "You have been invited to participate at a meeting.\nThe meeting will take place on {} until {} at {}.": [
+        "../ta/api/booking/confirmation.py :11"
     ],
     "You have been removed from a room booking": [
         "../ta/api/room_booking/emails.py :72"
     ],
-    "You have created a meeting.\n": [
-        "../ta/api/booking/confirmation.py :36"
+    "You have created a meeting.\nThe meeting will take place on {0} until {1} at {2}.": [
+        "../ta/api/booking/confirmation.py :35"
     ],
     "You have reached the maximum amount of bookings": [
         "../ta/api/booking/validators/booking_validators.py :164"
     ],
-    "You have reached the maximum amount of intersecting bookings. ": [
+    "You have reached the maximum amount of intersecting bookings. Please choose another time.": [
         "../ta/api/booking/validators/booking_validators.py :112"
     ],
     "You must be logged in": [
@@ -1179,10 +1099,10 @@
         "../ta/api/teams/models.py :26",
         "../ta/api/venues/models.py :110"
     ],
-    "You need at least 8 symbols, ": [
+    "You need at least 8 symbols, with one lowercase, one uppercase letter and a number": [
         "../ta/api/accounts/serializers.py :90"
     ],
-    "You need to purchase a license to create kiosks! ": [
+    "You need to purchase a license to create kiosks! You can easily do that by visiting shoptableair.com": [
         "../ta/api/kiosk/validators.py :47"
     ],
     "You were {1} minutes late for your booking at table {0}, so it got cancelled.": [
@@ -1209,10 +1129,10 @@
     "Your booking of {} begins in an 10 mins!": [
         "../ta/api/booking/notifications.py :18"
     ],
-    "Your current licensing only allows you to have a maximum of {} kiosks. ": [
+    "Your current licensing only allows you to have a maximum of {} kiosks. Visit shoptableair.com to purchase a new license.": [
         "../ta/api/kiosk/validators.py :50"
     ],
-    "Your current licensing only allows you to have a maximum of {} rooms. ": [
+    "Your current licensing only allows you to have a maximum of {} rooms. Visit shoptableair.com to purchase a new license.": [
         "../ta/api/rooms/validators.py :102"
     ],
     "Your room cannot have less than 2 tiles": [
@@ -1242,12 +1162,6 @@
     "account registrations": [
         "../ta/api/accounts/models.py :143"
     ],
-    "active status": [
-        "../ta/api/accounts/models.py :85"
-    ],
-    "active. Deselect this instead of deleting accounts.": [
-        "../ta/api/accounts/models.py :88"
-    ],
     "api settings": [
         "../ta/api/accounts/models.py :180"
     ],
@@ -1260,32 +1174,17 @@
     "conferencing system": [
         "../ta/api/objects/choices.py :63"
     ],
-    "date joined": [
-        "../ta/api/accounts/models.py :90"
-    ],
-    "deleted status": [
-        "../ta/api/accounts/models.py :93"
-    ],
     "div{margin-top:15px}body{margin:0;padding:10px}h2,h3,p{font-family:\"Open Sans\",Helvetica,Arial,sans-serif;font-weight:400}a,strong{font-family:\"Open Sans\",Arial,sans-serif;font-weight:700}a{background-color:#00c4de;color:#fff !important;border-radius:25px;font-size:.875em;display:inline-block;margin:10px 5px 5px;outline:0;padding:12px 20px;text-decoration:none;text-transform:uppercase}": [
         "../ta/api/room_booking/emails.py :16"
     ],
     "doors open": [
         "../ta/api/objects/choices.py :32"
     ],
-    "email address": [
-        "../ta/api/accounts/models.py :68"
-    ],
     "firmware version": [
         "../ta/api/firmware/models.py :13"
     ],
     "firmware versions": [
         "../ta/api/firmware/models.py :14"
-    ],
-    "first name": [
-        "../ta/api/accounts/models.py :72"
-    ],
-    "first usage": [
-        "../ta/api/accounts/models.py :78"
     ],
     "for each part, we add appropriate timedelta": [
         "../ta/api/analytics/occupancy_analytics.py :438"
@@ -1341,15 +1240,6 @@
     "kiosk west": [
         "../ta/api/objects/choices.py :51"
     ],
-    "last name": [
-        "../ta/api/accounts/models.py :75"
-    ],
-    "logged content type": [
-        "../ta/api/logging/models.py :25"
-    ],
-    "logged object": [
-        "../ta/api/logging/models.py :28"
-    ],
     "manage bookings of other team participants": [
         "../ta/api/teams/choices.py :17"
     ],
@@ -1390,16 +1280,6 @@
     "prefab not found (maybe it is not OcupancyActivity type)    ": [
         "../ta/api/analytics/occupancy_analytics.py :596"
     ],
-    "prefab type": [
-        "../ta/api/bookables/models.py :22"
-    ],
-    "prefab types": [
-        "../ta/api/bookables/models.py :23"
-    ],
-    "prefab usage": [
-        "../ta/api/bookables/models.py :56",
-        "../ta/api/bookables/models.py :57"
-    ],
     "put, delete": [
         "../ta/api/rooms/endpoints.py :15"
     ],
@@ -1430,9 +1310,6 @@
     "smoking area": [
         "../ta/api/objects/choices.py :41"
     ],
-    "staff status": [
-        "../ta/api/accounts/models.py :81"
-    ],
     "start, end": [
         "../ta/api/booking/validators/booking_validators.py :56"
     ],
@@ -1456,23 +1333,14 @@
     "team invitations": [
         "../ta/api/teams/models.py :126"
     ],
-    "this user's password, but you can change the password ": [
-        "../ta/api/accounts/forms.py :91"
-    ],
     "translates intervals to timedeltas, so the starting (from) point is 0": [
         "../ta/api/analytics/occupancy_analytics.py :379"
-    ],
-    "using <a href=\"password/\">this form</a>.": [
-        "../ta/api/accounts/forms.py :92"
     ],
     "venue background image": [
         "../ta/api/venues/models.py :127"
     ],
     "venue background images": [
         "../ta/api/venues/models.py :128"
-    ],
-    "with one lowercase, one uppercase letter and a number": [
-        "../ta/api/accounts/serializers.py :91"
     ],
     "{0} committed a {1} action on {2}": [
         "../ta/api/logging/models.py :61"
@@ -1508,7 +1376,7 @@
         "../ta/api/booking/models.py :96"
     ],
     "{}\n\nSender address: {}": [
-        "../ta/api/teams/endpoints.py :90"
+        "../ta/api/teams/endpoints.py :88"
     ],
     "{} ({}) in venue {}": [
         "../ta/api/rooms/models.py :23"

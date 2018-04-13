@@ -208,15 +208,8 @@
     "Participation": [
         "../ta/api/teams/models.py :44"
     ],
-    "Password": [
-        "../ta/api/accounts/forms.py :20",
-        "../ta/api/accounts/forms.py :89"
-    ],
     "Pending": [
         "../ta/api/requests/models.py :16"
-    ],
-    "Permissions": [
-        "../ta/api/accounts/admin.py :16"
     ],
     "Queries: ": [
         "../ta/api/analytics/views.py :51"
@@ -279,7 +272,6 @@
         "../ta/api/room_booking/choices.py :11"
     ],
     "account": [
-        "../ta/api/accounts/models.py :104",
         "../ta/api/analytics/admin.py :7",
         "../ta/api/analytics/aggregators.py :48",
         "../ta/api/analytics/aggregators.py :63",
@@ -354,9 +346,6 @@
         "../ta/api/ui/endpoints.py :46",
         "../ta/api/ui/validators.py :24",
         "../ta/api/ui/validators.py :40"
-    ],
-    "accounts": [
-        "../ta/api/accounts/models.py :105"
     ],
     "action": [
         "../ta/api/logging/serializers.py :9"
@@ -447,7 +436,6 @@
     ],
     "bookable": [
         "../ta/api/bookables/models.py :75",
-        "../ta/api/bookables/models.py :86",
         "../ta/api/booking/admin.py :7",
         "../ta/api/booking/permissions.py :10",
         "../ta/api/booking/validators/booking_validators.py :142",
@@ -472,7 +460,6 @@
     "bookables": [
         "../ta/api/bookables/models.py :73",
         "../ta/api/bookables/models.py :74",
-        "../ta/api/bookables/models.py :87",
         "../ta/api/mux/views.py :50"
     ],
     "booking": [
@@ -1307,7 +1294,6 @@
         "../ta/api/bookables/endpoints.py :133",
         "../ta/api/bookables/endpoints.py :171",
         "../ta/api/bookables/endpoints.py :188",
-        "../ta/api/bookables/models.py :40",
         "../ta/api/bookables/serializers.py :19",
         "../ta/api/bookables/serializers.py :73",
         "../ta/api/bookables/sitstand/aggregators.py :33",
@@ -1335,8 +1321,7 @@
         "../ta/api/bookables/endpoints.py :154",
         "../ta/api/bookables/endpoints.py :155",
         "../ta/api/bookables/endpoints.py :156",
-        "../ta/api/bookables/models.py :31",
-        "../ta/api/bookables/models.py :41"
+        "../ta/api/bookables/models.py :31"
     ],
     "projector": [
         "../ta/api/objects/choices.py :36",
