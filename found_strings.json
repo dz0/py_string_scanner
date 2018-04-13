@@ -1,6 +1,6 @@
 {
     "../ta/api/accounts/_deprecated_tests_api.py": {
-        "334": "\n"
+        "335": "\n"
     },
     "../ta/api/accounts/admin.py": {
         "12": "\n    Account admin model.\n    ",
@@ -19,7 +19,9 @@
         "56": "Check that the two password entries match.\n\n        :return str password2: cleaned password2\n        :raise forms.ValidationError: password2 != password1\n\n        ",
         "73": "Save user.\n\n        Save the provided password in hashed format.\n\n        :return custom_user.models.EmailUser: user\n\n        ",
         "87": "A form for updating users.\n\n    Includes all the fields on the user, but replaces the password field\n    with admin's password hash display field.\n\n    ",
-        "90": "Raw passwords are not stored, so there is no way to see this user's password, but you can change the password using <a href=\"password/\">this form</a>.",
+        "90": "Raw passwords are not stored, so there is no way to see ",
+        "91": "this user's password, but you can change the password ",
+        "92": "using <a href=\"password/\">this form</a>.",
         "99": "Init the form.",
         "114": "Clean password.\n\n        Regardless of what the user provides, return the initial value.\n        This is done here, rather than on the field, because the\n        field does not have access to the initial value.\n\n        :return str password:\n\n        "
     },
@@ -37,12 +39,14 @@
         "81": "staff status",
         "83": "Designates whether the user can log into this admin site.",
         "85": "active status",
-        "87": "Designates whether this user should be treated as active. Deselect this instead of deleting accounts.",
+        "87": "Designates whether this user should be treated as ",
+        "88": "active. Deselect this instead of deleting accounts.",
         "90": "date joined",
         "93": [
             "deleted status",
-            "Designates whether this account was previously removed"
+            "Designates whether this account"
         ],
+        "94": " was previously removed",
         "112": " ",
         "117": "\n        Send an email to this User.\n        ",
         "126": "Account is not a kiosk",
@@ -64,13 +68,14 @@
         "53": "Team with a given URL doesn't exist",
         "77": "This is your current email!",
         "86": "Account with this email already exists",
-        "90": "You need at least 8 symbols, with one lowercase, one uppercase letter and a number",
+        "90": "You need at least 8 symbols, ",
+        "91": "with one lowercase, one uppercase letter and a number",
         "94": "This field is required",
         "96": "Incorrect password",
         "126": "Confirm your TableAir Registration",
-        "127": "Click the link below to confirm your registration.\n{0}",
+        "128": "Click the link below to confirm your registration.\n{0}",
         "143": "Confirm your TableAir Email Change",
-        "144": "Click the link below to confirm your email change\n{}"
+        "145": "Click the link below to confirm your email change\n{}"
     },
     "../ta/api/accounts/views.py": {
         "39": "\n        retrieve list\n        ",
@@ -139,11 +144,9 @@
             "GROUP BY",
             "ORDER BY"
         ],
-        "52": [
-            " ",
-            "\n"
-        ],
-        "56": "\n",
+        "52": " ",
+        "53": "\n",
+        "57": "\n",
         "64": "\n    Lists possible selectors {<name>, <default_value>}\n    ",
         "99": "\n    Lists possible aggregators <function_name>, [<allowed_scope>, ...]\n    ",
         "194": "You must be logged in",
@@ -161,7 +164,9 @@
         "289": "Partition intervals to weekdays (or hours)\n        expects that intervals doesn't span over few parts...\n        ",
         "295": "\n            params:  interval of activity\n                     part   of partitioning (day/hour or so)\n            ",
         "322": "intervals should be sorted.\n            if we don't fit  interval  to current part, we goto next part",
-        "328": "ERROR when partitioning. Interval #%s/%s  (%s); \n      Partition counts: %s\n      timewindow_start: %s, part_count: %s, part_size: %s",
+        "328": "ERROR when partitioning. Interval #%s/%s  (%s); ",
+        "330": "\n      Partition counts: %s",
+        "331": "\n      timewindow_start: %s, part_count: %s, part_size: %s",
         "352": "EP1 by Rokas\n        https://tableair.slack.com/files/U8YH9D5K6/F8YKP6DU2/workoccupancy_endpoint_spec_description.txt\n        ",
         "354": "only week duration is accepted for graph",
         "364": "No prefabs are present in this venue (ID: %s)",
@@ -169,7 +174,8 @@
         "431": "function that distributes interval among the parts of partition\n                example:\n                partition = (start_time, part_size, parts_count)\n                workday = (9*60, 60, 8)  # in minutes: starts 9:00, and split into 8 hours\n                9  10  11  12  13  14  15  16  (17)\n\n                initial partitioned sums:\n                0   0   0   0   0   0   0   0\n\n                if interval:  9:20  9:30\n                10   0   0   0   0   0   0   0\n\n                if interval:  9:20  10:00\n                40   0   0   0   0   0   0   0\n\n                if interval:  9:20  10:20\n                40   20   0   0   0   0   0   0\n\n                if interval:  9:20  11:45\n                40   60   45   0   0   0   0   0\n\n                edge cases:\n                if interval:  None  9:30\n                30   0   0   0   0   0   0   0\n\n                if interval:  9:20 None\n                40  60  60  60  60  60  60  60\n\n                if interval:  10:00  10:00\n                0   0   0   0   0   0   0   0\n\n                error cases\n\n                if interval:  8:30  9:30  (if earlier than workday start, should get None)\n                30   0   0   0   0   0   0   0\n\n                if interval:  10:00  9:40\n                30   0   0   0   0   0   0   0\n                ",
         "438": "for each part, we add appropriate timedelta",
         "473": "\n            jei from yra 1mad -- 0 -trinti-> 5, 6\n            jei from yra 2mad -- 1 -trinti-> 4, 5\n            jei from yra 3mad -- 2 -trinti-> 3, 4\n\n            jei from yra 6mad -- 5 -trinti-> 0, 1\n            jei from yra 7mad -- 6 -trinti-> -1, 0\n            ",
-        "480": "Deleting meaningfull info: when excluding weekend from results. \n   relative_day_nr: %s, weekday__of_start: %s",
+        "480": "Deleting meaningfull info: when excluding weekend from results. ",
+        "482": "\n   relative_day_nr: %s, weekday__of_start: %s",
         "493": "gets date in parameter \"from\"\n        if <duration> is week: imagines week starts on it (though it might be not monday)\n        ",
         "505": "EP2 by Rokas\n        https://tableair.slack.com/files/U8YH9D5K6/F8YKP6DU2/workoccupancy_endpoint_spec_description.txt\n        ",
         "529": [
@@ -181,7 +187,7 @@
         "549": "If include_empty_days=False, skip days with no info (should be weekends and so)  ",
         "587": "\n        EP4 by Rokas\n        https://tableair.slack.com/files/U8YH9D5K6/F8YKP6DU2/workoccupancy_endpoint_spec_description.txt\n        ?page=1\n        ",
         "596": "prefab not found (maybe it is not OcupancyActivity type)    ",
-        "598": " too many prefabs...\n%s",
+        "599": " too many prefabs...\n%s",
         "648": "\n        For DEV purposes\n                # most activity:\n        {\n        \"prefab\": 152,\n        \"venue__name\": \"Approved house of cards\",\n        \"cnt\": 223,\n        \"prefab__identifier\": \"SP000000A\",\n        \"venue\": 9\n        },\n        \"prefab\": 155,             \"cnt\": 211,             \"prefab__identifier\": \"SP000000C\",             \"venue\": 9\n        \"prefab\": 156,                   \"cnt\": 30,          \"prefab__identifier\": \"SP0200000\",            \"venue\": 8\n        \"prefab\": 157,            \"venue__name\": \"euneV\",            \"cnt\": 4,            \"prefab__identifier\": \"SP0200001\",            \"venue\": 16\n        \"prefab\": 14,            \"venue__name\": \"Demo Venue\",            \"cnt\": 1,            \"prefab__identifier\": \"X0000000E\",            \"venue\": 5\n\n\n        ",
         "669": "\n        Adopted from SitStandAnalyticsAggregator\n        :return:\n        ",
         "759": "Error: interval start is later than end: %s, %s ",
@@ -263,7 +269,8 @@
         "85": "Occupancy sensor presence change"
     },
     "../ta/api/bookables/models.py": {
-        "15": "Used when generating identifiers, \"#\" denotes generated part. Example: \"SB1######\"",
+        "15": "Used when generating identifiers, \"#\" denotes generated part. ",
+        "16": "Example: \"SB1######\"",
         "18": "WARNING! Changing this might affect DB integrity",
         "22": "prefab type",
         "23": "prefab types",
@@ -304,13 +311,25 @@
     },
     "../ta/api/booking/confirmation.py": {
         "9": "Invitation to a meeting",
-        "11": "You have been invited to participate at a meeting.\nThe meeting will take place on {} until {} at {}.",
+        "12": [
+            "You have been invited to participate at a meeting.\n",
+            "The meeting will take place on {} until {} at {}."
+        ],
         "20": "Meeting was rescheduled",
-        "22": "The meeting you have been invited to was rescheduled.\nThe meeting will take place on {} until {} at {}.",
+        "23": [
+            "The meeting you have been invited to was rescheduled.\n",
+            "The meeting will take place on {} until {} at {}."
+        ],
         "33": "Meeting was scheduled",
-        "35": "You have created a meeting.\nThe meeting will take place on {0} until {1} at {2}.",
+        "36": [
+            "You have created a meeting.\n",
+            "The meeting will take place on {0} until {1} at {2}."
+        ],
         "46": "Meeting was canceled",
-        "48": "The meeting you have been invited to was canceled.\nThe meeting was to take place on {0} until {1} at {2}."
+        "49": [
+            "The meeting you have been invited to was canceled.\n",
+            "The meeting was to take place on {0} until {1} at {2}."
+        ]
     },
     "../ta/api/booking/endpoints.py": {
         "18": "\n    Main booking handlers\n",
@@ -363,8 +382,10 @@
         "58": "Your booking cannot start before venue opening time {}",
         "60": "Your booking cannot end after venue closing time {}",
         "106": "\n    Instance helper functions\n    ",
-        "110": "There's a booking at that time. Please choose another time. Visit the dashboard to manage your bookings.",
-        "112": "You have reached the maximum amount of intersecting bookings. Please choose another time.",
+        "110": "There's a booking at that time. Please choose another time. ",
+        "111": "Visit the dashboard to manage your bookings.",
+        "112": "You have reached the maximum amount of intersecting bookings. ",
+        "113": "Please choose another time.",
         "142": "A bookable must be assigned to a venue before booking",
         "143": "This is a room. Only bookables can be booked this way",
         "153": "You cannot check-in whilst creating a booking",
@@ -448,8 +469,10 @@
     },
     "../ta/api/kiosk/validators.py": {
         "27": "Grid object must be a kiosk",
-        "47": "You need to purchase a license to create kiosks! You can easily do that by visiting shoptableair.com",
-        "50": "Your current licensing only allows you to have a maximum of {} kiosks. Visit shoptableair.com to purchase a new license.",
+        "47": "You need to purchase a license to create kiosks! ",
+        "48": "You can easily do that by visiting shoptableair.com",
+        "50": "Your current licensing only allows you to have a maximum of {} kiosks. ",
+        "51": "Visit shoptableair.com to purchase a new license.",
         "58": "Grid object must be a kiosk"
     },
     "../ta/api/licensing/models.py": {
@@ -511,7 +534,7 @@
         "40": "This request has already been rejected",
         "52": "This account already belong to the requested team",
         "59": "{} ({}) is requesting to join your team \"{}\"",
-        "62": "Visit the cloud system to manage pending requests:\n{}",
+        "63": "Visit the cloud system to manage pending requests:\n{}",
         "68": "Team does not exist"
     },
     "../ta/api/room_booking/apps.py": {
@@ -591,12 +614,13 @@
         "92": "A bookable must be assigned to a venue before converting it to a room",
         "93": "This bookable has already been converted into a room",
         "94": "Move the bookable to another location first",
-        "102": "Your current licensing only allows you to have a maximum of {} rooms. Visit shoptableair.com to purchase a new license."
+        "102": "Your current licensing only allows you to have a maximum of {} rooms. ",
+        "103": "Visit shoptableair.com to purchase a new license."
     },
     "../ta/api/support/views.py": {
         "14": "This field is required",
         "16": "{0} has Sent a Support Inquiry",
-        "17": "User: {0}\nEmail: {1}\nMessage: {2}"
+        "19": "User: {0}\nEmail: {1}\nMessage: {2}"
     },
     "../ta/api/sync/apps.py": {
         "6": "Settings Synchronization Service"
@@ -619,7 +643,7 @@
         "53": "\nInvitation endpoints\n",
         "77": "\nInvitation endpoint\n",
         "84": "No contact email was set for the team",
-        "88": "{}\n\nSender address: {}"
+        "90": "{}\n\nSender address: {}"
     },
     "../ta/api/teams/management.py": {
         "22": "Invitation confirmation token expired.",
@@ -645,7 +669,7 @@
         "20": "Account is already in the team",
         "26": "You can't reinvite more than {0} times",
         "35": "You have been invited to join \"{0}\" on TableAir Cloud!",
-        "38": "Click the link below to accept this invitation\n{}"
+        "39": "Click the link below to accept this invitation\n{}"
     },
     "../ta/api/teams/validators/team_validator.py": {
         "18": "\n    Field validators\n    ",

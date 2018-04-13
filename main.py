@@ -87,7 +87,8 @@ def find_strings_tokenize(filename):
             if toktype == tokenize.STRING:
                 string = eval(tokstr)
                 # print (filename, lineno, strrepr)
-                lineno += string.count('\n')
+                # lineno -= 1  # shift line numbers to start from 0
+                lineno += string.count('\n')  # shift to the end of lines  # would fail for explicit \n "\n \n"
                 yield  (filename, lineno, string)
                 # print ("  File \"%s\", line %d   \"%s\"" % (filename, lineno, string))
 
@@ -110,7 +111,7 @@ def find_strings_ast_visit(filename):
         return result
 
 
-find_strings = find_strings_ast_visit
+find_strings = find_strings_tokenize
 
 # files = get_files('/home/jurgis/dev/new/tableair/sync_tableair-cloud/ta')
 files = get_files(ROOT_DIR)

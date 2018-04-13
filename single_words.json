@@ -9,10 +9,10 @@
         ],
         "321": "api:accounts:list",
         "322": [
-            "email",
-            "password",
             "John",
             "Doe",
+            "email",
+            "password",
             "labadiena1F"
         ]
     },
@@ -2024,8 +2024,8 @@
         ],
         "24": [
             "name",
-            "url",
             "goodname",
+            "url",
             "goodurl"
         ],
         "27": [
@@ -2038,20 +2038,20 @@
         ],
         "33": [
             "name",
-            "url",
             "goodname",
+            "url",
             "someurl"
         ],
         "36": [
             "name",
-            "url",
             "somename",
+            "url",
             "someurl"
         ],
         "39": [
             "name",
-            "url",
             "someteam",
+            "url",
             "goodurl"
         ]
     },
