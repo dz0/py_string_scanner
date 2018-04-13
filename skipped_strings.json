@@ -1,0 +1,872 @@
+{
+    "../ta/api/accounts/_deprecated_tests_api.py": {
+        "322": [
+            "first_name",
+            "last_name"
+        ]
+    },
+    "../ta/api/accounts/admin.py": {
+        "15": [
+            "first_name",
+            "last_name"
+        ],
+        "16": [
+            "is_active",
+            "is_staff",
+            "is_superuser"
+        ],
+        "17": "user_permissions",
+        "18": [
+            "last_login",
+            "date_joined"
+        ],
+        "23": [
+            "first_name",
+            "last_name"
+        ],
+        "34": "is_staff",
+        "35": [
+            "is_staff",
+            "is_superuser",
+            "is_active"
+        ],
+        "38": "user_permissions"
+    },
+    "../ta/api/accounts/apps.py": {
+        "7": "ta_accounts"
+    },
+    "../ta/api/accounts/forms.py": {
+        "15": "duplicate_email",
+        "16": "password_mismatch",
+        "29": [
+            "first_name",
+            "last_name"
+        ],
+        "46": "duplicate_email",
+        "47": "duplicate_email",
+        "61": "password_mismatch",
+        "62": "password_mismatch",
+        "101": "user_permissions",
+        "103": "content_type"
+    },
+    "../ta/api/accounts/models.py": {
+        "24": [
+            "first_name",
+            "first_name"
+        ],
+        "27": [
+            "last_name",
+            "last_name"
+        ],
+        "101": [
+            "first_name",
+            "last_name"
+        ],
+        "133": "ta_account",
+        "134": "AUTH_USER_MODEL",
+        "135": "ta_accounts",
+        "142": "ta_registration",
+        "150": "password_reset",
+        "153": "ta_password_reset",
+        "161": "email_change",
+        "165": "ta_email_change",
+        "176": "api_settings",
+        "179": "ta_api_settings"
+    },
+    "../ta/api/accounts/serializers.py": {
+        "26": [
+            "first_name",
+            "last_name",
+            "old_password",
+            "date_joined"
+        ],
+        "27": [
+            "confirm_invite",
+            "is_kiosk"
+        ],
+        "28": "first_usage",
+        "29": "date_joined",
+        "30": [
+            "confirm_invite",
+            "write_only",
+            "first_usage"
+        ],
+        "46": "old_password",
+        "53": "team_url",
+        "93": "old_password",
+        "94": "old_password",
+        "95": "old_password",
+        "96": "old_password",
+        "100": "confirm_invite",
+        "128": "accounts:confirm_registration",
+        "145": "auth:confirm_email_change"
+    },
+    "../ta/api/accounts/views.py": {
+        "110": [
+            "bookable__venue_id",
+            "bookable__venue__team__url"
+        ],
+        "158": "new_password",
+        "264": "bookable__venue__work_starts",
+        "265": "bookable__venue__work_ends",
+        "266": "bookable__venue__id",
+        "267": "bookable__venue__name",
+        "268": "bookable__venue__timezone",
+        "269": "bookable__name"
+    },
+    "../ta/api/analytics/_deprecated_tests_api.py": {
+        "19": "HTTP_HOST",
+        "192": "?scope=account&duration=month&from={0}&id={1}&aggregator=avg_booking_duration",
+        "200": "?scope=account&duration=alltime&id={0}&aggregator=avg_booking_duration",
+        "207": "?scope=table&duration=alltime&identifier={0}&aggregator=avg_booking_duration"
+    },
+    "../ta/api/analytics/admin.py": {
+        "8": "account__email"
+    },
+    "../ta/api/analytics/aggregators.py": {
+        "42": "team_url",
+        "49": [
+            "team_url",
+            "account_id"
+        ],
+        "63": "avg_activity_times",
+        "64": "avg_booking_duration",
+        "65": "avg_heights",
+        "66": "calories_burned",
+        "67": "least_used_table",
+        "68": "least_time_spent",
+        "69": "most_time_spent",
+        "70": "most_used_table",
+        "71": "table_utilization",
+        "72": "total_activity_times",
+        "73": "usage_end",
+        "74": "usage_start",
+        "76": "graph_booking_duration",
+        "79": "avg_room_booking_duration",
+        "82": "most_active_room_booking_participant",
+        "85": "avg_room_booking_attendance",
+        "88": "total_room_bookings",
+        "139": "team_url",
+        "145": "account_id",
+        "211": "__all__",
+        "231": "_",
+        "238": [
+            "bookable__venue__timezone",
+            "bookable__venue__work_starts"
+        ],
+        "239": "bookable__venue__work_ends",
+        "244": [
+            "bookable__venue__timezone",
+            "bookable__venue__work_starts"
+        ],
+        "245": "bookable__venue__work_ends",
+        "251": "only_checked_in",
+        "253": "team_url",
+        "254": "team_url",
+        "257": "only_checked_in",
+        "263": "team_url",
+        "264": "bookable__prefab__identifier",
+        "265": [
+            "team_tables#",
+            "team_url"
+        ],
+        "267": "only_checked_in",
+        "274": "only_checked_in",
+        "280": "team_url",
+        "281": [
+            "member_bookings#",
+            "team_url"
+        ],
+        "283": "only_checked_in",
+        "284": "account_id",
+        "287": "account_id",
+        "295": "account__id",
+        "300": "team_url",
+        "306": [
+            "account_id",
+            "team_url"
+        ],
+        "317": "team_url",
+        "326": "team_url",
+        "397": [
+            "sitting_height",
+            "standing_height"
+        ],
+        "406": "sitting_height",
+        "407": "standing_height",
+        "411": "account__id",
+        "456": "standing_time",
+        "457": "sitting_time",
+        "478": "standing_time",
+        "479": "sitting_time"
+    },
+    "../ta/api/analytics/models.py": {
+        "47": "app_usage",
+        "50": "ta_app_usage"
+    },
+    "../ta/api/analytics/occupancy_analytics.py": {
+        "101": "by_week_hours",
+        "102": "by_prefab",
+        "103": "by_state_changes",
+        "105": "get_prefabs_intervals",
+        "125": "prefab__bookables__name",
+        "126": "prefab__identifier",
+        "133": "prefab__bookables__venue",
+        "134": "prefab__bookables__venue__work_starts",
+        "135": "prefab__bookables__venue__work_ends",
+        "136": "prefab__bookables__venue__timezone",
+        "251": "__all__",
+        "527": "bookables__name",
+        "657": "prefab__usage_set",
+        "660": [
+            "prefab__identifier",
+            "venue__name"
+        ],
+        "695": [
+            "prefab__id",
+            "-prefab__id"
+        ],
+        "706": "prefab_identifier",
+        "715": "page_size",
+        "741": "prefab_identifier",
+        "832": "validate_missing_timepoints"
+    },
+    "../ta/api/analytics/serializers.py": {
+        "20": "account_id"
+    },
+    "../ta/api/analytics/views.py": {
+        "87": "by_state_changes",
+        "91": "by_week_hours",
+        "110": [
+            "this_week",
+            "last_week"
+        ],
+        "112": "this_week",
+        "114": "last_week",
+        "127": "by_state_changes",
+        "133": "by_prefab",
+        "135": "by_state_changes",
+        "138": "tableair-prefab_occupancy"
+    },
+    "../ta/api/bookables/admin.py": {
+        "7": "is_confirmed",
+        "9": "is_confirmed",
+        "13": [
+            "timestamp_formatted",
+            "created_formatted"
+        ],
+        "14": "prefab__identifier",
+        "31": "is_historic",
+        "32": "prefab__identifier",
+        "33": "is_historic"
+    },
+    "../ta/api/bookables/endpoints.py": {
+        "92": "team_url",
+        "94": "prefab__firmware_ver",
+        "95": "prefab__type",
+        "96": "prefab__firmware_ver_target",
+        "188": "fields_from_url"
+    },
+    "../ta/api/bookables/models.py": {
+        "21": "ta_prefab_type",
+        "39": "ta_prefab",
+        "51": "usage_set",
+        "55": "ta_prefab_usage",
+        "85": "ta_bookable"
+    },
+    "../ta/api/bookables/serializers.py": {
+        "45": "is_historic",
+        "53": "is_confirmed",
+        "54": "firmware_ver"
+    },
+    "../ta/api/bookables/sitstand/aggregators.py": {
+        "31": "team_url",
+        "32": "venue_id",
+        "57": "avg_standing_time",
+        "58": "avg_sitting_time",
+        "59": "avg_standing_height",
+        "60": "avg_sitting_height",
+        "61": "avg_switches",
+        "62": "avg_minor_switches",
+        "63": "height_visuals",
+        "71": "prefab__bookables__venue__name",
+        "72": "prefab__identifier",
+        "73": "prefab__bookables__venue__work_starts",
+        "74": "prefab__bookables__venue__work_ends",
+        "75": "prefab__bookables__venue__timezone",
+        "76": "prefab__bookables__venue__height_threshold",
+        "97": "height_visuals",
+        "99": "height_visuals",
+        "109": "prefab_identifier"
+    },
+    "../ta/api/bookables/sitstand/endpoints.py": {
+        "28": "team_url",
+        "30": "venue_id",
+        "61": "prefab__bookables__venue__height_threshold",
+        "62": "prefab__bookables__venue__timezone",
+        "74": [
+            "duration_mins",
+            "height_mm",
+            "is_sitting"
+        ],
+        "75": "is_sitting"
+    },
+    "../ta/api/bookables/validators/bookable_validator.py": {
+        "43": "booked_by",
+        "85": "booked_by",
+        "86": "account_id"
+    },
+    "../ta/api/bookables/validators/prefab_usage_validator.py": {
+        "56": "prefab_usage",
+        "61": "prefab_usage"
+    },
+    "../ta/api/booking/admin.py": {
+        "7": "check_in",
+        "8": [
+            "account__email",
+            "bookable__prefab__identifier"
+        ]
+    },
+    "../ta/api/booking/confirmation.py": {
+        "13": "SHORT_DATETIME_FORMAT",
+        "14": "SHORT_DATETIME_FORMAT",
+        "25": "SHORT_DATETIME_FORMAT",
+        "26": "SHORT_DATETIME_FORMAT",
+        "38": "SHORT_DATETIME_FORMAT",
+        "39": "SHORT_DATETIME_FORMAT",
+        "51": "SHORT_DATETIME_FORMAT",
+        "52": "SHORT_DATETIME_FORMAT"
+    },
+    "../ta/api/booking/endpoints.py": {
+        "37": "bookable__venue_id",
+        "150": "account_id",
+        "152": "bookable__venue_id",
+        "153": "bookable__venue__name",
+        "155": "eligible_for_check_in",
+        "164": "account_id",
+        "174": "account_id",
+        "175": "team_url",
+        "177": "-bookable__prefab__type__is_reserved",
+        "178": "bookable__prefab__type",
+        "192": "team_url"
+    },
+    "../ta/api/booking/management.py": {
+        "48": "repeat_every",
+        "51": "start_date",
+        "52": "end_date",
+        "53": "end_occurrences",
+        "55": "start_time",
+        "56": "end_time",
+        "58": "ending_at",
+        "60": "use_random_table",
+        "66": "account_id",
+        "67": "venue_id",
+        "69": "table_identifier",
+        "70": "table_identifier",
+        "72": [
+            "start_time",
+            "start_time"
+        ],
+        "73": [
+            "end_time",
+            "end_time"
+        ],
+        "78": "end_time",
+        "86": [
+            "ending_at",
+            "ending_at"
+        ],
+        "88": [
+            "ending_at",
+            "ending_at"
+        ],
+        "92": "ending_at",
+        "93": [
+            "end_date",
+            "end_date"
+        ],
+        "94": [
+            "end_date",
+            "start_date"
+        ],
+        "95": "end_date",
+        "100": "ending_at",
+        "101": [
+            "end_occurrences",
+            "end_occurrences"
+        ],
+        "111": [
+            "use_random_table",
+            "use_random_table"
+        ],
+        "114": "start_time",
+        "115": "end_time",
+        "147": "end_date",
+        "165": "prefab__identifier",
+        "187": [
+            "start_time",
+            "end_time"
+        ]
+    },
+    "../ta/api/booking/models.py": {
+        "89": "ta_booking"
+    },
+    "../ta/api/booking/notifications.py": {
+        "37": "notification_record_id",
+        "38": "notification_id",
+        "63": "CHECKIN_CATEGORY",
+        "72": "CHECKIN_CATEGORY",
+        "92": "push_token",
+        "104": "push_token",
+        "131": "push_token",
+        "188": "account_id",
+        "190": "account_id",
+        "198": "notification_id"
+    },
+    "../ta/api/booking/serializers.py": {
+        "14": "prefab__identifier",
+        "21": "__all__",
+        "23": "read_only",
+        "29": "__all__"
+    },
+    "../ta/api/booking/validators/booking_validators.py": {
+        "31": "date_extrema_exempt",
+        "32": "intersection_exempt",
+        "33": "other_bookables_intersection_exempt",
+        "34": "check_in_restrictions_exempt",
+        "35": "notification_exempt",
+        "40": "too_long",
+        "41": "too_short",
+        "43": [
+            "too_early",
+            "too_early_0"
+        ],
+        "45": "too_late",
+        "49": [
+            "check_in",
+            "check_in_once"
+        ],
+        "50": [
+            "check_in",
+            "check_in_early"
+        ],
+        "51": [
+            "check_in",
+            "check_in_late"
+        ],
+        "65": "check_in",
+        "131": "intersecting_allowed",
+        "146": "check_in",
+        "153": [
+            "check_in",
+            "check_in"
+        ],
+        "186": "check_in",
+        "187": "check_in",
+        "206": "check_in",
+        "247": "check_in"
+    },
+    "../ta/api/booking/validators/repeating_booking_validators.py": {
+        "73": "end_date",
+        "95": "bookable__prefab__id",
+        "111": [
+            "start_time",
+            "end_time"
+        ],
+        "158": "start_date",
+        "159": [
+            "start_time",
+            "start_time"
+        ],
+        "160": [
+            "end_time",
+            "end_time"
+        ],
+        "162": "repeat_every",
+        "169": "ending_type",
+        "171": "ending_type",
+        "175": "end_date",
+        "176": "end_date",
+        "178": "end_occurrences",
+        "180": "use_random_bookable",
+        "184": "user_random_bookable",
+        "187": "__iter__"
+    },
+    "../ta/api/broker/endpoints.py": {
+        "15": "notification_id"
+    },
+    "../ta/api/broker/serializers.py": {
+        "11": "__all__"
+    },
+    "../ta/api/devices/models.py": {
+        "25": "ta_agent",
+        "28": "is_active",
+        "56": [
+            "entity_type",
+            "entity_id"
+        ],
+        "59": "ta_notification"
+    },
+    "../ta/api/devices/serializers.py": {
+        "10": [
+            "push_token",
+            "is_active"
+        ],
+        "12": [
+            "push_token",
+            "write_only"
+        ],
+        "27": "is_active",
+        "28": "is_active"
+    },
+    "../ta/api/firmware/models.py": {
+        "12": "ta_firmware",
+        "15": "release_date"
+    },
+    "../ta/api/groups/endpoints.py": {
+        "11": "fields_from_url",
+        "32": "fields_from_url"
+    },
+    "../ta/api/groups/models.py": {
+        "11": "group_memberships",
+        "16": "ta_group",
+        "30": "ta_group_member"
+    },
+    "../ta/api/groups/serializers.py": {
+        "22": "__all__"
+    },
+    "../ta/api/groups/validators.py": {
+        "54": "account_id"
+    },
+    "../ta/api/integration/endpoints.py": {
+        "48": "external_email"
+    },
+    "../ta/api/integration/models.py": {
+        "10": "calendar_links",
+        "15": "ta_calendar_link"
+    },
+    "../ta/api/integration/sync.py": {
+        "44": "account__email"
+    },
+    "../ta/api/iot/serializers.py": {
+        "9": "check_in",
+        "14": "c_i"
+    },
+    "../ta/api/iot/views.py": {
+        "47": [
+            "prefab__firmware_ver",
+            "prefab__firmware_ver_target"
+        ],
+        "48": [
+            "venue__work_starts",
+            "venue__work_ends",
+            "venue__timezone"
+        ],
+        "58": "venue__timezone",
+        "59": "venue__work_starts",
+        "60": "venue__work_ends",
+        "65": "prefab__firmware_ver",
+        "66": "prefab__firmware_ver_target"
+    },
+    "../ta/api/kiosk/endpoints.py": {
+        "24": "grid_object",
+        "36": "participations__kiosk_grid_object"
+    },
+    "../ta/api/kiosk/serializers.py": {
+        "78": "grid_object"
+    },
+    "../ta/api/kiosk/validators.py": {
+        "34": "last_name",
+        "58": "grid_object"
+    },
+    "../ta/api/licensing/admin.py": {
+        "7": [
+            "max_rooms",
+            "max_kiosks",
+            "room_plan_from",
+            "kiosk_plan_from"
+        ],
+        "8": [
+            "team__url",
+            "team__name"
+        ]
+    },
+    "../ta/api/licensing/models.py": {
+        "15": "ta_license"
+    },
+    "../ta/api/logging/apps.py": {
+        "11": "ta_api_logging",
+        "17": "log_signal_post_save",
+        "18": "log_signal_post_delete",
+        "20": "log_signal_user_login",
+        "22": "log_signal_http_4xx"
+    },
+    "../ta/api/logging/models.py": {
+        "31": [
+            "content_type",
+            "object_id"
+        ],
+        "56": "ta_log"
+    },
+    "../ta/api/logging/serializers.py": {
+        "9": [
+            "content_type",
+            "object_id",
+            "object_repr"
+        ]
+    },
+    "../ta/api/logging/signals.py": {
+        "6": "ta_api_logging",
+        "13": "app_label",
+        "22": "get_response"
+    },
+    "../ta/api/mux/views.py": {
+        "31": "team_url",
+        "33": "team_url",
+        "38": "first_name"
+    },
+    "../ta/api/objects/endpoints.py": {
+        "13": "fields_from_url",
+        "34": "fields_from_url"
+    },
+    "../ta/api/objects/models.py": {
+        "14": "grid_tiles",
+        "15": "grid_tiles",
+        "19": "ta_tile",
+        "30": "grid_objects",
+        "34": "ta_object"
+    },
+    "../ta/api/objects/serializers.py": {
+        "15": "__all__",
+        "25": "__all__"
+    },
+    "../ta/api/requests/models.py": {
+        "36": "ta_request"
+    },
+    "../ta/api/requests/serializers.py": {
+        "28": "team_id",
+        "64": "team_url"
+    },
+    "../ta/api/requests/views.py": {
+        "16": "\n    **api/teams/<team_url>/requests/**\n    "
+    },
+    "../ta/api/room_booking/__init__.py": {
+        "1": "ta.api.room_booking.apps.RoomBookingConfig"
+    },
+    "../ta/api/room_booking/apps.py": {
+        "5": "ta.api.room_booking",
+        "6": "room_booking"
+    },
+    "../ta/api/room_booking/emails.py": {
+        "41": "room_booking:decline",
+        "42": "room_booking",
+        "43": "room_booking:accept",
+        "44": "room_booking"
+    },
+    "../ta/api/room_booking/endpoints.py": {
+        "31": [
+            "host__first_name",
+            "host__last_name"
+        ],
+        "35": "fields_from_url",
+        "45": "fields_from_url",
+        "62": "account_id",
+        "64": "team_url",
+        "80": "team_url",
+        "97": [
+            "fields_from_url",
+            "room_booking"
+        ],
+        "107": "account_id",
+        "129": [
+            "fields_from_url",
+            "room_booking"
+        ],
+        "195": "room__bookable__venue__name"
+    },
+    "../ta/api/room_booking/managers.py": {
+        "24": "room_booking",
+        "39": "room_booking"
+    },
+    "../ta/api/room_booking/models.py": {
+        "15": "room_bookings",
+        "16": "hosted_room_bookings",
+        "27": "ta_room_booking",
+        "36": "room_bookings",
+        "44": "ta_room_booking_participant",
+        "45": "room_booking",
+        "46": [
+            "account__first_name",
+            "account__last_name"
+        ]
+    },
+    "../ta/api/room_booking/serializers.py": {
+        "13": "room_booking",
+        "14": "read_only",
+        "18": "bookable__prefab__identifier",
+        "23": "__all__",
+        "24": "read_only",
+        "28": "bookable__prefab__identifier",
+        "39": "__all__",
+        "40": "read_only"
+    },
+    "../ta/api/room_booking/validators.py": {
+        "34": [
+            "room_booking",
+            "room_booking"
+        ],
+        "37": "skip_booking_checks",
+        "42": "room_booking",
+        "75": "no_email_notifications",
+        "87": "skip_capacity_checks",
+        "88": [
+            "room_booking",
+            "room_booking"
+        ],
+        "93": "skip_eligibility_checks",
+        "94": "room_booking",
+        "100": "room_booking",
+        "110": "skip_unique_check",
+        "127": "room_booking__host",
+        "159": "start_now",
+        "217": "time_changed",
+        "219": "replace_participants",
+        "220": "account_id",
+        "221": "remove_participants",
+        "222": "account_id",
+        "223": "create_participants",
+        "224": "account_id",
+        "227": "remove_participants",
+        "228": "create_participants",
+        "263": "time_changed",
+        "269": "create_participants",
+        "272": "create_participants",
+        "279": "remove_participants",
+        "281": "remove_participants",
+        "288": "room_booking__host"
+    },
+    "../ta/api/rooms/endpoints.py": {
+        "18": "fields_from_url",
+        "44": "fields_from_url",
+        "65": "fields_from_url"
+    },
+    "../ta/api/rooms/models.py": {
+        "16": "ta_room",
+        "28": "room_objects",
+        "33": "ta_room_object"
+    },
+    "../ta/api/rooms/serializers.py": {
+        "13": "bookable__prefab__identifier",
+        "22": "prefab__identifier",
+        "29": "__all__",
+        "48": "bookable__prefab__identifier",
+        "53": "__all__"
+    },
+    "../ta/api/rooms/validators.py": {
+        "30": "tiles_to_delete",
+        "36": "skip_tile_continuity_check",
+        "70": "tiles_to_delete",
+        "71": "tiles_to_delete",
+        "121": "tiles_to_delete",
+        "127": "tiles_to_delete",
+        "130": "is_occupied"
+    },
+    "../ta/api/sync/models.py": {
+        "46": "standing_height",
+        "53": "ta_settings"
+    },
+    "../ta/api/sync/serializers.py": {
+        "12": "date_modified",
+        "20": [
+            "sitting_height",
+            "standing_height",
+            "unit_system",
+            "date_modified",
+            "use_12_hour_clock"
+        ]
+    },
+    "../ta/api/sync/views.py": {
+        "16": "\n    **api/accounts/<account_pk>/sync/**\n    "
+    },
+    "../ta/api/teams/endpoints.py": {
+        "31": "team_url",
+        "63": "fields_from_url",
+        "84": "__non_field_errors__",
+        "88": "sender_email"
+    },
+    "../ta/api/teams/models.py": {
+        "62": "ta_team",
+        "97": "ta_participation",
+        "112": "ta_participant_permission",
+        "124": "ta_invitation"
+    },
+    "../ta/api/teams/serializers.py": {
+        "16": "is_historic",
+        "28": "recurring_invitation"
+    },
+    "../ta/api/teams/validators/invitation_validator.py": {
+        "30": "recurring_invitation",
+        "39": "auth:confirm_invite"
+    },
+    "../ta/api/teams/validators/team_validator.py": {
+        "57": "contact_email",
+        "58": "contact_email"
+    },
+    "../ta/api/teams/views.py": {
+        "15": "\n    **api/teams/<team_url>/venues/**\n    ",
+        "30": "\n    **api/teams/<team_url>/participants/**\n    ",
+        "39": "first_name"
+    },
+    "../ta/api/ui/endpoints.py": {
+        "12": "fields_from_url",
+        "16": "fields_from_url",
+        "27": "fields_from_url",
+        "32": "fields_from_url",
+        "46": "fields_from_url"
+    },
+    "../ta/api/ui/models.py": {
+        "20": "ta_ui_settings",
+        "30": "ta_ui_team_settings",
+        "48": "venue_settings",
+        "51": "ta_ui_venue_settings"
+    },
+    "../ta/api/ui/serializers.py": {
+        "28": "team_settings",
+        "41": "venue_settings"
+    },
+    "../ta/api/ui/validators.py": {
+        "17": "skip_venue_assignment_check",
+        "19": "last_used_venue",
+        "22": "skip_participation_construction",
+        "30": "check_in_duration",
+        "37": "scale_factor",
+        "47": "team_settings"
+    },
+    "../ta/api/venues/models.py": {
+        "25": "work_starts",
+        "96": "ta_venue",
+        "126": "ta_venue_back_img"
+    },
+    "../ta/api/venues/permissions.py": {
+        "10": "team_url",
+        "19": "venue_id"
+    },
+    "../ta/api/venues/serializers.py": {
+        "60": "is_historic"
+    },
+    "../ta/api/venues/validators/venue_image_validator.py": {
+        "21": "skip_img_checks",
+        "28": "skip_img_checks"
+    },
+    "../ta/api/venues/validators/venue_validator.py": {
+        "22": "is_historic",
+        "29": "work_ends",
+        "33": "height_threshold",
+        "36": [
+            "work_starts",
+            "work_ends"
+        ],
+        "46": "work_starts",
+        "47": "work_ends"
+    }
+}

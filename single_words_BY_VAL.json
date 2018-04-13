@@ -1,0 +1,1976 @@
+{
+    "\n        register\n        ": [
+        "../ta/api/accounts/views.py :44"
+    ],
+    "\n    **/api/accounts/**\n    ": [
+        "../ta/api/accounts/views.py :31"
+    ],
+    "\n    **/api/accounts/<pk>/**\n    ": [
+        "../ta/api/accounts/views.py :51",
+        "../ta/api/accounts/views.py :99"
+    ],
+    "\n    **/api/accounts/confirm-email-change/<hash>/**\n    ": [
+        "../ta/api/accounts/views.py :125"
+    ],
+    "\n    **/api/accounts/confirm-registration/<hash>/**\n    ": [
+        "../ta/api/accounts/views.py :115"
+    ],
+    "\n    **api/logs/**\n    ": [
+        "../ta/api/logging/views.py :12"
+    ],
+    "\n    **api/venues/<pk>/tables/**\n    ": [
+        "../ta/api/venues/views.py :13"
+    ],
+    "\n    Deprecated\n    ": [
+        "../ta/api/iot/views.py :20"
+    ],
+    "\n    Helpers\n    ": [
+        "../ta/api/analytics/occupancy_analytics.py :281"
+    ],
+    "\n    Perspectives\n    ": [
+        "../ta/api/analytics/occupancy_analytics.py :343"
+    ],
+    "\n    Primitives\n    ": [
+        "../ta/api/bookables/validators/bookable_validator.py :28",
+        "../ta/api/booking/validators/repeating_booking_validators.py :148",
+        "../ta/api/booking/validators/booking_validators.py :136"
+    ],
+    " (": [
+        "../ta/api/bookables/models.py :26",
+        "../ta/api/bookables/models.py :45",
+        "../ta/api/bookables/models.py :90",
+        "../ta/api/analytics/occupancy_analytics.py :126"
+    ],
+    " venue ": [
+        "../ta/api/ui/models.py :55"
+    ],
+    "\"": [
+        "../ta/api/analytics/occupancy_analytics.py :53"
+    ],
+    "#": [
+        "../ta/api/analytics/views.py :42",
+        "../ta/api/analytics/views.py :42",
+        "../ta/api/analytics/views.py :68",
+        "../ta/api/analytics/views.py :68",
+        "../ta/api/bookables/validators/prefab_validator.py :31",
+        "../ta/api/bookables/validators/prefab_validator.py :33",
+        "../ta/api/bookables/validators/bookable_validator.py :33"
+    ],
+    "#F3F3F3": [
+        "../ta/api/objects/models.py :12"
+    ],
+    "%02d:%02d": [
+        "../ta/api/analytics/occupancy_analytics.py :562"
+    ],
+    "%H:%M": [
+        "../ta/api/room_booking/emails.py :21"
+    ],
+    "%m-%d": [
+        "../ta/api/analytics/aggregators.py :704"
+    ],
+    "'": [
+        "../ta/api/analytics/occupancy_analytics.py :53"
+    ],
+    "([0-9]{2}):?([0-9]{2})": [
+        "../ta/api/booking/management.py :39",
+        "../ta/api/booking/validators/repeating_booking_validators.py :38"
+    ],
+    ")": [
+        "../ta/api/bookables/models.py :26",
+        "../ta/api/bookables/models.py :45",
+        "../ta/api/bookables/models.py :90",
+        "../ta/api/analytics/occupancy_analytics.py :126"
+    ],
+    "+": [
+        "../ta/api/groups/models.py :24"
+    ],
+    ",": [
+        "../ta/api/bookables/sitstand/endpoints.py :40"
+    ],
+    ", ": [
+        "../ta/api/bookables/sitstand/aggregators.py :95"
+    ],
+    "-cnt": [
+        "../ta/api/analytics/occupancy_analytics.py :658"
+    ],
+    "-id": [
+        "../ta/api/kiosk/validators.py :33"
+    ],
+    "-timestamp": [
+        "../ta/api/bookables/sitstand/endpoints.py :63",
+        "../ta/api/analytics/occupancy_analytics.py :696"
+    ],
+    "-version": [
+        "../ta/api/firmware/models.py :22",
+        "../ta/api/firmware/models.py :27"
+    ],
+    "00:00": [
+        "../ta/api/analytics/_deprecated_tests_api.py :43"
+    ],
+    "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ": [
+        "../ta/api/bookables/validators/prefab_validator.py :29"
+    ],
+    "23:59": [
+        "../ta/api/analytics/_deprecated_tests_api.py :43"
+    ],
+    ":": [
+        "../ta/api/venues/models.py :46",
+        "../ta/api/venues/models.py :47",
+        "../ta/api/venues/models.py :48",
+        "../ta/api/venues/models.py :49"
+    ],
+    "AND": [
+        "../ta/api/analytics/occupancy_analytics.py :51"
+    ],
+    "Accept": [
+        "../ta/api/integration/sync.py :55",
+        "../ta/api/integration/sync.py :58"
+    ],
+    "Accepted": [
+        "../ta/api/requests/models.py :17"
+    ],
+    "Administrator": [
+        "../ta/api/teams/choices.py :8",
+        "../ta/api/teams/models.py :80"
+    ],
+    "Android": [
+        "../ta/api/devices/models.py :12"
+    ],
+    "Break": [
+        "../ta/api/analytics/models.py :27"
+    ],
+    "Create": [
+        "../ta/api/logging/models.py :17"
+    ],
+    "Delete": [
+        "../ta/api/logging/models.py :19"
+    ],
+    "Doe": [
+        "../ta/api/accounts/_deprecated_tests_api.py :322"
+    ],
+    "Europe/Vilnius": [
+        "../ta/api/analytics/_deprecated_tests_api.py :43"
+    ],
+    "FROM": [
+        "../ta/api/analytics/occupancy_analytics.py :51"
+    ],
+    "GET": [
+        "../ta/api/mux/views.py :81",
+        "../ta/api/mux/views.py :86"
+    ],
+    "GroupMember": [
+        "../ta/api/groups/models.py :11"
+    ],
+    "INNER": [
+        "../ta/api/analytics/occupancy_analytics.py :51"
+    ],
+    "Imperial": [
+        "../ta/api/sync/models.py :25"
+    ],
+    "John": [
+        "../ta/api/accounts/_deprecated_tests_api.py :322"
+    ],
+    "Kiosk": [
+        "../ta/api/kiosk/validators.py :36"
+    ],
+    "Login": [
+        "../ta/api/logging/models.py :21",
+        "../ta/api/analytics/models.py :29"
+    ],
+    "Metric": [
+        "../ta/api/sync/models.py :24"
+    ],
+    "N/A": [
+        "../ta/api/analytics/aggregators.py :485",
+        "../ta/api/analytics/aggregators.py :497",
+        "../ta/api/analytics/aggregators.py :509",
+        "../ta/api/analytics/aggregators.py :521",
+        "../ta/api/analytics/aggregators.py :533",
+        "../ta/api/rooms/models.py :22"
+    ],
+    "ON": [
+        "../ta/api/analytics/occupancy_analytics.py :51"
+    ],
+    "Occupied": [
+        "../ta/api/analytics/occupancy_analytics.py :608"
+    ],
+    "Owner": [
+        "../ta/api/teams/choices.py :9",
+        "../ta/api/teams/models.py :81"
+    ],
+    "POST": [
+        "../ta/api/teams/endpoints.py :80"
+    ],
+    "Participant": [
+        "../ta/api/teams/choices.py :7",
+        "../ta/api/teams/models.py :79"
+    ],
+    "Participation": [
+        "../ta/api/teams/models.py :44"
+    ],
+    "Password": [
+        "../ta/api/accounts/forms.py :20",
+        "../ta/api/accounts/forms.py :89"
+    ],
+    "Pending": [
+        "../ta/api/requests/models.py :16"
+    ],
+    "Permissions": [
+        "../ta/api/accounts/admin.py :16"
+    ],
+    "Queries: ": [
+        "../ta/api/analytics/views.py :51"
+    ],
+    "Rejected": [
+        "../ta/api/requests/models.py :18"
+    ],
+    "SELECT": [
+        "../ta/api/analytics/occupancy_analytics.py :51"
+    ],
+    "SP02": [
+        "../ta/api/analytics/occupancy_analytics.py :627"
+    ],
+    "Sitting": [
+        "../ta/api/analytics/models.py :25"
+    ],
+    "Standing": [
+        "../ta/api/analytics/models.py :26"
+    ],
+    "TODO..": [
+        "../ta/api/analytics/occupancy_analytics.py :513"
+    ],
+    "UTC": [
+        "../ta/api/bookables/serializers.py :61",
+        "../ta/api/bookables/serializers.py :88",
+        "../ta/api/bookables/sitstand/aggregators.py :140"
+    ],
+    "Update": [
+        "../ta/api/logging/models.py :18"
+    ],
+    "Vacant": [
+        "../ta/api/analytics/occupancy_analytics.py :617"
+    ],
+    "WHERE": [
+        "../ta/api/analytics/occupancy_analytics.py :51"
+    ],
+    "[A-Z0-9]{9}": [
+        "../ta/api/bookables/validators/prefab_validator.py :11"
+    ],
+    "^$": [
+        "../ta/api/analytics/urls_usage.py :6",
+        "../ta/api/analytics/urls_analytics.py :7"
+    ],
+    "^(?P<hours>([0-1][0-9])|(2[0-3])):?(?P<minutes>[0-5][0-9])$": [
+        "../ta/api/venues/models.py :15"
+    ],
+    "^occupancy/(?P<perspective>.+?)/(?P<scope>.+?)/(?P<id>.+?)/(?P<csv>csv/)?$": [
+        "../ta/api/analytics/urls_analytics.py :9"
+    ],
+    "^{0}$": [
+        "../ta/api/teams/models.py :37"
+    ],
+    "a": [
+        "../ta/api/bookables/serializers.py :73"
+    ],
+    "acc": [
+        "../ta/api/iot/serializers.py :14"
+    ],
+    "accepted": [
+        "../ta/api/room_booking/choices.py :11"
+    ],
+    "account": [
+        "../ta/api/booking/management.py :44",
+        "../ta/api/booking/management.py :66",
+        "../ta/api/booking/management.py :81",
+        "../ta/api/accounts/models.py :104",
+        "../ta/api/room_booking/managers.py :24",
+        "../ta/api/room_booking/managers.py :38",
+        "../ta/api/room_booking/managers.py :42",
+        "../ta/api/analytics/aggregators.py :48",
+        "../ta/api/analytics/aggregators.py :63",
+        "../ta/api/analytics/aggregators.py :64",
+        "../ta/api/analytics/aggregators.py :66",
+        "../ta/api/analytics/aggregators.py :67",
+        "../ta/api/analytics/aggregators.py :70",
+        "../ta/api/analytics/aggregators.py :71",
+        "../ta/api/analytics/aggregators.py :72",
+        "../ta/api/analytics/aggregators.py :73",
+        "../ta/api/analytics/aggregators.py :74",
+        "../ta/api/analytics/aggregators.py :76",
+        "../ta/api/analytics/aggregators.py :79",
+        "../ta/api/analytics/aggregators.py :82",
+        "../ta/api/analytics/aggregators.py :85",
+        "../ta/api/analytics/aggregators.py :88",
+        "../ta/api/analytics/aggregators.py :135",
+        "../ta/api/analytics/aggregators.py :273",
+        "../ta/api/analytics/aggregators.py :301",
+        "../ta/api/analytics/aggregators.py :322",
+        "../ta/api/analytics/aggregators.py :601",
+        "../ta/api/analytics/admin.py :7",
+        "../ta/api/room_booking/endpoints.py :129",
+        "../ta/api/room_booking/endpoints.py :141",
+        "../ta/api/room_booking/endpoints.py :190",
+        "../ta/api/room_booking/endpoints.py :205",
+        "../ta/api/room_booking/endpoints.py :218",
+        "../ta/api/room_booking/validators.py :35",
+        "../ta/api/room_booking/validators.py :42",
+        "../ta/api/room_booking/validators.py :44",
+        "../ta/api/room_booking/validators.py :95",
+        "../ta/api/room_booking/validators.py :96",
+        "../ta/api/room_booking/validators.py :100",
+        "../ta/api/room_booking/validators.py :112",
+        "../ta/api/room_booking/validators.py :153",
+        "../ta/api/room_booking/validators.py :192",
+        "../ta/api/booking/validators/repeating_booking_validators.py :154",
+        "../ta/api/requests/serializers.py :29",
+        "../ta/api/requests/serializers.py :87",
+        "../ta/api/requests/serializers.py :100",
+        "../ta/api/groups/validators.py :13",
+        "../ta/api/groups/validators.py :19",
+        "../ta/api/groups/validators.py :25",
+        "../ta/api/booking/permissions.py :8",
+        "../ta/api/booking/admin.py :7",
+        "../ta/api/ui/validators.py :24",
+        "../ta/api/ui/validators.py :40",
+        "../ta/api/room_booking/emails.py :42",
+        "../ta/api/room_booking/emails.py :44",
+        "../ta/api/logging/serializers.py :9",
+        "../ta/api/iot/serializers.py :10",
+        "../ta/api/booking/endpoints.py :207",
+        "../ta/api/devices/serializers.py :30",
+        "../ta/api/room_booking/models.py :45",
+        "../ta/api/mux/views.py :44",
+        "../ta/api/mux/views.py :72",
+        "../ta/api/ui/endpoints.py :12",
+        "../ta/api/ui/endpoints.py :16",
+        "../ta/api/ui/endpoints.py :27",
+        "../ta/api/ui/endpoints.py :32",
+        "../ta/api/ui/endpoints.py :46",
+        "../ta/api/booking/validators/booking_validators.py :161",
+        "../ta/api/booking/validators/booking_validators.py :162",
+        "../ta/api/booking/validators/booking_validators.py :163",
+        "../ta/api/booking/validators/booking_validators.py :163",
+        "../ta/api/booking/validators/booking_validators.py :179",
+        "../ta/api/teams/models.py :99",
+        "../ta/api/groups/endpoints.py :32",
+        "../ta/api/groups/endpoints.py :36"
+    ],
+    "accounts": [
+        "../ta/api/accounts/models.py :105"
+    ],
+    "action": [
+        "../ta/api/logging/serializers.py :9"
+    ],
+    "activity": [
+        "../ta/api/bookables/serializers.py :67",
+        "../ta/api/analytics/serializers.py :32",
+        "../ta/api/bookables/admin.py :13",
+        "../ta/api/bookables/admin.py :15",
+        "../ta/api/analytics/aggregators.py :426",
+        "../ta/api/analytics/aggregators.py :430",
+        "../ta/api/analytics/aggregators.py :438",
+        "../ta/api/analytics/aggregators.py :441",
+        "../ta/api/analytics/aggregators.py :461",
+        "../ta/api/analytics/aggregators.py :464",
+        "../ta/api/analytics/admin.py :7",
+        "../ta/api/analytics/admin.py :9"
+    ],
+    "admin": [
+        "../ta/api/logging/signals.py :6"
+    ],
+    "agent": [
+        "../ta/api/devices/models.py :26"
+    ],
+    "agents": [
+        "../ta/api/devices/models.py :22",
+        "../ta/api/devices/models.py :27"
+    ],
+    "aggregator": [
+        "../ta/api/analytics/aggregators.py :172",
+        "../ta/api/analytics/aggregators.py :173",
+        "../ta/api/analytics/aggregators.py :175",
+        "../ta/api/analytics/aggregators.py :177",
+        "../ta/api/analytics/aggregators.py :206",
+        "../ta/api/analytics/aggregators.py :208",
+        "../ta/api/analytics/aggregators.py :219",
+        "../ta/api/analytics/aggregators.py :231",
+        "../ta/api/analytics/views.py :42"
+    ],
+    "aggregators": [
+        "../ta/api/bookables/sitstand/aggregators.py :95",
+        "../ta/api/bookables/sitstand/endpoints.py :40"
+    ],
+    "airTable234xOxO": [
+        "../ta/api/integration/endpoints.py :25"
+    ],
+    "alltime": [
+        "../ta/api/bookables/sitstand/aggregators.py :36",
+        "../ta/api/analytics/aggregators.py :52",
+        "../ta/api/analytics/aggregators.py :151",
+        "../ta/api/analytics/views.py :88",
+        "../ta/api/analytics/occupancy_analytics.py :74",
+        "../ta/api/analytics/occupancy_analytics.py :511"
+    ],
+    "analytics": [
+        "../ta/api/analytics/views.py :68"
+    ],
+    "analytics:list": [
+        "../ta/api/analytics/_deprecated_tests_api.py :50"
+    ],
+    "api": [
+        "../ta/api/analytics/_deprecated_tests_api.py :50"
+    ],
+    "api.tableair.xx": [
+        "../ta/api/analytics/_deprecated_tests_api.py :19"
+    ],
+    "api:accounts:detail": [
+        "../ta/api/accounts/_deprecated_tests_api.py :311"
+    ],
+    "api:accounts:list": [
+        "../ta/api/accounts/_deprecated_tests_api.py :321"
+    ],
+    "api:validators:teams": [
+        "../ta/api/validators/tests.py :15"
+    ],
+    "append": [
+        "../ta/api/bookables/validators/prefab_validator.py :42",
+        "../ta/api/bookables/validators/prefab_validator.py :42"
+    ],
+    "ascii": [
+        "../ta/api/bookables/validators/bookable_validator.py :35"
+    ],
+    "auth": [
+        "../ta/api/logging/signals.py :6"
+    ],
+    "balcony": [
+        "../ta/api/objects/choices.py :30"
+    ],
+    "bookable": [
+        "../ta/api/booking/validators/repeating_booking_validators.py :183",
+        "../ta/api/booking/validators/repeating_booking_validators.py :183",
+        "../ta/api/booking/validators/repeating_booking_validators.py :184",
+        "../ta/api/rooms/serializers.py :32",
+        "../ta/api/rooms/validators.py :92",
+        "../ta/api/rooms/validators.py :93",
+        "../ta/api/rooms/validators.py :94",
+        "../ta/api/rooms/validators.py :99",
+        "../ta/api/rooms/validators.py :104",
+        "../ta/api/bookables/models.py :75",
+        "../ta/api/bookables/models.py :86",
+        "../ta/api/rooms/endpoints.py :44",
+        "../ta/api/rooms/endpoints.py :47",
+        "../ta/api/booking/permissions.py :10",
+        "../ta/api/booking/admin.py :7",
+        "../ta/api/booking/validators/booking_validators.py :142",
+        "../ta/api/booking/validators/booking_validators.py :143",
+        "../ta/api/booking/validators/booking_validators.py :162",
+        "../ta/api/booking/validators/booking_validators.py :178"
+    ],
+    "bookable.venue.team": [
+        "../ta/api/room_booking/validators.py :188"
+    ],
+    "bookables": [
+        "../ta/api/bookables/models.py :73",
+        "../ta/api/bookables/models.py :74",
+        "../ta/api/bookables/models.py :87",
+        "../ta/api/mux/views.py :50"
+    ],
+    "booking": [
+        "../ta/api/booking/models.py :90"
+    ],
+    "bookings": [
+        "../ta/api/booking/validators/repeating_booking_validators.py :200",
+        "../ta/api/booking/models.py :65",
+        "../ta/api/booking/models.py :66",
+        "../ta/api/booking/models.py :91",
+        "../ta/api/booking/serializers.py :57",
+        "../ta/api/booking/serializers.py :59",
+        "../ta/api/booking/serializers.py :63"
+    ],
+    "cache": [
+        "../ta/api/analytics/aggregators.py :92",
+        "../ta/api/analytics/aggregators.py :92",
+        "../ta/api/analytics/occupancy_analytics.py :171",
+        "../ta/api/analytics/occupancy_analytics.py :171"
+    ],
+    "capacity": [
+        "../ta/api/rooms/validators.py :88"
+    ],
+    "classes": [
+        "../ta/api/accounts/admin.py :22"
+    ],
+    "cnt": [
+        "../ta/api/analytics/occupancy_analytics.py :660"
+    ],
+    "coffee": [
+        "../ta/api/objects/choices.py :31"
+    ],
+    "col": [
+        "../ta/api/objects/models.py :18",
+        "../ta/api/bookables/validators/bookable_validator.py :44",
+        "../ta/api/bookables/validators/bookable_validator.py :46",
+        "../ta/api/bookables/validators/bookable_validator.py :70",
+        "../ta/api/bookables/validators/bookable_validator.py :71",
+        "../ta/api/rooms/validators.py :20",
+        "../ta/api/rooms/validators.py :23",
+        "../ta/api/rooms/validators.py :28",
+        "../ta/api/rooms/validators.py :33",
+        "../ta/api/rooms/validators.py :39",
+        "../ta/api/rooms/validators.py :41",
+        "../ta/api/rooms/validators.py :52",
+        "../ta/api/rooms/validators.py :75",
+        "../ta/api/objects/validators.py :18",
+        "../ta/api/objects/validators.py :24"
+    ],
+    "confirmed": [
+        "../ta/api/booking/choices.py :8"
+    ],
+    "contenttypes": [
+        "../ta/api/logging/signals.py :6"
+    ],
+    "count": [
+        "../ta/api/requests/serializers.py :100",
+        "../ta/api/teams/serializers.py :31"
+    ],
+    "created": [
+        "../ta/api/bookables/admin.py :7",
+        "../ta/api/bookables/admin.py :27",
+        "../ta/api/logging/signals.py :36"
+    ],
+    "cupboard": [
+        "../ta/api/objects/choices.py :40"
+    ],
+    "d": [
+        "../ta/api/bookables/sitstand/aggregators.py :19"
+    ],
+    "date": [
+        "../ta/api/bookables/sitstand/endpoints.py :74",
+        "../ta/api/bookables/sitstand/endpoints.py :75"
+    ],
+    "day": [
+        "../ta/api/bookables/sitstand/aggregators.py :37",
+        "../ta/api/bookables/sitstand/aggregators.py :50",
+        "../ta/api/analytics/aggregators.py :54",
+        "../ta/api/analytics/aggregators.py :159",
+        "../ta/api/analytics/views.py :98",
+        "../ta/api/analytics/occupancy_analytics.py :76",
+        "../ta/api/analytics/occupancy_analytics.py :91",
+        "../ta/api/analytics/occupancy_analytics.py :109"
+    ],
+    "declined": [
+        "../ta/api/room_booking/choices.py :12"
+    ],
+    "delete": [
+        "../ta/api/room_booking/endpoints.py :105",
+        "../ta/api/room_booking/endpoints.py :130",
+        "../ta/api/rooms/endpoints.py :73",
+        "../ta/api/objects/endpoints.py :21",
+        "../ta/api/groups/endpoints.py :34"
+    ],
+    "devices": [
+        "../ta/api/mux/views.py :73"
+    ],
+    "doors": [
+        "../ta/api/objects/choices.py :28"
+    ],
+    "drinks": [
+        "../ta/api/objects/choices.py :45"
+    ],
+    "duration": [
+        "../ta/api/analytics/serializers.py :32",
+        "../ta/api/bookables/sitstand/aggregators.py :35",
+        "../ta/api/bookables/sitstand/aggregators.py :49",
+        "../ta/api/bookables/sitstand/aggregators.py :178",
+        "../ta/api/analytics/aggregators.py :51",
+        "../ta/api/analytics/aggregators.py :218",
+        "../ta/api/analytics/aggregators.py :426",
+        "../ta/api/analytics/aggregators.py :431",
+        "../ta/api/analytics/aggregators.py :438",
+        "../ta/api/analytics/aggregators.py :443",
+        "../ta/api/analytics/aggregators.py :448",
+        "../ta/api/analytics/aggregators.py :461",
+        "../ta/api/analytics/aggregators.py :466",
+        "../ta/api/analytics/aggregators.py :471",
+        "../ta/api/analytics/views.py :88",
+        "../ta/api/analytics/views.py :92",
+        "../ta/api/analytics/views.py :93",
+        "../ta/api/analytics/views.py :97",
+        "../ta/api/analytics/views.py :117",
+        "../ta/api/analytics/views.py :136",
+        "../ta/api/analytics/admin.py :7",
+        "../ta/api/bookables/sitstand/endpoints.py :75",
+        "../ta/api/analytics/occupancy_analytics.py :73",
+        "../ta/api/analytics/occupancy_analytics.py :90",
+        "../ta/api/analytics/occupancy_analytics.py :258",
+        "../ta/api/analytics/occupancy_analytics.py :510",
+        "../ta/api/analytics/occupancy_analytics.py :606",
+        "../ta/api/analytics/occupancy_analytics.py :615",
+        "../ta/api/analytics/occupancy_analytics.py :682",
+        "../ta/api/analytics/occupancy_analytics.py :684"
+    ],
+    "e": [
+        "../ta/api/iot/serializers.py :14"
+    ],
+    "elevator": [
+        "../ta/api/objects/choices.py :29"
+    ],
+    "email": [
+        "../ta/api/accounts/models.py :15",
+        "../ta/api/accounts/models.py :19",
+        "../ta/api/accounts/models.py :30",
+        "../ta/api/accounts/models.py :30",
+        "../ta/api/accounts/models.py :100",
+        "../ta/api/requests/serializers.py :56",
+        "../ta/api/teams/validators/invitation_validator.py :18",
+        "../ta/api/teams/validators/invitation_validator.py :20",
+        "../ta/api/teams/validators/invitation_validator.py :23",
+        "../ta/api/teams/validators/invitation_validator.py :26",
+        "../ta/api/teams/validators/invitation_validator.py :34",
+        "../ta/api/kiosk/endpoints.py :37",
+        "../ta/api/accounts/_deprecated_tests_api.py :322",
+        "../ta/api/accounts/admin.py :15",
+        "../ta/api/accounts/admin.py :23",
+        "../ta/api/accounts/admin.py :34",
+        "../ta/api/accounts/admin.py :36",
+        "../ta/api/accounts/admin.py :37",
+        "../ta/api/kiosk/serializers.py :78",
+        "../ta/api/accounts/views.py :143",
+        "../ta/api/accounts/serializers.py :26",
+        "../ta/api/accounts/serializers.py :71",
+        "../ta/api/accounts/serializers.py :72",
+        "../ta/api/accounts/serializers.py :72",
+        "../ta/api/accounts/serializers.py :76",
+        "../ta/api/accounts/serializers.py :77",
+        "../ta/api/accounts/serializers.py :77",
+        "../ta/api/accounts/serializers.py :78",
+        "../ta/api/accounts/serializers.py :81",
+        "../ta/api/accounts/serializers.py :86",
+        "../ta/api/accounts/serializers.py :118",
+        "../ta/api/accounts/serializers.py :125",
+        "../ta/api/accounts/serializers.py :137",
+        "../ta/api/accounts/serializers.py :137",
+        "../ta/api/accounts/serializers.py :138",
+        "../ta/api/teams/models.py :127",
+        "../ta/api/accounts/forms.py :29",
+        "../ta/api/accounts/forms.py :40"
+    ],
+    "empty": [
+        "../ta/api/bookables/endpoints.py :81"
+    ],
+    "end": [
+        "../ta/api/booking/management.py :165",
+        "../ta/api/booking/management.py :170",
+        "../ta/api/booking/management.py :212",
+        "../ta/api/bookables/sitstand/aggregators.py :201",
+        "../ta/api/bookables/sitstand/aggregators.py :251",
+        "../ta/api/analytics/aggregators.py :664",
+        "../ta/api/analytics/aggregators.py :681",
+        "../ta/api/analytics/aggregators.py :682",
+        "../ta/api/analytics/aggregators.py :690",
+        "../ta/api/analytics/aggregators.py :692",
+        "../ta/api/room_booking/validators.py :148",
+        "../ta/api/room_booking/validators.py :169",
+        "../ta/api/room_booking/validators.py :181",
+        "../ta/api/room_booking/validators.py :216",
+        "../ta/api/room_booking/validators.py :216",
+        "../ta/api/bookables/validators/prefab_usage_validator.py :32",
+        "../ta/api/booking/validators/repeating_booking_validators.py :95",
+        "../ta/api/booking/validators/repeating_booking_validators.py :101",
+        "../ta/api/booking/validators/repeating_booking_validators.py :134",
+        "../ta/api/booking/admin.py :7",
+        "../ta/api/booking/admin.py :9",
+        "../ta/api/iot/serializers.py :8",
+        "../ta/api/integration/sync.py :26",
+        "../ta/api/integration/sync.py :103",
+        "../ta/api/booking/validators/booking_validators.py :40",
+        "../ta/api/booking/validators/booking_validators.py :41",
+        "../ta/api/booking/validators/booking_validators.py :59",
+        "../ta/api/booking/validators/booking_validators.py :65",
+        "../ta/api/booking/validators/booking_validators.py :130",
+        "../ta/api/booking/validators/booking_validators.py :146",
+        "../ta/api/booking/validators/booking_validators.py :156",
+        "../ta/api/booking/validators/booking_validators.py :159",
+        "../ta/api/booking/validators/booking_validators.py :162",
+        "../ta/api/booking/validators/booking_validators.py :173",
+        "../ta/api/booking/validators/booking_validators.py :174",
+        "../ta/api/booking/validators/booking_validators.py :177",
+        "../ta/api/booking/validators/booking_validators.py :181",
+        "../ta/api/booking/validators/booking_validators.py :190",
+        "../ta/api/booking/validators/booking_validators.py :213"
+    ],
+    "entry": [
+        "../ta/api/requests/serializers.py :64"
+    ],
+    "eventStarts": [
+        "../ta/api/analytics/views.py :136",
+        "../ta/api/analytics/occupancy_analytics.py :607",
+        "../ta/api/analytics/occupancy_analytics.py :616"
+    ],
+    "explicit": [
+        "../ta/api/bookables/validators/prefab_validator.py :53"
+    ],
+    "extinguisher": [
+        "../ta/api/objects/choices.py :33"
+    ],
+    "f": [
+        "../ta/api/iot/views.py :69"
+    ],
+    "false": [
+        "../ta/api/analytics/occupancy_analytics.py :833"
+    ],
+    "fields": [
+        "../ta/api/accounts/admin.py :15",
+        "../ta/api/accounts/admin.py :16",
+        "../ta/api/accounts/admin.py :18",
+        "../ta/api/accounts/admin.py :23"
+    ],
+    "filters": [
+        "../ta/api/room_booking/endpoints.py :32",
+        "../ta/api/room_booking/endpoints.py :173",
+        "../ta/api/room_booking/endpoints.py :198",
+        "../ta/api/booking/endpoints.py :112",
+        "../ta/api/booking/endpoints.py :133",
+        "../ta/api/booking/endpoints.py :154",
+        "../ta/api/bookables/endpoints.py :93"
+    ],
+    "from": [
+        "../ta/api/bookables/sitstand/aggregators.py :37",
+        "../ta/api/bookables/sitstand/aggregators.py :38",
+        "../ta/api/bookables/sitstand/aggregators.py :39",
+        "../ta/api/analytics/aggregators.py :53",
+        "../ta/api/analytics/aggregators.py :54",
+        "../ta/api/analytics/aggregators.py :55",
+        "../ta/api/analytics/aggregators.py :154",
+        "../ta/api/analytics/views.py :95",
+        "../ta/api/analytics/views.py :108",
+        "../ta/api/analytics/views.py :116",
+        "../ta/api/booking/endpoints.py :99",
+        "../ta/api/analytics/occupancy_analytics.py :75",
+        "../ta/api/analytics/occupancy_analytics.py :76",
+        "../ta/api/analytics/occupancy_analytics.py :77",
+        "../ta/api/analytics/occupancy_analytics.py :497",
+        "../ta/api/analytics/occupancy_analytics.py :864"
+    ],
+    "front": [
+        "../ta/api/teams/validators/invitation_validator.py :39",
+        "../ta/api/room_booking/emails.py :41",
+        "../ta/api/room_booking/emails.py :43",
+        "../ta/api/accounts/serializers.py :128",
+        "../ta/api/accounts/serializers.py :146"
+    ],
+    "get": [
+        "../ta/api/room_booking/endpoints.py :27",
+        "../ta/api/room_booking/endpoints.py :60",
+        "../ta/api/room_booking/endpoints.py :93",
+        "../ta/api/room_booking/endpoints.py :168",
+        "../ta/api/room_booking/endpoints.py :188",
+        "../ta/api/firmware/endpoints.py :9",
+        "../ta/api/teams/endpoints.py :59",
+        "../ta/api/kiosk/endpoints.py :32",
+        "../ta/api/booking/endpoints.py :55",
+        "../ta/api/booking/endpoints.py :76",
+        "../ta/api/booking/endpoints.py :107",
+        "../ta/api/booking/endpoints.py :128",
+        "../ta/api/booking/endpoints.py :148",
+        "../ta/api/booking/endpoints.py :172",
+        "../ta/api/bookables/endpoints.py :91",
+        "../ta/api/objects/endpoints.py :9",
+        "../ta/api/objects/endpoints.py :30",
+        "../ta/api/ui/endpoints.py :10",
+        "../ta/api/ui/endpoints.py :24",
+        "../ta/api/integration/endpoints.py :21",
+        "../ta/api/bookables/sitstand/endpoints.py :20",
+        "../ta/api/bookables/sitstand/endpoints.py :52",
+        "../ta/api/groups/endpoints.py :13"
+    ],
+    "global": [
+        "../ta/api/analytics/aggregators.py :41",
+        "../ta/api/analytics/aggregators.py :63",
+        "../ta/api/analytics/aggregators.py :64",
+        "../ta/api/analytics/aggregators.py :65",
+        "../ta/api/analytics/aggregators.py :66",
+        "../ta/api/analytics/aggregators.py :67",
+        "../ta/api/analytics/aggregators.py :70",
+        "../ta/api/analytics/aggregators.py :71",
+        "../ta/api/analytics/aggregators.py :72",
+        "../ta/api/analytics/aggregators.py :73",
+        "../ta/api/analytics/aggregators.py :74",
+        "../ta/api/analytics/aggregators.py :79",
+        "../ta/api/analytics/aggregators.py :82",
+        "../ta/api/analytics/aggregators.py :85",
+        "../ta/api/analytics/aggregators.py :88",
+        "../ta/api/analytics/aggregators.py :120",
+        "../ta/api/analytics/aggregators.py :247",
+        "../ta/api/analytics/aggregators.py :297",
+        "../ta/api/analytics/aggregators.py :314",
+        "../ta/api/analytics/aggregators.py :390",
+        "../ta/api/analytics/occupancy_analytics.py :67",
+        "../ta/api/analytics/occupancy_analytics.py :197"
+    ],
+    "goodname": [
+        "../ta/api/validators/tests.py :18",
+        "../ta/api/validators/tests.py :21",
+        "../ta/api/validators/tests.py :24",
+        "../ta/api/validators/tests.py :33"
+    ],
+    "goodurl": [
+        "../ta/api/validators/tests.py :24",
+        "../ta/api/validators/tests.py :39"
+    ],
+    "group": [
+        "../ta/api/groups/models.py :14",
+        "../ta/api/groups/validators.py :16",
+        "../ta/api/groups/validators.py :20",
+        "../ta/api/groups/validators.py :24",
+        "../ta/api/groups/endpoints.py :32",
+        "../ta/api/groups/endpoints.py :36"
+    ],
+    "groups": [
+        "../ta/api/groups/models.py :10",
+        "../ta/api/groups/models.py :15",
+        "../ta/api/groups/models.py :25",
+        "../ta/api/accounts/admin.py :17",
+        "../ta/api/accounts/admin.py :35",
+        "../ta/api/accounts/admin.py :38"
+    ],
+    "h1": [
+        "../ta/api/bookables/sitstand/aggregators.py :20",
+        "../ta/api/bookables/sitstand/aggregators.py :187",
+        "../ta/api/bookables/sitstand/aggregators.py :251"
+    ],
+    "h2": [
+        "../ta/api/bookables/sitstand/aggregators.py :21"
+    ],
+    "hash": [
+        "../ta/api/teams/serializers.py :25",
+        "../ta/api/teams/validators/invitation_validator.py :39",
+        "../ta/api/accounts/serializers.py :129",
+        "../ta/api/accounts/serializers.py :147"
+    ],
+    "height": [
+        "../ta/api/bookables/sitstand/endpoints.py :75"
+    ],
+    "host": [
+        "../ta/api/room_booking/validators.py :99",
+        "../ta/api/room_booking/validators.py :204",
+        "../ta/api/room_booking/validators.py :214",
+        "../ta/api/room_booking/validators.py :239"
+    ],
+    "hour": [
+        "../ta/api/bookables/sitstand/aggregators.py :134"
+    ],
+    "hours": [
+        "../ta/api/venues/models.py :61"
+    ],
+    "iOS": [
+        "../ta/api/devices/models.py :13"
+    ],
+    "id": [
+        "../ta/api/booking/management.py :161",
+        "../ta/api/bookables/serializers.py :33",
+        "../ta/api/groups/serializers.py :26",
+        "../ta/api/analytics/aggregators.py :43",
+        "../ta/api/analytics/aggregators.py :45",
+        "../ta/api/analytics/aggregators.py :48",
+        "../ta/api/analytics/aggregators.py :125",
+        "../ta/api/analytics/aggregators.py :128",
+        "../ta/api/analytics/aggregators.py :136",
+        "../ta/api/analytics/aggregators.py :258",
+        "../ta/api/analytics/aggregators.py :259",
+        "../ta/api/analytics/aggregators.py :275",
+        "../ta/api/analytics/aggregators.py :276",
+        "../ta/api/analytics/aggregators.py :302",
+        "../ta/api/analytics/aggregators.py :319",
+        "../ta/api/analytics/aggregators.py :323",
+        "../ta/api/analytics/aggregators.py :325",
+        "../ta/api/analytics/aggregators.py :393",
+        "../ta/api/analytics/aggregators.py :664",
+        "../ta/api/analytics/views.py :86",
+        "../ta/api/room_booking/endpoints.py :170",
+        "../ta/api/room_booking/endpoints.py :180",
+        "../ta/api/bookables/validators/bookable_validator.py :20",
+        "../ta/api/bookables/validators/bookable_validator.py :86",
+        "../ta/api/booking/notifications.py :90",
+        "../ta/api/booking/notifications.py :104",
+        "../ta/api/booking/notifications.py :131",
+        "../ta/api/booking/notifications.py :188",
+        "../ta/api/booking/notifications.py :190",
+        "../ta/api/booking/validators/repeating_booking_validators.py :91",
+        "../ta/api/requests/serializers.py :100",
+        "../ta/api/requests/serializers.py :101",
+        "../ta/api/ui/serializers.py :17",
+        "../ta/api/ui/serializers.py :21",
+        "../ta/api/ui/serializers.py :23",
+        "../ta/api/ui/serializers.py :28",
+        "../ta/api/ui/serializers.py :33",
+        "../ta/api/ui/serializers.py :35",
+        "../ta/api/ui/serializers.py :42",
+        "../ta/api/rooms/serializers.py :18",
+        "../ta/api/rooms/validators.py :131",
+        "../ta/api/groups/validators.py :57",
+        "../ta/api/groups/validators.py :57",
+        "../ta/api/iot/views.py :47",
+        "../ta/api/iot/views.py :54",
+        "../ta/api/venues/validators/venue_validator.py :17",
+        "../ta/api/teams/serializers.py :16",
+        "../ta/api/firmware/serializers.py :13",
+        "../ta/api/accounts/_deprecated_tests_api.py :311",
+        "../ta/api/venues/serializers.py :20",
+        "../ta/api/iot/serializers.py :14",
+        "../ta/api/booking/endpoints.py :130",
+        "../ta/api/booking/endpoints.py :140",
+        "../ta/api/accounts/views.py :109",
+        "../ta/api/objects/serializers.py :11",
+        "../ta/api/objects/serializers.py :20",
+        "../ta/api/room_booking/serializers.py :13",
+        "../ta/api/accounts/serializers.py :26",
+        "../ta/api/accounts/serializers.py :29",
+        "../ta/api/analytics/occupancy_analytics.py :68",
+        "../ta/api/analytics/occupancy_analytics.py :201",
+        "../ta/api/analytics/occupancy_analytics.py :262",
+        "../ta/api/analytics/occupancy_analytics.py :508",
+        "../ta/api/analytics/occupancy_analytics.py :675",
+        "../ta/api/analytics/occupancy_analytics.py :705"
+    ],
+    "identifier": [
+        "../ta/api/booking/management.py :161",
+        "../ta/api/bookables/serializers.py :32",
+        "../ta/api/bookables/serializers.py :54",
+        "../ta/api/bookables/serializers.py :66",
+        "../ta/api/bookables/admin.py :7",
+        "../ta/api/bookables/admin.py :8",
+        "../ta/api/bookables/sitstand/aggregators.py :33",
+        "../ta/api/analytics/aggregators.py :47",
+        "../ta/api/analytics/aggregators.py :269",
+        "../ta/api/analytics/aggregators.py :271",
+        "../ta/api/analytics/aggregators.py :321",
+        "../ta/api/analytics/views.py :86",
+        "../ta/api/bookables/validators/prefab_validator.py :55",
+        "../ta/api/bookables/models.py :42",
+        "../ta/api/analytics/occupancy_analytics.py :69",
+        "../ta/api/analytics/occupancy_analytics.py :264",
+        "../ta/api/analytics/occupancy_analytics.py :527",
+        "../ta/api/analytics/occupancy_analytics.py :679"
+    ],
+    "image": [
+        "../ta/api/venues/models.py :123",
+        "../ta/api/venues/validators/venue_validator.py :39",
+        "../ta/api/venues/serializers.py :32",
+        "../ta/api/venues/serializers.py :42"
+    ],
+    "info@tableair.com": [
+        "../ta/api/support/views.py :20"
+    ],
+    "instance": [
+        "../ta/api/logging/signals.py :35"
+    ],
+    "intersecting": [
+        "../ta/api/booking/validators/booking_validators.py :131"
+    ],
+    "invitations": [
+        "../ta/api/teams/models.py :119"
+    ],
+    "invites": [
+        "../ta/api/mux/views.py :49"
+    ],
+    "json": [
+        "../ta/api/logging/management.py :21"
+    ],
+    "kiosk{}@{}": [
+        "../ta/api/kiosk/validators.py :38"
+    ],
+    "kitchen": [
+        "../ta/api/objects/choices.py :34"
+    ],
+    "labadiena1F": [
+        "../ta/api/accounts/_deprecated_tests_api.py :322"
+    ],
+    "license": [
+        "../ta/api/licensing/models.py :12"
+    ],
+    "list": [
+        "../ta/api/analytics/urls_usage.py :6",
+        "../ta/api/analytics/urls_analytics.py :7"
+    ],
+    "logging": [
+        "../ta/api/logging/models.py :57"
+    ],
+    "logo": [
+        "../ta/api/teams/validators/team_validator.py :24",
+        "../ta/api/teams/validators/team_validator.py :61",
+        "../ta/api/teams/validators/team_validator.py :72",
+        "../ta/api/teams/validators/team_validator.py :74",
+        "../ta/api/teams/validators/team_validator.py :74"
+    ],
+    "logs": [
+        "../ta/api/logging/models.py :46",
+        "../ta/api/logging/models.py :58"
+    ],
+    "members": [
+        "../ta/api/groups/validators.py :30",
+        "../ta/api/groups/validators.py :31",
+        "../ta/api/groups/validators.py :40",
+        "../ta/api/groups/validators.py :44",
+        "../ta/api/groups/validators.py :54",
+        "../ta/api/groups/validators.py :56"
+    ],
+    "message": [
+        "../ta/api/logging/serializers.py :9",
+        "../ta/api/support/views.py :13",
+        "../ta/api/support/views.py :14",
+        "../ta/api/support/views.py :18"
+    ],
+    "minute": [
+        "../ta/api/bookables/sitstand/aggregators.py :134"
+    ],
+    "minutes": [
+        "../ta/api/venues/models.py :61"
+    ],
+    "modified": [
+        "../ta/api/bookables/admin.py :7"
+    ],
+    "month": [
+        "../ta/api/bookables/sitstand/aggregators.py :39",
+        "../ta/api/bookables/sitstand/aggregators.py :52",
+        "../ta/api/analytics/aggregators.py :53",
+        "../ta/api/analytics/aggregators.py :155",
+        "../ta/api/analytics/views.py :98",
+        "../ta/api/analytics/occupancy_analytics.py :75",
+        "../ta/api/analytics/occupancy_analytics.py :93",
+        "../ta/api/analytics/occupancy_analytics.py :109"
+    ],
+    "myemail@provider.net": [
+        "../ta/api/support/tests.py :8"
+    ],
+    "name": [
+        "../ta/api/validators/tests.py :18",
+        "../ta/api/validators/tests.py :24",
+        "../ta/api/validators/tests.py :27",
+        "../ta/api/validators/tests.py :33",
+        "../ta/api/validators/tests.py :36",
+        "../ta/api/validators/tests.py :39",
+        "../ta/api/teams/validators/team_validator.py :37",
+        "../ta/api/teams/validators/team_validator.py :38",
+        "../ta/api/teams/validators/team_validator.py :39",
+        "../ta/api/teams/validators/team_validator.py :42",
+        "../ta/api/teams/validators/team_validator.py :42",
+        "../ta/api/teams/validators/team_validator.py :43",
+        "../ta/api/bookables/admin.py :31",
+        "../ta/api/bookables/admin.py :32",
+        "../ta/api/validators/serializers.py :12",
+        "../ta/api/validators/serializers.py :12",
+        "../ta/api/validators/serializers.py :13",
+        "../ta/api/analytics/views.py :134",
+        "../ta/api/bookables/validators/bookable_validator.py :33",
+        "../ta/api/bookables/validators/bookable_validator.py :37",
+        "../ta/api/groups/models.py :17",
+        "../ta/api/rooms/validators.py :85",
+        "../ta/api/rooms/validators.py :104",
+        "../ta/api/rooms/validators.py :109",
+        "../ta/api/rooms/validators.py :110",
+        "../ta/api/bookables/endpoints.py :77",
+        "../ta/api/bookables/endpoints.py :81",
+        "../ta/api/devices/serializers.py :10",
+        "../ta/api/bookables/sitstand/endpoints.py :45",
+        "../ta/api/analytics/occupancy_analytics.py :571"
+    ],
+    "no": [
+        "../ta/api/bookables/validators/prefab_usage_validator.py :51",
+        "../ta/api/bookables/activity/occupancy.py :7",
+        "../ta/api/bookables/activity/occupancy.py :12",
+        "../ta/api/bookables/activity/occupancy.py :25"
+    ],
+    "noresponse": [
+        "../ta/api/bookables/endpoints.py :195"
+    ],
+    "notification": [
+        "../ta/api/devices/models.py :60"
+    ],
+    "notifications": [
+        "../ta/api/devices/models.py :52",
+        "../ta/api/devices/models.py :61"
+    ],
+    "object": [
+        "../ta/api/objects/models.py :35"
+    ],
+    "objects": [
+        "../ta/api/objects/models.py :36",
+        "../ta/api/booking/models.py :93"
+    ],
+    "objects.GridObject": [
+        "../ta/api/teams/models.py :89"
+    ],
+    "occupancy": [
+        "../ta/api/analytics/urls_analytics.py :9"
+    ],
+    "p": [
+        "../ta/api/bookables/serializers.py :73",
+        "../ta/api/bookables/sitstand/aggregators.py :190"
+    ],
+    "page": [
+        "../ta/api/analytics/views.py :142",
+        "../ta/api/analytics/views.py :142",
+        "../ta/api/room_booking/endpoints.py :216",
+        "../ta/api/room_booking/endpoints.py :216",
+        "../ta/api/bookables/sitstand/endpoints.py :69",
+        "../ta/api/bookables/sitstand/endpoints.py :69"
+    ],
+    "parameters": [
+        "../ta/api/bookables/serializers.py :69",
+        "../ta/api/bookables/admin.py :13",
+        "../ta/api/bookables/validators/prefab_validator.py :44",
+        "../ta/api/bookables/validators/prefab_validator.py :47",
+        "../ta/api/bookables/validators/prefab_validator.py :48",
+        "../ta/api/bookables/validators/prefab_validator.py :48",
+        "../ta/api/bookables/validators/prefab_validator.py :49",
+        "../ta/api/bookables/validators/prefab_validator.py :58",
+        "../ta/api/bookables/validators/prefab_validator.py :59",
+        "../ta/api/bookables/validators/prefab_validator.py :59",
+        "../ta/api/bookables/validators/prefab_validator.py :60",
+        "../ta/api/bookables/validators/prefab_validator.py :60",
+        "../ta/api/bookables/validators/prefab_usage_validator.py :51",
+        "../ta/api/bookables/validators/prefab_usage_validator.py :52",
+        "../ta/api/analytics/occupancy_analytics.py :710",
+        "../ta/api/bookables/activity/occupancy.py :7",
+        "../ta/api/bookables/activity/occupancy.py :7",
+        "../ta/api/bookables/activity/occupancy.py :12",
+        "../ta/api/bookables/activity/occupancy.py :12",
+        "../ta/api/bookables/activity/occupancy.py :25",
+        "../ta/api/bookables/activity/occupancy.py :25"
+    ],
+    "participant": [
+        "../ta/api/analytics/aggregators.py :49",
+        "../ta/api/analytics/aggregators.py :63",
+        "../ta/api/analytics/aggregators.py :64",
+        "../ta/api/analytics/aggregators.py :66",
+        "../ta/api/analytics/aggregators.py :67",
+        "../ta/api/analytics/aggregators.py :70",
+        "../ta/api/analytics/aggregators.py :71",
+        "../ta/api/analytics/aggregators.py :72",
+        "../ta/api/analytics/aggregators.py :73",
+        "../ta/api/analytics/aggregators.py :74",
+        "../ta/api/analytics/aggregators.py :79",
+        "../ta/api/analytics/aggregators.py :82",
+        "../ta/api/analytics/aggregators.py :85",
+        "../ta/api/analytics/aggregators.py :88",
+        "../ta/api/analytics/aggregators.py :138",
+        "../ta/api/analytics/aggregators.py :278",
+        "../ta/api/analytics/aggregators.py :303",
+        "../ta/api/analytics/aggregators.py :324",
+        "../ta/api/analytics/aggregators.py :601",
+        "../ta/api/room_booking/validators.py :51",
+        "../ta/api/room_booking/validators.py :54",
+        "../ta/api/room_booking/validators.py :55",
+        "../ta/api/teams/models.py :90"
+    ],
+    "participants": [
+        "../ta/api/room_booking/validators.py :156",
+        "../ta/api/room_booking/validators.py :189",
+        "../ta/api/room_booking/validators.py :190",
+        "../ta/api/room_booking/validators.py :190",
+        "../ta/api/room_booking/validators.py :195",
+        "../ta/api/room_booking/validators.py :198",
+        "../ta/api/room_booking/validators.py :208",
+        "../ta/api/room_booking/validators.py :209",
+        "../ta/api/room_booking/validators.py :222",
+        "../ta/api/room_booking/validators.py :224",
+        "../ta/api/room_booking/validators.py :244",
+        "../ta/api/groups/validators.py :35",
+        "../ta/api/groups/validators.py :49",
+        "../ta/api/groups/validators.py :53",
+        "../ta/api/groups/validators.py :54",
+        "../ta/api/room_booking/models.py :37",
+        "../ta/api/mux/views.py :47"
+    ],
+    "participation": [
+        "../ta/api/groups/serializers.py :31",
+        "../ta/api/ui/serializers.py :42",
+        "../ta/api/groups/validators.py :21",
+        "../ta/api/groups/validators.py :24",
+        "../ta/api/ui/validators.py :23"
+    ],
+    "participations": [
+        "../ta/api/teams/models.py :84",
+        "../ta/api/teams/models.py :85",
+        "../ta/api/teams/models.py :98"
+    ],
+    "password": [
+        "../ta/api/accounts/models.py :21",
+        "../ta/api/accounts/models.py :38",
+        "../ta/api/accounts/_deprecated_tests_api.py :322",
+        "../ta/api/accounts/admin.py :15",
+        "../ta/api/accounts/serializers.py :26",
+        "../ta/api/accounts/serializers.py :46",
+        "../ta/api/accounts/serializers.py :88",
+        "../ta/api/accounts/serializers.py :89",
+        "../ta/api/accounts/serializers.py :90",
+        "../ta/api/accounts/serializers.py :106",
+        "../ta/api/accounts/serializers.py :107",
+        "../ta/api/accounts/serializers.py :150",
+        "../ta/api/accounts/serializers.py :151",
+        "../ta/api/accounts/forms.py :115"
+    ],
+    "password1": [
+        "../ta/api/accounts/admin.py :23",
+        "../ta/api/accounts/forms.py :57",
+        "../ta/api/accounts/forms.py :75"
+    ],
+    "password2": [
+        "../ta/api/accounts/admin.py :23",
+        "../ta/api/accounts/forms.py :58"
+    ],
+    "passwordxx": [
+        "../ta/api/support/tests.py :8"
+    ],
+    "pending": [
+        "../ta/api/room_booking/endpoints.py :156",
+        "../ta/api/room_booking/endpoints.py :217",
+        "../ta/api/room_booking/choices.py :10"
+    ],
+    "permissions": [
+        "../ta/api/teams/models.py :107"
+    ],
+    "perspective": [
+        "../ta/api/analytics/views.py :87",
+        "../ta/api/analytics/views.py :91",
+        "../ta/api/analytics/views.py :127",
+        "../ta/api/analytics/views.py :133",
+        "../ta/api/analytics/views.py :135",
+        "../ta/api/analytics/occupancy_analytics.py :212",
+        "../ta/api/analytics/occupancy_analytics.py :213",
+        "../ta/api/analytics/occupancy_analytics.py :215",
+        "../ta/api/analytics/occupancy_analytics.py :217",
+        "../ta/api/analytics/occupancy_analytics.py :246",
+        "../ta/api/analytics/occupancy_analytics.py :248",
+        "../ta/api/analytics/occupancy_analytics.py :259",
+        "../ta/api/analytics/occupancy_analytics.py :276"
+    ],
+    "pk": [
+        "../ta/api/room_booking/endpoints.py :44",
+        "../ta/api/rooms/endpoints.py :74",
+        "../ta/api/booking/endpoints.py :36",
+        "../ta/api/booking/endpoints.py :56",
+        "../ta/api/booking/endpoints.py :77",
+        "../ta/api/objects/endpoints.py :22",
+        "../ta/api/objects/endpoints.py :43",
+        "../ta/api/groups/endpoints.py :23",
+        "../ta/api/venues/endpoints.py :23",
+        "../ta/api/logging/management.py :22"
+    ],
+    "po": [
+        "../ta/api/bookables/validators/prefab_usage_validator.py :52",
+        "../ta/api/bookables/activity/occupancy.py :7",
+        "../ta/api/bookables/activity/occupancy.py :12",
+        "../ta/api/bookables/activity/occupancy.py :25"
+    ],
+    "post": [
+        "../ta/api/broker/endpoints.py :8",
+        "../ta/api/room_booking/endpoints.py :34",
+        "../ta/api/room_booking/endpoints.py :96",
+        "../ta/api/rooms/endpoints.py :26",
+        "../ta/api/rooms/endpoints.py :43",
+        "../ta/api/rooms/endpoints.py :64",
+        "../ta/api/teams/endpoints.py :19",
+        "../ta/api/teams/endpoints.py :62",
+        "../ta/api/kiosk/endpoints.py :14",
+        "../ta/api/booking/endpoints.py :24",
+        "../ta/api/booking/endpoints.py :201",
+        "../ta/api/bookables/endpoints.py :66",
+        "../ta/api/bookables/endpoints.py :121",
+        "../ta/api/bookables/endpoints.py :145",
+        "../ta/api/bookables/endpoints.py :187",
+        "../ta/api/objects/endpoints.py :12",
+        "../ta/api/objects/endpoints.py :33",
+        "../ta/api/groups/endpoints.py :10",
+        "../ta/api/groups/endpoints.py :31",
+        "../ta/api/venues/endpoints.py :11"
+    ],
+    "prefab": [
+        "../ta/api/bookables/serializers.py :19",
+        "../ta/api/bookables/serializers.py :73",
+        "../ta/api/bookables/admin.py :13",
+        "../ta/api/bookables/admin.py :31",
+        "../ta/api/bookables/sitstand/aggregators.py :33",
+        "../ta/api/bookables/sitstand/aggregators.py :47",
+        "../ta/api/bookables/sitstand/aggregators.py :63",
+        "../ta/api/bookables/sitstand/aggregators.py :226",
+        "../ta/api/analytics/views.py :85",
+        "../ta/api/bookables/validators/bookable_validator.py :40",
+        "../ta/api/bookables/validators/bookable_validator.py :51",
+        "../ta/api/bookables/validators/bookable_validator.py :52",
+        "../ta/api/bookables/validators/bookable_validator.py :62",
+        "../ta/api/bookables/validators/bookable_validator.py :68",
+        "../ta/api/bookables/validators/bookable_validator.py :82",
+        "../ta/api/bookables/validators/bookable_validator.py :83",
+        "../ta/api/bookables/validators/bookable_validator.py :87",
+        "../ta/api/bookables/validators/prefab_usage_validator.py :21",
+        "../ta/api/bookables/validators/prefab_usage_validator.py :56",
+        "../ta/api/bookables/validators/prefab_usage_validator.py :61",
+        "../ta/api/bookables/models.py :40",
+        "../ta/api/booking/endpoints.py :109",
+        "../ta/api/booking/endpoints.py :120",
+        "../ta/api/bookables/endpoints.py :29",
+        "../ta/api/bookables/endpoints.py :37",
+        "../ta/api/bookables/endpoints.py :38",
+        "../ta/api/bookables/endpoints.py :51",
+        "../ta/api/bookables/endpoints.py :94",
+        "../ta/api/bookables/endpoints.py :133",
+        "../ta/api/bookables/endpoints.py :171",
+        "../ta/api/bookables/endpoints.py :188",
+        "../ta/api/analytics/occupancy_analytics.py :69",
+        "../ta/api/analytics/occupancy_analytics.py :88",
+        "../ta/api/analytics/occupancy_analytics.py :101",
+        "../ta/api/analytics/occupancy_analytics.py :103",
+        "../ta/api/analytics/occupancy_analytics.py :105",
+        "../ta/api/analytics/occupancy_analytics.py :263",
+        "../ta/api/analytics/occupancy_analytics.py :366",
+        "../ta/api/analytics/occupancy_analytics.py :660",
+        "../ta/api/analytics/occupancy_analytics.py :678",
+        "../ta/api/analytics/occupancy_analytics.py :680"
+    ],
+    "prefabs": [
+        "../ta/api/bookables/models.py :31",
+        "../ta/api/bookables/models.py :41",
+        "../ta/api/bookables/endpoints.py :150",
+        "../ta/api/bookables/endpoints.py :150",
+        "../ta/api/bookables/endpoints.py :151",
+        "../ta/api/bookables/endpoints.py :154",
+        "../ta/api/bookables/endpoints.py :155",
+        "../ta/api/bookables/endpoints.py :156"
+    ],
+    "projector": [
+        "../ta/api/objects/choices.py :36",
+        "../ta/api/objects/choices.py :61"
+    ],
+    "put": [
+        "../ta/api/ui/endpoints.py :14",
+        "../ta/api/ui/endpoints.py :29",
+        "../ta/api/ui/endpoints.py :40"
+    ],
+    "query": [
+        "../ta/api/broker/endpoints.py :15",
+        "../ta/api/room_booking/endpoints.py :28",
+        "../ta/api/room_booking/endpoints.py :44",
+        "../ta/api/room_booking/endpoints.py :61",
+        "../ta/api/room_booking/endpoints.py :106",
+        "../ta/api/room_booking/endpoints.py :131",
+        "../ta/api/room_booking/endpoints.py :169",
+        "../ta/api/room_booking/endpoints.py :189",
+        "../ta/api/firmware/endpoints.py :10",
+        "../ta/api/rooms/endpoints.py :16",
+        "../ta/api/rooms/endpoints.py :47",
+        "../ta/api/rooms/endpoints.py :74",
+        "../ta/api/teams/endpoints.py :31",
+        "../ta/api/teams/endpoints.py :60",
+        "../ta/api/kiosk/endpoints.py :24",
+        "../ta/api/kiosk/endpoints.py :33",
+        "../ta/api/booking/endpoints.py :36",
+        "../ta/api/booking/endpoints.py :56",
+        "../ta/api/booking/endpoints.py :77",
+        "../ta/api/booking/endpoints.py :108",
+        "../ta/api/booking/endpoints.py :129",
+        "../ta/api/booking/endpoints.py :149",
+        "../ta/api/booking/endpoints.py :173",
+        "../ta/api/bookables/endpoints.py :51",
+        "../ta/api/bookables/endpoints.py :92",
+        "../ta/api/bookables/endpoints.py :133",
+        "../ta/api/objects/endpoints.py :10",
+        "../ta/api/objects/endpoints.py :22",
+        "../ta/api/objects/endpoints.py :31",
+        "../ta/api/objects/endpoints.py :43",
+        "../ta/api/ui/endpoints.py :11",
+        "../ta/api/ui/endpoints.py :15",
+        "../ta/api/ui/endpoints.py :25",
+        "../ta/api/ui/endpoints.py :30",
+        "../ta/api/ui/endpoints.py :41",
+        "../ta/api/bookables/sitstand/endpoints.py :21",
+        "../ta/api/bookables/sitstand/endpoints.py :53",
+        "../ta/api/groups/endpoints.py :14",
+        "../ta/api/groups/endpoints.py :23",
+        "../ta/api/groups/endpoints.py :35",
+        "../ta/api/venues/endpoints.py :23"
+    ],
+    "registration": [
+        "../ta/api/accounts/models.py :139"
+    ],
+    "removed": [
+        "../ta/api/booking/choices.py :9",
+        "../ta/api/room_booking/choices.py :13"
+    ],
+    "request": [
+        "../ta/api/teams/validators/team_validator.py :53",
+        "../ta/api/teams/validators/team_validator.py :58",
+        "../ta/api/room_booking/validators.py :219",
+        "../ta/api/logging/signals.py :23",
+        "../ta/api/analytics/occupancy_analytics.py :182"
+    ],
+    "requests": [
+        "../ta/api/mux/views.py :48",
+        "../ta/api/requests/models.py :21",
+        "../ta/api/requests/models.py :23"
+    ],
+    "required": [
+        "../ta/api/accounts/serializers.py :30"
+    ],
+    "restroom": [
+        "../ta/api/objects/choices.py :37"
+    ],
+    "result": [
+        "../ta/api/analytics/aggregators.py :232",
+        "../ta/api/analytics/views.py :46",
+        "../ta/api/analytics/views.py :72"
+    ],
+    "role": [
+        "../ta/api/teams/management.py :40",
+        "../ta/api/teams/serializers.py :40",
+        "../ta/api/accounts/serializers.py :26",
+        "../ta/api/accounts/serializers.py :29",
+        "../ta/api/accounts/serializers.py :48",
+        "../ta/api/accounts/serializers.py :70"
+    ],
+    "room": [
+        "../ta/api/integration/models.py :16",
+        "../ta/api/analytics/aggregators.py :45",
+        "../ta/api/analytics/aggregators.py :79",
+        "../ta/api/analytics/aggregators.py :82",
+        "../ta/api/analytics/aggregators.py :85",
+        "../ta/api/analytics/aggregators.py :88",
+        "../ta/api/room_booking/endpoints.py :29",
+        "../ta/api/room_booking/endpoints.py :35",
+        "../ta/api/room_booking/endpoints.py :45",
+        "../ta/api/room_booking/endpoints.py :97",
+        "../ta/api/room_booking/endpoints.py :129",
+        "../ta/api/room_booking/validators.py :114",
+        "../ta/api/room_booking/validators.py :149",
+        "../ta/api/room_booking/validators.py :188",
+        "../ta/api/room_booking/validators.py :188",
+        "../ta/api/room_booking/validators.py :191",
+        "../ta/api/room_booking/validators.py :203",
+        "../ta/api/room_booking/validators.py :209",
+        "../ta/api/room_booking/validators.py :213",
+        "../ta/api/rooms/validators.py :19",
+        "../ta/api/rooms/validators.py :39",
+        "../ta/api/rooms/endpoints.py :17",
+        "../ta/api/rooms/endpoints.py :18",
+        "../ta/api/rooms/endpoints.py :65",
+        "../ta/api/rooms/endpoints.py :75",
+        "../ta/api/rooms/models.py :14",
+        "../ta/api/integration/endpoints.py :45"
+    ],
+    "room1": [
+        "../ta/api/analytics/_deprecated_tests_api.py :166",
+        "../ta/api/analytics/_deprecated_tests_api.py :170",
+        "../ta/api/analytics/_deprecated_tests_api.py :171"
+    ],
+    "rooms": [
+        "../ta/api/rooms/models.py :15"
+    ],
+    "row": [
+        "../ta/api/objects/models.py :18",
+        "../ta/api/bookables/validators/bookable_validator.py :44",
+        "../ta/api/bookables/validators/bookable_validator.py :46",
+        "../ta/api/bookables/validators/bookable_validator.py :70",
+        "../ta/api/bookables/validators/bookable_validator.py :71",
+        "../ta/api/rooms/validators.py :20",
+        "../ta/api/rooms/validators.py :22",
+        "../ta/api/rooms/validators.py :28",
+        "../ta/api/rooms/validators.py :33",
+        "../ta/api/rooms/validators.py :39",
+        "../ta/api/rooms/validators.py :41",
+        "../ta/api/rooms/validators.py :52",
+        "../ta/api/rooms/validators.py :75",
+        "../ta/api/objects/validators.py :18",
+        "../ta/api/objects/validators.py :24"
+    ],
+    "s": [
+        "../ta/api/iot/serializers.py :14"
+    ],
+    "scope": [
+        "../ta/api/bookables/sitstand/aggregators.py :30",
+        "../ta/api/bookables/sitstand/aggregators.py :44",
+        "../ta/api/bookables/sitstand/aggregators.py :174",
+        "../ta/api/analytics/aggregators.py :40",
+        "../ta/api/analytics/aggregators.py :211",
+        "../ta/api/analytics/aggregators.py :213",
+        "../ta/api/analytics/aggregators.py :213",
+        "../ta/api/analytics/aggregators.py :217",
+        "../ta/api/analytics/aggregators.py :289",
+        "../ta/api/analytics/aggregators.py :292",
+        "../ta/api/analytics/aggregators.py :308",
+        "../ta/api/analytics/aggregators.py :328",
+        "../ta/api/analytics/aggregators.py :389",
+        "../ta/api/analytics/aggregators.py :600",
+        "../ta/api/analytics/aggregators.py :608",
+        "../ta/api/analytics/views.py :85",
+        "../ta/api/bookables/sitstand/endpoints.py :27",
+        "../ta/api/analytics/occupancy_analytics.py :66",
+        "../ta/api/analytics/occupancy_analytics.py :84",
+        "../ta/api/analytics/occupancy_analytics.py :251",
+        "../ta/api/analytics/occupancy_analytics.py :253",
+        "../ta/api/analytics/occupancy_analytics.py :253",
+        "../ta/api/analytics/occupancy_analytics.py :257",
+        "../ta/api/analytics/occupancy_analytics.py :676",
+        "../ta/api/analytics/occupancy_analytics.py :680"
+    ],
+    "sessions": [
+        "../ta/api/logging/signals.py :6"
+    ],
+    "settings": [
+        "../ta/api/sync/models.py :40",
+        "../ta/api/mux/views.py :51",
+        "../ta/api/mux/views.py :75"
+    ],
+    "shelf": [
+        "../ta/api/objects/choices.py :38"
+    ],
+    "shower": [
+        "../ta/api/objects/choices.py :39"
+    ],
+    "snacks": [
+        "../ta/api/objects/choices.py :42",
+        "../ta/api/objects/choices.py :46"
+    ],
+    "somename": [
+        "../ta/api/validators/tests.py :36"
+    ],
+    "someteam": [
+        "../ta/api/validators/tests.py :12",
+        "../ta/api/validators/tests.py :27",
+        "../ta/api/validators/tests.py :39"
+    ],
+    "someurl": [
+        "../ta/api/validators/tests.py :12",
+        "../ta/api/validators/tests.py :30",
+        "../ta/api/validators/tests.py :33",
+        "../ta/api/validators/tests.py :36"
+    ],
+    "stairs": [
+        "../ta/api/objects/choices.py :43"
+    ],
+    "start": [
+        "../ta/api/booking/management.py :165",
+        "../ta/api/booking/management.py :170",
+        "../ta/api/booking/management.py :212",
+        "../ta/api/bookables/sitstand/aggregators.py :201",
+        "../ta/api/bookables/sitstand/aggregators.py :251",
+        "../ta/api/analytics/aggregators.py :664",
+        "../ta/api/analytics/aggregators.py :664",
+        "../ta/api/analytics/aggregators.py :673",
+        "../ta/api/analytics/aggregators.py :674",
+        "../ta/api/analytics/aggregators.py :681",
+        "../ta/api/analytics/aggregators.py :682",
+        "../ta/api/analytics/aggregators.py :683",
+        "../ta/api/analytics/aggregators.py :688",
+        "../ta/api/room_booking/endpoints.py :66",
+        "../ta/api/room_booking/endpoints.py :197",
+        "../ta/api/room_booking/validators.py :147",
+        "../ta/api/room_booking/validators.py :160",
+        "../ta/api/room_booking/validators.py :165",
+        "../ta/api/room_booking/validators.py :169",
+        "../ta/api/room_booking/validators.py :181",
+        "../ta/api/room_booking/validators.py :207",
+        "../ta/api/room_booking/validators.py :214",
+        "../ta/api/bookables/validators/prefab_usage_validator.py :31",
+        "../ta/api/bookables/validators/prefab_usage_validator.py :31",
+        "../ta/api/bookables/validators/prefab_usage_validator.py :34",
+        "../ta/api/bookables/validators/prefab_usage_validator.py :35",
+        "../ta/api/bookables/validators/prefab_usage_validator.py :37",
+        "../ta/api/booking/validators/repeating_booking_validators.py :95",
+        "../ta/api/booking/validators/repeating_booking_validators.py :101",
+        "../ta/api/booking/validators/repeating_booking_validators.py :134",
+        "../ta/api/booking/models.py :92",
+        "../ta/api/booking/admin.py :7",
+        "../ta/api/booking/admin.py :9",
+        "../ta/api/iot/serializers.py :7",
+        "../ta/api/booking/endpoints.py :177",
+        "../ta/api/accounts/views.py :270",
+        "../ta/api/integration/sync.py :25",
+        "../ta/api/integration/sync.py :103",
+        "../ta/api/booking/validators/booking_validators.py :43",
+        "../ta/api/booking/validators/booking_validators.py :45",
+        "../ta/api/booking/validators/booking_validators.py :57",
+        "../ta/api/booking/validators/booking_validators.py :65",
+        "../ta/api/booking/validators/booking_validators.py :130",
+        "../ta/api/booking/validators/booking_validators.py :146",
+        "../ta/api/booking/validators/booking_validators.py :156",
+        "../ta/api/booking/validators/booking_validators.py :159",
+        "../ta/api/booking/validators/booking_validators.py :162",
+        "../ta/api/booking/validators/booking_validators.py :173",
+        "../ta/api/booking/validators/booking_validators.py :174",
+        "../ta/api/booking/validators/booking_validators.py :176",
+        "../ta/api/booking/validators/booking_validators.py :181",
+        "../ta/api/booking/validators/booking_validators.py :190",
+        "../ta/api/booking/validators/booking_validators.py :204",
+        "../ta/api/booking/validators/booking_validators.py :245"
+    ],
+    "state": [
+        "../ta/api/analytics/views.py :136",
+        "../ta/api/analytics/occupancy_analytics.py :608",
+        "../ta/api/analytics/occupancy_analytics.py :617"
+    ],
+    "status": [
+        "../ta/api/room_booking/validators.py :55",
+        "../ta/api/room_booking/validators.py :68",
+        "../ta/api/room_booking/validators.py :104",
+        "../ta/api/room_booking/validators.py :108",
+        "../ta/api/room_booking/validators.py :285",
+        "../ta/api/requests/serializers.py :100",
+        "../ta/api/booking/serializers.py :23",
+        "../ta/api/booking/validators/booking_validators.py :149",
+        "../ta/api/booking/validators/booking_validators.py :165",
+        "../ta/api/booking/validators/booking_validators.py :169",
+        "../ta/api/booking/validators/booking_validators.py :196",
+        "../ta/api/room_booking/serializers.py :14",
+        "../ta/api/room_booking/serializers.py :24",
+        "../ta/api/room_booking/serializers.py :40"
+    ],
+    "subject": [
+        "../ta/api/teams/endpoints.py :89",
+        "../ta/api/integration/sync.py :103"
+    ],
+    "t": [
+        "../ta/api/bookables/serializers.py :73",
+        "../ta/api/bookables/serializers.py :74"
+    ],
+    "ta.api.accounts": [
+        "../ta/api/accounts/apps.py :6"
+    ],
+    "ta.api.accounts.apps.AccountConfig": [
+        "../ta/api/accounts/__init__.py :1"
+    ],
+    "ta.api.logging": [
+        "../ta/api/logging/apps.py :10"
+    ],
+    "ta.api.logging.apps.LoggingConfig": [
+        "../ta/api/logging/__init__.py :1"
+    ],
+    "ta.api.objects": [
+        "../ta/api/objects/apps.py :5"
+    ],
+    "table": [
+        "../ta/api/booking/management.py :46",
+        "../ta/api/booking/management.py :70",
+        "../ta/api/booking/management.py :111",
+        "../ta/api/analytics/aggregators.py :47",
+        "../ta/api/analytics/aggregators.py :64",
+        "../ta/api/analytics/aggregators.py :71",
+        "../ta/api/analytics/aggregators.py :73",
+        "../ta/api/analytics/aggregators.py :74",
+        "../ta/api/analytics/aggregators.py :131",
+        "../ta/api/analytics/aggregators.py :261",
+        "../ta/api/analytics/aggregators.py :320",
+        "../ta/api/analytics/aggregators.py :603"
+    ],
+    "tableair-sitstand": [
+        "../ta/api/bookables/sitstand/endpoints.py :45"
+    ],
+    "tableair-sitstand-details-{}": [
+        "../ta/api/bookables/sitstand/endpoints.py :73"
+    ],
+    "team": [
+        "../ta/api/bookables/sitstand/aggregators.py :31",
+        "../ta/api/bookables/sitstand/aggregators.py :45",
+        "../ta/api/bookables/sitstand/aggregators.py :57",
+        "../ta/api/bookables/sitstand/aggregators.py :58",
+        "../ta/api/bookables/sitstand/aggregators.py :59",
+        "../ta/api/bookables/sitstand/aggregators.py :60",
+        "../ta/api/bookables/sitstand/aggregators.py :61",
+        "../ta/api/bookables/sitstand/aggregators.py :62",
+        "../ta/api/analytics/aggregators.py :42",
+        "../ta/api/analytics/aggregators.py :63",
+        "../ta/api/analytics/aggregators.py :64",
+        "../ta/api/analytics/aggregators.py :65",
+        "../ta/api/analytics/aggregators.py :66",
+        "../ta/api/analytics/aggregators.py :67",
+        "../ta/api/analytics/aggregators.py :70",
+        "../ta/api/analytics/aggregators.py :71",
+        "../ta/api/analytics/aggregators.py :72",
+        "../ta/api/analytics/aggregators.py :73",
+        "../ta/api/analytics/aggregators.py :74",
+        "../ta/api/analytics/aggregators.py :79",
+        "../ta/api/analytics/aggregators.py :82",
+        "../ta/api/analytics/aggregators.py :85",
+        "../ta/api/analytics/aggregators.py :88",
+        "../ta/api/analytics/aggregators.py :123",
+        "../ta/api/analytics/aggregators.py :250",
+        "../ta/api/analytics/aggregators.py :299",
+        "../ta/api/analytics/aggregators.py :316",
+        "../ta/api/room_booking/endpoints.py :191",
+        "../ta/api/room_booking/endpoints.py :206",
+        "../ta/api/groups/models.py :17",
+        "../ta/api/requests/serializers.py :52",
+        "../ta/api/groups/validators.py :37",
+        "../ta/api/venues/validators/venue_validator.py :44",
+        "../ta/api/venues/validators/venue_validator.py :44",
+        "../ta/api/teams/serializers.py :25",
+        "../ta/api/teams/validators/invitation_validator.py :19",
+        "../ta/api/teams/validators/invitation_validator.py :23",
+        "../ta/api/teams/endpoints.py :60",
+        "../ta/api/teams/endpoints.py :63",
+        "../ta/api/teams/endpoints.py :70",
+        "../ta/api/teams/endpoints.py :70",
+        "../ta/api/teams/endpoints.py :70",
+        "../ta/api/ui/validators.py :18",
+        "../ta/api/ui/validators.py :19",
+        "../ta/api/ui/validators.py :24",
+        "../ta/api/ui/validators.py :40",
+        "../ta/api/kiosk/endpoints.py :35",
+        "../ta/api/licensing/admin.py :7",
+        "../ta/api/venues/serializers.py :60",
+        "../ta/api/mux/views.py :45",
+        "../ta/api/ui/endpoints.py :27",
+        "../ta/api/ui/endpoints.py :32",
+        "../ta/api/ui/endpoints.py :46",
+        "../ta/api/bookables/sitstand/endpoints.py :27",
+        "../ta/api/analytics/occupancy_analytics.py :85",
+        "../ta/api/teams/models.py :99",
+        "../ta/api/groups/endpoints.py :11",
+        "../ta/api/groups/endpoints.py :14",
+        "../ta/api/venues/endpoints.py :16"
+    ],
+    "teamSettings": [
+        "../ta/api/mux/views.py :56",
+        "../ta/api/mux/views.py :61"
+    ],
+    "teams": [
+        "../ta/api/requests/serializers.py :64",
+        "../ta/api/mux/views.py :74",
+        "../ta/api/teams/models.py :63"
+    ],
+    "teams.Team": [
+        "../ta/api/licensing/models.py :12"
+    ],
+    "tentative": [
+        "../ta/api/booking/choices.py :10",
+        "../ta/api/room_booking/choices.py :14"
+    ],
+    "text": [
+        "../ta/api/teams/endpoints.py :88"
+    ],
+    "tile": [
+        "../ta/api/objects/models.py :20"
+    ],
+    "tiles": [
+        "../ta/api/objects/models.py :21"
+    ],
+    "timestamp": [
+        "../ta/api/bookables/serializers.py :68",
+        "../ta/api/analytics/serializers.py :21",
+        "../ta/api/analytics/serializers.py :22",
+        "../ta/api/analytics/serializers.py :22",
+        "../ta/api/analytics/serializers.py :32",
+        "../ta/api/bookables/admin.py :21",
+        "../ta/api/bookables/sitstand/aggregators.py :224",
+        "../ta/api/analytics/aggregators.py :295",
+        "../ta/api/analytics/aggregators.py :411",
+        "../ta/api/analytics/admin.py :7",
+        "../ta/api/logging/serializers.py :9",
+        "../ta/api/analytics/occupancy_analytics.py :696",
+        "../ta/api/analytics/occupancy_analytics.py :709",
+        "../ta/api/analytics/occupancy_analytics.py :750",
+        "../ta/api/analytics/occupancy_analytics.py :752"
+    ],
+    "timezone": [
+        "../ta/api/venues/models.py :20"
+    ],
+    "title": [
+        "../ta/api/integration/sync.py :27"
+    ],
+    "to": [
+        "../ta/api/booking/endpoints.py :100"
+    ],
+    "true": [
+        "../ta/api/room_booking/validators.py :219",
+        "../ta/api/analytics/occupancy_analytics.py :832"
+    ],
+    "type": [
+        "../ta/api/integration/models.py :16",
+        "../ta/api/bookables/admin.py :7",
+        "../ta/api/bookables/admin.py :9",
+        "../ta/api/bookables/validators/prefab_validator.py :52",
+        "../ta/api/bookables/validators/prefab_validator.py :54",
+        "../ta/api/bookables/validators/bookable_validator.py :55",
+        "../ta/api/bookables/validators/bookable_validator.py :57",
+        "../ta/api/bookables/validators/bookable_validator.py :58",
+        "../ta/api/bookables/validators/bookable_validator.py :62",
+        "../ta/api/bookables/validators/bookable_validator.py :83",
+        "../ta/api/bookables/validators/bookable_validator.py :87",
+        "../ta/api/bookables/validators/bookable_validator.py :87",
+        "../ta/api/booking/notifications.py :91",
+        "../ta/api/booking/notifications.py :104",
+        "../ta/api/booking/notifications.py :131",
+        "../ta/api/kiosk/validators.py :27",
+        "../ta/api/rooms/endpoints.py :16",
+        "../ta/api/rooms/endpoints.py :18",
+        "../ta/api/devices/serializers.py :10",
+        "../ta/api/objects/validators.py :14"
+    ],
+    "udid": [
+        "../ta/api/devices/serializers.py :10",
+        "../ta/api/devices/serializers.py :11",
+        "../ta/api/devices/serializers.py :31"
+    ],
+    "unknown": [
+        "../ta/api/booking/choices.py :11",
+        "../ta/api/room_booking/choices.py :15"
+    ],
+    "url": [
+        "../ta/api/validators/tests.py :21",
+        "../ta/api/validators/tests.py :24",
+        "../ta/api/validators/tests.py :30",
+        "../ta/api/validators/tests.py :33",
+        "../ta/api/validators/tests.py :36",
+        "../ta/api/validators/tests.py :39",
+        "../ta/api/teams/validators/team_validator.py :37",
+        "../ta/api/teams/validators/team_validator.py :38",
+        "../ta/api/teams/validators/team_validator.py :39",
+        "../ta/api/teams/validators/team_validator.py :40",
+        "../ta/api/teams/validators/team_validator.py :40",
+        "../ta/api/teams/validators/team_validator.py :41",
+        "../ta/api/teams/validators/team_validator.py :46",
+        "../ta/api/groups/serializers.py :12",
+        "../ta/api/validators/serializers.py :14",
+        "../ta/api/validators/serializers.py :14",
+        "../ta/api/validators/serializers.py :15",
+        "../ta/api/ui/serializers.py :12",
+        "../ta/api/ui/serializers.py :22",
+        "../ta/api/ui/serializers.py :32",
+        "../ta/api/teams/serializers.py :20",
+        "../ta/api/venues/serializers.py :24",
+        "../ta/api/venues/validators/venue_image_validator.py :22",
+        "../ta/api/venues/validators/venue_image_validator.py :36",
+        "../ta/api/venues/validators/venue_image_validator.py :38",
+        "../ta/api/venues/validators/venue_image_validator.py :38"
+    ],
+    "venue": [
+        "../ta/api/booking/management.py :45",
+        "../ta/api/booking/management.py :67",
+        "../ta/api/booking/management.py :81",
+        "../ta/api/booking/management.py :104",
+        "../ta/api/bookables/admin.py :31",
+        "../ta/api/bookables/sitstand/aggregators.py :32",
+        "../ta/api/bookables/sitstand/aggregators.py :46",
+        "../ta/api/bookables/sitstand/aggregators.py :57",
+        "../ta/api/bookables/sitstand/aggregators.py :58",
+        "../ta/api/bookables/sitstand/aggregators.py :59",
+        "../ta/api/bookables/sitstand/aggregators.py :60",
+        "../ta/api/bookables/sitstand/aggregators.py :61",
+        "../ta/api/bookables/sitstand/aggregators.py :62",
+        "../ta/api/analytics/aggregators.py :43",
+        "../ta/api/analytics/aggregators.py :64",
+        "../ta/api/analytics/aggregators.py :67",
+        "../ta/api/analytics/aggregators.py :68",
+        "../ta/api/analytics/aggregators.py :69",
+        "../ta/api/analytics/aggregators.py :70",
+        "../ta/api/analytics/aggregators.py :71",
+        "../ta/api/analytics/aggregators.py :73",
+        "../ta/api/analytics/aggregators.py :74",
+        "../ta/api/analytics/aggregators.py :127",
+        "../ta/api/analytics/aggregators.py :256",
+        "../ta/api/analytics/aggregators.py :318",
+        "../ta/api/analytics/aggregators.py :605",
+        "../ta/api/objects/models.py :18",
+        "../ta/api/venues/models.py :97",
+        "../ta/api/bookables/validators/bookable_validator.py :44",
+        "../ta/api/bookables/validators/bookable_validator.py :45",
+        "../ta/api/bookables/validators/bookable_validator.py :59",
+        "../ta/api/bookables/validators/bookable_validator.py :73",
+        "../ta/api/bookables/validators/bookable_validator.py :74",
+        "../ta/api/booking/validators/repeating_booking_validators.py :155",
+        "../ta/api/rooms/validators.py :19",
+        "../ta/api/rooms/endpoints.py :33",
+        "../ta/api/venues/serializers.py :20",
+        "../ta/api/booking/endpoints.py :208",
+        "../ta/api/bookables/endpoints.py :33",
+        "../ta/api/objects/endpoints.py :10",
+        "../ta/api/objects/endpoints.py :13",
+        "../ta/api/objects/endpoints.py :31",
+        "../ta/api/objects/endpoints.py :34",
+        "../ta/api/ui/endpoints.py :46",
+        "../ta/api/analytics/occupancy_analytics.py :68",
+        "../ta/api/analytics/occupancy_analytics.py :87",
+        "../ta/api/analytics/occupancy_analytics.py :101",
+        "../ta/api/analytics/occupancy_analytics.py :102",
+        "../ta/api/analytics/occupancy_analytics.py :105",
+        "../ta/api/analytics/occupancy_analytics.py :200",
+        "../ta/api/analytics/occupancy_analytics.py :261",
+        "../ta/api/analytics/occupancy_analytics.py :360",
+        "../ta/api/analytics/occupancy_analytics.py :660",
+        "../ta/api/analytics/occupancy_analytics.py :674",
+        "../ta/api/analytics/occupancy_analytics.py :676"
+    ],
+    "venues": [
+        "../ta/api/venues/models.py :40",
+        "../ta/api/venues/models.py :98",
+        "../ta/api/mux/views.py :46"
+    ],
+    "version": [
+        "../ta/api/firmware/models.py :27"
+    ],
+    "vilius@tableair.onmicrosoft.com": [
+        "../ta/api/integration/endpoints.py :25",
+        "../ta/api/integration/endpoints.py :27"
+    ],
+    "water": [
+        "../ta/api/objects/choices.py :47"
+    ],
+    "week": [
+        "../ta/api/bookables/sitstand/aggregators.py :38",
+        "../ta/api/bookables/sitstand/aggregators.py :51",
+        "../ta/api/analytics/aggregators.py :55",
+        "../ta/api/analytics/aggregators.py :157",
+        "../ta/api/analytics/views.py :93",
+        "../ta/api/analytics/views.py :98",
+        "../ta/api/analytics/views.py :117",
+        "../ta/api/analytics/occupancy_analytics.py :77",
+        "../ta/api/analytics/occupancy_analytics.py :92",
+        "../ta/api/analytics/occupancy_analytics.py :109",
+        "../ta/api/analytics/occupancy_analytics.py :353"
+    ],
+    "weekdays": [
+        "../ta/api/booking/management.py :49",
+        "../ta/api/booking/management.py :63",
+        "../ta/api/booking/management.py :63",
+        "../ta/api/booking/management.py :64",
+        "../ta/api/booking/management.py :64",
+        "../ta/api/booking/management.py :85",
+        "../ta/api/booking/management.py :85",
+        "../ta/api/booking/validators/repeating_booking_validators.py :165",
+        "../ta/api/booking/validators/repeating_booking_validators.py :167",
+        "../ta/api/booking/validators/repeating_booking_validators.py :187",
+        "../ta/api/booking/validators/repeating_booking_validators.py :188",
+        "../ta/api/booking/validators/repeating_booking_validators.py :189"
+    ],
+    "whiteboard": [
+        "../ta/api/objects/choices.py :62"
+    ],
+    "wide": [
+        "../ta/api/accounts/admin.py :22"
+    ],
+    "window": [
+        "../ta/api/objects/choices.py :44"
+    ],
+    "workEnds": [
+        "../ta/api/analytics/views.py :134",
+        "../ta/api/analytics/occupancy_analytics.py :574"
+    ],
+    "workOccupancy": [
+        "../ta/api/analytics/views.py :134",
+        "../ta/api/analytics/occupancy_analytics.py :572"
+    ],
+    "workStarts": [
+        "../ta/api/analytics/views.py :134",
+        "../ta/api/analytics/occupancy_analytics.py :573"
+    ],
+    "{0:02d}:{1:02d}": [
+        "../ta/api/analytics/aggregators.py :546"
+    ],
+    "{:02d}:{:02d}": [
+        "../ta/api/venues/models.py :73",
+        "../ta/api/venues/models.py :77"
+    ],
+    "{}{}": [
+        "../ta/api/venues/models.py :112",
+        "../ta/api/teams/models.py :28"
+    ]
+}

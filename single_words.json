@@ -1,0 +1,2114 @@
+{
+    "../ta/api/accounts/__init__.py": {
+        "1": "ta.api.accounts.apps.AccountConfig"
+    },
+    "../ta/api/accounts/_deprecated_tests_api.py": {
+        "311": [
+            "api:accounts:detail",
+            "id"
+        ],
+        "321": "api:accounts:list",
+        "322": [
+            "John",
+            "Doe",
+            "email",
+            "password",
+            "labadiena1F"
+        ]
+    },
+    "../ta/api/accounts/admin.py": {
+        "15": [
+            "fields",
+            "email",
+            "password"
+        ],
+        "16": [
+            "Permissions",
+            "fields"
+        ],
+        "17": "groups",
+        "18": "fields",
+        "22": [
+            "classes",
+            "wide"
+        ],
+        "23": [
+            "fields",
+            "email",
+            "password1",
+            "password2"
+        ],
+        "34": "email",
+        "35": "groups",
+        "36": "email",
+        "37": "email",
+        "38": "groups"
+    },
+    "../ta/api/accounts/apps.py": {
+        "6": "ta.api.accounts"
+    },
+    "../ta/api/accounts/forms.py": {
+        "20": "Password",
+        "29": "email",
+        "40": "email",
+        "57": "password1",
+        "58": "password2",
+        "75": "password1",
+        "89": "Password",
+        "115": "password"
+    },
+    "../ta/api/accounts/models.py": {
+        "15": "email",
+        "19": "email",
+        "21": "password",
+        "30": [
+            "email",
+            "email"
+        ],
+        "38": "password",
+        "100": "email",
+        "104": "account",
+        "105": "accounts",
+        "139": "registration"
+    },
+    "../ta/api/accounts/serializers.py": {
+        "26": [
+            "id",
+            "password",
+            "email",
+            "role"
+        ],
+        "29": [
+            "id",
+            "role"
+        ],
+        "30": "required",
+        "46": "password",
+        "48": "role",
+        "70": "role",
+        "71": "email",
+        "72": [
+            "email",
+            "email"
+        ],
+        "76": "email",
+        "77": [
+            "email",
+            "email"
+        ],
+        "78": "email",
+        "81": "email",
+        "86": "email",
+        "88": "password",
+        "89": "password",
+        "90": "password",
+        "106": "password",
+        "107": "password",
+        "118": "email",
+        "125": "email",
+        "128": "front",
+        "129": "hash",
+        "137": [
+            "email",
+            "email"
+        ],
+        "138": "email",
+        "146": "front",
+        "147": "hash",
+        "150": "password",
+        "151": "password"
+    },
+    "../ta/api/accounts/views.py": {
+        "31": "\n    **/api/accounts/**\n    ",
+        "44": "\n        register\n        ",
+        "51": "\n    **/api/accounts/<pk>/**\n    ",
+        "99": "\n    **/api/accounts/<pk>/**\n    ",
+        "109": "id",
+        "115": "\n    **/api/accounts/confirm-registration/<hash>/**\n    ",
+        "125": "\n    **/api/accounts/confirm-email-change/<hash>/**\n    ",
+        "143": "email",
+        "270": "start"
+    },
+    "../ta/api/analytics/_deprecated_tests_api.py": {
+        "19": "api.tableair.xx",
+        "43": [
+            "Europe/Vilnius",
+            "00:00",
+            "23:59"
+        ],
+        "50": [
+            "analytics:list",
+            "api"
+        ],
+        "166": "room1",
+        "170": "room1",
+        "171": "room1"
+    },
+    "../ta/api/analytics/admin.py": {
+        "7": [
+            "account",
+            "activity",
+            "duration",
+            "timestamp"
+        ],
+        "9": "activity"
+    },
+    "../ta/api/analytics/aggregators.py": {
+        "40": "scope",
+        "41": "global",
+        "42": "team",
+        "43": [
+            "venue",
+            "id"
+        ],
+        "45": [
+            "room",
+            "id"
+        ],
+        "47": [
+            "table",
+            "identifier"
+        ],
+        "48": [
+            "account",
+            "id"
+        ],
+        "49": "participant",
+        "51": "duration",
+        "52": "alltime",
+        "53": [
+            "month",
+            "from"
+        ],
+        "54": [
+            "day",
+            "from"
+        ],
+        "55": [
+            "week",
+            "from"
+        ],
+        "63": [
+            "global",
+            "team",
+            "account",
+            "participant"
+        ],
+        "64": [
+            "global",
+            "team",
+            "venue",
+            "table",
+            "account",
+            "participant"
+        ],
+        "65": [
+            "global",
+            "team"
+        ],
+        "66": [
+            "global",
+            "team",
+            "account",
+            "participant"
+        ],
+        "67": [
+            "global",
+            "team",
+            "venue",
+            "account",
+            "participant"
+        ],
+        "68": "venue",
+        "69": "venue",
+        "70": [
+            "global",
+            "team",
+            "venue",
+            "account",
+            "participant"
+        ],
+        "71": [
+            "global",
+            "team",
+            "venue",
+            "table",
+            "account",
+            "participant"
+        ],
+        "72": [
+            "global",
+            "team",
+            "account",
+            "participant"
+        ],
+        "73": [
+            "global",
+            "team",
+            "venue",
+            "table",
+            "account",
+            "participant"
+        ],
+        "74": [
+            "global",
+            "team",
+            "venue",
+            "table",
+            "account",
+            "participant"
+        ],
+        "76": "account",
+        "79": [
+            "global",
+            "team",
+            "account",
+            "room",
+            "participant"
+        ],
+        "82": [
+            "global",
+            "team",
+            "room",
+            "account",
+            "participant"
+        ],
+        "85": [
+            "global",
+            "team",
+            "room",
+            "account",
+            "participant"
+        ],
+        "88": [
+            "global",
+            "team",
+            "room",
+            "account",
+            "participant"
+        ],
+        "92": [
+            "cache",
+            "cache"
+        ],
+        "120": "global",
+        "123": "team",
+        "125": "id",
+        "127": "venue",
+        "128": "id",
+        "131": "table",
+        "135": "account",
+        "136": "id",
+        "138": "participant",
+        "151": "alltime",
+        "154": "from",
+        "155": "month",
+        "157": "week",
+        "159": "day",
+        "172": "aggregator",
+        "173": "aggregator",
+        "175": "aggregator",
+        "177": "aggregator",
+        "206": "aggregator",
+        "208": "aggregator",
+        "211": "scope",
+        "213": [
+            "scope",
+            "scope"
+        ],
+        "217": "scope",
+        "218": "duration",
+        "219": "aggregator",
+        "231": "aggregator",
+        "232": "result",
+        "247": "global",
+        "250": "team",
+        "256": "venue",
+        "258": "id",
+        "259": "id",
+        "261": "table",
+        "269": "identifier",
+        "271": "identifier",
+        "273": "account",
+        "275": "id",
+        "276": "id",
+        "278": "participant",
+        "289": "scope",
+        "292": "scope",
+        "295": "timestamp",
+        "297": "global",
+        "299": "team",
+        "301": "account",
+        "302": "id",
+        "303": "participant",
+        "308": "scope",
+        "314": "global",
+        "316": "team",
+        "318": "venue",
+        "319": "id",
+        "320": "table",
+        "321": "identifier",
+        "322": "account",
+        "323": "id",
+        "324": "participant",
+        "325": "id",
+        "328": "scope",
+        "389": "scope",
+        "390": "global",
+        "393": "id",
+        "411": "timestamp",
+        "426": [
+            "activity",
+            "duration"
+        ],
+        "430": "activity",
+        "431": "duration",
+        "438": [
+            "activity",
+            "duration"
+        ],
+        "441": "activity",
+        "443": "duration",
+        "448": "duration",
+        "461": [
+            "activity",
+            "duration"
+        ],
+        "464": "activity",
+        "466": "duration",
+        "471": "duration",
+        "485": "N/A",
+        "497": "N/A",
+        "509": "N/A",
+        "521": "N/A",
+        "533": "N/A",
+        "546": "{0:02d}:{1:02d}",
+        "600": "scope",
+        "601": [
+            "participant",
+            "account"
+        ],
+        "603": "table",
+        "605": "venue",
+        "608": "scope",
+        "664": [
+            "id",
+            "start",
+            "end",
+            "start"
+        ],
+        "673": "start",
+        "674": "start",
+        "681": [
+            "end",
+            "start"
+        ],
+        "682": [
+            "start",
+            "end"
+        ],
+        "683": "start",
+        "688": "start",
+        "690": "end",
+        "692": "end",
+        "704": "%m-%d"
+    },
+    "../ta/api/analytics/models.py": {
+        "25": "Sitting",
+        "26": "Standing",
+        "27": "Break",
+        "29": "Login"
+    },
+    "../ta/api/analytics/occupancy_analytics.py": {
+        "51": [
+            "INNER",
+            "ON",
+            "FROM",
+            "WHERE",
+            "SELECT",
+            "AND"
+        ],
+        "53": [
+            "\"",
+            "'"
+        ],
+        "66": "scope",
+        "67": "global",
+        "68": [
+            "venue",
+            "id"
+        ],
+        "69": [
+            "prefab",
+            "identifier"
+        ],
+        "73": "duration",
+        "74": "alltime",
+        "75": [
+            "month",
+            "from"
+        ],
+        "76": [
+            "day",
+            "from"
+        ],
+        "77": [
+            "week",
+            "from"
+        ],
+        "84": "scope",
+        "85": "team",
+        "87": "venue",
+        "88": "prefab",
+        "90": "duration",
+        "91": "day",
+        "92": "week",
+        "93": "month",
+        "101": [
+            "venue",
+            "prefab"
+        ],
+        "102": "venue",
+        "103": "prefab",
+        "105": [
+            "prefab",
+            "venue"
+        ],
+        "109": [
+            "day",
+            "week",
+            "month"
+        ],
+        "126": [
+            " (",
+            ")"
+        ],
+        "171": [
+            "cache",
+            "cache"
+        ],
+        "182": "request",
+        "197": "global",
+        "200": "venue",
+        "201": "id",
+        "212": "perspective",
+        "213": "perspective",
+        "215": "perspective",
+        "217": "perspective",
+        "246": "perspective",
+        "248": "perspective",
+        "251": "scope",
+        "253": [
+            "scope",
+            "scope"
+        ],
+        "257": "scope",
+        "258": "duration",
+        "259": "perspective",
+        "261": "venue",
+        "262": "id",
+        "263": "prefab",
+        "264": "identifier",
+        "276": "perspective",
+        "281": "\n    Helpers\n    ",
+        "343": "\n    Perspectives\n    ",
+        "353": "week",
+        "360": "venue",
+        "366": "prefab",
+        "497": "from",
+        "508": "id",
+        "510": "duration",
+        "511": "alltime",
+        "513": "TODO..",
+        "527": "identifier",
+        "562": "%02d:%02d",
+        "571": "name",
+        "572": "workOccupancy",
+        "573": "workStarts",
+        "574": "workEnds",
+        "606": "duration",
+        "607": "eventStarts",
+        "608": [
+            "state",
+            "Occupied"
+        ],
+        "615": "duration",
+        "616": "eventStarts",
+        "617": [
+            "state",
+            "Vacant"
+        ],
+        "627": "SP02",
+        "658": "-cnt",
+        "660": [
+            "prefab",
+            "venue",
+            "cnt"
+        ],
+        "674": "venue",
+        "675": "id",
+        "676": [
+            "scope",
+            "venue"
+        ],
+        "678": "prefab",
+        "679": "identifier",
+        "680": [
+            "scope",
+            "prefab"
+        ],
+        "682": "duration",
+        "684": "duration",
+        "696": [
+            "timestamp",
+            "-timestamp"
+        ],
+        "705": "id",
+        "709": "timestamp",
+        "710": "parameters",
+        "750": "timestamp",
+        "752": "timestamp",
+        "832": "true",
+        "833": "false",
+        "864": "from"
+    },
+    "../ta/api/analytics/serializers.py": {
+        "21": "timestamp",
+        "22": [
+            "timestamp",
+            "timestamp"
+        ],
+        "32": [
+            "activity",
+            "timestamp",
+            "duration"
+        ]
+    },
+    "../ta/api/analytics/urls_analytics.py": {
+        "7": [
+            "^$",
+            "list"
+        ],
+        "9": [
+            "^occupancy/(?P<perspective>.+?)/(?P<scope>.+?)/(?P<id>.+?)/(?P<csv>csv/)?$",
+            "occupancy"
+        ]
+    },
+    "../ta/api/analytics/urls_usage.py": {
+        "6": [
+            "^$",
+            "list"
+        ]
+    },
+    "../ta/api/analytics/views.py": {
+        "42": [
+            "aggregator",
+            "#",
+            "#"
+        ],
+        "46": "result",
+        "51": "Queries: ",
+        "68": [
+            "analytics",
+            "#",
+            "#"
+        ],
+        "72": "result",
+        "85": [
+            "scope",
+            "prefab"
+        ],
+        "86": [
+            "identifier",
+            "id"
+        ],
+        "87": "perspective",
+        "88": [
+            "duration",
+            "alltime"
+        ],
+        "91": "perspective",
+        "92": "duration",
+        "93": [
+            "duration",
+            "week"
+        ],
+        "95": "from",
+        "97": "duration",
+        "98": [
+            "day",
+            "week",
+            "month"
+        ],
+        "108": "from",
+        "116": "from",
+        "117": [
+            "duration",
+            "week"
+        ],
+        "127": "perspective",
+        "133": "perspective",
+        "134": [
+            "name",
+            "workOccupancy",
+            "workStarts",
+            "workEnds"
+        ],
+        "135": "perspective",
+        "136": [
+            "eventStarts",
+            "duration",
+            "state"
+        ],
+        "142": [
+            "page",
+            "page"
+        ]
+    },
+    "../ta/api/bookables/activity/occupancy.py": {
+        "7": [
+            "parameters",
+            "po",
+            "parameters",
+            "no"
+        ],
+        "12": [
+            "parameters",
+            "po",
+            "parameters",
+            "no"
+        ],
+        "25": [
+            "parameters",
+            "po",
+            "parameters",
+            "no"
+        ]
+    },
+    "../ta/api/bookables/admin.py": {
+        "7": [
+            "identifier",
+            "type",
+            "created",
+            "modified"
+        ],
+        "8": "identifier",
+        "9": "type",
+        "13": [
+            "prefab",
+            "activity",
+            "parameters"
+        ],
+        "15": "activity",
+        "21": "timestamp",
+        "27": "created",
+        "31": [
+            "name",
+            "venue",
+            "prefab"
+        ],
+        "32": "name"
+    },
+    "../ta/api/bookables/endpoints.py": {
+        "29": "prefab",
+        "33": "venue",
+        "37": "prefab",
+        "38": "prefab",
+        "51": [
+            "query",
+            "prefab"
+        ],
+        "66": "post",
+        "77": "name",
+        "81": [
+            "name",
+            "empty"
+        ],
+        "91": "get",
+        "92": "query",
+        "93": "filters",
+        "94": "prefab",
+        "121": "post",
+        "133": [
+            "query",
+            "prefab"
+        ],
+        "145": "post",
+        "150": [
+            "prefabs",
+            "prefabs"
+        ],
+        "151": "prefabs",
+        "154": "prefabs",
+        "155": "prefabs",
+        "156": "prefabs",
+        "171": "prefab",
+        "187": "post",
+        "188": "prefab",
+        "195": "noresponse"
+    },
+    "../ta/api/bookables/models.py": {
+        "26": [
+            " (",
+            ")"
+        ],
+        "31": "prefabs",
+        "40": "prefab",
+        "41": "prefabs",
+        "42": "identifier",
+        "45": [
+            " (",
+            ")"
+        ],
+        "73": "bookables",
+        "74": "bookables",
+        "75": "bookable",
+        "86": "bookable",
+        "87": "bookables",
+        "90": [
+            " (",
+            ")"
+        ]
+    },
+    "../ta/api/bookables/serializers.py": {
+        "19": "prefab",
+        "32": "identifier",
+        "33": "id",
+        "54": "identifier",
+        "61": "UTC",
+        "66": "identifier",
+        "67": "activity",
+        "68": "timestamp",
+        "69": "parameters",
+        "73": [
+            "a",
+            "t",
+            "p",
+            "prefab"
+        ],
+        "74": "t",
+        "88": "UTC"
+    },
+    "../ta/api/bookables/sitstand/aggregators.py": {
+        "19": "d",
+        "20": "h1",
+        "21": "h2",
+        "30": "scope",
+        "31": "team",
+        "32": "venue",
+        "33": [
+            "prefab",
+            "identifier"
+        ],
+        "35": "duration",
+        "36": "alltime",
+        "37": [
+            "day",
+            "from"
+        ],
+        "38": [
+            "week",
+            "from"
+        ],
+        "39": [
+            "month",
+            "from"
+        ],
+        "44": "scope",
+        "45": "team",
+        "46": "venue",
+        "47": "prefab",
+        "49": "duration",
+        "50": "day",
+        "51": "week",
+        "52": "month",
+        "57": [
+            "team",
+            "venue"
+        ],
+        "58": [
+            "team",
+            "venue"
+        ],
+        "59": [
+            "team",
+            "venue"
+        ],
+        "60": [
+            "team",
+            "venue"
+        ],
+        "61": [
+            "team",
+            "venue"
+        ],
+        "62": [
+            "team",
+            "venue"
+        ],
+        "63": "prefab",
+        "95": [
+            "aggregators",
+            ", "
+        ],
+        "134": [
+            "hour",
+            "minute"
+        ],
+        "140": "UTC",
+        "174": "scope",
+        "178": "duration",
+        "187": "h1",
+        "190": "p",
+        "201": [
+            "end",
+            "start"
+        ],
+        "224": "timestamp",
+        "226": "prefab",
+        "251": [
+            "h1",
+            "end",
+            "start"
+        ]
+    },
+    "../ta/api/bookables/sitstand/endpoints.py": {
+        "20": "get",
+        "21": "query",
+        "27": [
+            "scope",
+            "team"
+        ],
+        "40": [
+            "aggregators",
+            ","
+        ],
+        "45": [
+            "tableair-sitstand",
+            "name"
+        ],
+        "52": "get",
+        "53": "query",
+        "63": "-timestamp",
+        "69": [
+            "page",
+            "page"
+        ],
+        "73": "tableair-sitstand-details-{}",
+        "74": "date",
+        "75": [
+            "date",
+            "duration",
+            "height"
+        ]
+    },
+    "../ta/api/bookables/validators/bookable_validator.py": {
+        "20": "id",
+        "28": "\n    Primitives\n    ",
+        "33": [
+            "#",
+            "name"
+        ],
+        "35": "ascii",
+        "37": "name",
+        "40": "prefab",
+        "44": [
+            "col",
+            "row",
+            "venue"
+        ],
+        "45": "venue",
+        "46": [
+            "col",
+            "row"
+        ],
+        "51": "prefab",
+        "52": "prefab",
+        "55": "type",
+        "57": "type",
+        "58": "type",
+        "59": "venue",
+        "62": [
+            "prefab",
+            "type"
+        ],
+        "68": "prefab",
+        "70": [
+            "col",
+            "row"
+        ],
+        "71": [
+            "col",
+            "row"
+        ],
+        "73": "venue",
+        "74": "venue",
+        "82": "prefab",
+        "83": [
+            "type",
+            "prefab"
+        ],
+        "86": "id",
+        "87": [
+            "type",
+            "prefab",
+            "type"
+        ]
+    },
+    "../ta/api/bookables/validators/prefab_usage_validator.py": {
+        "21": "prefab",
+        "31": [
+            "start",
+            "start"
+        ],
+        "32": "end",
+        "34": "start",
+        "35": "start",
+        "37": "start",
+        "51": [
+            "parameters",
+            "no"
+        ],
+        "52": [
+            "parameters",
+            "po"
+        ],
+        "56": "prefab",
+        "61": "prefab"
+    },
+    "../ta/api/bookables/validators/prefab_validator.py": {
+        "11": "[A-Z0-9]{9}",
+        "29": "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "31": "#",
+        "33": "#",
+        "42": [
+            "append",
+            "append"
+        ],
+        "44": "parameters",
+        "47": "parameters",
+        "48": [
+            "parameters",
+            "parameters"
+        ],
+        "49": "parameters",
+        "52": "type",
+        "53": "explicit",
+        "54": "type",
+        "55": "identifier",
+        "58": "parameters",
+        "59": [
+            "parameters",
+            "parameters"
+        ],
+        "60": [
+            "parameters",
+            "parameters"
+        ]
+    },
+    "../ta/api/booking/admin.py": {
+        "7": [
+            "account",
+            "bookable",
+            "start",
+            "end"
+        ],
+        "9": [
+            "start",
+            "end"
+        ]
+    },
+    "../ta/api/booking/choices.py": {
+        "8": "confirmed",
+        "9": "removed",
+        "10": "tentative",
+        "11": "unknown"
+    },
+    "../ta/api/booking/endpoints.py": {
+        "24": "post",
+        "36": [
+            "query",
+            "pk"
+        ],
+        "55": "get",
+        "56": [
+            "query",
+            "pk"
+        ],
+        "76": "get",
+        "77": [
+            "query",
+            "pk"
+        ],
+        "99": "from",
+        "100": "to",
+        "107": "get",
+        "108": "query",
+        "109": "prefab",
+        "112": "filters",
+        "120": "prefab",
+        "128": "get",
+        "129": "query",
+        "130": "id",
+        "133": "filters",
+        "140": "id",
+        "148": "get",
+        "149": "query",
+        "154": "filters",
+        "172": "get",
+        "173": "query",
+        "177": "start",
+        "201": "post",
+        "207": "account",
+        "208": "venue"
+    },
+    "../ta/api/booking/management.py": {
+        "39": "([0-9]{2}):?([0-9]{2})",
+        "44": "account",
+        "45": "venue",
+        "46": "table",
+        "49": "weekdays",
+        "63": [
+            "weekdays",
+            "weekdays"
+        ],
+        "64": [
+            "weekdays",
+            "weekdays"
+        ],
+        "66": "account",
+        "67": "venue",
+        "70": "table",
+        "81": [
+            "account",
+            "venue"
+        ],
+        "85": [
+            "weekdays",
+            "weekdays"
+        ],
+        "104": "venue",
+        "111": "table",
+        "161": [
+            "identifier",
+            "id"
+        ],
+        "165": [
+            "start",
+            "end"
+        ],
+        "170": [
+            "start",
+            "end"
+        ],
+        "212": [
+            "start",
+            "end"
+        ]
+    },
+    "../ta/api/booking/models.py": {
+        "65": "bookings",
+        "66": "bookings",
+        "90": "booking",
+        "91": "bookings",
+        "92": "start",
+        "93": "objects"
+    },
+    "../ta/api/booking/notifications.py": {
+        "90": "id",
+        "91": "type",
+        "104": [
+            "id",
+            "type"
+        ],
+        "131": [
+            "id",
+            "type"
+        ],
+        "188": "id",
+        "190": "id"
+    },
+    "../ta/api/booking/permissions.py": {
+        "8": "account",
+        "10": "bookable"
+    },
+    "../ta/api/booking/serializers.py": {
+        "23": "status",
+        "57": "bookings",
+        "59": "bookings",
+        "63": "bookings"
+    },
+    "../ta/api/booking/validators/booking_validators.py": {
+        "40": "end",
+        "41": "end",
+        "43": "start",
+        "45": "start",
+        "57": "start",
+        "59": "end",
+        "65": [
+            "start",
+            "end"
+        ],
+        "130": [
+            "start",
+            "end"
+        ],
+        "131": "intersecting",
+        "136": "\n    Primitives\n    ",
+        "142": "bookable",
+        "143": "bookable",
+        "146": [
+            "start",
+            "end"
+        ],
+        "149": "status",
+        "156": [
+            "start",
+            "end"
+        ],
+        "159": [
+            "start",
+            "end"
+        ],
+        "161": "account",
+        "162": [
+            "bookable",
+            "account",
+            "start",
+            "end"
+        ],
+        "163": [
+            "account",
+            "account"
+        ],
+        "165": "status",
+        "169": "status",
+        "173": [
+            "start",
+            "end"
+        ],
+        "174": [
+            "start",
+            "end"
+        ],
+        "176": "start",
+        "177": "end",
+        "178": "bookable",
+        "179": "account",
+        "181": [
+            "start",
+            "end"
+        ],
+        "190": [
+            "start",
+            "end"
+        ],
+        "196": "status",
+        "204": "start",
+        "213": "end",
+        "245": "start"
+    },
+    "../ta/api/booking/validators/repeating_booking_validators.py": {
+        "38": "([0-9]{2}):?([0-9]{2})",
+        "91": "id",
+        "95": [
+            "start",
+            "end"
+        ],
+        "101": [
+            "start",
+            "end"
+        ],
+        "134": [
+            "start",
+            "end"
+        ],
+        "148": "\n    Primitives\n    ",
+        "154": "account",
+        "155": "venue",
+        "165": "weekdays",
+        "167": "weekdays",
+        "183": [
+            "bookable",
+            "bookable"
+        ],
+        "184": "bookable",
+        "187": "weekdays",
+        "188": "weekdays",
+        "189": "weekdays",
+        "200": "bookings"
+    },
+    "../ta/api/broker/endpoints.py": {
+        "8": "post",
+        "15": "query"
+    },
+    "../ta/api/devices/models.py": {
+        "12": "Android",
+        "13": "iOS",
+        "22": "agents",
+        "26": "agent",
+        "27": "agents",
+        "52": "notifications",
+        "60": "notification",
+        "61": "notifications"
+    },
+    "../ta/api/devices/serializers.py": {
+        "10": [
+            "type",
+            "udid",
+            "name"
+        ],
+        "11": "udid",
+        "30": "account",
+        "31": "udid"
+    },
+    "../ta/api/firmware/endpoints.py": {
+        "9": "get",
+        "10": "query"
+    },
+    "../ta/api/firmware/models.py": {
+        "22": "-version",
+        "27": [
+            "-version",
+            "version"
+        ]
+    },
+    "../ta/api/firmware/serializers.py": {
+        "13": "id"
+    },
+    "../ta/api/groups/endpoints.py": {
+        "10": "post",
+        "11": "team",
+        "13": "get",
+        "14": [
+            "query",
+            "team"
+        ],
+        "23": [
+            "query",
+            "pk"
+        ],
+        "31": "post",
+        "32": [
+            "group",
+            "account"
+        ],
+        "34": "delete",
+        "35": "query",
+        "36": [
+            "group",
+            "account"
+        ]
+    },
+    "../ta/api/groups/models.py": {
+        "10": "groups",
+        "11": "GroupMember",
+        "14": "group",
+        "15": "groups",
+        "17": [
+            "name",
+            "team"
+        ],
+        "24": "+",
+        "25": "groups"
+    },
+    "../ta/api/groups/serializers.py": {
+        "12": "url",
+        "26": "id",
+        "31": "participation"
+    },
+    "../ta/api/groups/validators.py": {
+        "13": "account",
+        "16": "group",
+        "19": "account",
+        "20": "group",
+        "21": "participation",
+        "24": [
+            "group",
+            "participation"
+        ],
+        "25": "account",
+        "30": "members",
+        "31": "members",
+        "35": "participants",
+        "37": "team",
+        "40": "members",
+        "44": "members",
+        "49": "participants",
+        "53": "participants",
+        "54": [
+            "members",
+            "participants"
+        ],
+        "56": "members",
+        "57": [
+            "id",
+            "id"
+        ]
+    },
+    "../ta/api/integration/endpoints.py": {
+        "21": "get",
+        "25": [
+            "vilius@tableair.onmicrosoft.com",
+            "airTable234xOxO"
+        ],
+        "27": "vilius@tableair.onmicrosoft.com",
+        "45": "room"
+    },
+    "../ta/api/integration/models.py": {
+        "16": [
+            "type",
+            "room"
+        ]
+    },
+    "../ta/api/integration/sync.py": {
+        "25": "start",
+        "26": "end",
+        "27": "title",
+        "55": "Accept",
+        "58": "Accept",
+        "103": [
+            "start",
+            "end",
+            "subject"
+        ]
+    },
+    "../ta/api/iot/serializers.py": {
+        "7": "start",
+        "8": "end",
+        "10": "account",
+        "14": [
+            "id",
+            "s",
+            "e",
+            "acc"
+        ]
+    },
+    "../ta/api/iot/views.py": {
+        "20": "\n    Deprecated\n    ",
+        "47": "id",
+        "54": "id",
+        "69": "f"
+    },
+    "../ta/api/kiosk/endpoints.py": {
+        "14": "post",
+        "24": "query",
+        "32": "get",
+        "33": "query",
+        "35": "team",
+        "37": "email"
+    },
+    "../ta/api/kiosk/serializers.py": {
+        "78": "email"
+    },
+    "../ta/api/kiosk/validators.py": {
+        "27": "type",
+        "33": "-id",
+        "36": "Kiosk",
+        "38": "kiosk{}@{}"
+    },
+    "../ta/api/licensing/admin.py": {
+        "7": "team"
+    },
+    "../ta/api/licensing/models.py": {
+        "12": [
+            "teams.Team",
+            "license"
+        ]
+    },
+    "../ta/api/logging/__init__.py": {
+        "1": "ta.api.logging.apps.LoggingConfig"
+    },
+    "../ta/api/logging/apps.py": {
+        "10": "ta.api.logging"
+    },
+    "../ta/api/logging/management.py": {
+        "21": "json",
+        "22": "pk"
+    },
+    "../ta/api/logging/models.py": {
+        "17": "Create",
+        "18": "Update",
+        "19": "Delete",
+        "21": "Login",
+        "46": "logs",
+        "57": "logging",
+        "58": "logs"
+    },
+    "../ta/api/logging/serializers.py": {
+        "9": [
+            "message",
+            "timestamp",
+            "action",
+            "account"
+        ]
+    },
+    "../ta/api/logging/signals.py": {
+        "6": [
+            "admin",
+            "auth",
+            "contenttypes",
+            "sessions"
+        ],
+        "23": "request",
+        "35": "instance",
+        "36": "created"
+    },
+    "../ta/api/logging/views.py": {
+        "12": "\n    **api/logs/**\n    "
+    },
+    "../ta/api/mux/views.py": {
+        "44": "account",
+        "45": "team",
+        "46": "venues",
+        "47": "participants",
+        "48": "requests",
+        "49": "invites",
+        "50": "bookables",
+        "51": "settings",
+        "56": "teamSettings",
+        "61": "teamSettings",
+        "72": "account",
+        "73": "devices",
+        "74": "teams",
+        "75": "settings",
+        "81": "GET",
+        "86": "GET"
+    },
+    "../ta/api/objects/apps.py": {
+        "5": "ta.api.objects"
+    },
+    "../ta/api/objects/choices.py": {
+        "28": "doors",
+        "29": "elevator",
+        "30": "balcony",
+        "31": "coffee",
+        "33": "extinguisher",
+        "34": "kitchen",
+        "36": "projector",
+        "37": "restroom",
+        "38": "shelf",
+        "39": "shower",
+        "40": "cupboard",
+        "42": "snacks",
+        "43": "stairs",
+        "44": "window",
+        "45": "drinks",
+        "46": "snacks",
+        "47": "water",
+        "61": "projector",
+        "62": "whiteboard"
+    },
+    "../ta/api/objects/endpoints.py": {
+        "9": "get",
+        "10": [
+            "query",
+            "venue"
+        ],
+        "12": "post",
+        "13": "venue",
+        "21": "delete",
+        "22": [
+            "query",
+            "pk"
+        ],
+        "30": "get",
+        "31": [
+            "query",
+            "venue"
+        ],
+        "33": "post",
+        "34": "venue",
+        "43": [
+            "query",
+            "pk"
+        ]
+    },
+    "../ta/api/objects/models.py": {
+        "12": "#F3F3F3",
+        "18": [
+            "col",
+            "row",
+            "venue"
+        ],
+        "20": "tile",
+        "21": "tiles",
+        "35": "object",
+        "36": "objects"
+    },
+    "../ta/api/objects/serializers.py": {
+        "11": "id",
+        "20": "id"
+    },
+    "../ta/api/objects/validators.py": {
+        "14": "type",
+        "18": [
+            "col",
+            "row"
+        ],
+        "24": [
+            "col",
+            "row"
+        ]
+    },
+    "../ta/api/requests/models.py": {
+        "16": "Pending",
+        "17": "Accepted",
+        "18": "Rejected",
+        "21": "requests",
+        "23": "requests"
+    },
+    "../ta/api/requests/serializers.py": {
+        "29": "account",
+        "52": "team",
+        "56": "email",
+        "64": [
+            "entry",
+            "teams"
+        ],
+        "87": "account",
+        "100": [
+            "id",
+            "account",
+            "count",
+            "status"
+        ],
+        "101": "id"
+    },
+    "../ta/api/room_booking/choices.py": {
+        "10": "pending",
+        "11": "accepted",
+        "12": "declined",
+        "13": "removed",
+        "14": "tentative",
+        "15": "unknown"
+    },
+    "../ta/api/room_booking/emails.py": {
+        "21": "%H:%M",
+        "41": "front",
+        "42": "account",
+        "43": "front",
+        "44": "account"
+    },
+    "../ta/api/room_booking/endpoints.py": {
+        "27": "get",
+        "28": "query",
+        "29": "room",
+        "32": "filters",
+        "34": "post",
+        "35": "room",
+        "44": [
+            "query",
+            "pk"
+        ],
+        "45": "room",
+        "60": "get",
+        "61": "query",
+        "66": "start",
+        "93": "get",
+        "96": "post",
+        "97": "room",
+        "105": "delete",
+        "106": "query",
+        "129": [
+            "room",
+            "account"
+        ],
+        "130": "delete",
+        "131": "query",
+        "141": "account",
+        "156": "pending",
+        "168": "get",
+        "169": "query",
+        "170": "id",
+        "173": "filters",
+        "180": "id",
+        "188": "get",
+        "189": "query",
+        "190": "account",
+        "191": "team",
+        "197": "start",
+        "198": "filters",
+        "205": "account",
+        "206": "team",
+        "216": [
+            "page",
+            "page"
+        ],
+        "217": "pending",
+        "218": "account"
+    },
+    "../ta/api/room_booking/managers.py": {
+        "24": "account",
+        "38": "account",
+        "42": "account"
+    },
+    "../ta/api/room_booking/models.py": {
+        "37": "participants",
+        "45": "account"
+    },
+    "../ta/api/room_booking/serializers.py": {
+        "13": "id",
+        "14": "status",
+        "24": "status",
+        "40": "status"
+    },
+    "../ta/api/room_booking/validators.py": {
+        "35": "account",
+        "42": "account",
+        "44": "account",
+        "51": "participant",
+        "54": "participant",
+        "55": [
+            "participant",
+            "status"
+        ],
+        "68": "status",
+        "95": "account",
+        "96": "account",
+        "99": "host",
+        "100": "account",
+        "104": "status",
+        "108": "status",
+        "112": "account",
+        "114": "room",
+        "147": "start",
+        "148": "end",
+        "149": "room",
+        "153": "account",
+        "156": "participants",
+        "160": "start",
+        "165": "start",
+        "169": [
+            "start",
+            "end"
+        ],
+        "181": [
+            "start",
+            "end"
+        ],
+        "188": [
+            "room",
+            "bookable.venue.team",
+            "room"
+        ],
+        "189": "participants",
+        "190": [
+            "participants",
+            "participants"
+        ],
+        "191": "room",
+        "192": "account",
+        "195": "participants",
+        "198": "participants",
+        "203": "room",
+        "204": "host",
+        "207": "start",
+        "208": "participants",
+        "209": [
+            "participants",
+            "room"
+        ],
+        "213": "room",
+        "214": [
+            "host",
+            "start"
+        ],
+        "216": [
+            "end",
+            "end"
+        ],
+        "219": [
+            "request",
+            "true"
+        ],
+        "222": "participants",
+        "224": "participants",
+        "239": "host",
+        "244": "participants",
+        "285": "status"
+    },
+    "../ta/api/rooms/endpoints.py": {
+        "16": [
+            "query",
+            "type"
+        ],
+        "17": "room",
+        "18": [
+            "type",
+            "room"
+        ],
+        "26": "post",
+        "33": "venue",
+        "43": "post",
+        "44": "bookable",
+        "47": [
+            "query",
+            "bookable"
+        ],
+        "64": "post",
+        "65": "room",
+        "73": "delete",
+        "74": [
+            "query",
+            "pk"
+        ],
+        "75": "room"
+    },
+    "../ta/api/rooms/models.py": {
+        "14": "room",
+        "15": "rooms",
+        "22": "N/A"
+    },
+    "../ta/api/rooms/serializers.py": {
+        "18": "id",
+        "32": "bookable"
+    },
+    "../ta/api/rooms/validators.py": {
+        "19": [
+            "room",
+            "venue"
+        ],
+        "20": [
+            "row",
+            "col"
+        ],
+        "22": "row",
+        "23": "col",
+        "28": [
+            "col",
+            "row"
+        ],
+        "33": [
+            "col",
+            "row"
+        ],
+        "39": [
+            "room",
+            "row",
+            "col"
+        ],
+        "41": [
+            "col",
+            "row"
+        ],
+        "52": [
+            "col",
+            "row"
+        ],
+        "75": [
+            "col",
+            "row"
+        ],
+        "85": "name",
+        "88": "capacity",
+        "92": "bookable",
+        "93": "bookable",
+        "94": "bookable",
+        "99": "bookable",
+        "104": [
+            "bookable",
+            "name"
+        ],
+        "109": "name",
+        "110": "name",
+        "131": "id"
+    },
+    "../ta/api/support/tests.py": {
+        "8": [
+            "myemail@provider.net",
+            "passwordxx"
+        ]
+    },
+    "../ta/api/support/views.py": {
+        "13": "message",
+        "14": "message",
+        "18": "message",
+        "20": "info@tableair.com"
+    },
+    "../ta/api/sync/models.py": {
+        "24": "Metric",
+        "25": "Imperial",
+        "40": "settings"
+    },
+    "../ta/api/teams/choices.py": {
+        "7": "Participant",
+        "8": "Administrator",
+        "9": "Owner"
+    },
+    "../ta/api/teams/endpoints.py": {
+        "19": "post",
+        "31": "query",
+        "59": "get",
+        "60": [
+            "query",
+            "team"
+        ],
+        "62": "post",
+        "63": "team",
+        "70": [
+            "team",
+            "team",
+            "team"
+        ],
+        "80": "POST",
+        "88": "text",
+        "89": "subject"
+    },
+    "../ta/api/teams/management.py": {
+        "40": "role"
+    },
+    "../ta/api/teams/models.py": {
+        "28": "{}{}",
+        "37": "^{0}$",
+        "44": "Participation",
+        "63": "teams",
+        "79": "Participant",
+        "80": "Administrator",
+        "81": "Owner",
+        "84": "participations",
+        "85": "participations",
+        "89": "objects.GridObject",
+        "90": "participant",
+        "98": "participations",
+        "99": [
+            "account",
+            "team"
+        ],
+        "107": "permissions",
+        "119": "invitations",
+        "127": "email"
+    },
+    "../ta/api/teams/serializers.py": {
+        "16": "id",
+        "20": "url",
+        "25": [
+            "team",
+            "hash"
+        ],
+        "31": "count",
+        "40": "role"
+    },
+    "../ta/api/teams/validators/invitation_validator.py": {
+        "18": "email",
+        "19": "team",
+        "20": "email",
+        "23": [
+            "email",
+            "team"
+        ],
+        "26": "email",
+        "34": "email",
+        "39": [
+            "front",
+            "hash"
+        ]
+    },
+    "../ta/api/teams/validators/team_validator.py": {
+        "24": "logo",
+        "37": [
+            "url",
+            "name"
+        ],
+        "38": [
+            "url",
+            "name"
+        ],
+        "39": [
+            "name",
+            "url"
+        ],
+        "40": [
+            "url",
+            "url"
+        ],
+        "41": "url",
+        "42": [
+            "name",
+            "name"
+        ],
+        "43": "name",
+        "46": "url",
+        "53": "request",
+        "58": "request",
+        "61": "logo",
+        "72": "logo",
+        "74": [
+            "logo",
+            "logo"
+        ]
+    },
+    "../ta/api/ui/endpoints.py": {
+        "10": "get",
+        "11": "query",
+        "12": "account",
+        "14": "put",
+        "15": "query",
+        "16": "account",
+        "24": "get",
+        "25": "query",
+        "27": [
+            "account",
+            "team"
+        ],
+        "29": "put",
+        "30": "query",
+        "32": [
+            "account",
+            "team"
+        ],
+        "40": "put",
+        "41": "query",
+        "46": [
+            "account",
+            "team",
+            "venue"
+        ]
+    },
+    "../ta/api/ui/models.py": {
+        "55": " venue "
+    },
+    "../ta/api/ui/serializers.py": {
+        "12": "url",
+        "17": "id",
+        "21": "id",
+        "22": "url",
+        "23": "id",
+        "28": "id",
+        "32": "url",
+        "33": "id",
+        "35": "id",
+        "42": [
+            "id",
+            "participation"
+        ]
+    },
+    "../ta/api/ui/validators.py": {
+        "18": "team",
+        "19": "team",
+        "23": "participation",
+        "24": [
+            "team",
+            "account"
+        ],
+        "40": [
+            "team",
+            "account"
+        ]
+    },
+    "../ta/api/validators/serializers.py": {
+        "12": [
+            "name",
+            "name"
+        ],
+        "13": "name",
+        "14": [
+            "url",
+            "url"
+        ],
+        "15": "url"
+    },
+    "../ta/api/validators/tests.py": {
+        "12": [
+            "someteam",
+            "someurl"
+        ],
+        "15": "api:validators:teams",
+        "18": [
+            "name",
+            "goodname"
+        ],
+        "21": [
+            "url",
+            "goodname"
+        ],
+        "24": [
+            "name",
+            "goodname",
+            "url",
+            "goodurl"
+        ],
+        "27": [
+            "name",
+            "someteam"
+        ],
+        "30": [
+            "url",
+            "someurl"
+        ],
+        "33": [
+            "name",
+            "goodname",
+            "url",
+            "someurl"
+        ],
+        "36": [
+            "name",
+            "somename",
+            "url",
+            "someurl"
+        ],
+        "39": [
+            "name",
+            "someteam",
+            "url",
+            "goodurl"
+        ]
+    },
+    "../ta/api/venues/endpoints.py": {
+        "11": "post",
+        "16": "team",
+        "23": [
+            "query",
+            "pk"
+        ]
+    },
+    "../ta/api/venues/models.py": {
+        "15": "^(?P<hours>([0-1][0-9])|(2[0-3])):?(?P<minutes>[0-5][0-9])$",
+        "20": "timezone",
+        "40": "venues",
+        "46": ":",
+        "47": ":",
+        "48": ":",
+        "49": ":",
+        "61": [
+            "hours",
+            "minutes"
+        ],
+        "73": "{:02d}:{:02d}",
+        "77": "{:02d}:{:02d}",
+        "97": "venue",
+        "98": "venues",
+        "112": "{}{}",
+        "123": "image"
+    },
+    "../ta/api/venues/serializers.py": {
+        "20": [
+            "id",
+            "venue"
+        ],
+        "24": "url",
+        "32": "image",
+        "42": "image",
+        "60": "team"
+    },
+    "../ta/api/venues/validators/venue_image_validator.py": {
+        "22": "url",
+        "36": "url",
+        "38": [
+            "url",
+            "url"
+        ]
+    },
+    "../ta/api/venues/validators/venue_validator.py": {
+        "17": "id",
+        "39": "image",
+        "44": [
+            "team",
+            "team"
+        ]
+    },
+    "../ta/api/venues/views.py": {
+        "13": "\n    **api/venues/<pk>/tables/**\n    "
+    }
+}
