@@ -1,54 +1,20 @@
 {
-    "\n            jei from yra 1mad -- 0 -trinti-> 5, 6\n            jei from yra 2mad -- 1 -trinti-> 4, 5\n            jei from yra 3mad -- 2 -trinti-> 3, 4\n\n            jei from yra 6mad -- 5 -trinti-> 0, 1\n            jei from yra 7mad -- 6 -trinti-> -1, 0\n            ": [
-        "../ta/api/analytics/occupancy_analytics.py:473"
+    "": [
+        "../ta/api/analytics/occupancy_analytics.py:529",
+        "../ta/api/bookables/models.py:90",
+        "../ta/api/bookables/validators/prefab_validator.py:35",
+        "../ta/api/iot/views.py:69",
+        "../ta/api/teams/validators/team_validator.py:21",
+        "../ta/api/teams/validators/team_validator.py:27",
+        "../ta/api/teams/validators/team_validator.py:73",
+        "../ta/api/venues/validators/venue_image_validator.py:19",
+        "../ta/api/venues/validators/venue_image_validator.py:28",
+        "../ta/api/venues/validators/venue_image_validator.py:37"
     ],
-    "\n            params:  interval of activity\n                     part   of partitioning (day/hour or so)\n            ": [
-        "../ta/api/analytics/occupancy_analytics.py:295"
-    ],
-    "\n        EP4 by Rokas\n        https://tableair.slack.com/files/U8YH9D5K6/F8YKP6DU2/workoccupancy_endpoint_spec_description.txt\n        ?page=1\n        ": [
-        "../ta/api/analytics/occupancy_analytics.py:587"
-    ],
-    "\n        For DEV purposes\n                # most activity:\n        {\n        \"prefab\": 152,\n        \"venue__name\": \"Approved house of cards\",\n        \"cnt\": 223,\n        \"prefab__identifier\": \"SP000000A\",\n        \"venue\": 9\n        },\n        \"prefab\": 155,             \"cnt\": 211,             \"prefab__identifier\": \"SP000000C\",             \"venue\": 9\n        \"prefab\": 156,                   \"cnt\": 30,          \"prefab__identifier\": \"SP0200000\",            \"venue\": 8\n        \"prefab\": 157,            \"venue__name\": \"euneV\",            \"cnt\": 4,            \"prefab__identifier\": \"SP0200001\",            \"venue\": 16\n        \"prefab\": 14,            \"venue__name\": \"Demo Venue\",            \"cnt\": 1,            \"prefab__identifier\": \"X0000000E\",            \"venue\": 5\n\n\n        ": [
-        "../ta/api/analytics/occupancy_analytics.py:648"
-    ],
-    "\n        Name and URL uniqueness checks. Moved here from DB layer due to is_historic presence.\n        ": [
-        "../ta/api/teams/validators/team_validator.py:36"
-    ],
-    "\n        Object instance -> Dict of primitive datatypes.\n        ": [
-        "../ta/api/accounts/serializers.py:40"
-    ],
-    "\n        Send an email to this User.\n        ": [
-        "../ta/api/accounts/models.py:117"
-    ],
-    "\n        retrieve list\n        ": [
-        "../ta/api/accounts/views.py:39"
-    ],
-    "\n       **/api/accounts/<pk>/teams/<url>/**\n        manages account's participation in team\n    ": [
-        "../ta/api/accounts/views.py:203"
-    ],
-    "\n    **/api/accounts/<account_id>/teams/**\n    gets teams that the account participates in\n    ": [
-        "../ta/api/accounts/views.py:167"
-    ],
-    "\n    **/api/accounts/<pk>/forgot/**\n    request password reset\n    ": [
-        "../ta/api/accounts/views.py:138"
-    ],
-    "\n    **/api/accounts/<pk>/venues/<pk>/booking/**\n    returns bookings for a given venue\n    ": [
-        "../ta/api/accounts/views.py:184"
-    ],
-    "\n    **/api/accounts/confirm-forgot/<hash>/**\n    change the password with given hash\n    ": [
-        "../ta/api/accounts/views.py:153"
-    ],
-    "\n    A form for creating new users.\n\n    Includes all the required fields, plus a repeated password.\n    ": [
-        "../ta/api/accounts/forms.py:12"
-    ],
-    "\n    Account admin model.\n    ": [
-        "../ta/api/accounts/admin.py:12"
-    ],
-    "\n    Aggregator implementations\n    ": [
-        "../ta/api/analytics/aggregators.py:371"
-    ],
-    "\n    An abstract user model that is an alternative to the standard AbstractUser. The\n    sole difference is that AbstractAccount does not have a username field, and uses\n    the email field as the primary identifier by default.\n\n    Email and password are required. Other fields are optional.\n    ": [
-        "../ta/api/accounts/models.py:66"
+    "\n": [
+        "../ta/api/accounts/_deprecated_tests_api.py:334",
+        "../ta/api/analytics/occupancy_analytics.py:52",
+        "../ta/api/analytics/occupancy_analytics.py:56"
     ],
     "\n    Bookable Handlers\n": [
         "../ta/api/bookables/endpoints.py:17"
@@ -56,43 +22,14 @@
     "\n    Composite booking handlers\n": [
         "../ta/api/booking/endpoints.py:96"
     ],
-    "\n    Field validators\n    ": [
-        "../ta/api/teams/validators/team_validator.py:18"
-    ],
-    "\n    Global validators\n    ": [
-        "../ta/api/teams/validators/team_validator.py:50"
-    ],
-    "\n    Instance helper functions\n    ": [
-        "../ta/api/booking/validators/booking_validators.py:106"
-    ],
-    "\n    Lists possible aggregators <function_name>, [<allowed_scope>, ...]\n    ": [
-        "../ta/api/analytics/aggregators.py:61",
-        "../ta/api/analytics/occupancy_analytics.py:99"
-    ],
-    "\n    Lists possible selectors {<name>, <default_value>}\n    ": [
-        "../ta/api/analytics/aggregators.py:38",
-        "../ta/api/analytics/occupancy_analytics.py:64"
-    ],
     "\n    Main booking handlers\n": [
         "../ta/api/booking/endpoints.py:18"
-    ],
-    "\n    Participation intermediary model.\n    Connects Team with Account as many to many.\n    ": [
-        "../ta/api/teams/models.py:73"
     ],
     "\n    Prefab Handlers\n": [
         "../ta/api/bookables/endpoints.py:115"
     ],
     "\n    Prefab Usage Handlers\n": [
         "../ta/api/bookables/endpoints.py:181"
-    ],
-    "\n    Team service model.\n    ": [
-        "../ta/api/teams/models.py:34"
-    ],
-    "\n    Validates participant attendance states (accept/decline)\n    ": [
-        "../ta/api/room_booking/validators.py:30"
-    ],
-    "\n    Validates participant invitation (invite/remove)\n    ": [
-        "../ta/api/room_booking/validators.py:74"
     ],
     "\n<!doctype html><html><head>\n<!--[if !mso]><!-- -->\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&subset=latin\">\n<!--<![endif]-->\n<style>{style}</style>\n</head><body>{content}</body></html>\n": [
         "../ta/api/room_booking/emails.py:14"
@@ -137,7 +74,8 @@
         "../ta/api/analytics/urls_analytics.py:34"
     ],
     " ": [
-        "../ta/api/accounts/models.py:112"
+        "../ta/api/accounts/models.py:112",
+        "../ta/api/analytics/occupancy_analytics.py:52"
     ],
     " UI settings": [
         "../ta/api/ui/models.py:55"
@@ -148,9 +86,6 @@
     " too many prefabs...\n%s": [
         "../ta/api/analytics/occupancy_analytics.py:598"
     ],
-    "\"\n            if missing the very first interval start\n            or very last interval end\n            delete them or\n\n            replace with week start and end respectively (with idea, that timestamps were outside query)\n            but should keep in mind to substract weekends... # TODO\n            ": [
-        "../ta/api/analytics/occupancy_analytics.py:814"
-    ],
     "%Y-%m-%d %H:%M:%S": [
         "../ta/api/bookables/admin.py:19",
         "../ta/api/bookables/admin.py:25"
@@ -158,6 +93,9 @@
     "%Y-%m-%d %H:%M:%S %Z": [
         "../ta/api/bookables/models.py:61",
         "../ta/api/bookables/models.py:63"
+    ],
+    "%s (%s)": [
+        "../ta/api/analytics/occupancy_analytics.py:529"
     ],
     "1-index int list type expected (e.g. [1, 2, 3]).": [
         "../ta/api/booking/validators/repeating_booking_validators.py:167"
@@ -179,9 +117,6 @@
     ],
     "A booking that is not in a confirmed status cannot be updated": [
         "../ta/api/booking/validators/booking_validators.py:169"
-    ],
-    "A form for updating users.\n\n    Includes all the fields on the user, but replaces the password field\n    with admin's password hash display field.\n\n    ": [
-        "../ta/api/accounts/forms.py:87"
     ],
     "A name cannot contain #": [
         "../ta/api/bookables/validators/bookable_validator.py:33"
@@ -212,9 +147,6 @@
     ],
     "Account is already in the team": [
         "../ta/api/teams/validators/invitation_validator.py:20"
-    ],
-    "Account is not a kiosk": [
-        "../ta/api/accounts/models.py:126"
     ],
     "Account must be in the same team as room": [
         "../ta/api/room_booking/validators.py:96"
@@ -361,15 +293,6 @@
     "Check out": [
         "../ta/api/analytics/models.py:28"
     ],
-    "Check that the two password entries match.\n\n        :return str password2: cleaned password2\n        :raise forms.ValidationError: password2 != password1\n\n        ": [
-        "../ta/api/accounts/forms.py:56"
-    ],
-    "Clean form email.\n\n        :return str email: cleaned email\n        :raise forms.ValidationError: Email is duplicated\n\n        ": [
-        "../ta/api/accounts/forms.py:37"
-    ],
-    "Clean password.\n\n        Regardless of what the user provides, return the initial value.\n        This is done here, rather than on the field, because the\n        field does not have access to the initial value.\n\n        :return str password:\n\n        ": [
-        "../ta/api/accounts/forms.py:114"
-    ],
     "Click the link below to accept this invitation\n{}": [
         "../ta/api/teams/validators/invitation_validator.py:38"
     ],
@@ -399,12 +322,6 @@
     ],
     "Deleting meaningfull info: when excluding weekend from results. \n   relative_day_nr: %s, weekday__of_start: %s": [
         "../ta/api/analytics/occupancy_analytics.py:480"
-    ],
-    "EP1 by Rokas\n        https://tableair.slack.com/files/U8YH9D5K6/F8YKP6DU2/workoccupancy_endpoint_spec_description.txt\n        ": [
-        "../ta/api/analytics/occupancy_analytics.py:352"
-    ],
-    "EP2 by Rokas\n        https://tableair.slack.com/files/U8YH9D5K6/F8YKP6DU2/workoccupancy_endpoint_spec_description.txt\n        ": [
-        "../ta/api/analytics/occupancy_analytics.py:505"
     ],
     "ERROR when partitioning. Interval #%s/%s  (%s); \n      Partition counts: %s\n      timewindow_start: %s, part_count: %s, part_size: %s": [
         "../ta/api/analytics/occupancy_analytics.py:328"
@@ -480,14 +397,8 @@
     "Height must not be less than {0}cm ({2}in) and not more than {1}cm ({3}in)": [
         "../ta/api/sync/models.py:13"
     ],
-    "Helper function to help debug/analyse queries.\n    Can also be used to return query in rest api (as list of lines)": [
-        "../ta/api/analytics/occupancy_analytics.py:49"
-    ],
     "Host must belong to the same team as the room": [
         "../ta/api/room_booking/validators.py:204"
-    ],
-    "If include_empty_days=False, skip days with no info (should be weekends and so)  ": [
-        "../ta/api/analytics/occupancy_analytics.py:549"
     ],
     "In millimetres": [
         "../ta/api/venues/models.py:38"
@@ -498,17 +409,8 @@
     "Incorrect time format, accepted HH:mm": [
         "../ta/api/venues/models.py:25"
     ],
-    "Init the form.": [
-        "../ta/api/accounts/forms.py:99"
-    ],
     "Initiate standing program": [
         "../ta/api/analytics/models.py:35"
-    ],
-    "Invalid kiosk setup": [
-        "../ta/api/accounts/models.py:129"
-    ],
-    "Invalid kiosk setup. Kiosk with no participations": [
-        "../ta/api/accounts/models.py:127"
     ],
     "Invalid object type": [
         "../ta/api/objects/validators.py:14"
@@ -524,9 +426,6 @@
     ],
     "Invitation for {} to team {}": [
         "../ta/api/teams/models.py:130"
-    ],
-    "Invitation to a meeting": [
-        "../ta/api/booking/confirmation.py:9"
     ],
     "JSON must be of type `list` or `object`": [
         "../ta/api/bookables/validators/prefab_validator.py:44"
@@ -581,15 +480,6 @@
     ],
     "Maximum row allowed is ": [
         "../ta/api/rooms/validators.py:22"
-    ],
-    "Meeting was canceled": [
-        "../ta/api/booking/confirmation.py:46"
-    ],
-    "Meeting was rescheduled": [
-        "../ta/api/booking/confirmation.py:20"
-    ],
-    "Meeting was scheduled": [
-        "../ta/api/booking/confirmation.py:33"
     ],
     "Microsoft Exchange Server": [
         "../ta/api/integration/choices.py:10"
@@ -662,9 +552,6 @@
         "../ta/api/analytics/aggregators.py:130",
         "../ta/api/analytics/occupancy_analytics.py:203"
     ],
-    "Partition intervals to weekdays (or hours)\n        expects that intervals doesn't span over few parts...\n        ": [
-        "../ta/api/analytics/occupancy_analytics.py:289"
-    ],
     "Password reset request for {0}": [
         "../ta/api/accounts/models.py:157"
     ],
@@ -687,12 +574,6 @@
         "../ta/api/accounts/models.py:70",
         "../ta/api/accounts/models.py:162"
     ],
-    "Room Booking": [
-        "../ta/api/room_booking/apps.py:7"
-    ],
-    "Room booking must have a confirmed status": [
-        "../ta/api/room_booking/validators.py:31"
-    ],
     "Room booking participant {} ({}) at room booking {}": [
         "../ta/api/room_booking/models.py:49"
     ],
@@ -703,9 +584,6 @@
     ],
     "Room with this name already exists in the venue": [
         "../ta/api/rooms/validators.py:85"
-    ],
-    "Save user.\n\n        Save the provided password in hashed format.\n\n        :return custom_user.models.EmailUser: user\n\n        ": [
-        "../ta/api/accounts/forms.py:73"
     ],
     "Select animation": [
         "../ta/api/analytics/models.py:39"
@@ -737,9 +615,6 @@
     ],
     "Switch height": [
         "../ta/api/analytics/models.py:37"
-    ],
-    "Take work starts and ends in each partition (weekday)": [
-        "../ta/api/analytics/occupancy_analytics.py:548"
     ],
     "Team URL was not provided": [
         "../ta/api/requests/serializers.py:24"
@@ -870,23 +745,11 @@
     "Time was out of range": [
         "../ta/api/booking/validators/repeating_booking_validators.py:46"
     ],
-    "Timestamp Sent by the Sensor": [
-        "../ta/api/bookables/admin.py:22"
-    ],
     "Timestamp cannot be more than a year old": [
         "../ta/api/analytics/serializers.py:22"
     ],
     "Timezone '{0}' is not a valid tz identifier": [
         "../ta/api/venues/models.py:20"
-    ],
-    "UI Settings": [
-        "../ta/api/ui/models.py:21"
-    ],
-    "UI Team Settings": [
-        "../ta/api/ui/models.py:31"
-    ],
-    "UI Venue Settings": [
-        "../ta/api/ui/models.py:52"
     ],
     "Unknown aggregator '{0}'": [
         "../ta/api/analytics/aggregators.py:177",
@@ -1089,27 +952,6 @@
     "[{}] {}: {} ({}), (received: {})": [
         "../ta/api/bookables/models.py:60"
     ],
-    "account email change": [
-        "../ta/api/accounts/models.py:166"
-    ],
-    "account email changes": [
-        "../ta/api/accounts/models.py:167"
-    ],
-    "account password resets": [
-        "../ta/api/accounts/models.py:154"
-    ],
-    "account registrations": [
-        "../ta/api/accounts/models.py:143"
-    ],
-    "api settings": [
-        "../ta/api/accounts/models.py:180"
-    ],
-    "calendar integration link": [
-        "../ta/api/integration/models.py:13"
-    ],
-    "calendar integration links": [
-        "../ta/api/integration/models.py:14"
-    ],
     "conferencing system": [
         "../ta/api/objects/choices.py:63"
     ],
@@ -1119,17 +961,8 @@
     "doors open": [
         "../ta/api/objects/choices.py:32"
     ],
-    "firmware version": [
-        "../ta/api/firmware/models.py:13"
-    ],
-    "firmware versions": [
-        "../ta/api/firmware/models.py:14"
-    ],
     "for each part, we add appropriate timedelta": [
         "../ta/api/analytics/occupancy_analytics.py:438"
-    ],
-    "function that distributes interval among the parts of partition\n                example:\n                partition = (start_time, part_size, parts_count)\n                workday = (9*60, 60, 8)  # in minutes: starts 9:00, and split into 8 hours\n                9  10  11  12  13  14  15  16  (17)\n\n                initial partitioned sums:\n                0   0   0   0   0   0   0   0\n\n                if interval:  9:20  9:30\n                10   0   0   0   0   0   0   0\n\n                if interval:  9:20  10:00\n                40   0   0   0   0   0   0   0\n\n                if interval:  9:20  10:20\n                40   20   0   0   0   0   0   0\n\n                if interval:  9:20  11:45\n                40   60   45   0   0   0   0   0\n\n                edge cases:\n                if interval:  None  9:30\n                30   0   0   0   0   0   0   0\n\n                if interval:  9:20 None\n                40  60  60  60  60  60  60  60\n\n                if interval:  10:00  10:00\n                0   0   0   0   0   0   0   0\n\n                error cases\n\n                if interval:  8:30  9:30  (if earlier than workday start, should get None)\n                30   0   0   0   0   0   0   0\n\n                if interval:  10:00  9:40\n                30   0   0   0   0   0   0   0\n                ": [
-        "../ta/api/analytics/occupancy_analytics.py:431"
     ],
     "get, patch": [
         "../ta/api/bookables/endpoints.py:50",
@@ -1140,18 +973,6 @@
         "../ta/api/room_booking/endpoints.py:43",
         "../ta/api/teams/endpoints.py:30",
         "../ta/api/venues/endpoints.py:22"
-    ],
-    "gets date in parameter \"from\"\n        if <duration> is week: imagines week starts on it (though it might be not monday)\n        ": [
-        "../ta/api/analytics/occupancy_analytics.py:493"
-    ],
-    "group member": [
-        "../ta/api/groups/models.py:28"
-    ],
-    "group members": [
-        "../ta/api/groups/models.py:29"
-    ],
-    "https://tableair.slack.com/archives/C0GBXFB0X/p1516972939000060\n    esminis parametras yra 'po' ir 'no'\n    'po' -> previous occupancy, 'no' -> new occupancy\n\n    tai jeigu 'po': 0 ir 'no': 1   tai rei\u0161kia stalas (sensorius) tuo metu tapo u\u017eimtas\n    o jeigu 'po': 1 ir 'no': 0, tai nuo stalo (sensoriaus) ka\u017ekas nu\u0117jo\n    jeigu 'po': 1 ir 'no': 1, tai jis tiesiog toliau yra u\u017eimtas, b\u016bsena nesikei\u010dia\n\n": [
-        "../ta/api/bookables/activity/occupancy.py:21"
     ],
     "in degrees": [
         "../ta/api/venues/models.py:121"
@@ -1185,23 +1006,8 @@
     "meeting room": [
         "../ta/api/objects/choices.py:35"
     ],
-    "mobile app usage": [
-        "../ta/api/analytics/models.py:51"
-    ],
-    "mobile app usage logs": [
-        "../ta/api/analytics/models.py:52"
-    ],
-    "must be fixed": [
-        "../ta/api/validators/tests.py:9"
-    ],
     "only week duration is accepted for graph": [
         "../ta/api/analytics/occupancy_analytics.py:354"
-    ],
-    "participant permission": [
-        "../ta/api/teams/models.py:110"
-    ],
-    "participant permissions": [
-        "../ta/api/teams/models.py:111"
     ],
     "patch, delete": [
         "../ta/api/broker/endpoints.py:14",
@@ -1222,30 +1028,6 @@
     "put, delete": [
         "../ta/api/rooms/endpoints.py:15"
     ],
-    "returns avg start and end of work": [
-        "../ta/api/analytics/occupancy_analytics.py:537"
-    ],
-    "room booking": [
-        "../ta/api/room_booking/models.py:25"
-    ],
-    "room booking participant": [
-        "../ta/api/room_booking/models.py:42"
-    ],
-    "room booking participants": [
-        "../ta/api/room_booking/models.py:43"
-    ],
-    "room bookings": [
-        "../ta/api/room_booking/models.py:26"
-    ],
-    "room object": [
-        "../ta/api/rooms/models.py:31"
-    ],
-    "room objects": [
-        "../ta/api/rooms/models.py:32"
-    ],
-    "settings synchronization": [
-        "../ta/api/sync/models.py:54"
-    ],
     "smoking area": [
         "../ta/api/objects/choices.py:41"
     ],
@@ -1259,27 +1041,6 @@
     "start_time, end_time": [
         "../ta/api/booking/management.py:194",
         "../ta/api/booking/validators/repeating_booking_validators.py:117"
-    ],
-    "team access request": [
-        "../ta/api/requests/models.py:37"
-    ],
-    "team access requests": [
-        "../ta/api/requests/models.py:38"
-    ],
-    "team invitation": [
-        "../ta/api/teams/models.py:125"
-    ],
-    "team invitations": [
-        "../ta/api/teams/models.py:126"
-    ],
-    "translates intervals to timedeltas, so the starting (from) point is 0": [
-        "../ta/api/analytics/occupancy_analytics.py:379"
-    ],
-    "venue background image": [
-        "../ta/api/venues/models.py:127"
-    ],
-    "venue background images": [
-        "../ta/api/venues/models.py:128"
     ],
     "{0} committed a {1} action on {2}": [
         "../ta/api/logging/models.py:61"

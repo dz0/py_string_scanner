@@ -41,9 +41,6 @@
         "37": "email",
         "38": "groups"
     },
-    "../ta/api/accounts/apps.py": {
-        "6": "ta.api.accounts"
-    },
     "../ta/api/accounts/forms.py": {
         "29": "email",
         "40": "email",
@@ -61,7 +58,6 @@
             "email"
         ],
         "38": "password",
-        "100": "email",
         "139": "registration"
     },
     "../ta/api/accounts/serializers.py": {
@@ -112,13 +108,7 @@
         "151": "password"
     },
     "../ta/api/accounts/views.py": {
-        "33": "\n    **/api/accounts/**\n    ",
-        "46": "\n        register\n        ",
-        "53": "\n    **/api/accounts/<pk>/**\n    ",
-        "101": "\n    **/api/accounts/<pk>/**\n    ",
         "109": "id",
-        "117": "\n    **/api/accounts/confirm-registration/<hash>/**\n    ",
-        "127": "\n    **/api/accounts/confirm-email-change/<hash>/**\n    ",
         "143": "email",
         "270": "start"
     },
@@ -503,8 +493,6 @@
         "263": "prefab",
         "264": "identifier",
         "276": "perspective",
-        "283": "\n    Helpers\n    ",
-        "345": "\n    Perspectives\n    ",
         "353": "week",
         "360": "venue",
         "366": "prefab",
@@ -693,8 +681,6 @@
             "parameters"
         ],
         "15": "activity",
-        "21": "timestamp",
-        "27": "created",
         "31": [
             "name",
             "venue",
@@ -893,7 +879,6 @@
     },
     "../ta/api/bookables/validators/bookable_validator.py": {
         "20": "id",
-        "30": "\n    Primitives\n    ",
         "33": [
             "#",
             "name"
@@ -966,8 +951,6 @@
         "61": "prefab"
     },
     "../ta/api/bookables/validators/prefab_validator.py": {
-        "11": "[A-Z0-9]{9}",
-        "29": "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ",
         "31": "#",
         "33": "#",
         "42": [
@@ -1098,10 +1081,7 @@
     "../ta/api/booking/models.py": {
         "65": "bookings",
         "66": "bookings",
-        "90": "booking",
-        "91": "bookings",
-        "92": "start",
-        "93": "objects"
+        "92": "start"
     },
     "../ta/api/booking/notifications.py": {
         "90": "id",
@@ -1143,7 +1123,6 @@
             "end"
         ],
         "131": "intersecting",
-        "138": "\n    Primitives\n    ",
         "142": "bookable",
         "143": "bookable",
         "146": [
@@ -1212,7 +1191,6 @@
             "start",
             "end"
         ],
-        "150": "\n    Primitives\n    ",
         "154": "account",
         "155": "venue",
         "165": "weekdays",
@@ -1235,11 +1213,7 @@
         "12": "Android",
         "13": "iOS",
         "22": "agents",
-        "26": "agent",
-        "27": "agents",
-        "52": "notifications",
-        "60": "notification",
-        "61": "notifications"
+        "52": "notifications"
     },
     "../ta/api/devices/serializers.py": {
         "10": [
@@ -1292,8 +1266,6 @@
     "../ta/api/groups/models.py": {
         "10": "groups",
         "11": "GroupMember",
-        "14": "group",
-        "15": "groups",
         "17": [
             "name",
             "team"
@@ -1374,7 +1346,6 @@
         ]
     },
     "../ta/api/iot/views.py": {
-        "22": "\n    Deprecated\n    ",
         "47": "id",
         "54": "id",
         "69": "f"
@@ -1408,9 +1379,6 @@
     "../ta/api/logging/__init__.py": {
         "1": "ta.api.logging.apps.LoggingConfig"
     },
-    "../ta/api/logging/apps.py": {
-        "10": "ta.api.logging"
-    },
     "../ta/api/logging/management.py": {
         "21": "json",
         "22": "pk"
@@ -1420,9 +1388,7 @@
         "18": "Update",
         "19": "Delete",
         "21": "Login",
-        "46": "logs",
-        "57": "logging",
-        "58": "logs"
+        "46": "logs"
     },
     "../ta/api/logging/serializers.py": {
         "9": [
@@ -1443,9 +1409,6 @@
         "35": "instance",
         "36": "created"
     },
-    "../ta/api/logging/views.py": {
-        "14": "\n    **api/logs/**\n    "
-    },
     "../ta/api/mux/views.py": {
         "44": "account",
         "45": "team",
@@ -1463,9 +1426,6 @@
         "75": "settings",
         "81": "GET",
         "86": "GET"
-    },
-    "../ta/api/objects/apps.py": {
-        "5": "ta.api.objects"
     },
     "../ta/api/objects/choices.py": {
         "28": "doors",
@@ -1519,11 +1479,7 @@
             "col",
             "row",
             "venue"
-        ],
-        "20": "tile",
-        "21": "tiles",
-        "35": "object",
-        "36": "objects"
+        ]
     },
     "../ta/api/objects/serializers.py": {
         "11": "id",
@@ -1745,8 +1701,6 @@
         "75": "room"
     },
     "../ta/api/rooms/models.py": {
-        "14": "room",
-        "15": "rooms",
         "22": "N/A"
     },
     "../ta/api/rooms/serializers.py": {
@@ -1851,7 +1805,6 @@
         "28": "{}{}",
         "37": "^{0}$",
         "44": "Participation",
-        "63": "teams",
         "79": "Participant",
         "80": "Administrator",
         "81": "Owner",
@@ -1859,7 +1812,6 @@
         "85": "participations",
         "89": "objects.GridObject",
         "90": "participant",
-        "98": "participations",
         "99": [
             "account",
             "team"
@@ -2066,8 +2018,6 @@
         ],
         "73": "{:02d}:{:02d}",
         "77": "{:02d}:{:02d}",
-        "97": "venue",
-        "98": "venues",
         "112": "{}{}",
         "123": "image"
     },
@@ -2096,8 +2046,5 @@
             "team",
             "team"
         ]
-    },
-    "../ta/api/venues/views.py": {
-        "15": "\n    **api/venues/<pk>/tables/**\n    "
     }
 }

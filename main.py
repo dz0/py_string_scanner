@@ -116,21 +116,32 @@ def find_strings_ast_visit(filename):
                         caller_name = func.id
                     if isinstance(func, ast.Attribute):
                         caller_name = func.attr
-                    
+
                     if caller_name == '_' \
                     or 'gettext' in caller_name:
                         return True
 
+            def check_is_docstring():
+                try:
+                    if isinstance( node.parent.parent, (ast.ClassDef, ast.FunctionDef) ):
+                        return True
+                except AttributeError:
+                    pass
 
             string = node.s
             lineno =  node.lineno
             # lineno -= string.count('\n')  # fails on multiline chunked-spanning string
 
-            if check_gettext_wrap():  # a bit dirty hook (not in Main) 
+            # if "An abstract user model" in string:
+            #     print("bla")
+
+            if check_is_docstring():
+                SKIPPED_STR[ filename ][lineno].append( "DOCSTRING -- " + string )
+
+            elif check_gettext_wrap():  # a bit dirty hook (not in Main) 
                 ALREADY_GETTEXTED[ filename ][lineno].append( string )
     
             else:
-
                 result.append(  (filename, lineno, string)  )
 
 
@@ -245,3 +256,6 @@ with open('skipped_files.json', 'w') as f:    json.dump(SKIPPED_FILES, f, indent
 # print("FOUND STRS: \n   ", json.dumps( FOUND_STR , indent=4) ) 
 # print("SKIPPED STRS: \n   ", json.dumps( SKIPPED_STR , indent=4) ) 
 
+
+import TODO
+TODO.values_first("found_strings_BY_VAL.json", 20)

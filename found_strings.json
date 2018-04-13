@@ -1,41 +1,21 @@
 {
-    "../ta/api/accounts/admin.py": {
-        "12": "\n    Account admin model.\n    "
-    },
-    "../ta/api/accounts/forms.py": {
-        "12": "\n    A form for creating new users.\n\n    Includes all the required fields, plus a repeated password.\n    ",
-        "37": "Clean form email.\n\n        :return str email: cleaned email\n        :raise forms.ValidationError: Email is duplicated\n\n        ",
-        "56": "Check that the two password entries match.\n\n        :return str password2: cleaned password2\n        :raise forms.ValidationError: password2 != password1\n\n        ",
-        "73": "Save user.\n\n        Save the provided password in hashed format.\n\n        :return custom_user.models.EmailUser: user\n\n        ",
-        "87": "A form for updating users.\n\n    Includes all the fields on the user, but replaces the password field\n    with admin's password hash display field.\n\n    ",
-        "99": "Init the form.",
-        "114": "Clean password.\n\n        Regardless of what the user provides, return the initial value.\n        This is done here, rather than on the field, because the\n        field does not have access to the initial value.\n\n        :return str password:\n\n        "
+    "../ta/api/accounts/_deprecated_tests_api.py": {
+        "334": "\n"
     },
     "../ta/api/accounts/models.py": {
         "16": "Account must have an email",
         "22": "Account must have a password",
         "25": "Account must have a first name",
         "28": "Account must have a last name",
-        "66": "\n    An abstract user model that is an alternative to the standard AbstractUser. The\n    sole difference is that AbstractAccount does not have a username field, and uses\n    the email field as the primary identifier by default.\n\n    Email and password are required. Other fields are optional.\n    ",
         "70": "Required. Standard email address",
         "112": " ",
-        "117": "\n        Send an email to this User.\n        ",
-        "126": "Account is not a kiosk",
-        "127": "Invalid kiosk setup. Kiosk with no participations",
-        "129": "Invalid kiosk setup",
-        "143": "account registrations",
         "146": "Registration confirmation for {0}",
-        "154": "account password resets",
         "157": "Password reset request for {0}",
         "162": "Required. Standard email address",
-        "166": "account email change",
-        "167": "account email changes",
         "170": "Email change to {1} request for {0}",
-        "180": "api settings",
         "183": "API settings of "
     },
     "../ta/api/accounts/serializers.py": {
-        "40": "\n        Object instance -> Dict of primitive datatypes.\n        ",
         "53": "Team with a given URL doesn't exist",
         "77": "This is your current email!",
         "86": "Account with this email already exists",
@@ -48,18 +28,10 @@
         "144": "Click the link below to confirm your email change\n{}"
     },
     "../ta/api/accounts/views.py": {
-        "39": "\n        retrieve list\n        ",
-        "138": "\n    **/api/accounts/<pk>/forgot/**\n    request password reset\n    ",
-        "153": "\n    **/api/accounts/confirm-forgot/<hash>/**\n    change the password with given hash\n    ",
-        "167": "\n    **/api/accounts/<account_id>/teams/**\n    gets teams that the account participates in\n    ",
-        "184": "\n    **/api/accounts/<pk>/venues/<pk>/booking/**\n    returns bookings for a given venue\n    ",
-        "203": "\n       **/api/accounts/<pk>/teams/<url>/**\n        manages account's participation in team\n    ",
         "234": "You do not have permission to do this",
         "249": "You can't leave the team if you're the owner"
     },
     "../ta/api/analytics/aggregators.py": {
-        "38": "\n    Lists possible selectors {<name>, <default_value>}\n    ",
-        "61": "\n    Lists possible aggregators <function_name>, [<allowed_scope>, ...]\n    ",
         "117": "You must be logged in",
         "122": "Global scope is visible only with special rights",
         "126": "Only participated teams can be accessed",
@@ -79,7 +51,6 @@
         "289": "Unknown scope {0}",
         "308": "Unknown scope {0}",
         "328": "Unknown scope",
-        "371": "\n    Aggregator implementations\n    ",
         "608": "This scope cannot be used"
     },
     "../ta/api/analytics/models.py": {
@@ -94,19 +65,19 @@
         "37": "Switch height",
         "38": "Select color",
         "39": "Select animation",
-        "51": "mobile app usage",
-        "52": "mobile app usage logs",
         "55": "{0}: {1} on {2}"
     },
     "../ta/api/analytics/occupancy_analytics.py": {
-        "49": "Helper function to help debug/analyse queries.\n    Can also be used to return query in rest api (as list of lines)",
         "51": [
             "LEFT OUTER",
             "GROUP BY",
             "ORDER BY"
         ],
-        "64": "\n    Lists possible selectors {<name>, <default_value>}\n    ",
-        "99": "\n    Lists possible aggregators <function_name>, [<allowed_scope>, ...]\n    ",
+        "52": [
+            " ",
+            "\n"
+        ],
+        "56": "\n",
         "194": "You must be logged in",
         "199": "Global scope is visible only with special rights",
         "203": "Only venues in participated teams can be accessed",
@@ -119,33 +90,23 @@
         "243": "Selector {0}={1} requires additional selectors {2}",
         "248": "Unknown perspective '{0}'",
         "253": "Aggregator '{0}' does not support scope '{1}'",
-        "289": "Partition intervals to weekdays (or hours)\n        expects that intervals doesn't span over few parts...\n        ",
-        "295": "\n            params:  interval of activity\n                     part   of partitioning (day/hour or so)\n            ",
         "322": "intervals should be sorted.\n            if we don't fit  interval  to current part, we goto next part",
         "328": "ERROR when partitioning. Interval #%s/%s  (%s); \n      Partition counts: %s\n      timewindow_start: %s, part_count: %s, part_size: %s",
-        "352": "EP1 by Rokas\n        https://tableair.slack.com/files/U8YH9D5K6/F8YKP6DU2/workoccupancy_endpoint_spec_description.txt\n        ",
         "354": "only week duration is accepted for graph",
         "364": "No prefabs are present in this venue (ID: %s)",
-        "379": "translates intervals to timedeltas, so the starting (from) point is 0",
-        "431": "function that distributes interval among the parts of partition\n                example:\n                partition = (start_time, part_size, parts_count)\n                workday = (9*60, 60, 8)  # in minutes: starts 9:00, and split into 8 hours\n                9  10  11  12  13  14  15  16  (17)\n\n                initial partitioned sums:\n                0   0   0   0   0   0   0   0\n\n                if interval:  9:20  9:30\n                10   0   0   0   0   0   0   0\n\n                if interval:  9:20  10:00\n                40   0   0   0   0   0   0   0\n\n                if interval:  9:20  10:20\n                40   20   0   0   0   0   0   0\n\n                if interval:  9:20  11:45\n                40   60   45   0   0   0   0   0\n\n                edge cases:\n                if interval:  None  9:30\n                30   0   0   0   0   0   0   0\n\n                if interval:  9:20 None\n                40  60  60  60  60  60  60  60\n\n                if interval:  10:00  10:00\n                0   0   0   0   0   0   0   0\n\n                error cases\n\n                if interval:  8:30  9:30  (if earlier than workday start, should get None)\n                30   0   0   0   0   0   0   0\n\n                if interval:  10:00  9:40\n                30   0   0   0   0   0   0   0\n                ",
         "438": "for each part, we add appropriate timedelta",
-        "473": "\n            jei from yra 1mad -- 0 -trinti-> 5, 6\n            jei from yra 2mad -- 1 -trinti-> 4, 5\n            jei from yra 3mad -- 2 -trinti-> 3, 4\n\n            jei from yra 6mad -- 5 -trinti-> 0, 1\n            jei from yra 7mad -- 6 -trinti-> -1, 0\n            ",
         "480": "Deleting meaningfull info: when excluding weekend from results. \n   relative_day_nr: %s, weekday__of_start: %s",
-        "493": "gets date in parameter \"from\"\n        if <duration> is week: imagines week starts on it (though it might be not monday)\n        ",
-        "505": "EP2 by Rokas\n        https://tableair.slack.com/files/U8YH9D5K6/F8YKP6DU2/workoccupancy_endpoint_spec_description.txt\n        ",
-        "537": "returns avg start and end of work",
-        "548": "Take work starts and ends in each partition (weekday)",
-        "549": "If include_empty_days=False, skip days with no info (should be weekends and so)  ",
-        "587": "\n        EP4 by Rokas\n        https://tableair.slack.com/files/U8YH9D5K6/F8YKP6DU2/workoccupancy_endpoint_spec_description.txt\n        ?page=1\n        ",
+        "529": [
+            "%s (%s)",
+            ""
+        ],
         "596": "prefab not found (maybe it is not OcupancyActivity type)    ",
         "598": " too many prefabs...\n%s",
-        "648": "\n        For DEV purposes\n                # most activity:\n        {\n        \"prefab\": 152,\n        \"venue__name\": \"Approved house of cards\",\n        \"cnt\": 223,\n        \"prefab__identifier\": \"SP000000A\",\n        \"venue\": 9\n        },\n        \"prefab\": 155,             \"cnt\": 211,             \"prefab__identifier\": \"SP000000C\",             \"venue\": 9\n        \"prefab\": 156,                   \"cnt\": 30,          \"prefab__identifier\": \"SP0200000\",            \"venue\": 8\n        \"prefab\": 157,            \"venue__name\": \"euneV\",            \"cnt\": 4,            \"prefab__identifier\": \"SP0200001\",            \"venue\": 16\n        \"prefab\": 14,            \"venue__name\": \"Demo Venue\",            \"cnt\": 1,            \"prefab__identifier\": \"X0000000E\",            \"venue\": 5\n\n\n        ",
         "759": "Error: interval start is later than end: %s, %s ",
         "769": "Error: Overlaping time intervals for prefab %s, end (%s) is more than start (%s) of next (nr %s).",
         "781": "Missing data: timestamp for START %s (when end was: %s)",
         "789": "Missing data: timestamp for END %s (when start was: %s)",
-        "799": "Deleting incorrect data intervals for",
-        "814": "\"\n            if missing the very first interval start\n            or very last interval end\n            delete them or\n\n            replace with week start and end respectively (with idea, that timestamps were outside query)\n            but should keep in mind to substract weekends... # TODO\n            "
+        "799": "Deleting incorrect data intervals for"
     },
     "../ta/api/analytics/serializers.py": {
         "14": "No account ID was provided",
@@ -155,12 +116,8 @@
     "../ta/api/analytics/urls_analytics.py": {
         "34": "\nrefactoring URL structure:\n\nhttp://api.tableair.xx:8000/analytics/occupancy/get_prefabs_intervals/venue/8/?duration=week&from=2018-01-07\n\n\nEP1\nhttp://api.tableair.xx:8000/analytics/occupancy/by_week_hours/venue/8/?from=2018-01-07  (from galima nera\u0161yt - defaultins \u012f duration prad\u017ei\u0105)\nhttp://api.tableair.xx:8000/analytics/occupancy/by_week_hours/prefab/SP0200000/?from=2018-01-07  (from galima nera\u0161yt - defaultins \u012f duration prad\u017ei\u0105)\n\n\nEP2\nhttp://api.tableair.xx:8000/analytics/occupancy/by_prefab/venue/8/?duration=week&from=2018-01-07  (from galima nera\u0161yt - defaultins \u012f duration prad\u017ei\u0105)\nEP3 (CSV)\nhttp://api.tableair.xx:8000/analytics/occupancy/by_prefab/venue/8/csv/?duration=week&from=2018-01-07\n\nEP4\nhttp://api.tableair.xx:8000/analytics/occupancy/by_state_changes/prefab/SP0200000/?duration=week&from=2018-01-07\n\n"
     },
-    "../ta/api/bookables/activity/occupancy.py": {
-        "21": "https://tableair.slack.com/archives/C0GBXFB0X/p1516972939000060\n    esminis parametras yra 'po' ir 'no'\n    'po' -> previous occupancy, 'no' -> new occupancy\n\n    tai jeigu 'po': 0 ir 'no': 1   tai rei\u0161kia stalas (sensorius) tuo metu tapo u\u017eimtas\n    o jeigu 'po': 1 ir 'no': 0, tai nuo stalo (sensoriaus) ka\u017ekas nu\u0117jo\n    jeigu 'po': 1 ir 'no': 1, tai jis tiesiog toliau yra u\u017eimtas, b\u016bsena nesikei\u010dia\n\n"
-    },
     "../ta/api/bookables/admin.py": {
         "19": "%Y-%m-%d %H:%M:%S",
-        "22": "Timestamp Sent by the Sensor",
         "25": "%Y-%m-%d %H:%M:%S"
     },
     "../ta/api/bookables/endpoints.py": {
@@ -223,7 +180,8 @@
         "18": "WARNING! Changing this might affect DB integrity",
         "60": "[{}] {}: {} ({}), (received: {})",
         "61": "%Y-%m-%d %H:%M:%S %Z",
-        "63": "%Y-%m-%d %H:%M:%S %Z"
+        "63": "%Y-%m-%d %H:%M:%S %Z",
+        "90": ""
     },
     "../ta/api/bookables/sitstand/aggregators.py": {
         "95": "Unsupported aggregator type, allowed: `{}`"
@@ -244,18 +202,15 @@
         "61": "Prefab %s is still vacang (no=po=0)"
     },
     "../ta/api/bookables/validators/prefab_validator.py": {
+        "35": "",
         "44": "JSON must be of type `list` or `object`",
         "49": "Value must be of type `list` or `object`",
         "54": "You cannot create a safe prefab directly."
     },
     "../ta/api/booking/confirmation.py": {
-        "9": "Invitation to a meeting",
         "11": "You have been invited to participate at a meeting.\nThe meeting will take place on {} until {} at {}.",
-        "20": "Meeting was rescheduled",
         "22": "The meeting you have been invited to was rescheduled.\nThe meeting will take place on {} until {} at {}.",
-        "33": "Meeting was scheduled",
         "35": "You have created a meeting.\nThe meeting will take place on {0} until {1} at {2}.",
-        "46": "Meeting was canceled",
         "48": "The meeting you have been invited to was canceled.\nThe meeting was to take place on {0} until {1} at {2}."
     },
     "../ta/api/booking/endpoints.py": {
@@ -308,7 +263,6 @@
         ],
         "58": "Your booking cannot start before venue opening time {}",
         "60": "Your booking cannot end after venue closing time {}",
-        "106": "\n    Instance helper functions\n    ",
         "110": "There's a booking at that time. Please choose another time. Visit the dashboard to manage your bookings.",
         "112": "You have reached the maximum amount of intersecting bookings. Please choose another time.",
         "142": "A bookable must be assigned to a venue before booking",
@@ -357,8 +311,6 @@
     },
     "../ta/api/firmware/models.py": {
         "9": "Additional info that helps differentiate versions",
-        "13": "firmware version",
-        "14": "firmware versions",
         "18": "{}: ({})"
     },
     "../ta/api/groups/endpoints.py": {
@@ -366,8 +318,6 @@
     },
     "../ta/api/groups/models.py": {
         "20": "{0} in team {1}",
-        "28": "group member",
-        "29": "group members",
         "33": "{0} in group {1}"
     },
     "../ta/api/groups/validators.py": {
@@ -382,9 +332,10 @@
         "11": "Microsoft Office"
     },
     "../ta/api/integration/models.py": {
-        "13": "calendar integration link",
-        "14": "calendar integration links",
         "19": "External calendar integration link with {0} with room {1}"
+    },
+    "../ta/api/iot/views.py": {
+        "69": ""
     },
     "../ta/api/kiosk/endpoints.py": {
         "23": "patch, delete"
@@ -439,8 +390,6 @@
     },
     "../ta/api/requests/models.py": {
         "29": "A request cannot be issued more than {0} times",
-        "37": "team access request",
-        "38": "team access requests",
         "41": "Invitation for {0} to team {1}"
     },
     "../ta/api/requests/serializers.py": {
@@ -451,9 +400,6 @@
         "59": "{} ({}) is requesting to join your team \"{}\"",
         "62": "Visit the cloud system to manage pending requests:\n{}",
         "68": "Team does not exist"
-    },
-    "../ta/api/room_booking/apps.py": {
-        "7": "Room Booking"
     },
     "../ta/api/room_booking/emails.py": {
         "14": "\n<!doctype html><html><head>\n<!--[if !mso]><!-- -->\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&subset=latin\">\n<!--<![endif]-->\n<style>{style}</style>\n</head><body>{content}</body></html>\n",
@@ -477,21 +423,14 @@
         "162": "\nRoom booking composite endpoints\n"
     },
     "../ta/api/room_booking/models.py": {
-        "25": "room booking",
-        "26": "room bookings",
         "30": "{} {} - {}, hosted by {} at {}",
-        "42": "room booking participant",
-        "43": "room booking participants",
         "49": "Room booking participant {} ({}) at room booking {}"
     },
     "../ta/api/room_booking/validators.py": {
-        "30": "\n    Validates participant attendance states (accept/decline)\n    ",
-        "31": "Room booking must have a confirmed status",
         "39": "This room booking is not confirmed",
         "46": "{0} wasn't invited to this room booking",
         "49": "{0} must have a pending or declined state, not {1}",
         "63": "{0} must have a pending or accepted state, not {1}",
-        "74": "\n    Validates participant invitation (invite/remove)\n    ",
         "90": "Room is overcapacity",
         "96": "Account must be in the same team as room",
         "112": "Account was already invited to this booking",
@@ -511,8 +450,6 @@
     "../ta/api/rooms/models.py": {
         "11": "Value in days",
         "23": "{} ({}) in venue {}",
-        "31": "room object",
-        "32": "room objects",
         "36": "{0} in room {1}"
     },
     "../ta/api/rooms/validators.py": {
@@ -539,7 +476,6 @@
     "../ta/api/sync/models.py": {
         "13": "Height must not be less than {0}cm ({2}in) and not more than {1}cm ({3}in)",
         "46": "Standing height must be higher than sitting height",
-        "54": "settings synchronization",
         "57": "Settings of {0}"
     },
     "../ta/api/teams/choices.py": {
@@ -560,16 +496,10 @@
     },
     "../ta/api/teams/models.py": {
         "26": "You must provide either a filename or an extension",
-        "34": "\n    Team service model.\n    ",
         "36": "Characters not allowed. Name must compose of 'A-Za-z0-9 .,_-\"'",
         "38": "Characters not allowed. URL must compose of 'A-Za-z0-9_-",
-        "73": "\n    Participation intermediary model.\n    Connects Team with Account as many to many.\n    ",
         "102": "{0} is {2} in team {1}",
-        "110": "participant permission",
-        "111": "participant permissions",
         "115": "{} can {}",
-        "125": "team invitation",
-        "126": "team invitations",
         "130": "Invitation for {} to team {}"
     },
     "../ta/api/teams/validators/invitation_validator.py": {
@@ -579,21 +509,18 @@
         "38": "Click the link below to accept this invitation\n{}"
     },
     "../ta/api/teams/validators/team_validator.py": {
-        "18": "\n    Field validators\n    ",
+        "21": "",
         "24": "File size exceeds limit of {0}",
-        "36": "\n        Name and URL uniqueness checks. Moved here from DB layer due to is_historic presence.\n        ",
+        "27": "",
         "39": "The provided name or URL is already taken",
         "41": "The provided URL is already taken",
         "43": "The provided name is already taken",
         "46": "This URL cannot be used",
-        "50": "\n    Global validators\n    "
+        "73": ""
     },
     "../ta/api/ui/models.py": {
         "17": "{}'s UI settings",
-        "21": "UI Settings",
-        "31": "UI Team Settings",
         "34": " team UI settings",
-        "52": "UI Venue Settings",
         "55": " UI settings"
     },
     "../ta/api/ui/validators.py": {
@@ -604,9 +531,6 @@
     "../ta/api/validators/serializers.py": {
         "13": "Team with this name already exists",
         "15": "Team with this URL already exists"
-    },
-    "../ta/api/validators/tests.py": {
-        "9": "must be fixed"
     },
     "../ta/api/venues/endpoints.py": {
         "22": "get, patch, delete"
@@ -623,12 +547,13 @@
         "119": "in pixels",
         "120": "in pixels",
         "121": "in degrees",
-        "127": "venue background image",
-        "128": "venue background images",
         "131": "{} image x: {}, y: {}, rot: {}, scale: {}, opacity: {}"
     },
     "../ta/api/venues/validators/venue_image_validator.py": {
-        "22": "File size exceeds limit of {}"
+        "19": "",
+        "22": "File size exceeds limit of {}",
+        "28": "",
+        "37": ""
     },
     "../ta/api/venues/validators/venue_validator.py": {
         "29": "Venue can't close earlier than an hour after it opens",

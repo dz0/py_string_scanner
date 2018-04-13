@@ -1,4 +1,4 @@
-{
+
     "": [
         "../ta/api/analytics/occupancy_analytics.py:529",
         "../ta/api/bookables/models.py:90",
