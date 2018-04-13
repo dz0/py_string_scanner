@@ -1,7 +1,4 @@
 {
-    "../ta/api/accounts/_deprecated_tests_api.py": {
-        "334": "\n"
-    },
     "../ta/api/accounts/admin.py": {
         "12": "\n    Account admin model.\n    "
     },
@@ -83,16 +80,7 @@
         "308": "Unknown scope {0}",
         "328": "Unknown scope",
         "371": "\n    Aggregator implementations\n    ",
-        "376": "\n        :return: average booking duration in minutes\n        ",
-        "388": "\n        :return: average sitting and standing heights\n        ",
-        "551": "\n        :return: average booking end time 'HH:MM'\n        ",
-        "557": "\n        :return: average check-in time 'HH:MM'\n        ",
-        "564": "\n        the percentage of daily time relative to venue.work_start, venue.work_end spent booked\n        :return: average table utilization [0.0, 1.0]\n        ",
-        "608": "This scope cannot be used",
-        "615": "\n        :return: average room booking duration with at least one check-in\n        ",
-        "627": "\n        :return: the account id of the longest total check-in attendance\n        ",
-        "644": "\n        :return: the percentage of checked-in participants over invited\n        ",
-        "661": "\n        :return: minutes booked by day for a time period\n        "
+        "608": "This scope cannot be used"
     },
     "../ta/api/analytics/models.py": {
         "28": "Check out",
@@ -117,11 +105,6 @@
             "GROUP BY",
             "ORDER BY"
         ],
-        "52": [
-            " ",
-            "\n"
-        ],
-        "56": "\n",
         "64": "\n    Lists possible selectors {<name>, <default_value>}\n    ",
         "99": "\n    Lists possible aggregators <function_name>, [<allowed_scope>, ...]\n    ",
         "194": "You must be logged in",
@@ -150,10 +133,6 @@
         "480": "Deleting meaningfull info: when excluding weekend from results. \n   relative_day_nr: %s, weekday__of_start: %s",
         "493": "gets date in parameter \"from\"\n        if <duration> is week: imagines week starts on it (though it might be not monday)\n        ",
         "505": "EP2 by Rokas\n        https://tableair.slack.com/files/U8YH9D5K6/F8YKP6DU2/workoccupancy_endpoint_spec_description.txt\n        ",
-        "529": [
-            "%s (%s)",
-            ""
-        ],
         "537": "returns avg start and end of work",
         "548": "Take work starts and ends in each partition (weekday)",
         "549": "If include_empty_days=False, skip days with no info (should be weekends and so)  ",
@@ -161,7 +140,6 @@
         "596": "prefab not found (maybe it is not OcupancyActivity type)    ",
         "598": " too many prefabs...\n%s",
         "648": "\n        For DEV purposes\n                # most activity:\n        {\n        \"prefab\": 152,\n        \"venue__name\": \"Approved house of cards\",\n        \"cnt\": 223,\n        \"prefab__identifier\": \"SP000000A\",\n        \"venue\": 9\n        },\n        \"prefab\": 155,             \"cnt\": 211,             \"prefab__identifier\": \"SP000000C\",             \"venue\": 9\n        \"prefab\": 156,                   \"cnt\": 30,          \"prefab__identifier\": \"SP0200000\",            \"venue\": 8\n        \"prefab\": 157,            \"venue__name\": \"euneV\",            \"cnt\": 4,            \"prefab__identifier\": \"SP0200001\",            \"venue\": 16\n        \"prefab\": 14,            \"venue__name\": \"Demo Venue\",            \"cnt\": 1,            \"prefab__identifier\": \"X0000000E\",            \"venue\": 5\n\n\n        ",
-        "669": "\n        Adopted from SitStandAnalyticsAggregator\n        :return:\n        ",
         "759": "Error: interval start is later than end: %s, %s ",
         "769": "Error: Overlaping time intervals for prefab %s, end (%s) is more than start (%s) of next (nr %s).",
         "781": "Missing data: timestamp for START %s (when end was: %s)",
@@ -245,18 +223,13 @@
         "18": "WARNING! Changing this might affect DB integrity",
         "60": "[{}] {}: {} ({}), (received: {})",
         "61": "%Y-%m-%d %H:%M:%S %Z",
-        "63": "%Y-%m-%d %H:%M:%S %Z",
-        "90": ""
+        "63": "%Y-%m-%d %H:%M:%S %Z"
     },
     "../ta/api/bookables/sitstand/aggregators.py": {
-        "92": "\n        Performs a single calculation based of context kwargs\n        :return:\n        ",
         "95": "Unsupported aggregator type, allowed: `{}`"
     },
     "../ta/api/bookables/sitstand/endpoints.py": {
         "35": "All parameters must be set once"
-    },
-    "../ta/api/bookables/utils.py": {
-        "59": "\n        finds the first free spot to place table in\n        :return: pair (column, row)\n        "
     },
     "../ta/api/bookables/validators/bookable_validator.py": {
         "33": "A name cannot contain #",
@@ -271,7 +244,6 @@
         "61": "Prefab %s is still vacang (no=po=0)"
     },
     "../ta/api/bookables/validators/prefab_validator.py": {
-        "35": "",
         "44": "JSON must be of type `list` or `object`",
         "49": "Value must be of type `list` or `object`",
         "54": "You cannot create a safe prefab directly."
@@ -413,9 +385,6 @@
         "13": "calendar integration link",
         "14": "calendar integration links",
         "19": "External calendar integration link with {0} with room {1}"
-    },
-    "../ta/api/iot/views.py": {
-        "69": ""
     },
     "../ta/api/kiosk/endpoints.py": {
         "23": "patch, delete"
@@ -590,7 +559,6 @@
         "49": "Only owners can make others owners"
     },
     "../ta/api/teams/models.py": {
-        "23": "\n    Renames a given filename to a unique one\n    :param extension: (optional) use this parameter when you have the extension ready\n    :param original_filename: original full filename (file.ext)\n    :return: a random UUID filename with original lowercased extension\n    ",
         "26": "You must provide either a filename or an extension",
         "34": "\n    Team service model.\n    ",
         "36": "Characters not allowed. Name must compose of 'A-Za-z0-9 .,_-\"'",
@@ -612,16 +580,13 @@
     },
     "../ta/api/teams/validators/team_validator.py": {
         "18": "\n    Field validators\n    ",
-        "21": "",
         "24": "File size exceeds limit of {0}",
-        "27": "",
         "36": "\n        Name and URL uniqueness checks. Moved here from DB layer due to is_historic presence.\n        ",
         "39": "The provided name or URL is already taken",
         "41": "The provided URL is already taken",
         "43": "The provided name is already taken",
         "46": "This URL cannot be used",
-        "50": "\n    Global validators\n    ",
-        "73": ""
+        "50": "\n    Global validators\n    "
     },
     "../ta/api/ui/models.py": {
         "17": "{}'s UI settings",
@@ -652,7 +617,6 @@
         "38": "In millimetres",
         "52": "Team cannot have more than {0} venues",
         "93": "{} of team {}",
-        "107": "\n    Renames a given filename to a unique one\n    :param extension: (optional) use this parameter when you have the extension ready\n    :param original_filename: original full filename (file.ext)\n    :return: a random UUID filename with original lowercased extension\n    ",
         "110": "You must provide either a filename or an extension",
         "117": "in interval [0.0, 1.0]",
         "118": "in interval [0.0, 1.0]",
@@ -664,10 +628,7 @@
         "131": "{} image x: {}, y: {}, rot: {}, scale: {}, opacity: {}"
     },
     "../ta/api/venues/validators/venue_image_validator.py": {
-        "19": "",
-        "22": "File size exceeds limit of {}",
-        "28": "",
-        "37": ""
+        "22": "File size exceeds limit of {}"
     },
     "../ta/api/venues/validators/venue_validator.py": {
         "29": "Venue can't close earlier than an hour after it opens",

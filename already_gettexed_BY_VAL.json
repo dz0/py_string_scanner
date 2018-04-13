@@ -1,109 +1,109 @@
 {
     "A user with that email already exists.": [
-        "../ta/api/accounts/forms.py :15"
+        "../ta/api/accounts/forms.py:15"
     ],
     "Account Service": [
-        "../ta/api/accounts/apps.py :8"
+        "../ta/api/accounts/apps.py:8"
     ],
     "Designates whether the user can log into this admin site.": [
-        "../ta/api/accounts/models.py :83"
+        "../ta/api/accounts/models.py:83"
     ],
     "Designates whether this account was previously removed": [
-        "../ta/api/accounts/models.py :93"
+        "../ta/api/accounts/models.py:93"
     ],
     "Designates whether this user should be treated as active. Deselect this instead of deleting accounts.": [
-        "../ta/api/accounts/models.py :87"
+        "../ta/api/accounts/models.py:87"
     ],
     "Enter the same password as above, for verification.": [
-        "../ta/api/accounts/forms.py :25"
+        "../ta/api/accounts/forms.py:25"
     ],
     "Important dates": [
-        "../ta/api/accounts/admin.py :18"
+        "../ta/api/accounts/admin.py:18"
     ],
     "Logging Service": [
-        "../ta/api/logging/apps.py :12"
+        "../ta/api/logging/apps.py:12"
     ],
     "Password": [
-        "../ta/api/accounts/forms.py :20",
-        "../ta/api/accounts/forms.py :89"
+        "../ta/api/accounts/forms.py:20",
+        "../ta/api/accounts/forms.py:89"
     ],
     "Password confirmation": [
-        "../ta/api/accounts/forms.py :23"
+        "../ta/api/accounts/forms.py:23"
     ],
     "Permissions": [
-        "../ta/api/accounts/admin.py :16"
+        "../ta/api/accounts/admin.py:16"
     ],
     "Raw passwords are not stored, so there is no way to see this user's password, but you can change the password using <a href=\"password/\">this form</a>.": [
-        "../ta/api/accounts/forms.py :90"
+        "../ta/api/accounts/forms.py:90"
     ],
     "Settings Synchronization Service": [
-        "../ta/api/sync/apps.py :6"
+        "../ta/api/sync/apps.py:6"
     ],
     "Team Service": [
-        "../ta/api/teams/apps.py :6"
+        "../ta/api/teams/apps.py:6"
     ],
     "The two password fields didn't match.": [
-        "../ta/api/accounts/forms.py :16"
+        "../ta/api/accounts/forms.py:16"
     ],
     "UI Settings Service": [
-        "../ta/api/ui/apps.py :6"
+        "../ta/api/ui/apps.py:6"
     ],
     "account": [
-        "../ta/api/accounts/models.py :104"
+        "../ta/api/accounts/models.py:104"
     ],
     "accounts": [
-        "../ta/api/accounts/models.py :105"
+        "../ta/api/accounts/models.py:105"
     ],
     "active status": [
-        "../ta/api/accounts/models.py :85"
+        "../ta/api/accounts/models.py:85"
     ],
     "bookable": [
-        "../ta/api/bookables/models.py :86"
+        "../ta/api/bookables/models.py:86"
     ],
     "bookables": [
-        "../ta/api/bookables/models.py :87"
+        "../ta/api/bookables/models.py:87"
     ],
     "date joined": [
-        "../ta/api/accounts/models.py :90"
+        "../ta/api/accounts/models.py:90"
     ],
     "deleted status": [
-        "../ta/api/accounts/models.py :93"
+        "../ta/api/accounts/models.py:93"
     ],
     "email address": [
-        "../ta/api/accounts/models.py :68"
+        "../ta/api/accounts/models.py:68"
     ],
     "first name": [
-        "../ta/api/accounts/models.py :72"
+        "../ta/api/accounts/models.py:72"
     ],
     "first usage": [
-        "../ta/api/accounts/models.py :78"
+        "../ta/api/accounts/models.py:78"
     ],
     "last name": [
-        "../ta/api/accounts/models.py :75"
+        "../ta/api/accounts/models.py:75"
     ],
     "logged content type": [
-        "../ta/api/logging/models.py :25"
+        "../ta/api/logging/models.py:25"
     ],
     "logged object": [
-        "../ta/api/logging/models.py :28"
+        "../ta/api/logging/models.py:28"
     ],
     "prefab": [
-        "../ta/api/bookables/models.py :40"
+        "../ta/api/bookables/models.py:40"
     ],
     "prefab type": [
-        "../ta/api/bookables/models.py :22"
+        "../ta/api/bookables/models.py:22"
     ],
     "prefab types": [
-        "../ta/api/bookables/models.py :23"
+        "../ta/api/bookables/models.py:23"
     ],
     "prefab usage": [
-        "../ta/api/bookables/models.py :56",
-        "../ta/api/bookables/models.py :57"
+        "../ta/api/bookables/models.py:56",
+        "../ta/api/bookables/models.py:57"
     ],
     "prefabs": [
-        "../ta/api/bookables/models.py :41"
+        "../ta/api/bookables/models.py:41"
     ],
     "staff status": [
-        "../ta/api/accounts/models.py :81"
+        "../ta/api/accounts/models.py:81"
     ]
 }

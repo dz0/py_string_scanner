@@ -30,7 +30,7 @@ file_skip_patterns = [p if '*' in p     else  '*%s*' % p     for p in file_skip_
 ####### Strings to Skip
 str_skip_patterns = """
     bootstrap
-    Miscellaneous
+    :return:
 """
 str_skip_patterns = filter(len, map(str.strip, str_skip_patterns.split()))
 # surround by wildcards
@@ -155,6 +155,8 @@ find_strings = find_strings_ast_visit
 files = get_files(ROOT_DIR)
 
 
+SKIP_SRC_LINKS = open('SKIP_SRC_LINKS.txt').read().split('\n')
+SKIP_SRC_LINKS = [x.strip(' ",') for x in SKIP_SRC_LINKS]
 ##################
 #
 #     MAIN   loops 
@@ -176,6 +178,11 @@ for nr, fname in enumerate(files):
             SINGLE_WORDS[ filename ][lineno].append( string )
             continue        
         
+        src_link = "%s:%s" % (filename, lineno )
+        if src_link in SKIP_SRC_LINKS:
+            # print("SKIP SRC", src_link, repr(string))
+            continue
+
         FOUND_STR[ filename ][lineno].append( string )
         # print ("  File \"%s\", line %d   \"%s\"" % (filename, lineno, string))
 
@@ -192,14 +199,15 @@ for nr, fname in enumerate(files):
 #
 ####################
 def sorted_dict( adict ):
-    return OrderedDict(  sorted(adict.items(), key=lambda x: x[0] ) )
+    return OrderedDict(  sorted(adict.items() ) )
 
 def restructure_by_val(STUFF):
     REZ = defaultdict(list)
     for file, lines in sorted( STUFF.items() ):
-        for line_nr, strings in lines.items():
+        for line_nr, strings in sorted( lines.items() ):
             for string in strings:
-                REZ[string].append( "%s :%s" % (file, line_nr ) )
+                src_link = "%s:%s" % (file, line_nr )
+                REZ[string].append( src_link )
 
     
     return REZ

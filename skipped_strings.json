@@ -188,6 +188,8 @@
         ],
         "317": "team_url",
         "326": "team_url",
+        "376": "\n        :return: average booking duration in minutes\n        ",
+        "388": "\n        :return: average sitting and standing heights\n        ",
         "397": [
             "sitting_height",
             "standing_height"
@@ -198,7 +200,14 @@
         "456": "standing_time",
         "457": "sitting_time",
         "478": "standing_time",
-        "479": "sitting_time"
+        "479": "sitting_time",
+        "551": "\n        :return: average booking end time 'HH:MM'\n        ",
+        "557": "\n        :return: average check-in time 'HH:MM'\n        ",
+        "564": "\n        the percentage of daily time relative to venue.work_start, venue.work_end spent booked\n        :return: average table utilization [0.0, 1.0]\n        ",
+        "615": "\n        :return: average room booking duration with at least one check-in\n        ",
+        "627": "\n        :return: the account id of the longest total check-in attendance\n        ",
+        "644": "\n        :return: the percentage of checked-in participants over invited\n        ",
+        "661": "\n        :return: minutes booked by day for a time period\n        "
     },
     "../ta/api/analytics/models.py": {
         "47": "app_usage",
@@ -222,6 +231,7 @@
             "prefab__identifier",
             "venue__name"
         ],
+        "669": "\n        Adopted from SitStandAnalyticsAggregator\n        :return:\n        ",
         "695": [
             "prefab__id",
             "-prefab__id"
@@ -295,6 +305,7 @@
         "74": "prefab__bookables__venue__work_ends",
         "75": "prefab__bookables__venue__timezone",
         "76": "prefab__bookables__venue__height_threshold",
+        "92": "\n        Performs a single calculation based of context kwargs\n        :return:\n        ",
         "97": "height_visuals",
         "99": "height_visuals",
         "109": "prefab_identifier"
@@ -310,6 +321,9 @@
             "is_sitting"
         ],
         "75": "is_sitting"
+    },
+    "../ta/api/bookables/utils.py": {
+        "59": "\n        finds the first free spot to place table in\n        :return: pair (column, row)\n        "
     },
     "../ta/api/bookables/validators/bookable_validator.py": {
         "43": "booked_by",
@@ -795,6 +809,7 @@
         "88": "sender_email"
     },
     "../ta/api/teams/models.py": {
+        "23": "\n    Renames a given filename to a unique one\n    :param extension: (optional) use this parameter when you have the extension ready\n    :param original_filename: original full filename (file.ext)\n    :return: a random UUID filename with original lowercased extension\n    ",
         "62": "ta_team",
         "97": "ta_participation",
         "112": "ta_participant_permission",
@@ -845,6 +860,7 @@
     "../ta/api/venues/models.py": {
         "25": "work_starts",
         "96": "ta_venue",
+        "107": "\n    Renames a given filename to a unique one\n    :param extension: (optional) use this parameter when you have the extension ready\n    :param original_filename: original full filename (file.ext)\n    :return: a random UUID filename with original lowercased extension\n    ",
         "126": "ta_venue_back_img"
     },
     "../ta/api/venues/permissions.py": {
