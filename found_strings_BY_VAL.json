@@ -504,12 +504,6 @@
     "Password reset request for {0}": [
         "../ta/api/accounts/models.py:157"
     ],
-    "Prefab %s is still occupied (no=po=1)": [
-        "../ta/api/bookables/validators/prefab_usage_validator.py:56"
-    ],
-    "Prefab %s is still vacang (no=po=0)": [
-        "../ta/api/bookables/validators/prefab_usage_validator.py:61"
-    ],
     "Registration confirmation for {0}": [
         "../ta/api/accounts/models.py:146"
     ],

@@ -936,25 +936,15 @@
         ]
     },
     "../ta/api/bookables/validators/prefab_usage_validator.py": {
-        "21": "prefab",
-        "31": [
+        "20": "prefab",
+        "30": [
             "start",
             "start"
         ],
-        "32": "end",
+        "31": "end",
+        "33": "start",
         "34": "start",
-        "35": "start",
-        "37": "start",
-        "51": [
-            "parameters",
-            "no"
-        ],
-        "52": [
-            "parameters",
-            "po"
-        ],
-        "56": "prefab",
-        "61": "prefab"
+        "36": "start"
     },
     "../ta/api/bookables/validators/prefab_validator.py": {
         "11": "[A-Z0-9]{9}",

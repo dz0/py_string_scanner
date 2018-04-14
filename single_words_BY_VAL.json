@@ -595,7 +595,7 @@
         "../ta/api/analytics/aggregators.py:692",
         "../ta/api/bookables/sitstand/aggregators.py:201",
         "../ta/api/bookables/sitstand/aggregators.py:251",
-        "../ta/api/bookables/validators/prefab_usage_validator.py:32",
+        "../ta/api/bookables/validators/prefab_usage_validator.py:31",
         "../ta/api/booking/admin.py:7",
         "../ta/api/booking/admin.py:9",
         "../ta/api/booking/management.py:165",
@@ -985,8 +985,7 @@
     "no": [
         "../ta/api/bookables/activity/occupancy.py:7",
         "../ta/api/bookables/activity/occupancy.py:12",
-        "../ta/api/bookables/activity/occupancy.py:25",
-        "../ta/api/bookables/validators/prefab_usage_validator.py:51"
+        "../ta/api/bookables/activity/occupancy.py:25"
     ],
     "noresponse": [
         "../ta/api/bookables/endpoints.py:195"
@@ -1033,8 +1032,6 @@
         "../ta/api/bookables/activity/occupancy.py:25",
         "../ta/api/bookables/admin.py:13",
         "../ta/api/bookables/serializers.py:69",
-        "../ta/api/bookables/validators/prefab_usage_validator.py:51",
-        "../ta/api/bookables/validators/prefab_usage_validator.py:52",
         "../ta/api/bookables/validators/prefab_validator.py:44",
         "../ta/api/bookables/validators/prefab_validator.py:47",
         "../ta/api/bookables/validators/prefab_validator.py:48",
@@ -1168,8 +1165,7 @@
     "po": [
         "../ta/api/bookables/activity/occupancy.py:7",
         "../ta/api/bookables/activity/occupancy.py:12",
-        "../ta/api/bookables/activity/occupancy.py:25",
-        "../ta/api/bookables/validators/prefab_usage_validator.py:52"
+        "../ta/api/bookables/activity/occupancy.py:25"
     ],
     "post": [
         "../ta/api/bookables/endpoints.py:66",
@@ -1229,9 +1225,7 @@
         "../ta/api/bookables/validators/bookable_validator.py:82",
         "../ta/api/bookables/validators/bookable_validator.py:83",
         "../ta/api/bookables/validators/bookable_validator.py:87",
-        "../ta/api/bookables/validators/prefab_usage_validator.py:21",
-        "../ta/api/bookables/validators/prefab_usage_validator.py:56",
-        "../ta/api/bookables/validators/prefab_usage_validator.py:61",
+        "../ta/api/bookables/validators/prefab_usage_validator.py:20",
         "../ta/api/booking/endpoints.py:109",
         "../ta/api/booking/endpoints.py:120"
     ],
@@ -1431,11 +1425,11 @@
         "../ta/api/analytics/aggregators.py:688",
         "../ta/api/bookables/sitstand/aggregators.py:201",
         "../ta/api/bookables/sitstand/aggregators.py:251",
-        "../ta/api/bookables/validators/prefab_usage_validator.py:31",
-        "../ta/api/bookables/validators/prefab_usage_validator.py:31",
+        "../ta/api/bookables/validators/prefab_usage_validator.py:30",
+        "../ta/api/bookables/validators/prefab_usage_validator.py:30",
+        "../ta/api/bookables/validators/prefab_usage_validator.py:33",
         "../ta/api/bookables/validators/prefab_usage_validator.py:34",
-        "../ta/api/bookables/validators/prefab_usage_validator.py:35",
-        "../ta/api/bookables/validators/prefab_usage_validator.py:37",
+        "../ta/api/bookables/validators/prefab_usage_validator.py:36",
         "../ta/api/booking/admin.py:7",
         "../ta/api/booking/admin.py:9",
         "../ta/api/booking/endpoints.py:177",

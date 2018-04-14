@@ -952,10 +952,6 @@
         "../ta/api/analytics/occupancy_analytics.py:741",
         "../ta/api/bookables/sitstand/aggregators.py:109"
     ],
-    "prefab_usage": [
-        "../ta/api/bookables/validators/prefab_usage_validator.py:56",
-        "../ta/api/bookables/validators/prefab_usage_validator.py:61"
-    ],
     "push_token": [
         "../ta/api/booking/notifications.py:92",
         "../ta/api/booking/notifications.py:104",

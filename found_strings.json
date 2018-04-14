@@ -180,10 +180,6 @@
         "58": "This type is reserved and can't be used",
         "71": "This bookable was converted to a room and can't be moved"
     },
-    "../ta/api/bookables/validators/prefab_usage_validator.py": {
-        "56": "Prefab %s is still occupied (no=po=1)",
-        "61": "Prefab %s is still vacang (no=po=0)"
-    },
     "../ta/api/bookables/validators/prefab_validator.py": {
         "44": "JSON must be of type `list` or `object`",
         "49": "Value must be of type `list` or `object`",

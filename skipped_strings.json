@@ -395,10 +395,6 @@
         "85": "booked_by",
         "86": "account_id"
     },
-    "../ta/api/bookables/validators/prefab_usage_validator.py": {
-        "56": "prefab_usage",
-        "61": "prefab_usage"
-    },
     "../ta/api/booking/admin.py": {
         "7": "check_in",
         "8": [

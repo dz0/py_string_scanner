@@ -70,5 +70,5 @@ with open("found_strings.json") as f:
 
 
 print ("INJECTION_FAILED", len(INJECTION_FAILED))
-print(  json.dumps(INJECTION_FAILED, indent=4))
+# print(  json.dumps(INJECTION_FAILED, indent=4))
 with open("INJECTION_FAILED.json", 'w') as f: json.dump(INJECTION_FAILED, f, indent=4)
