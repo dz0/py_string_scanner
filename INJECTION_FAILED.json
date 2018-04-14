@@ -1,0 +1,102 @@
+[
+    [
+        "../ta/api/accounts/serializers.py:90",
+        "You need at least 8 symbols, with one lowercase, one uppercase letter and a number",
+        "                raise serializers.ValidationError({'password': ['You need at least 8 symbols, '"
+    ],
+    [
+        "../ta/api/analytics/occupancy_analytics.py:322",
+        "\"\"\"intervals should be sorted.\n            if we don't fit  interval  to current part, we goto next part\"\"\"",
+        "            if we don't fit  interval  to current part, we goto next part\"\"\""
+    ],
+    [
+        "../ta/api/analytics/occupancy_analytics.py:328",
+        "ERROR when partitioning. Interval #%s/%s  (%s); \n      Partition counts: %s\n      timewindow_start: %s, part_count: %s, part_size: %s",
+        "                    raise RuntimeError(\"ERROR when partitioning. Interval #%s/%s  (%s); \""
+    ],
+    [
+        "../ta/api/analytics/occupancy_analytics.py:480",
+        "Deleting meaningfull info: when excluding weekend from results. \n   relative_day_nr: %s, weekday__of_start: %s",
+        "                    raise RuntimeError(\"Deleting meaningfull info: when excluding weekend from results. \""
+    ],
+    [
+        "../ta/api/bookables/models.py:15",
+        "Used when generating identifiers, \"#\" denotes generated part. Example: \"SB1######\"",
+        "                                         help_text='Used when generating identifiers, \"#\" denotes generated part. '"
+    ],
+    [
+        "../ta/api/booking/confirmation.py:11",
+        "You have been invited to participate at a meeting.\nThe meeting will take place on {} until {} at {}.",
+        "            'You have been invited to participate at a meeting.\\n'"
+    ],
+    [
+        "../ta/api/booking/confirmation.py:22",
+        "The meeting you have been invited to was rescheduled.\nThe meeting will take place on {} until {} at {}.",
+        "            'The meeting you have been invited to was rescheduled.\\n'"
+    ],
+    [
+        "../ta/api/booking/confirmation.py:35",
+        "You have created a meeting.\nThe meeting will take place on {0} until {1} at {2}.",
+        "            'You have created a meeting.\\n'"
+    ],
+    [
+        "../ta/api/booking/confirmation.py:48",
+        "The meeting you have been invited to was canceled.\nThe meeting was to take place on {0} until {1} at {2}.",
+        "            'The meeting you have been invited to was canceled.\\n'"
+    ],
+    [
+        "../ta/api/booking/validators/booking_validators.py:110",
+        "There's a booking at that time. Please choose another time. Visit the dashboard to manage your bookings.",
+        "            intersecting='There\\'s a booking at that time. Please choose another time. '"
+    ],
+    [
+        "../ta/api/booking/validators/booking_validators.py:112",
+        "You have reached the maximum amount of intersecting bookings. Please choose another time.",
+        "            intersecting_allowed='You have reached the maximum amount of intersecting bookings. '"
+    ],
+    [
+        "../ta/api/kiosk/validators.py:47",
+        "You need to purchase a license to create kiosks! You can easily do that by visiting shoptableair.com",
+        "                msg_text = 'You need to purchase a license to create kiosks! ' \\"
+    ],
+    [
+        "../ta/api/kiosk/validators.py:50",
+        "Your current licensing only allows you to have a maximum of {} kiosks. Visit shoptableair.com to purchase a new license.",
+        "                msg_text = 'Your current licensing only allows you to have a maximum of {} kiosks. ' \\"
+    ],
+    [
+        "../ta/api/room_booking/emails.py:108",
+        "\"\"\"\n<h2>A room booking you were invited to has been cancelled. Details:</h2>\n<p>Title: <strong>{}</strong></p>\n<strong>Booking starts {}</strong>\n<br/>\n<strong>Booking ends {}</strong>\n    \"\"\"",
+        "    \"\"\".format("
+    ],
+    [
+        "../ta/api/room_booking/emails.py:14",
+        "\"\"\"\n<!doctype html><html><head>\n<!--[if !mso]><!-- -->\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&subset=latin\">\n<!--<![endif]-->\n<style>{style}</style>\n</head><body>{content}</body></html>\n\"\"\"",
+        "\"\"\""
+    ],
+    [
+        "../ta/api/room_booking/emails.py:36",
+        "\"\"\"\n<h2>You have been invited to a room booking by <strong>{}</strong>. Details:</h2>\n<p>Title: <strong>{}</strong></p>\n<strong>Booking starts {}</strong>\n<br/>\n<strong>Booking ends {}</strong>\n<div>\n    <a style=\"background-color: #b73746;\" href='{}'>Decline</a>\n    <a href='{}'>Accept</a>\n</div>\n\"\"\"",
+        "\"\"\".format("
+    ],
+    [
+        "../ta/api/room_booking/emails.py:64",
+        "\"\"\"\n<h2>You have been removed from a room booking. Details:</h2>\n<p>Title: <strong>{}</strong></p>\n<strong>Booking starts {}</strong>\n<br/>\n<strong>Booking ends {}</strong>\n\"\"\"",
+        "\"\"\".format("
+    ],
+    [
+        "../ta/api/room_booking/emails.py:86",
+        "\"\"\"\n<h2>Date/time of a room booking you are attending were changed. Details:</h2>\n<p>Title: <strong>{}</strong></p>\n<strong>Booking starts {}</strong>\n<br/>\n<strong>Booking ends {}</strong>\n\"\"\"",
+        "\"\"\".format("
+    ],
+    [
+        "../ta/api/rooms/validators.py:102",
+        "Your current licensing only allows you to have a maximum of {} rooms. Visit shoptableair.com to purchase a new license.",
+        "            invalid(None, 'Your current licensing only allows you to have a maximum of {} rooms. '"
+    ],
+    [
+        "../ta/api/teams/endpoints.py:88",
+        "{}\n\nSender address: {}",
+        "        text = '{}\\n\\nSender address: {}'.format(serializer.data['text'], serializer.data['sender_email'])"
+    ]
+]
