@@ -19,22 +19,43 @@ file_skip_patterns = """
     ta/tutorial
     /tests/
     /tests_
+    */ta/api/validators/tests.py
     /migrations/
+    */ta/api/objects/choices.py
     """
     # ta/contrib
 
-file_skip_patterns = filter(len, map(str.strip, file_skip_patterns.split()))
+file_skip_patterns = filter(len, map(str.strip, file_skip_patterns.split("\n")))
 # surround by wildcards
 file_skip_patterns = [p if '*' in p     else  '*%s*' % p     for p in file_skip_patterns]
 
 ####### Strings to Skip
-str_skip_patterns = """
-    bootstrap
-    :return:
+str_skip_patterns = r"""
+    *bootstrap*
+    *:return:*
+    \n
+    get, patch, delete
+    get, patch
+    post, delete
+    post, patch
+    patch, delete
+    put, delete
+
+    start_time end_time
+    start_time, end_time
+    start, end
+
+    ORDER BY
+    LEFT OUTER
+
+    @/ta/api/room_booking/emails.py
+    \n<!doctype html><html>*
+    div{margin-top:15px}
 """
-str_skip_patterns = filter(len, map(str.strip, str_skip_patterns.split()))
+str_skip_patterns = list( filter(len, map(str.strip, str_skip_patterns.split("\n"))) )
+str_skip_patterns.append(" ")
 # surround by wildcards
-str_skip_patterns = [p if '*' in p     else  '*%s*' % p    for p in str_skip_patterns]
+# str_skip_patterns = [p if '*' in p     else  '*%s*' % p    for p in str_skip_patterns]
 
 
 SKIPPED_FILES = []
@@ -123,8 +144,9 @@ def find_strings_ast_visit(filename):
 
             def check_is_docstring():
                 try:
-                    if isinstance( node.parent.parent, (ast.ClassDef, ast.FunctionDef) ):
-                        return True
+                    if isinstance( node.parent, (ast.Expr) ):
+                        if isinstance( node.parent.parent, (ast.ClassDef, ast.FunctionDef, ast.Module) ):
+                            return True
                 except AttributeError:
                     pass
 
@@ -135,8 +157,12 @@ def find_strings_ast_visit(filename):
             # if "An abstract user model" in string:
             #     print("bla")
 
+            # if 'Main booking handlers' in string:
+            #    print( "asdf")
+
             if check_is_docstring():
-                SKIPPED_STR[ filename ][lineno].append( "DOCSTRING -- " + string )
+                type_of_documented = node.parent.parent.__class__.__name__
+                SKIPPED_STR[ filename ][lineno].append( type_of_documented+" DOCSTRING -- "  + string )
 
             elif check_gettext_wrap():  # a bit dirty hook (not in Main) 
                 ALREADY_GETTEXTED[ filename ][lineno].append( string )
@@ -238,8 +264,6 @@ def compact_if_single_in_list( STUFF ):
             if len(strings) == 1:
                 lines[line_nr] = strings[0]
     return STUFF # just in case -- as replacements were in place
-
-
 
 
 compact_if_single_in_list( FOUND_STR )

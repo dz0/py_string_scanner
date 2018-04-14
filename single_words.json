@@ -41,6 +41,9 @@
         "37": "email",
         "38": "groups"
     },
+    "../ta/api/accounts/apps.py": {
+        "6": "ta.api.accounts"
+    },
     "../ta/api/accounts/forms.py": {
         "29": "email",
         "40": "email",
@@ -58,6 +61,7 @@
             "email"
         ],
         "38": "password",
+        "100": "email",
         "139": "registration"
     },
     "../ta/api/accounts/serializers.py": {
@@ -681,6 +685,8 @@
             "parameters"
         ],
         "15": "activity",
+        "21": "timestamp",
+        "27": "created",
         "31": [
             "name",
             "venue",
@@ -951,6 +957,8 @@
         "61": "prefab"
     },
     "../ta/api/bookables/validators/prefab_validator.py": {
+        "11": "[A-Z0-9]{9}",
+        "29": "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ",
         "31": "#",
         "33": "#",
         "42": [
@@ -1081,7 +1089,10 @@
     "../ta/api/booking/models.py": {
         "65": "bookings",
         "66": "bookings",
-        "92": "start"
+        "90": "booking",
+        "91": "bookings",
+        "92": "start",
+        "93": "objects"
     },
     "../ta/api/booking/notifications.py": {
         "90": "id",
@@ -1213,7 +1224,11 @@
         "12": "Android",
         "13": "iOS",
         "22": "agents",
-        "52": "notifications"
+        "26": "agent",
+        "27": "agents",
+        "52": "notifications",
+        "60": "notification",
+        "61": "notifications"
     },
     "../ta/api/devices/serializers.py": {
         "10": [
@@ -1266,6 +1281,8 @@
     "../ta/api/groups/models.py": {
         "10": "groups",
         "11": "GroupMember",
+        "14": "group",
+        "15": "groups",
         "17": [
             "name",
             "team"
@@ -1379,6 +1396,9 @@
     "../ta/api/logging/__init__.py": {
         "1": "ta.api.logging.apps.LoggingConfig"
     },
+    "../ta/api/logging/apps.py": {
+        "10": "ta.api.logging"
+    },
     "../ta/api/logging/management.py": {
         "21": "json",
         "22": "pk"
@@ -1388,7 +1408,9 @@
         "18": "Update",
         "19": "Delete",
         "21": "Login",
-        "46": "logs"
+        "46": "logs",
+        "57": "logging",
+        "58": "logs"
     },
     "../ta/api/logging/serializers.py": {
         "9": [
@@ -1427,26 +1449,8 @@
         "81": "GET",
         "86": "GET"
     },
-    "../ta/api/objects/choices.py": {
-        "28": "doors",
-        "29": "elevator",
-        "30": "balcony",
-        "31": "coffee",
-        "33": "extinguisher",
-        "34": "kitchen",
-        "36": "projector",
-        "37": "restroom",
-        "38": "shelf",
-        "39": "shower",
-        "40": "cupboard",
-        "42": "snacks",
-        "43": "stairs",
-        "44": "window",
-        "45": "drinks",
-        "46": "snacks",
-        "47": "water",
-        "61": "projector",
-        "62": "whiteboard"
+    "../ta/api/objects/apps.py": {
+        "5": "ta.api.objects"
     },
     "../ta/api/objects/endpoints.py": {
         "9": "get",
@@ -1479,7 +1483,11 @@
             "col",
             "row",
             "venue"
-        ]
+        ],
+        "20": "tile",
+        "21": "tiles",
+        "35": "object",
+        "36": "objects"
     },
     "../ta/api/objects/serializers.py": {
         "11": "id",
@@ -1701,6 +1709,8 @@
         "75": "room"
     },
     "../ta/api/rooms/models.py": {
+        "14": "room",
+        "15": "rooms",
         "22": "N/A"
     },
     "../ta/api/rooms/serializers.py": {
@@ -1805,6 +1815,7 @@
         "28": "{}{}",
         "37": "^{0}$",
         "44": "Participation",
+        "63": "teams",
         "79": "Participant",
         "80": "Administrator",
         "81": "Owner",
@@ -1812,6 +1823,7 @@
         "85": "participations",
         "89": "objects.GridObject",
         "90": "participant",
+        "98": "participations",
         "99": [
             "account",
             "team"
@@ -1949,53 +1961,6 @@
         ],
         "15": "url"
     },
-    "../ta/api/validators/tests.py": {
-        "12": [
-            "someteam",
-            "someurl"
-        ],
-        "15": "api:validators:teams",
-        "18": [
-            "name",
-            "goodname"
-        ],
-        "21": [
-            "url",
-            "goodname"
-        ],
-        "24": [
-            "name",
-            "url",
-            "goodname",
-            "goodurl"
-        ],
-        "27": [
-            "name",
-            "someteam"
-        ],
-        "30": [
-            "url",
-            "someurl"
-        ],
-        "33": [
-            "name",
-            "url",
-            "goodname",
-            "someurl"
-        ],
-        "36": [
-            "name",
-            "url",
-            "somename",
-            "someurl"
-        ],
-        "39": [
-            "name",
-            "url",
-            "someteam",
-            "goodurl"
-        ]
-    },
     "../ta/api/venues/endpoints.py": {
         "11": "post",
         "16": "team",
@@ -2018,6 +1983,8 @@
         ],
         "73": "{:02d}:{:02d}",
         "77": "{:02d}:{:02d}",
+        "97": "venue",
+        "98": "venues",
         "112": "{}{}",
         "123": "image"
     },

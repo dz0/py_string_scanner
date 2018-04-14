@@ -1,4 +1,8 @@
 {
+    " ": [
+        "../ta/api/accounts/models.py:112",
+        "../ta/api/analytics/occupancy_analytics.py:52"
+    ],
     "-bookable__prefab__type__is_reserved": [
         "../ta/api/booking/endpoints.py:177"
     ],
@@ -14,599 +18,285 @@
     "?scope=table&duration=alltime&identifier={0}&aggregator=avg_booking_duration": [
         "../ta/api/analytics/_deprecated_tests_api.py:207"
     ],
+    "AUTH_USER_MODEL": [
+        "../ta/api/accounts/models.py:134"
+    ],
     "CHECKIN_CATEGORY": [
         "../ta/api/booking/notifications.py:63",
         "../ta/api/booking/notifications.py:72"
     ],
-    "DOCSTRING -- \n            jei from yra 1mad -- 0 -trinti-> 5, 6\n            jei from yra 2mad -- 1 -trinti-> 4, 5\n            jei from yra 3mad -- 2 -trinti-> 3, 4\n\n            jei from yra 6mad -- 5 -trinti-> 0, 1\n            jei from yra 7mad -- 6 -trinti-> -1, 0\n            ": [
-        "../ta/api/analytics/occupancy_analytics.py:473"
-    ],
-    "DOCSTRING -- \n            params:  interval of activity\n                     part   of partitioning (day/hour or so)\n            ": [
-        "../ta/api/analytics/occupancy_analytics.py:295"
-    ],
-    "DOCSTRING -- \n        :return: average booking duration in minutes\n        ": [
-        "../ta/api/analytics/aggregators.py:376"
-    ],
-    "DOCSTRING -- \n        :return: average booking end time 'HH:MM'\n        ": [
-        "../ta/api/analytics/aggregators.py:551"
-    ],
-    "DOCSTRING -- \n        :return: average check-in time 'HH:MM'\n        ": [
-        "../ta/api/analytics/aggregators.py:557"
-    ],
-    "DOCSTRING -- \n        :return: average room booking duration with at least one check-in\n        ": [
-        "../ta/api/analytics/aggregators.py:615"
-    ],
-    "DOCSTRING -- \n        :return: average sitting and standing heights\n        ": [
-        "../ta/api/analytics/aggregators.py:388"
-    ],
-    "DOCSTRING -- \n        :return: minutes booked by day for a time period\n        ": [
-        "../ta/api/analytics/aggregators.py:661"
-    ],
-    "DOCSTRING -- \n        :return: the account id of the longest total check-in attendance\n        ": [
-        "../ta/api/analytics/aggregators.py:627"
-    ],
-    "DOCSTRING -- \n        :return: the percentage of checked-in participants over invited\n        ": [
-        "../ta/api/analytics/aggregators.py:644"
-    ],
-    "DOCSTRING -- \n        Adopted from SitStandAnalyticsAggregator\n        :return:\n        ": [
-        "../ta/api/analytics/occupancy_analytics.py:669"
-    ],
-    "DOCSTRING -- \n        EP4 by Rokas\n        https://tableair.slack.com/files/U8YH9D5K6/F8YKP6DU2/workoccupancy_endpoint_spec_description.txt\n        ?page=1\n        ": [
-        "../ta/api/analytics/occupancy_analytics.py:587"
-    ],
-    "DOCSTRING -- \n        For DEV purposes\n                # most activity:\n        {\n        \"prefab\": 152,\n        \"venue__name\": \"Approved house of cards\",\n        \"cnt\": 223,\n        \"prefab__identifier\": \"SP000000A\",\n        \"venue\": 9\n        },\n        \"prefab\": 155,             \"cnt\": 211,             \"prefab__identifier\": \"SP000000C\",             \"venue\": 9\n        \"prefab\": 156,                   \"cnt\": 30,          \"prefab__identifier\": \"SP0200000\",            \"venue\": 8\n        \"prefab\": 157,            \"venue__name\": \"euneV\",            \"cnt\": 4,            \"prefab__identifier\": \"SP0200001\",            \"venue\": 16\n        \"prefab\": 14,            \"venue__name\": \"Demo Venue\",            \"cnt\": 1,            \"prefab__identifier\": \"X0000000E\",            \"venue\": 5\n\n\n        ": [
-        "../ta/api/analytics/occupancy_analytics.py:648"
-    ],
-    "DOCSTRING -- \n        Name and URL uniqueness checks. Moved here from DB layer due to is_historic presence.\n        ": [
-        "../ta/api/teams/validators/team_validator.py:36"
-    ],
-    "DOCSTRING -- \n        Object instance -> Dict of primitive datatypes.\n        ": [
-        "../ta/api/accounts/serializers.py:40"
-    ],
-    "DOCSTRING -- \n        Performs a single calculation based of context kwargs\n        :return:\n        ": [
-        "../ta/api/bookables/sitstand/aggregators.py:92"
-    ],
-    "DOCSTRING -- \n        Send an email to this User.\n        ": [
-        "../ta/api/accounts/models.py:117"
-    ],
-    "DOCSTRING -- \n        finds the first free spot to place table in\n        :return: pair (column, row)\n        ": [
-        "../ta/api/bookables/utils.py:59"
-    ],
-    "DOCSTRING -- \n        register\n        ": [
-        "../ta/api/accounts/views.py:46"
-    ],
-    "DOCSTRING -- \n        retrieve list\n        ": [
-        "../ta/api/accounts/views.py:39"
-    ],
-    "DOCSTRING -- \n        the percentage of daily time relative to venue.work_start, venue.work_end spent booked\n        :return: average table utilization [0.0, 1.0]\n        ": [
-        "../ta/api/analytics/aggregators.py:564"
-    ],
-    "DOCSTRING -- \n       **/api/accounts/<pk>/teams/<url>/**\n        manages account's participation in team\n    ": [
+    "ClassDef DOCSTRING -- \n       **/api/accounts/<pk>/teams/<url>/**\n        manages account's participation in team\n    ": [
         "../ta/api/accounts/views.py:203"
     ],
-    "DOCSTRING -- \n    **/api/accounts/**\n    ": [
+    "ClassDef DOCSTRING -- \n    **/api/accounts/**\n    ": [
         "../ta/api/accounts/views.py:33"
     ],
-    "DOCSTRING -- \n    **/api/accounts/<account_id>/teams/**\n    gets teams that the account participates in\n    ": [
+    "ClassDef DOCSTRING -- \n    **/api/accounts/<account_id>/teams/**\n    gets teams that the account participates in\n    ": [
         "../ta/api/accounts/views.py:167"
     ],
-    "DOCSTRING -- \n    **/api/accounts/<pk>/**\n    ": [
+    "ClassDef DOCSTRING -- \n    **/api/accounts/<pk>/**\n    ": [
         "../ta/api/accounts/views.py:53",
         "../ta/api/accounts/views.py:101"
     ],
-    "DOCSTRING -- \n    **/api/accounts/<pk>/forgot/**\n    request password reset\n    ": [
+    "ClassDef DOCSTRING -- \n    **/api/accounts/<pk>/forgot/**\n    request password reset\n    ": [
         "../ta/api/accounts/views.py:138"
     ],
-    "DOCSTRING -- \n    **/api/accounts/<pk>/venues/<pk>/booking/**\n    returns bookings for a given venue\n    ": [
+    "ClassDef DOCSTRING -- \n    **/api/accounts/<pk>/venues/<pk>/booking/**\n    returns bookings for a given venue\n    ": [
         "../ta/api/accounts/views.py:184"
     ],
-    "DOCSTRING -- \n    **/api/accounts/confirm-email-change/<hash>/**\n    ": [
+    "ClassDef DOCSTRING -- \n    **/api/accounts/confirm-email-change/<hash>/**\n    ": [
         "../ta/api/accounts/views.py:127"
     ],
-    "DOCSTRING -- \n    **/api/accounts/confirm-forgot/<hash>/**\n    change the password with given hash\n    ": [
+    "ClassDef DOCSTRING -- \n    **/api/accounts/confirm-forgot/<hash>/**\n    change the password with given hash\n    ": [
         "../ta/api/accounts/views.py:153"
     ],
-    "DOCSTRING -- \n    **/api/accounts/confirm-registration/<hash>/**\n    ": [
+    "ClassDef DOCSTRING -- \n    **/api/accounts/confirm-registration/<hash>/**\n    ": [
         "../ta/api/accounts/views.py:117"
     ],
-    "DOCSTRING -- \n    **api/accounts/<account_pk>/sync/**\n    ": [
+    "ClassDef DOCSTRING -- \n    **api/accounts/<account_pk>/sync/**\n    ": [
         "../ta/api/sync/views.py:18"
     ],
-    "DOCSTRING -- \n    **api/logs/**\n    ": [
+    "ClassDef DOCSTRING -- \n    **api/logs/**\n    ": [
         "../ta/api/logging/views.py:14"
     ],
-    "DOCSTRING -- \n    **api/teams/<team_url>/participants/**\n    ": [
+    "ClassDef DOCSTRING -- \n    **api/teams/<team_url>/participants/**\n    ": [
         "../ta/api/teams/views.py:32"
     ],
-    "DOCSTRING -- \n    **api/teams/<team_url>/requests/**\n    ": [
+    "ClassDef DOCSTRING -- \n    **api/teams/<team_url>/requests/**\n    ": [
         "../ta/api/requests/views.py:18"
     ],
-    "DOCSTRING -- \n    **api/teams/<team_url>/venues/**\n    ": [
+    "ClassDef DOCSTRING -- \n    **api/teams/<team_url>/venues/**\n    ": [
         "../ta/api/teams/views.py:17"
     ],
-    "DOCSTRING -- \n    **api/venues/<pk>/tables/**\n    ": [
+    "ClassDef DOCSTRING -- \n    **api/venues/<pk>/tables/**\n    ": [
         "../ta/api/venues/views.py:15"
     ],
-    "DOCSTRING -- \n    A form for creating new users.\n\n    Includes all the required fields, plus a repeated password.\n    ": [
+    "ClassDef DOCSTRING -- \n    A form for creating new users.\n\n    Includes all the required fields, plus a repeated password.\n    ": [
         "../ta/api/accounts/forms.py:12"
     ],
-    "DOCSTRING -- \n    Account admin model.\n    ": [
+    "ClassDef DOCSTRING -- \n    Account admin model.\n    ": [
         "../ta/api/accounts/admin.py:12"
     ],
-    "DOCSTRING -- \n    Aggregator implementations\n    ": [
+    "ClassDef DOCSTRING -- \n    Aggregator implementations\n    ": [
         "../ta/api/analytics/aggregators.py:371"
     ],
-    "DOCSTRING -- \n    An abstract user model that is an alternative to the standard AbstractUser. The\n    sole difference is that AbstractAccount does not have a username field, and uses\n    the email field as the primary identifier by default.\n\n    Email and password are required. Other fields are optional.\n    ": [
+    "ClassDef DOCSTRING -- \n    An abstract user model that is an alternative to the standard AbstractUser. The\n    sole difference is that AbstractAccount does not have a username field, and uses\n    the email field as the primary identifier by default.\n\n    Email and password are required. Other fields are optional.\n    ": [
         "../ta/api/accounts/models.py:66"
     ],
-    "DOCSTRING -- \n    Deprecated\n    ": [
+    "ClassDef DOCSTRING -- \n    Deprecated\n    ": [
         "../ta/api/iot/views.py:22"
     ],
-    "DOCSTRING -- \n    Field validators\n    ": [
+    "ClassDef DOCSTRING -- \n    Field validators\n    ": [
         "../ta/api/teams/validators/team_validator.py:18"
     ],
-    "DOCSTRING -- \n    Global validators\n    ": [
+    "ClassDef DOCSTRING -- \n    Global validators\n    ": [
         "../ta/api/teams/validators/team_validator.py:50"
     ],
-    "DOCSTRING -- \n    Helpers\n    ": [
+    "ClassDef DOCSTRING -- \n    Helpers\n    ": [
         "../ta/api/analytics/occupancy_analytics.py:283"
     ],
-    "DOCSTRING -- \n    Instance helper functions\n    ": [
+    "ClassDef DOCSTRING -- \n    Instance helper functions\n    ": [
         "../ta/api/booking/validators/booking_validators.py:106"
     ],
-    "DOCSTRING -- \n    Lists possible aggregators <function_name>, [<allowed_scope>, ...]\n    ": [
+    "ClassDef DOCSTRING -- \n    Lists possible aggregators <function_name>, [<allowed_scope>, ...]\n    ": [
         "../ta/api/analytics/aggregators.py:61",
         "../ta/api/analytics/occupancy_analytics.py:99"
     ],
-    "DOCSTRING -- \n    Lists possible selectors {<name>, <default_value>}\n    ": [
+    "ClassDef DOCSTRING -- \n    Lists possible selectors {<name>, <default_value>}\n    ": [
         "../ta/api/analytics/aggregators.py:38",
         "../ta/api/analytics/occupancy_analytics.py:64"
     ],
-    "DOCSTRING -- \n    Participation intermediary model.\n    Connects Team with Account as many to many.\n    ": [
+    "ClassDef DOCSTRING -- \n    Participation intermediary model.\n    Connects Team with Account as many to many.\n    ": [
         "../ta/api/teams/models.py:73"
     ],
-    "DOCSTRING -- \n    Perspectives\n    ": [
+    "ClassDef DOCSTRING -- \n    Perspectives\n    ": [
         "../ta/api/analytics/occupancy_analytics.py:345"
     ],
-    "DOCSTRING -- \n    Primitives\n    ": [
+    "ClassDef DOCSTRING -- \n    Primitives\n    ": [
         "../ta/api/bookables/validators/bookable_validator.py:30",
         "../ta/api/booking/validators/booking_validators.py:138",
         "../ta/api/booking/validators/repeating_booking_validators.py:150"
     ],
-    "DOCSTRING -- \n    Renames a given filename to a unique one\n    :param extension: (optional) use this parameter when you have the extension ready\n    :param original_filename: original full filename (file.ext)\n    :return: a random UUID filename with original lowercased extension\n    ": [
+    "ClassDef DOCSTRING -- \n    Team service model.\n    ": [
+        "../ta/api/teams/models.py:34"
+    ],
+    "ClassDef DOCSTRING -- \n    Validates participant attendance states (accept/decline)\n    ": [
+        "../ta/api/room_booking/validators.py:30"
+    ],
+    "ClassDef DOCSTRING -- \n    Validates participant invitation (invite/remove)\n    ": [
+        "../ta/api/room_booking/validators.py:74"
+    ],
+    "ClassDef DOCSTRING -- A form for updating users.\n\n    Includes all the fields on the user, but replaces the password field\n    with admin's password hash display field.\n\n    ": [
+        "../ta/api/accounts/forms.py:87"
+    ],
+    "ClassDef DOCSTRING -- https://tableair.slack.com/archives/C0GBXFB0X/p1516972939000060\n    esminis parametras yra 'po' ir 'no'\n    'po' -> previous occupancy, 'no' -> new occupancy\n\n    tai jeigu 'po': 0 ir 'no': 1   tai rei\u0161kia stalas (sensorius) tuo metu tapo u\u017eimtas\n    o jeigu 'po': 1 ir 'no': 0, tai nuo stalo (sensoriaus) ka\u017ekas nu\u0117jo\n    jeigu 'po': 1 ir 'no': 1, tai jis tiesiog toliau yra u\u017eimtas, b\u016bsena nesikei\u010dia\n\n": [
+        "../ta/api/bookables/activity/occupancy.py:21"
+    ],
+    "FunctionDef DOCSTRING -- \n            jei from yra 1mad -- 0 -trinti-> 5, 6\n            jei from yra 2mad -- 1 -trinti-> 4, 5\n            jei from yra 3mad -- 2 -trinti-> 3, 4\n\n            jei from yra 6mad -- 5 -trinti-> 0, 1\n            jei from yra 7mad -- 6 -trinti-> -1, 0\n            ": [
+        "../ta/api/analytics/occupancy_analytics.py:473"
+    ],
+    "FunctionDef DOCSTRING -- \n            params:  interval of activity\n                     part   of partitioning (day/hour or so)\n            ": [
+        "../ta/api/analytics/occupancy_analytics.py:295"
+    ],
+    "FunctionDef DOCSTRING -- \n        :return: average booking duration in minutes\n        ": [
+        "../ta/api/analytics/aggregators.py:376"
+    ],
+    "FunctionDef DOCSTRING -- \n        :return: average booking end time 'HH:MM'\n        ": [
+        "../ta/api/analytics/aggregators.py:551"
+    ],
+    "FunctionDef DOCSTRING -- \n        :return: average check-in time 'HH:MM'\n        ": [
+        "../ta/api/analytics/aggregators.py:557"
+    ],
+    "FunctionDef DOCSTRING -- \n        :return: average room booking duration with at least one check-in\n        ": [
+        "../ta/api/analytics/aggregators.py:615"
+    ],
+    "FunctionDef DOCSTRING -- \n        :return: average sitting and standing heights\n        ": [
+        "../ta/api/analytics/aggregators.py:388"
+    ],
+    "FunctionDef DOCSTRING -- \n        :return: minutes booked by day for a time period\n        ": [
+        "../ta/api/analytics/aggregators.py:661"
+    ],
+    "FunctionDef DOCSTRING -- \n        :return: the account id of the longest total check-in attendance\n        ": [
+        "../ta/api/analytics/aggregators.py:627"
+    ],
+    "FunctionDef DOCSTRING -- \n        :return: the percentage of checked-in participants over invited\n        ": [
+        "../ta/api/analytics/aggregators.py:644"
+    ],
+    "FunctionDef DOCSTRING -- \n        Adopted from SitStandAnalyticsAggregator\n        :return:\n        ": [
+        "../ta/api/analytics/occupancy_analytics.py:669"
+    ],
+    "FunctionDef DOCSTRING -- \n        EP4 by Rokas\n        https://tableair.slack.com/files/U8YH9D5K6/F8YKP6DU2/workoccupancy_endpoint_spec_description.txt\n        ?page=1\n        ": [
+        "../ta/api/analytics/occupancy_analytics.py:587"
+    ],
+    "FunctionDef DOCSTRING -- \n        For DEV purposes\n                # most activity:\n        {\n        \"prefab\": 152,\n        \"venue__name\": \"Approved house of cards\",\n        \"cnt\": 223,\n        \"prefab__identifier\": \"SP000000A\",\n        \"venue\": 9\n        },\n        \"prefab\": 155,             \"cnt\": 211,             \"prefab__identifier\": \"SP000000C\",             \"venue\": 9\n        \"prefab\": 156,                   \"cnt\": 30,          \"prefab__identifier\": \"SP0200000\",            \"venue\": 8\n        \"prefab\": 157,            \"venue__name\": \"euneV\",            \"cnt\": 4,            \"prefab__identifier\": \"SP0200001\",            \"venue\": 16\n        \"prefab\": 14,            \"venue__name\": \"Demo Venue\",            \"cnt\": 1,            \"prefab__identifier\": \"X0000000E\",            \"venue\": 5\n\n\n        ": [
+        "../ta/api/analytics/occupancy_analytics.py:648"
+    ],
+    "FunctionDef DOCSTRING -- \n        Name and URL uniqueness checks. Moved here from DB layer due to is_historic presence.\n        ": [
+        "../ta/api/teams/validators/team_validator.py:36"
+    ],
+    "FunctionDef DOCSTRING -- \n        Object instance -> Dict of primitive datatypes.\n        ": [
+        "../ta/api/accounts/serializers.py:40"
+    ],
+    "FunctionDef DOCSTRING -- \n        Performs a single calculation based of context kwargs\n        :return:\n        ": [
+        "../ta/api/bookables/sitstand/aggregators.py:92"
+    ],
+    "FunctionDef DOCSTRING -- \n        Send an email to this User.\n        ": [
+        "../ta/api/accounts/models.py:117"
+    ],
+    "FunctionDef DOCSTRING -- \n        finds the first free spot to place table in\n        :return: pair (column, row)\n        ": [
+        "../ta/api/bookables/utils.py:59"
+    ],
+    "FunctionDef DOCSTRING -- \n        register\n        ": [
+        "../ta/api/accounts/views.py:46"
+    ],
+    "FunctionDef DOCSTRING -- \n        retrieve list\n        ": [
+        "../ta/api/accounts/views.py:39"
+    ],
+    "FunctionDef DOCSTRING -- \n        the percentage of daily time relative to venue.work_start, venue.work_end spent booked\n        :return: average table utilization [0.0, 1.0]\n        ": [
+        "../ta/api/analytics/aggregators.py:564"
+    ],
+    "FunctionDef DOCSTRING -- \n    Renames a given filename to a unique one\n    :param extension: (optional) use this parameter when you have the extension ready\n    :param original_filename: original full filename (file.ext)\n    :return: a random UUID filename with original lowercased extension\n    ": [
         "../ta/api/teams/models.py:23",
         "../ta/api/venues/models.py:107"
     ],
-    "DOCSTRING -- \n    Team service model.\n    ": [
-        "../ta/api/teams/models.py:34"
-    ],
-    "DOCSTRING -- \n    Validates participant attendance states (accept/decline)\n    ": [
-        "../ta/api/room_booking/validators.py:30"
-    ],
-    "DOCSTRING -- \n    Validates participant invitation (invite/remove)\n    ": [
-        "../ta/api/room_booking/validators.py:74"
-    ],
-    "DOCSTRING -- \"\n            if missing the very first interval start\n            or very last interval end\n            delete them or\n\n            replace with week start and end respectively (with idea, that timestamps were outside query)\n            but should keep in mind to substract weekends... # TODO\n            ": [
+    "FunctionDef DOCSTRING -- \"\n            if missing the very first interval start\n            or very last interval end\n            delete them or\n\n            replace with week start and end respectively (with idea, that timestamps were outside query)\n            but should keep in mind to substract weekends... # TODO\n            ": [
         "../ta/api/analytics/occupancy_analytics.py:814"
     ],
-    "DOCSTRING -- 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ": [
-        "../ta/api/bookables/validators/prefab_validator.py:29"
-    ],
-    "DOCSTRING -- A form for updating users.\n\n    Includes all the fields on the user, but replaces the password field\n    with admin's password hash display field.\n\n    ": [
-        "../ta/api/accounts/forms.py:87"
-    ],
-    "DOCSTRING -- AUTH_USER_MODEL": [
-        "../ta/api/accounts/models.py:134"
-    ],
-    "DOCSTRING -- Account is not a kiosk": [
-        "../ta/api/accounts/models.py:126"
-    ],
-    "DOCSTRING -- Check that the two password entries match.\n\n        :return str password2: cleaned password2\n        :raise forms.ValidationError: password2 != password1\n\n        ": [
+    "FunctionDef DOCSTRING -- Check that the two password entries match.\n\n        :return str password2: cleaned password2\n        :raise forms.ValidationError: password2 != password1\n\n        ": [
         "../ta/api/accounts/forms.py:56"
     ],
-    "DOCSTRING -- Clean form email.\n\n        :return str email: cleaned email\n        :raise forms.ValidationError: Email is duplicated\n\n        ": [
+    "FunctionDef DOCSTRING -- Clean form email.\n\n        :return str email: cleaned email\n        :raise forms.ValidationError: Email is duplicated\n\n        ": [
         "../ta/api/accounts/forms.py:37"
     ],
-    "DOCSTRING -- Clean password.\n\n        Regardless of what the user provides, return the initial value.\n        This is done here, rather than on the field, because the\n        field does not have access to the initial value.\n\n        :return str password:\n\n        ": [
+    "FunctionDef DOCSTRING -- Clean password.\n\n        Regardless of what the user provides, return the initial value.\n        This is done here, rather than on the field, because the\n        field does not have access to the initial value.\n\n        :return str password:\n\n        ": [
         "../ta/api/accounts/forms.py:114"
     ],
-    "DOCSTRING -- EP1 by Rokas\n        https://tableair.slack.com/files/U8YH9D5K6/F8YKP6DU2/workoccupancy_endpoint_spec_description.txt\n        ": [
+    "FunctionDef DOCSTRING -- EP1 by Rokas\n        https://tableair.slack.com/files/U8YH9D5K6/F8YKP6DU2/workoccupancy_endpoint_spec_description.txt\n        ": [
         "../ta/api/analytics/occupancy_analytics.py:352"
     ],
-    "DOCSTRING -- EP2 by Rokas\n        https://tableair.slack.com/files/U8YH9D5K6/F8YKP6DU2/workoccupancy_endpoint_spec_description.txt\n        ": [
+    "FunctionDef DOCSTRING -- EP2 by Rokas\n        https://tableair.slack.com/files/U8YH9D5K6/F8YKP6DU2/workoccupancy_endpoint_spec_description.txt\n        ": [
         "../ta/api/analytics/occupancy_analytics.py:505"
     ],
-    "DOCSTRING -- Helper function to help debug/analyse queries.\n    Can also be used to return query in rest api (as list of lines)": [
+    "FunctionDef DOCSTRING -- Helper function to help debug/analyse queries.\n    Can also be used to return query in rest api (as list of lines)": [
         "../ta/api/analytics/occupancy_analytics.py:49"
     ],
-    "DOCSTRING -- If include_empty_days=False, skip days with no info (should be weekends and so)  ": [
+    "FunctionDef DOCSTRING -- If include_empty_days=False, skip days with no info (should be weekends and so)  ": [
         "../ta/api/analytics/occupancy_analytics.py:549"
     ],
-    "DOCSTRING -- Init the form.": [
+    "FunctionDef DOCSTRING -- Init the form.": [
         "../ta/api/accounts/forms.py:99"
     ],
-    "DOCSTRING -- Invalid kiosk setup": [
-        "../ta/api/accounts/models.py:129"
-    ],
-    "DOCSTRING -- Invalid kiosk setup. Kiosk with no participations": [
-        "../ta/api/accounts/models.py:127"
-    ],
-    "DOCSTRING -- Invitation to a meeting": [
-        "../ta/api/booking/confirmation.py:9"
-    ],
-    "DOCSTRING -- Meeting was canceled": [
-        "../ta/api/booking/confirmation.py:46"
-    ],
-    "DOCSTRING -- Meeting was rescheduled": [
-        "../ta/api/booking/confirmation.py:20"
-    ],
-    "DOCSTRING -- Meeting was scheduled": [
-        "../ta/api/booking/confirmation.py:33"
-    ],
-    "DOCSTRING -- Partition intervals to weekdays (or hours)\n        expects that intervals doesn't span over few parts...\n        ": [
+    "FunctionDef DOCSTRING -- Partition intervals to weekdays (or hours)\n        expects that intervals doesn't span over few parts...\n        ": [
         "../ta/api/analytics/occupancy_analytics.py:289"
     ],
-    "DOCSTRING -- Room Booking": [
-        "../ta/api/room_booking/apps.py:7"
-    ],
-    "DOCSTRING -- Room booking must have a confirmed status": [
-        "../ta/api/room_booking/validators.py:31"
-    ],
-    "DOCSTRING -- Save user.\n\n        Save the provided password in hashed format.\n\n        :return custom_user.models.EmailUser: user\n\n        ": [
+    "FunctionDef DOCSTRING -- Save user.\n\n        Save the provided password in hashed format.\n\n        :return custom_user.models.EmailUser: user\n\n        ": [
         "../ta/api/accounts/forms.py:73"
     ],
-    "DOCSTRING -- Take work starts and ends in each partition (weekday)": [
+    "FunctionDef DOCSTRING -- Take work starts and ends in each partition (weekday)": [
         "../ta/api/analytics/occupancy_analytics.py:548"
     ],
-    "DOCSTRING -- Timestamp Sent by the Sensor": [
-        "../ta/api/bookables/admin.py:22"
-    ],
-    "DOCSTRING -- UI Settings": [
-        "../ta/api/ui/models.py:21"
-    ],
-    "DOCSTRING -- UI Team Settings": [
-        "../ta/api/ui/models.py:31"
-    ],
-    "DOCSTRING -- UI Venue Settings": [
-        "../ta/api/ui/models.py:52"
-    ],
-    "DOCSTRING -- [A-Z0-9]{9}": [
-        "../ta/api/bookables/validators/prefab_validator.py:11"
-    ],
-    "DOCSTRING -- __all__": [
-        "../ta/api/booking/serializers.py:21",
-        "../ta/api/booking/serializers.py:29",
-        "../ta/api/broker/serializers.py:11",
-        "../ta/api/groups/serializers.py:22",
-        "../ta/api/objects/serializers.py:15",
-        "../ta/api/objects/serializers.py:25",
-        "../ta/api/room_booking/serializers.py:23",
-        "../ta/api/room_booking/serializers.py:39",
-        "../ta/api/rooms/serializers.py:29",
-        "../ta/api/rooms/serializers.py:53"
-    ],
-    "DOCSTRING -- account email change": [
-        "../ta/api/accounts/models.py:166"
-    ],
-    "DOCSTRING -- account email changes": [
-        "../ta/api/accounts/models.py:167"
-    ],
-    "DOCSTRING -- account password resets": [
-        "../ta/api/accounts/models.py:154"
-    ],
-    "DOCSTRING -- account registrations": [
-        "../ta/api/accounts/models.py:143"
-    ],
-    "DOCSTRING -- agent": [
-        "../ta/api/devices/models.py:26"
-    ],
-    "DOCSTRING -- agents": [
-        "../ta/api/devices/models.py:27"
-    ],
-    "DOCSTRING -- api settings": [
-        "../ta/api/accounts/models.py:180"
-    ],
-    "DOCSTRING -- booking": [
-        "../ta/api/booking/models.py:90"
-    ],
-    "DOCSTRING -- bookings": [
-        "../ta/api/booking/models.py:91"
-    ],
-    "DOCSTRING -- calendar integration link": [
-        "../ta/api/integration/models.py:13"
-    ],
-    "DOCSTRING -- calendar integration links": [
-        "../ta/api/integration/models.py:14"
-    ],
-    "DOCSTRING -- check_in_restrictions_exempt": [
-        "../ta/api/booking/validators/booking_validators.py:34"
-    ],
-    "DOCSTRING -- created": [
-        "../ta/api/bookables/admin.py:27"
-    ],
-    "DOCSTRING -- date_extrema_exempt": [
-        "../ta/api/booking/validators/booking_validators.py:31"
-    ],
-    "DOCSTRING -- email": [
-        "../ta/api/accounts/models.py:100"
-    ],
-    "DOCSTRING -- firmware version": [
-        "../ta/api/firmware/models.py:13"
-    ],
-    "DOCSTRING -- firmware versions": [
-        "../ta/api/firmware/models.py:14"
-    ],
-    "DOCSTRING -- function that distributes interval among the parts of partition\n                example:\n                partition = (start_time, part_size, parts_count)\n                workday = (9*60, 60, 8)  # in minutes: starts 9:00, and split into 8 hours\n                9  10  11  12  13  14  15  16  (17)\n\n                initial partitioned sums:\n                0   0   0   0   0   0   0   0\n\n                if interval:  9:20  9:30\n                10   0   0   0   0   0   0   0\n\n                if interval:  9:20  10:00\n                40   0   0   0   0   0   0   0\n\n                if interval:  9:20  10:20\n                40   20   0   0   0   0   0   0\n\n                if interval:  9:20  11:45\n                40   60   45   0   0   0   0   0\n\n                edge cases:\n                if interval:  None  9:30\n                30   0   0   0   0   0   0   0\n\n                if interval:  9:20 None\n                40  60  60  60  60  60  60  60\n\n                if interval:  10:00  10:00\n                0   0   0   0   0   0   0   0\n\n                error cases\n\n                if interval:  8:30  9:30  (if earlier than workday start, should get None)\n                30   0   0   0   0   0   0   0\n\n                if interval:  10:00  9:40\n                30   0   0   0   0   0   0   0\n                ": [
+    "FunctionDef DOCSTRING -- function that distributes interval among the parts of partition\n                example:\n                partition = (start_time, part_size, parts_count)\n                workday = (9*60, 60, 8)  # in minutes: starts 9:00, and split into 8 hours\n                9  10  11  12  13  14  15  16  (17)\n\n                initial partitioned sums:\n                0   0   0   0   0   0   0   0\n\n                if interval:  9:20  9:30\n                10   0   0   0   0   0   0   0\n\n                if interval:  9:20  10:00\n                40   0   0   0   0   0   0   0\n\n                if interval:  9:20  10:20\n                40   20   0   0   0   0   0   0\n\n                if interval:  9:20  11:45\n                40   60   45   0   0   0   0   0\n\n                edge cases:\n                if interval:  None  9:30\n                30   0   0   0   0   0   0   0\n\n                if interval:  9:20 None\n                40  60  60  60  60  60  60  60\n\n                if interval:  10:00  10:00\n                0   0   0   0   0   0   0   0\n\n                error cases\n\n                if interval:  8:30  9:30  (if earlier than workday start, should get None)\n                30   0   0   0   0   0   0   0\n\n                if interval:  10:00  9:40\n                30   0   0   0   0   0   0   0\n                ": [
         "../ta/api/analytics/occupancy_analytics.py:431"
     ],
-    "DOCSTRING -- gets date in parameter \"from\"\n        if <duration> is week: imagines week starts on it (though it might be not monday)\n        ": [
+    "FunctionDef DOCSTRING -- gets date in parameter \"from\"\n        if <duration> is week: imagines week starts on it (though it might be not monday)\n        ": [
         "../ta/api/analytics/occupancy_analytics.py:493"
     ],
-    "DOCSTRING -- group": [
-        "../ta/api/groups/models.py:14"
-    ],
-    "DOCSTRING -- group member": [
-        "../ta/api/groups/models.py:28"
-    ],
-    "DOCSTRING -- group members": [
-        "../ta/api/groups/models.py:29"
-    ],
-    "DOCSTRING -- groups": [
-        "../ta/api/groups/models.py:15"
-    ],
-    "DOCSTRING -- https://tableair.slack.com/archives/C0GBXFB0X/p1516972939000060\n    esminis parametras yra 'po' ir 'no'\n    'po' -> previous occupancy, 'no' -> new occupancy\n\n    tai jeigu 'po': 0 ir 'no': 1   tai rei\u0161kia stalas (sensorius) tuo metu tapo u\u017eimtas\n    o jeigu 'po': 1 ir 'no': 0, tai nuo stalo (sensoriaus) ka\u017ekas nu\u0117jo\n    jeigu 'po': 1 ir 'no': 1, tai jis tiesiog toliau yra u\u017eimtas, b\u016bsena nesikei\u010dia\n\n": [
-        "../ta/api/bookables/activity/occupancy.py:21"
-    ],
-    "DOCSTRING -- intersection_exempt": [
-        "../ta/api/booking/validators/booking_validators.py:32"
-    ],
-    "DOCSTRING -- logging": [
-        "../ta/api/logging/models.py:57"
-    ],
-    "DOCSTRING -- logs": [
-        "../ta/api/logging/models.py:58"
-    ],
-    "DOCSTRING -- mobile app usage": [
-        "../ta/api/analytics/models.py:51"
-    ],
-    "DOCSTRING -- mobile app usage logs": [
-        "../ta/api/analytics/models.py:52"
-    ],
-    "DOCSTRING -- must be fixed": [
-        "../ta/api/validators/tests.py:9"
-    ],
-    "DOCSTRING -- no_email_notifications": [
-        "../ta/api/room_booking/validators.py:75"
-    ],
-    "DOCSTRING -- notification": [
-        "../ta/api/devices/models.py:60"
-    ],
-    "DOCSTRING -- notification_exempt": [
-        "../ta/api/booking/validators/booking_validators.py:35"
-    ],
-    "DOCSTRING -- notifications": [
-        "../ta/api/devices/models.py:61"
-    ],
-    "DOCSTRING -- object": [
-        "../ta/api/objects/models.py:35"
-    ],
-    "DOCSTRING -- objects": [
-        "../ta/api/booking/models.py:93",
-        "../ta/api/objects/models.py:36"
-    ],
-    "DOCSTRING -- other_bookables_intersection_exempt": [
-        "../ta/api/booking/validators/booking_validators.py:33"
-    ],
-    "DOCSTRING -- participant permission": [
-        "../ta/api/teams/models.py:110"
-    ],
-    "DOCSTRING -- participant permissions": [
-        "../ta/api/teams/models.py:111"
-    ],
-    "DOCSTRING -- participations": [
-        "../ta/api/teams/models.py:98"
-    ],
-    "DOCSTRING -- returns avg start and end of work": [
+    "FunctionDef DOCSTRING -- returns avg start and end of work": [
         "../ta/api/analytics/occupancy_analytics.py:537"
     ],
-    "DOCSTRING -- room": [
-        "../ta/api/rooms/models.py:14"
-    ],
-    "DOCSTRING -- room booking": [
-        "../ta/api/room_booking/models.py:25"
-    ],
-    "DOCSTRING -- room booking participant": [
-        "../ta/api/room_booking/models.py:42"
-    ],
-    "DOCSTRING -- room booking participants": [
-        "../ta/api/room_booking/models.py:43"
-    ],
-    "DOCSTRING -- room bookings": [
-        "../ta/api/room_booking/models.py:26"
-    ],
-    "DOCSTRING -- room object": [
-        "../ta/api/rooms/models.py:31"
-    ],
-    "DOCSTRING -- room objects": [
-        "../ta/api/rooms/models.py:32"
-    ],
-    "DOCSTRING -- room_booking": [
-        "../ta/api/room_booking/apps.py:6"
-    ],
-    "DOCSTRING -- rooms": [
-        "../ta/api/rooms/models.py:15"
-    ],
-    "DOCSTRING -- settings synchronization": [
-        "../ta/api/sync/models.py:54"
-    ],
-    "DOCSTRING -- ta.api.accounts": [
-        "../ta/api/accounts/apps.py:6"
-    ],
-    "DOCSTRING -- ta.api.logging": [
-        "../ta/api/logging/apps.py:10"
-    ],
-    "DOCSTRING -- ta.api.objects": [
-        "../ta/api/objects/apps.py:5"
-    ],
-    "DOCSTRING -- ta.api.room_booking": [
-        "../ta/api/room_booking/apps.py:5"
-    ],
-    "DOCSTRING -- ta_account": [
-        "../ta/api/accounts/models.py:133"
-    ],
-    "DOCSTRING -- ta_accounts": [
-        "../ta/api/accounts/apps.py:7",
-        "../ta/api/accounts/models.py:135"
-    ],
-    "DOCSTRING -- ta_agent": [
-        "../ta/api/devices/models.py:25"
-    ],
-    "DOCSTRING -- ta_api_logging": [
-        "../ta/api/logging/apps.py:11"
-    ],
-    "DOCSTRING -- ta_api_settings": [
-        "../ta/api/accounts/models.py:179"
-    ],
-    "DOCSTRING -- ta_app_usage": [
-        "../ta/api/analytics/models.py:50"
-    ],
-    "DOCSTRING -- ta_bookable": [
-        "../ta/api/bookables/models.py:85"
-    ],
-    "DOCSTRING -- ta_booking": [
-        "../ta/api/booking/models.py:89"
-    ],
-    "DOCSTRING -- ta_calendar_link": [
-        "../ta/api/integration/models.py:15"
-    ],
-    "DOCSTRING -- ta_email_change": [
-        "../ta/api/accounts/models.py:165"
-    ],
-    "DOCSTRING -- ta_firmware": [
-        "../ta/api/firmware/models.py:12"
-    ],
-    "DOCSTRING -- ta_group": [
-        "../ta/api/groups/models.py:16"
-    ],
-    "DOCSTRING -- ta_group_member": [
-        "../ta/api/groups/models.py:30"
-    ],
-    "DOCSTRING -- ta_invitation": [
-        "../ta/api/teams/models.py:124"
-    ],
-    "DOCSTRING -- ta_license": [
-        "../ta/api/licensing/models.py:15"
-    ],
-    "DOCSTRING -- ta_log": [
-        "../ta/api/logging/models.py:56"
-    ],
-    "DOCSTRING -- ta_notification": [
-        "../ta/api/devices/models.py:59"
-    ],
-    "DOCSTRING -- ta_object": [
-        "../ta/api/objects/models.py:34"
-    ],
-    "DOCSTRING -- ta_participant_permission": [
-        "../ta/api/teams/models.py:112"
-    ],
-    "DOCSTRING -- ta_participation": [
-        "../ta/api/teams/models.py:97"
-    ],
-    "DOCSTRING -- ta_password_reset": [
-        "../ta/api/accounts/models.py:153"
-    ],
-    "DOCSTRING -- ta_prefab": [
-        "../ta/api/bookables/models.py:39"
-    ],
-    "DOCSTRING -- ta_prefab_type": [
-        "../ta/api/bookables/models.py:21"
-    ],
-    "DOCSTRING -- ta_prefab_usage": [
-        "../ta/api/bookables/models.py:55"
-    ],
-    "DOCSTRING -- ta_registration": [
-        "../ta/api/accounts/models.py:142"
-    ],
-    "DOCSTRING -- ta_request": [
-        "../ta/api/requests/models.py:36"
-    ],
-    "DOCSTRING -- ta_room": [
-        "../ta/api/rooms/models.py:16"
-    ],
-    "DOCSTRING -- ta_room_booking": [
-        "../ta/api/room_booking/models.py:27"
-    ],
-    "DOCSTRING -- ta_room_booking_participant": [
-        "../ta/api/room_booking/models.py:44"
-    ],
-    "DOCSTRING -- ta_room_object": [
-        "../ta/api/rooms/models.py:33"
-    ],
-    "DOCSTRING -- ta_settings": [
-        "../ta/api/sync/models.py:53"
-    ],
-    "DOCSTRING -- ta_team": [
-        "../ta/api/teams/models.py:62"
-    ],
-    "DOCSTRING -- ta_tile": [
-        "../ta/api/objects/models.py:19"
-    ],
-    "DOCSTRING -- ta_ui_settings": [
-        "../ta/api/ui/models.py:20"
-    ],
-    "DOCSTRING -- ta_ui_team_settings": [
-        "../ta/api/ui/models.py:30"
-    ],
-    "DOCSTRING -- ta_ui_venue_settings": [
-        "../ta/api/ui/models.py:51"
-    ],
-    "DOCSTRING -- ta_venue": [
-        "../ta/api/venues/models.py:96"
-    ],
-    "DOCSTRING -- ta_venue_back_img": [
-        "../ta/api/venues/models.py:126"
-    ],
-    "DOCSTRING -- team access request": [
-        "../ta/api/requests/models.py:37"
-    ],
-    "DOCSTRING -- team access requests": [
-        "../ta/api/requests/models.py:38"
-    ],
-    "DOCSTRING -- team invitation": [
-        "../ta/api/teams/models.py:125"
-    ],
-    "DOCSTRING -- team invitations": [
-        "../ta/api/teams/models.py:126"
-    ],
-    "DOCSTRING -- teams": [
-        "../ta/api/teams/models.py:63"
-    ],
-    "DOCSTRING -- tile": [
-        "../ta/api/objects/models.py:20"
-    ],
-    "DOCSTRING -- tiles": [
-        "../ta/api/objects/models.py:21"
-    ],
-    "DOCSTRING -- timestamp": [
-        "../ta/api/bookables/admin.py:21"
-    ],
-    "DOCSTRING -- translates intervals to timedeltas, so the starting (from) point is 0": [
+    "FunctionDef DOCSTRING -- translates intervals to timedeltas, so the starting (from) point is 0": [
         "../ta/api/analytics/occupancy_analytics.py:379"
-    ],
-    "DOCSTRING -- venue": [
-        "../ta/api/venues/models.py:97"
-    ],
-    "DOCSTRING -- venue background image": [
-        "../ta/api/venues/models.py:127"
-    ],
-    "DOCSTRING -- venue background images": [
-        "../ta/api/venues/models.py:128"
-    ],
-    "DOCSTRING -- venues": [
-        "../ta/api/venues/models.py:98"
     ],
     "HTTP_HOST": [
         "../ta/api/analytics/_deprecated_tests_api.py:19"
+    ],
+    "LEFT OUTER": [
+        "../ta/api/analytics/occupancy_analytics.py:51"
+    ],
+    "Module DOCSTRING -- \n    Bookable Handlers\n": [
+        "../ta/api/bookables/endpoints.py:17"
+    ],
+    "Module DOCSTRING -- \n    Composite booking handlers\n": [
+        "../ta/api/booking/endpoints.py:96"
+    ],
+    "Module DOCSTRING -- \n    Main booking handlers\n": [
+        "../ta/api/booking/endpoints.py:18"
+    ],
+    "Module DOCSTRING -- \n    Prefab Handlers\n": [
+        "../ta/api/bookables/endpoints.py:115"
+    ],
+    "Module DOCSTRING -- \n    Prefab Usage Handlers\n": [
+        "../ta/api/bookables/endpoints.py:181"
+    ],
+    "Module DOCSTRING -- \nInvitation endpoint\n": [
+        "../ta/api/teams/endpoints.py:77"
+    ],
+    "Module DOCSTRING -- \nInvitation endpoints\n": [
+        "../ta/api/teams/endpoints.py:53"
+    ],
+    "Module DOCSTRING -- \nRoom booking\n": [
+        "../ta/api/room_booking/endpoints.py:21"
+    ],
+    "Module DOCSTRING -- \nRoom booking attendance\n": [
+        "../ta/api/room_booking/endpoints.py:122"
+    ],
+    "Module DOCSTRING -- \nRoom booking composite endpoints\n": [
+        "../ta/api/room_booking/endpoints.py:162"
+    ],
+    "Module DOCSTRING -- \nRoom booking participation\n": [
+        "../ta/api/room_booking/endpoints.py:87"
+    ],
+    "Module DOCSTRING -- \nTeam endpoints\n": [
+        "../ta/api/teams/endpoints.py:13"
+    ],
+    "Module DOCSTRING -- \nclass OccupancySerializer(serializers.ModelSerializer):\n    def __init__(self, instance=None, data=empty, account_pk=None, **kwargs):\n        if account_pk is None:\n            raise AttributeError('No account ID was provided')\n        self.account_pk = account_pk\n        queryset = WorkspaceOccupancy.objects.filter(account_id=account_pk)\n        super().__init__(instance, data, **kwargs)\n\n    def validate(self, attrs):\n        attrs['account_id'] = self.account_pk\n        if 'timestamp' in attrs:\n            invalid_if(timezone.now() - attrs['timestamp'] > timedelta(days=365), 'timestamp', 'Timestamp cannot be more than a year old')\n        return attrs\n\n    def create(self, validated_data):\n        instance = WorkspaceOccupancy(**validated_data)\n        instance.validate_and_save()\n        return instance\n\n    class Meta:\n        model = WorkspaceOccupancy\n        fields = ('activity', 'timestamp', 'duration')\n\n": [
+        "../ta/api/analytics/serializers.py:58"
+    ],
+    "Module DOCSTRING -- \nrefactoring URL structure:\n\nhttp://api.tableair.xx:8000/analytics/occupancy/get_prefabs_intervals/venue/8/?duration=week&from=2018-01-07\n\n\nEP1\nhttp://api.tableair.xx:8000/analytics/occupancy/by_week_hours/venue/8/?from=2018-01-07  (from galima nera\u0161yt - defaultins \u012f duration prad\u017ei\u0105)\nhttp://api.tableair.xx:8000/analytics/occupancy/by_week_hours/prefab/SP0200000/?from=2018-01-07  (from galima nera\u0161yt - defaultins \u012f duration prad\u017ei\u0105)\n\n\nEP2\nhttp://api.tableair.xx:8000/analytics/occupancy/by_prefab/venue/8/?duration=week&from=2018-01-07  (from galima nera\u0161yt - defaultins \u012f duration prad\u017ei\u0105)\nEP3 (CSV)\nhttp://api.tableair.xx:8000/analytics/occupancy/by_prefab/venue/8/csv/?duration=week&from=2018-01-07\n\nEP4\nhttp://api.tableair.xx:8000/analytics/occupancy/by_state_changes/prefab/SP0200000/?duration=week&from=2018-01-07\n\n": [
+        "../ta/api/analytics/urls_analytics.py:34"
+    ],
+    "ORDER BY": [
+        "../ta/api/analytics/occupancy_analytics.py:51"
     ],
     "SHORT_DATETIME_FORMAT": [
         "../ta/api/booking/confirmation.py:13",
@@ -623,7 +313,17 @@
     ],
     "__all__": [
         "../ta/api/analytics/aggregators.py:211",
-        "../ta/api/analytics/occupancy_analytics.py:251"
+        "../ta/api/analytics/occupancy_analytics.py:251",
+        "../ta/api/booking/serializers.py:21",
+        "../ta/api/booking/serializers.py:29",
+        "../ta/api/broker/serializers.py:11",
+        "../ta/api/groups/serializers.py:22",
+        "../ta/api/objects/serializers.py:15",
+        "../ta/api/objects/serializers.py:25",
+        "../ta/api/room_booking/serializers.py:23",
+        "../ta/api/room_booking/serializers.py:39",
+        "../ta/api/rooms/serializers.py:29",
+        "../ta/api/rooms/serializers.py:53"
     ],
     "__iter__": [
         "../ta/api/booking/validators/repeating_booking_validators.py:187"
@@ -822,6 +522,9 @@
     "check_in_once": [
         "../ta/api/booking/validators/booking_validators.py:49"
     ],
+    "check_in_restrictions_exempt": [
+        "../ta/api/booking/validators/booking_validators.py:34"
+    ],
     "confirm_invite": [
         "../ta/api/accounts/serializers.py:27",
         "../ta/api/accounts/serializers.py:30",
@@ -844,6 +547,9 @@
     ],
     "created_formatted": [
         "../ta/api/bookables/admin.py:13"
+    ],
+    "date_extrema_exempt": [
+        "../ta/api/booking/validators/booking_validators.py:31"
     ],
     "date_joined": [
         "../ta/api/accounts/admin.py:18",
@@ -957,6 +663,16 @@
         "../ta/api/accounts/serializers.py:28",
         "../ta/api/accounts/serializers.py:30"
     ],
+    "get, patch": [
+        "../ta/api/bookables/endpoints.py:50",
+        "../ta/api/bookables/endpoints.py:132"
+    ],
+    "get, patch, delete": [
+        "../ta/api/booking/endpoints.py:35",
+        "../ta/api/room_booking/endpoints.py:43",
+        "../ta/api/teams/endpoints.py:30",
+        "../ta/api/venues/endpoints.py:22"
+    ],
     "get_prefabs_intervals": [
         "../ta/api/analytics/occupancy_analytics.py:105"
     ],
@@ -1003,6 +719,9 @@
     ],
     "intersecting_allowed": [
         "../ta/api/booking/validators/booking_validators.py:131"
+    ],
+    "intersection_exempt": [
+        "../ta/api/booking/validators/booking_validators.py:32"
     ],
     "is_active": [
         "../ta/api/accounts/admin.py:16",
@@ -1107,6 +826,12 @@
     "new_password": [
         "../ta/api/accounts/views.py:158"
     ],
+    "no_email_notifications": [
+        "../ta/api/room_booking/validators.py:75"
+    ],
+    "notification_exempt": [
+        "../ta/api/booking/validators/booking_validators.py:35"
+    ],
     "notification_id": [
         "../ta/api/booking/notifications.py:38",
         "../ta/api/booking/notifications.py:198",
@@ -1137,6 +862,9 @@
         "../ta/api/analytics/aggregators.py:274",
         "../ta/api/analytics/aggregators.py:283"
     ],
+    "other_bookables_intersection_exempt": [
+        "../ta/api/booking/validators/booking_validators.py:33"
+    ],
     "page_size": [
         "../ta/api/analytics/occupancy_analytics.py:715"
     ],
@@ -1150,6 +878,19 @@
     ],
     "password_reset": [
         "../ta/api/accounts/models.py:150"
+    ],
+    "patch, delete": [
+        "../ta/api/broker/endpoints.py:14",
+        "../ta/api/groups/endpoints.py:22",
+        "../ta/api/kiosk/endpoints.py:23",
+        "../ta/api/objects/endpoints.py:42",
+        "../ta/api/rooms/endpoints.py:46"
+    ],
+    "post, delete": [
+        "../ta/api/room_booking/endpoints.py:128"
+    ],
+    "post, patch": [
+        "../ta/api/bookables/endpoints.py:23"
     ],
     "prefab__bookables__name": [
         "../ta/api/analytics/occupancy_analytics.py:125"
@@ -1222,6 +963,9 @@
         "../ta/api/devices/serializers.py:10",
         "../ta/api/devices/serializers.py:12"
     ],
+    "put, delete": [
+        "../ta/api/rooms/endpoints.py:15"
+    ],
     "read_only": [
         "../ta/api/booking/serializers.py:23",
         "../ta/api/room_booking/serializers.py:14",
@@ -1252,6 +996,7 @@
         "../ta/api/room_booking/endpoints.py:195"
     ],
     "room_booking": [
+        "../ta/api/room_booking/apps.py:6",
         "../ta/api/room_booking/emails.py:42",
         "../ta/api/room_booking/emails.py:44",
         "../ta/api/room_booking/endpoints.py:97",
@@ -1338,6 +1083,9 @@
         "../ta/api/analytics/aggregators.py:456",
         "../ta/api/analytics/aggregators.py:478"
     ],
+    "start, end": [
+        "../ta/api/booking/validators/booking_validators.py:56"
+    ],
     "start_date": [
         "../ta/api/booking/management.py:51",
         "../ta/api/booking/management.py:94",
@@ -1356,11 +1104,135 @@
         "../ta/api/booking/validators/repeating_booking_validators.py:159",
         "../ta/api/booking/validators/repeating_booking_validators.py:159"
     ],
+    "start_time end_time": [
+        "../ta/api/booking/management.py:216",
+        "../ta/api/booking/validators/repeating_booking_validators.py:141"
+    ],
+    "start_time, end_time": [
+        "../ta/api/booking/management.py:194",
+        "../ta/api/booking/validators/repeating_booking_validators.py:117"
+    ],
+    "ta.api.room_booking": [
+        "../ta/api/room_booking/apps.py:5"
+    ],
     "ta.api.room_booking.apps.RoomBookingConfig": [
         "../ta/api/room_booking/__init__.py:1"
     ],
+    "ta_account": [
+        "../ta/api/accounts/models.py:133"
+    ],
+    "ta_accounts": [
+        "../ta/api/accounts/apps.py:7",
+        "../ta/api/accounts/models.py:135"
+    ],
+    "ta_agent": [
+        "../ta/api/devices/models.py:25"
+    ],
     "ta_api_logging": [
+        "../ta/api/logging/apps.py:11",
         "../ta/api/logging/signals.py:6"
+    ],
+    "ta_api_settings": [
+        "../ta/api/accounts/models.py:179"
+    ],
+    "ta_app_usage": [
+        "../ta/api/analytics/models.py:50"
+    ],
+    "ta_bookable": [
+        "../ta/api/bookables/models.py:85"
+    ],
+    "ta_booking": [
+        "../ta/api/booking/models.py:89"
+    ],
+    "ta_calendar_link": [
+        "../ta/api/integration/models.py:15"
+    ],
+    "ta_email_change": [
+        "../ta/api/accounts/models.py:165"
+    ],
+    "ta_firmware": [
+        "../ta/api/firmware/models.py:12"
+    ],
+    "ta_group": [
+        "../ta/api/groups/models.py:16"
+    ],
+    "ta_group_member": [
+        "../ta/api/groups/models.py:30"
+    ],
+    "ta_invitation": [
+        "../ta/api/teams/models.py:124"
+    ],
+    "ta_license": [
+        "../ta/api/licensing/models.py:15"
+    ],
+    "ta_log": [
+        "../ta/api/logging/models.py:56"
+    ],
+    "ta_notification": [
+        "../ta/api/devices/models.py:59"
+    ],
+    "ta_object": [
+        "../ta/api/objects/models.py:34"
+    ],
+    "ta_participant_permission": [
+        "../ta/api/teams/models.py:112"
+    ],
+    "ta_participation": [
+        "../ta/api/teams/models.py:97"
+    ],
+    "ta_password_reset": [
+        "../ta/api/accounts/models.py:153"
+    ],
+    "ta_prefab": [
+        "../ta/api/bookables/models.py:39"
+    ],
+    "ta_prefab_type": [
+        "../ta/api/bookables/models.py:21"
+    ],
+    "ta_prefab_usage": [
+        "../ta/api/bookables/models.py:55"
+    ],
+    "ta_registration": [
+        "../ta/api/accounts/models.py:142"
+    ],
+    "ta_request": [
+        "../ta/api/requests/models.py:36"
+    ],
+    "ta_room": [
+        "../ta/api/rooms/models.py:16"
+    ],
+    "ta_room_booking": [
+        "../ta/api/room_booking/models.py:27"
+    ],
+    "ta_room_booking_participant": [
+        "../ta/api/room_booking/models.py:44"
+    ],
+    "ta_room_object": [
+        "../ta/api/rooms/models.py:33"
+    ],
+    "ta_settings": [
+        "../ta/api/sync/models.py:53"
+    ],
+    "ta_team": [
+        "../ta/api/teams/models.py:62"
+    ],
+    "ta_tile": [
+        "../ta/api/objects/models.py:19"
+    ],
+    "ta_ui_settings": [
+        "../ta/api/ui/models.py:20"
+    ],
+    "ta_ui_team_settings": [
+        "../ta/api/ui/models.py:30"
+    ],
+    "ta_ui_venue_settings": [
+        "../ta/api/ui/models.py:51"
+    ],
+    "ta_venue": [
+        "../ta/api/venues/models.py:96"
+    ],
+    "ta_venue_back_img": [
+        "../ta/api/venues/models.py:126"
     ],
     "table_identifier": [
         "../ta/api/booking/management.py:69",

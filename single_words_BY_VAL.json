@@ -71,6 +71,9 @@
     "00:00": [
         "../ta/api/analytics/_deprecated_tests_api.py:43"
     ],
+    "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ": [
+        "../ta/api/bookables/validators/prefab_validator.py:29"
+    ],
     "23:59": [
         "../ta/api/analytics/_deprecated_tests_api.py:43"
     ],
@@ -207,6 +210,9 @@
     "WHERE": [
         "../ta/api/analytics/occupancy_analytics.py:51"
     ],
+    "[A-Z0-9]{9}": [
+        "../ta/api/bookables/validators/prefab_validator.py:11"
+    ],
     "^$": [
         "../ta/api/analytics/urls_analytics.py:7",
         "../ta/api/analytics/urls_usage.py:6"
@@ -325,8 +331,12 @@
     "admin": [
         "../ta/api/logging/signals.py:6"
     ],
+    "agent": [
+        "../ta/api/devices/models.py:26"
+    ],
     "agents": [
-        "../ta/api/devices/models.py:22"
+        "../ta/api/devices/models.py:22",
+        "../ta/api/devices/models.py:27"
     ],
     "aggregator": [
         "../ta/api/analytics/aggregators.py:172",
@@ -372,9 +382,6 @@
     "api:accounts:list": [
         "../ta/api/accounts/_deprecated_tests_api.py:321"
     ],
-    "api:validators:teams": [
-        "../ta/api/validators/tests.py:15"
-    ],
     "append": [
         "../ta/api/bookables/validators/prefab_validator.py:42",
         "../ta/api/bookables/validators/prefab_validator.py:42"
@@ -384,9 +391,6 @@
     ],
     "auth": [
         "../ta/api/logging/signals.py:6"
-    ],
-    "balcony": [
-        "../ta/api/objects/choices.py:30"
     ],
     "bookable": [
         "../ta/api/bookables/models.py:75",
@@ -416,9 +420,13 @@
         "../ta/api/bookables/models.py:74",
         "../ta/api/mux/views.py:50"
     ],
+    "booking": [
+        "../ta/api/booking/models.py:90"
+    ],
     "bookings": [
         "../ta/api/booking/models.py:65",
         "../ta/api/booking/models.py:66",
+        "../ta/api/booking/models.py:91",
         "../ta/api/booking/serializers.py:57",
         "../ta/api/booking/serializers.py:59",
         "../ta/api/booking/serializers.py:63",
@@ -438,9 +446,6 @@
     ],
     "cnt": [
         "../ta/api/analytics/occupancy_analytics.py:660"
-    ],
-    "coffee": [
-        "../ta/api/objects/choices.py:31"
     ],
     "col": [
         "../ta/api/bookables/validators/bookable_validator.py:44",
@@ -471,10 +476,8 @@
     ],
     "created": [
         "../ta/api/bookables/admin.py:7",
+        "../ta/api/bookables/admin.py:27",
         "../ta/api/logging/signals.py:36"
-    ],
-    "cupboard": [
-        "../ta/api/objects/choices.py:40"
     ],
     "d": [
         "../ta/api/bookables/sitstand/aggregators.py:19"
@@ -505,12 +508,6 @@
     ],
     "devices": [
         "../ta/api/mux/views.py:73"
-    ],
-    "doors": [
-        "../ta/api/objects/choices.py:28"
-    ],
-    "drinks": [
-        "../ta/api/objects/choices.py:45"
     ],
     "duration": [
         "../ta/api/analytics/admin.py:7",
@@ -547,9 +544,6 @@
     "e": [
         "../ta/api/iot/serializers.py:14"
     ],
-    "elevator": [
-        "../ta/api/objects/choices.py:29"
-    ],
     "email": [
         "../ta/api/accounts/_deprecated_tests_api.py:322",
         "../ta/api/accounts/admin.py:15",
@@ -563,6 +557,7 @@
         "../ta/api/accounts/models.py:19",
         "../ta/api/accounts/models.py:30",
         "../ta/api/accounts/models.py:30",
+        "../ta/api/accounts/models.py:100",
         "../ta/api/accounts/serializers.py:26",
         "../ta/api/accounts/serializers.py:71",
         "../ta/api/accounts/serializers.py:72",
@@ -643,9 +638,6 @@
     ],
     "explicit": [
         "../ta/api/bookables/validators/prefab_validator.py:53"
-    ],
-    "extinguisher": [
-        "../ta/api/objects/choices.py:33"
     ],
     "f": [
         "../ta/api/iot/views.py:69"
@@ -742,19 +734,10 @@
         "../ta/api/analytics/occupancy_analytics.py:67",
         "../ta/api/analytics/occupancy_analytics.py:197"
     ],
-    "goodname": [
-        "../ta/api/validators/tests.py:18",
-        "../ta/api/validators/tests.py:21",
-        "../ta/api/validators/tests.py:24",
-        "../ta/api/validators/tests.py:33"
-    ],
-    "goodurl": [
-        "../ta/api/validators/tests.py:24",
-        "../ta/api/validators/tests.py:39"
-    ],
     "group": [
         "../ta/api/groups/endpoints.py:32",
         "../ta/api/groups/endpoints.py:36",
+        "../ta/api/groups/models.py:14",
         "../ta/api/groups/validators.py:16",
         "../ta/api/groups/validators.py:20",
         "../ta/api/groups/validators.py:24"
@@ -764,6 +747,7 @@
         "../ta/api/accounts/admin.py:35",
         "../ta/api/accounts/admin.py:38",
         "../ta/api/groups/models.py:10",
+        "../ta/api/groups/models.py:15",
         "../ta/api/groups/models.py:25"
     ],
     "h1": [
@@ -912,9 +896,6 @@
     "kiosk{}@{}": [
         "../ta/api/kiosk/validators.py:38"
     ],
-    "kitchen": [
-        "../ta/api/objects/choices.py:34"
-    ],
     "labadiena1F": [
         "../ta/api/accounts/_deprecated_tests_api.py:322"
     ],
@@ -925,6 +906,9 @@
         "../ta/api/analytics/urls_analytics.py:7",
         "../ta/api/analytics/urls_usage.py:6"
     ],
+    "logging": [
+        "../ta/api/logging/models.py:57"
+    ],
     "logo": [
         "../ta/api/teams/validators/team_validator.py:24",
         "../ta/api/teams/validators/team_validator.py:61",
@@ -933,7 +917,8 @@
         "../ta/api/teams/validators/team_validator.py:74"
     ],
     "logs": [
-        "../ta/api/logging/models.py:46"
+        "../ta/api/logging/models.py:46",
+        "../ta/api/logging/models.py:58"
     ],
     "members": [
         "../ta/api/groups/validators.py:30",
@@ -995,13 +980,7 @@
         "../ta/api/teams/validators/team_validator.py:43",
         "../ta/api/validators/serializers.py:12",
         "../ta/api/validators/serializers.py:12",
-        "../ta/api/validators/serializers.py:13",
-        "../ta/api/validators/tests.py:18",
-        "../ta/api/validators/tests.py:24",
-        "../ta/api/validators/tests.py:27",
-        "../ta/api/validators/tests.py:33",
-        "../ta/api/validators/tests.py:36",
-        "../ta/api/validators/tests.py:39"
+        "../ta/api/validators/serializers.py:13"
     ],
     "no": [
         "../ta/api/bookables/activity/occupancy.py:7",
@@ -1012,8 +991,19 @@
     "noresponse": [
         "../ta/api/bookables/endpoints.py:195"
     ],
+    "notification": [
+        "../ta/api/devices/models.py:60"
+    ],
     "notifications": [
-        "../ta/api/devices/models.py:52"
+        "../ta/api/devices/models.py:52",
+        "../ta/api/devices/models.py:61"
+    ],
+    "object": [
+        "../ta/api/objects/models.py:35"
+    ],
+    "objects": [
+        "../ta/api/booking/models.py:93",
+        "../ta/api/objects/models.py:36"
     ],
     "objects.GridObject": [
         "../ta/api/teams/models.py:89"
@@ -1109,7 +1099,8 @@
     ],
     "participations": [
         "../ta/api/teams/models.py:84",
-        "../ta/api/teams/models.py:85"
+        "../ta/api/teams/models.py:85",
+        "../ta/api/teams/models.py:98"
     ],
     "password": [
         "../ta/api/accounts/_deprecated_tests_api.py:322",
@@ -1253,10 +1244,6 @@
         "../ta/api/bookables/endpoints.py:156",
         "../ta/api/bookables/models.py:31"
     ],
-    "projector": [
-        "../ta/api/objects/choices.py:36",
-        "../ta/api/objects/choices.py:61"
-    ],
     "put": [
         "../ta/api/ui/endpoints.py:14",
         "../ta/api/ui/endpoints.py:29",
@@ -1327,9 +1314,6 @@
     "required": [
         "../ta/api/accounts/serializers.py:30"
     ],
-    "restroom": [
-        "../ta/api/objects/choices.py:37"
-    ],
     "result": [
         "../ta/api/analytics/aggregators.py:232",
         "../ta/api/analytics/views.py:46",
@@ -1368,6 +1352,7 @@
         "../ta/api/rooms/endpoints.py:18",
         "../ta/api/rooms/endpoints.py:65",
         "../ta/api/rooms/endpoints.py:75",
+        "../ta/api/rooms/models.py:14",
         "../ta/api/rooms/validators.py:19",
         "../ta/api/rooms/validators.py:39"
     ],
@@ -1375,6 +1360,9 @@
         "../ta/api/analytics/_deprecated_tests_api.py:166",
         "../ta/api/analytics/_deprecated_tests_api.py:170",
         "../ta/api/analytics/_deprecated_tests_api.py:171"
+    ],
+    "rooms": [
+        "../ta/api/rooms/models.py:15"
     ],
     "row": [
         "../ta/api/bookables/validators/bookable_validator.py:44",
@@ -1430,33 +1418,6 @@
         "../ta/api/mux/views.py:51",
         "../ta/api/mux/views.py:75",
         "../ta/api/sync/models.py:40"
-    ],
-    "shelf": [
-        "../ta/api/objects/choices.py:38"
-    ],
-    "shower": [
-        "../ta/api/objects/choices.py:39"
-    ],
-    "snacks": [
-        "../ta/api/objects/choices.py:42",
-        "../ta/api/objects/choices.py:46"
-    ],
-    "somename": [
-        "../ta/api/validators/tests.py:36"
-    ],
-    "someteam": [
-        "../ta/api/validators/tests.py:12",
-        "../ta/api/validators/tests.py:27",
-        "../ta/api/validators/tests.py:39"
-    ],
-    "someurl": [
-        "../ta/api/validators/tests.py:12",
-        "../ta/api/validators/tests.py:30",
-        "../ta/api/validators/tests.py:33",
-        "../ta/api/validators/tests.py:36"
-    ],
-    "stairs": [
-        "../ta/api/objects/choices.py:43"
     ],
     "start": [
         "../ta/api/accounts/views.py:270",
@@ -1543,11 +1504,20 @@
         "../ta/api/bookables/serializers.py:73",
         "../ta/api/bookables/serializers.py:74"
     ],
+    "ta.api.accounts": [
+        "../ta/api/accounts/apps.py:6"
+    ],
     "ta.api.accounts.apps.AccountConfig": [
         "../ta/api/accounts/__init__.py:1"
     ],
+    "ta.api.logging": [
+        "../ta/api/logging/apps.py:10"
+    ],
     "ta.api.logging.apps.LoggingConfig": [
         "../ta/api/logging/__init__.py:1"
+    ],
+    "ta.api.objects": [
+        "../ta/api/objects/apps.py:5"
     ],
     "table": [
         "../ta/api/analytics/aggregators.py:47",
@@ -1636,7 +1606,8 @@
     ],
     "teams": [
         "../ta/api/mux/views.py:74",
-        "../ta/api/requests/serializers.py:64"
+        "../ta/api/requests/serializers.py:64",
+        "../ta/api/teams/models.py:63"
     ],
     "teams.Team": [
         "../ta/api/licensing/models.py:12"
@@ -1647,6 +1618,12 @@
     ],
     "text": [
         "../ta/api/teams/endpoints.py:88"
+    ],
+    "tile": [
+        "../ta/api/objects/models.py:20"
+    ],
+    "tiles": [
+        "../ta/api/objects/models.py:21"
     ],
     "timestamp": [
         "../ta/api/analytics/admin.py:7",
@@ -1660,6 +1637,7 @@
         "../ta/api/analytics/serializers.py:22",
         "../ta/api/analytics/serializers.py:22",
         "../ta/api/analytics/serializers.py:32",
+        "../ta/api/bookables/admin.py:21",
         "../ta/api/bookables/serializers.py:68",
         "../ta/api/bookables/sitstand/aggregators.py:224",
         "../ta/api/logging/serializers.py:9"
@@ -1724,12 +1702,6 @@
         "../ta/api/validators/serializers.py:14",
         "../ta/api/validators/serializers.py:14",
         "../ta/api/validators/serializers.py:15",
-        "../ta/api/validators/tests.py:21",
-        "../ta/api/validators/tests.py:24",
-        "../ta/api/validators/tests.py:30",
-        "../ta/api/validators/tests.py:33",
-        "../ta/api/validators/tests.py:36",
-        "../ta/api/validators/tests.py:39",
         "../ta/api/venues/serializers.py:24",
         "../ta/api/venues/validators/venue_image_validator.py:22",
         "../ta/api/venues/validators/venue_image_validator.py:36",
@@ -1790,11 +1762,13 @@
         "../ta/api/rooms/endpoints.py:33",
         "../ta/api/rooms/validators.py:19",
         "../ta/api/ui/endpoints.py:46",
+        "../ta/api/venues/models.py:97",
         "../ta/api/venues/serializers.py:20"
     ],
     "venues": [
         "../ta/api/mux/views.py:46",
-        "../ta/api/venues/models.py:40"
+        "../ta/api/venues/models.py:40",
+        "../ta/api/venues/models.py:98"
     ],
     "version": [
         "../ta/api/firmware/models.py:27"
@@ -1802,9 +1776,6 @@
     "vilius@tableair.onmicrosoft.com": [
         "../ta/api/integration/endpoints.py:25",
         "../ta/api/integration/endpoints.py:27"
-    ],
-    "water": [
-        "../ta/api/objects/choices.py:47"
     ],
     "week": [
         "../ta/api/analytics/aggregators.py:55",
@@ -1833,14 +1804,8 @@
         "../ta/api/booking/validators/repeating_booking_validators.py:188",
         "../ta/api/booking/validators/repeating_booking_validators.py:189"
     ],
-    "whiteboard": [
-        "../ta/api/objects/choices.py:62"
-    ],
     "wide": [
         "../ta/api/accounts/admin.py:22"
-    ],
-    "window": [
-        "../ta/api/objects/choices.py:44"
     ],
     "workEnds": [
         "../ta/api/analytics/occupancy_analytics.py:574",
