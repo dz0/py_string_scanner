@@ -1,28 +1,4 @@
-GROUP BY
-
-"'_('"
-'"_("'
-
-'{}\\n\\nSender address: {}'
-
-
-       "../ta/api/teams/endpoints.py:89:        text = '{}\\n\\nSender address: {}'.format(serializer.data['text'], serializer.data['sender_email'])"
-
-
-
-
-    "../ta/api/analytics/aggregators.py": {
-        "214": "_(Aggregator '{0}' does not support scope '{1}')"
-    },
-    "../ta/api/analytics/occupancy_analytics.py": {
-        "254": "_(Aggregator '{0}' does not support scope '{1}')"
-    },
-    "../ta/api/bookables/sitstand/aggregators.py": {
-        "96": "_(Unsupported aggregator type, allowed: `{}`)"
-    },
-    "../ta/api/ui/validators.py": {
-        "20": "_(Venue does not belong to team with url `{}`)"
-    },
+GROUP BY ?
 
 
 
@@ -37,8 +13,6 @@ GROUP BY
     "empty": [
 545         "../ta/api/bookables/endpoints.py:82:            request._full_data.update({'name': 'empty'})"
 
-            verbose_name_plural = 'participations'
-        "../ta/api/devices/models.py:28:        verbose_name_plural = 'agents'"
     
 
     "../ta/api/accounts/admin.py:16:        (_('Permissions'), {'fields': ('is_active', 'is_staff', 'is_superuser',",

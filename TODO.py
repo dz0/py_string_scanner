@@ -11,7 +11,8 @@ def values_first(fname, start, limit):
 
         # print( txt )
 
-values_first("manually_IGNORED_BY_VAL.json", 1250, 100)
+# values_first("manually_IGNORED_BY_VAL.json", 1250, 100)
+values_first("INJECTION_FAILED.json", 0, -1)
 
 # stuff = """
 # File "../ta/front/auth/views.py", line 36    'message': 'Your password reset request was submitted. Check your email for further instructions.',

@@ -10,20 +10,7 @@ with  open("manually_IGNORED_BY_VAL.json") as f: MANUALLY_IGNORED_BY_VAL_asTxt =
 
 
 INJECTION_FAILED = []
-def gettext_inject_to_code_line(code_line, msg):
-    # found = False
-    # msg = repr(msg)[1:-1]
-    # for quote_style in ["'", '"', '"""', "'''"]:
-    #     msg_token = quote_style + msg + quote_style
-    msg_token = msg 
-    if msg_token in code_line:
-        code_line = code_line.replace( msg_token, 
-                                        INJECTION_PATTERN % msg_token )  
-        return code_line
 
-    else:
-        # INJECTION_FAILED.append( [msg, code_line] ) 
-        raise RuntimeError("INJECTION_FAILED") 
     
 
 
@@ -52,25 +39,31 @@ with open("found_strings.json") as f:
                 strings = [ strings ]  # wrap single string into list 
             for msg in sorted( strings ):
                 
-                if eval( string_tokens[line_nr] ) == msg:
-                    msg =  string_tokens[line_nr]
-                else:
-                    print("asdf mismatch")
-                # print( "\"%s\", line %s    -- %s" % (file, line_nr, string[:20] ) )
                 code_line = code_lines[ line_nr-1 ]
-                try:
-                    code_lines[ line_nr-1 ] =  new_code_line = gettext_inject_to_code_line( code_line, msg )
+                
+                # find out token/representation in code  -- and replace it
+                string_token =  string_tokens[line_nr]
+
+                if eval( string_token ) == msg    and    string_token in code_line:
                     
+                    # print( "\"%s\", line %s    -- %s" % (file, line_nr, string[:20] ) )    
+               
+                    code_lines[ line_nr-1 ] =  new_code_line = code_line.replace( 
+                                string_token, 
+                                INJECTION_PATTERN % string_token 
+                    )
+
                     # Hook update in file manually_IGNORED_BY_VAL.json
                     src_link = "%s:%s:%s" % (file, line_nr , code_line)
                     if src_link in MANUALLY_IGNORED_BY_VAL_asTxt:
                         MANUALLY_IGNORED_BY_VAL_asTxt = MANUALLY_IGNORED_BY_VAL_asTxt.replace(
                                 src_link, 
                                 "%s:%s:%s" % (file, line_nr , new_code_line) # new_src_link
-                                )
+                        )
 
-                except RuntimeError:
+                else:
                     INJECTION_FAILED.append( (("%s:%s" %(file, line_nr)) ,  msg, code_line )  )
+              
 
         if not IMPORT_PATTERN in orig_code:
             code_lines.insert(0, IMPORT_STATEMENT)
