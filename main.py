@@ -24,6 +24,7 @@ def compact_if_single_in_list( STUFF ):
 
 SKIPPED_FILES = []
 SKIPPED_STR = defaultdict( OrderedDefaultListDict )
+ALL_CAPS = defaultdict( OrderedDefaultListDict )
 FOUND_STR =  defaultdict( OrderedDefaultListDict )
 SINGLE_WORDS = defaultdict( OrderedDefaultListDict )
 ALREADY_GETTEXTED = defaultdict( OrderedDefaultListDict )
@@ -72,7 +73,7 @@ str_skip_patterns = r"""
     div{margin-top:15px}
 """
 str_skip_patterns = list( filter(len, map(str.strip, str_skip_patterns.split("\n"))) )
-str_skip_patterns.append(" ")
+str_skip_patterns.extend([" ", "", "\n"])
 # surround by wildcards
 # str_skip_patterns = [p if '*' in p     else  '*%s*' % p    for p in str_skip_patterns]
 
@@ -88,7 +89,6 @@ def skip_by_patterns(txt, skip_patterns):
 # skip_by_patterns("/home/jurgis/dev/new/tableair/sync_tableair-cloud/ta/sd/security/urls.py/asd", file_skip_patterns)
 # skip_by_patterns("bootstrap btn-info", str_skip_patterns)
 
-
 def get_files(rootDir='.', ext='py'):
     for dirName, subdirList, fileList in os.walk(rootDir):
         # print('Found directory: %s' % dirName)
@@ -103,16 +103,35 @@ def get_files(rootDir='.', ext='py'):
                 # yield Path(rootDir) / dirName / fname
 
 
-def skip_string( string ):
-    if skip_by_patterns(string, str_skip_patterns):
-        return True
+CODE_LINES = {}
+def get_code_line(file, line_nr):
+    if not file in CODE_LINES:
+        with open(file) as f:
+            CODE_LINES[file] = f.read().split('\n')
+    return CODE_LINES[file][line_nr-1]
 
-    if len( string.split() ) == 1:  # TODO -- risky
-        if '_' in string:  
-            return True 
+with open('manually_IGNORED_BY_VAL.json', 'r') as f:   
+    manually_IGNORED_BY_VAL = json.load(f)
 
-        # return True
+def is_manually_IGNORED(string, filename, lineno ):
+    if string in manually_IGNORED_BY_VAL:
+        whole_line = get_code_line(filename, lineno)
+        info_lines = manually_IGNORED_BY_VAL[string]
+        for info_line in info_lines: 
+            # print(info_line)
+            filename_, lineno_, whole_line_ = info_line.split(':', maxsplit=2)
+            if filename == filename_:
+                if whole_line == whole_line_:
+                    lineno_ = int(lineno_)
+                    if abs(lineno - lineno_) < 5:
+                        return True 
 
+
+################################
+#####
+#####  string collectors
+#####
+#####################################
 def find_strings_tokenize(filename, eval_=True):
     import tokenize
     with open(filename) as f:
@@ -205,8 +224,8 @@ if __name__ == "__main__":
     # files = get_files('/home/jurgis/dev/new/tableair/sync_tableair-cloud/ta')
     files = get_files(ROOT_DIR)
 
-    SKIP_SRC_LINKS = open('SKIP_SRC_LINKS.txt').read().split('\n')
-    SKIP_SRC_LINKS = [x.strip(' ",') for x in SKIP_SRC_LINKS]
+    # SKIP_SRC_LINKS = open('SKIP_SRC_LINKS.txt').read().split('\n')
+    # SKIP_SRC_LINKS = [x.strip(' ",') for x in SKIP_SRC_LINKS]
 
 
     ##################
@@ -221,19 +240,35 @@ if __name__ == "__main__":
         print(nr, fname)
         for filename, lineno, string in find_strings( fname ):
 
-            if skip_string( string ):
+            if skip_by_patterns(string, str_skip_patterns):
                 SKIPPED_STR[ filename ][lineno].append( string )
-                # SKIPPED_STR[ filename ][lineno] = string
+                continue
+            
+            if string.isupper(): # ALL CAPS
+                SKIPPED_STR[ filename ][lineno].append( string )
+                ALL_CAPS[ filename ][lineno].append( string )
                 continue
 
-            if len( string.split() ) == 1: # actually ALSO SKIP
-                SINGLE_WORDS[ filename ][lineno].append( string )
-                continue        
-            
-            src_link = "%s:%s" % (filename, lineno )
-            if src_link in SKIP_SRC_LINKS:
-                # print("SKIP SRC", src_link, repr(string))
+            if is_manually_IGNORED(string, filename, lineno ):
+                # print("SKIP manually_IGNORED", src_link, repr(string))
                 continue
+
+            if len( string.split() ) == 1: # SINGLE WORDS
+                if '_' in string:  
+                    SKIPPED_STR[ filename ][lineno].append( string )
+                    continue
+
+                #  if '.' in string  or ':' in string or any not isalpha: # MAYBE TODO
+                else:
+                    SINGLE_WORDS[ filename ][lineno].append( string )
+                    # continue  # if commented includes single strings in FOUND_STR
+            
+            # src_link = "%s:%s" % (filename, lineno )
+            # if src_link in SKIP_SRC_LINKS:
+            #     # print("SKIP SRC", src_link, repr(string))
+            #     continue
+            
+
 
             FOUND_STR[ filename ][lineno].append( string )
             # print ("  File \"%s\", line %d   \"%s\"" % (filename, lineno, string))
@@ -253,14 +288,16 @@ if __name__ == "__main__":
     def sorted_dict( adict ):
         return OrderedDict(  sorted(adict.items() ) )
 
+   
+    
     def restructure_by_val(STUFF):
         REZ = defaultdict(list)
         for file, lines in sorted( STUFF.items() ):
             for line_nr, strings in sorted( lines.items() ):
                 for string in strings:
-                    src_link = "%s:%s" % (file, line_nr )
+                    # src_link = "%s:%s" % (file, line_nr )
+                    src_link = "%s:%s:%s" % (file, line_nr , get_code_line(file, line_nr) )
                     REZ[string].append( src_link )
-
         
         return REZ
 
@@ -269,6 +306,7 @@ if __name__ == "__main__":
     with open('found_strings_BY_VAL.json', 'w') as f:    json.dump(sorted_dict( restructure_by_val(FOUND_STR) ), f, indent=4)
     with open('skipped_strings_BY_VAL.json', 'w') as f:    json.dump(sorted_dict( restructure_by_val(SKIPPED_STR)), f, indent=4)
     with open('single_words_BY_VAL.json', 'w') as f:    json.dump(sorted_dict( restructure_by_val(SINGLE_WORDS) ), f, indent=4)
+    with open('ALL_CAPS_BY_VAL.json', 'w') as f:    json.dump(sorted_dict( restructure_by_val(ALL_CAPS) ), f, indent=4)
 
 
     compact_if_single_in_list( FOUND_STR )

@@ -1,0 +1,81 @@
+{
+    "#F3F3F3": [
+        "../ta/api/objects/models.py:13:    color = ColorField(default='#F3F3F3')"
+    ],
+    "%H:%M": [
+        "../ta/api/room_booking/emails.py:22:    return '{} {}'.format(naturaldate(stamp), stamp.strftime('%H:%M'))"
+    ],
+    "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ": [
+        "../ta/api/bookables/validators/prefab_validator.py:30:        alphabet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'"
+    ],
+    "AND": [
+        "../ta/api/analytics/occupancy_analytics.py:52:    for newline_mark in ['INNER', \"ON\", \"LEFT OUTER\", \"FROM\", \"WHERE\", \"SELECT\", \"GROUP BY\", \"ORDER BY\", \"AND\"]:"
+    ],
+    "AUTH_USER_MODEL": [
+        "../ta/api/accounts/models.py:134:        swappable = 'AUTH_USER_MODEL'"
+    ],
+    "CHECKIN_CATEGORY": [
+        "../ta/api/booking/notifications.py:64:                                            category='CHECKIN_CATEGORY'),",
+        "../ta/api/booking/notifications.py:73:                                            category='CHECKIN_CATEGORY'),"
+    ],
+    "FROM": [
+        "../ta/api/analytics/occupancy_analytics.py:52:    for newline_mark in ['INNER', \"ON\", \"LEFT OUTER\", \"FROM\", \"WHERE\", \"SELECT\", \"GROUP BY\", \"ORDER BY\", \"AND\"]:"
+    ],
+    "GET": [
+        "../ta/api/mux/views.py:82:@api_view(['GET'])",
+        "../ta/api/mux/views.py:87:@api_view(['GET'])"
+    ],
+    "GROUP BY": [
+        "../ta/api/analytics/occupancy_analytics.py:52:    for newline_mark in ['INNER', \"ON\", \"LEFT OUTER\", \"FROM\", \"WHERE\", \"SELECT\", \"GROUP BY\", \"ORDER BY\", \"AND\"]:"
+    ],
+    "HTTP_HOST": [
+        "../ta/api/analytics/_deprecated_tests_api.py:19:api_request_headers = {'HTTP_HOST': 'api.tableair.xx'}"
+    ],
+    "INNER": [
+        "../ta/api/analytics/occupancy_analytics.py:52:    for newline_mark in ['INNER', \"ON\", \"LEFT OUTER\", \"FROM\", \"WHERE\", \"SELECT\", \"GROUP BY\", \"ORDER BY\", \"AND\"]:"
+    ],
+    "N/A": [
+        "../ta/api/analytics/aggregators.py:486:            return 'N/A'",
+        "../ta/api/analytics/aggregators.py:498:            return 'N/A'",
+        "../ta/api/analytics/aggregators.py:510:            return 'N/A'",
+        "../ta/api/analytics/aggregators.py:522:            return 'N/A'",
+        "../ta/api/analytics/aggregators.py:534:            return 'N/A'",
+        "../ta/api/rooms/models.py:23:            venue = 'N/A'"
+    ],
+    "ON": [
+        "../ta/api/analytics/occupancy_analytics.py:52:    for newline_mark in ['INNER', \"ON\", \"LEFT OUTER\", \"FROM\", \"WHERE\", \"SELECT\", \"GROUP BY\", \"ORDER BY\", \"AND\"]:"
+    ],
+    "POST": [
+        "../ta/api/teams/endpoints.py:81:@api_view(('POST',))"
+    ],
+    "SELECT": [
+        "../ta/api/analytics/occupancy_analytics.py:52:    for newline_mark in ['INNER', \"ON\", \"LEFT OUTER\", \"FROM\", \"WHERE\", \"SELECT\", \"GROUP BY\", \"ORDER BY\", \"AND\"]:"
+    ],
+    "SHORT_DATETIME_FORMAT": [
+        "../ta/api/booking/confirmation.py:14:        ).format(formats.date_format(room_booking.start, \"SHORT_DATETIME_FORMAT\"),",
+        "../ta/api/booking/confirmation.py:15:                 formats.date_format(room_booking.end, \"SHORT_DATETIME_FORMAT\"),",
+        "../ta/api/booking/confirmation.py:26:            formats.date_format(room_booking.start, \"SHORT_DATETIME_FORMAT\"),",
+        "../ta/api/booking/confirmation.py:27:            formats.date_format(room_booking.end, \"SHORT_DATETIME_FORMAT\"),",
+        "../ta/api/booking/confirmation.py:39:            formats.date_format(room_booking.start, \"SHORT_DATETIME_FORMAT\"),",
+        "../ta/api/booking/confirmation.py:40:            formats.date_format(room_booking.end, \"SHORT_DATETIME_FORMAT\"),",
+        "../ta/api/booking/confirmation.py:52:            formats.date_format(room_booking.start, \"SHORT_DATETIME_FORMAT\"),",
+        "../ta/api/booking/confirmation.py:53:            formats.date_format(room_booking.end, \"SHORT_DATETIME_FORMAT\"),"
+    ],
+    "SP02": [
+        "../ta/api/analytics/occupancy_analytics.py:628:            identifier__startswith='SP02'  # same as   type_id=6   ?"
+    ],
+    "TODO..": [
+        "../ta/api/analytics/occupancy_analytics.py:514:            raise RuntimeError(\"TODO..\")"
+    ],
+    "UTC": [
+        "../ta/api/bookables/serializers.py:61:            return datetime.utcfromtimestamp(data).replace(tzinfo=pytz.timezone('UTC'))",
+        "../ta/api/bookables/serializers.py:88:                                                    SitStandAnalyticsAggregator._tz_for_tzdata('UTC')) \\",
+        "../ta/api/bookables/sitstand/aggregators.py:141:            prefab_usage.timestamp = make_aware(prefab_usage.timestamp, cls._tz_for_tzdata('UTC'))"
+    ],
+    "WHERE": [
+        "../ta/api/analytics/occupancy_analytics.py:52:    for newline_mark in ['INNER', \"ON\", \"LEFT OUTER\", \"FROM\", \"WHERE\", \"SELECT\", \"GROUP BY\", \"ORDER BY\", \"AND\"]:"
+    ],
+    "[A-Z0-9]{9}": [
+        "../ta/api/bookables/validators/prefab_validator.py:12:    RE_IDENTIFIER = r'[A-Z0-9]{9}'"
+    ]
+}

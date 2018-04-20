@@ -1,1399 +1,1475 @@
 {
+    "": [
+        "../ta/api/analytics/occupancy_analytics.py:530:            combined_name = \"%s (%s)\" % (name or \"\", identifier)",
+        "../ta/api/bookables/models.py:90:        identifier = ' (' + self.prefab.identifier + ')' if self.prefab else ''",
+        "../ta/api/bookables/validators/prefab_validator.py:36:        return ''.join(result)",
+        "../ta/api/iot/views.py:69:            additional_data['f'] = ''",
+        "../ta/api/teams/validators/team_validator.py:22:        if logo == '' or logo is None:",
+        "../ta/api/teams/validators/team_validator.py:28:        if logo != '':",
+        "../ta/api/teams/validators/team_validator.py:74:        if logo != '' and logo is not None:",
+        "../ta/api/venues/validators/venue_image_validator.py:20:        if url == '' or url is None:",
+        "../ta/api/venues/validators/venue_image_validator.py:29:        if url != '' and not self.context.get('skip_img_checks', False):",
+        "../ta/api/venues/validators/venue_image_validator.py:38:        if url != '' and url is not None:"
+    ],
+    "\n": [
+        "../ta/api/accounts/_deprecated_tests_api.py:334:        _, url = mail.outbox[0].body.split('\\n')",
+        "../ta/api/analytics/occupancy_analytics.py:53:        q = q.replace(\" \" + newline_mark, \"\\n\" + newline_mark)",
+        "../ta/api/analytics/occupancy_analytics.py:57:        q = q.split('\\n')"
+    ],
     " ": [
-        "../ta/api/accounts/models.py:112",
-        "../ta/api/analytics/occupancy_analytics.py:52"
+        "../ta/api/accounts/models.py:112:        return self.first_name + ' ' + self.last_name",
+        "../ta/api/analytics/occupancy_analytics.py:53:        q = q.replace(\" \" + newline_mark, \"\\n\" + newline_mark)"
+    ],
+    "#F3F3F3": [
+        "../ta/api/objects/models.py:13:    color = ColorField(default='#F3F3F3')"
+    ],
+    "%H:%M": [
+        "../ta/api/room_booking/emails.py:22:    return '{} {}'.format(naturaldate(stamp), stamp.strftime('%H:%M'))"
     ],
     "-bookable__prefab__type__is_reserved": [
-        "../ta/api/booking/endpoints.py:177"
+        "../ta/api/booking/endpoints.py:177:                .order_by('-bookable__prefab__type__is_reserved', 'start')"
     ],
     "-prefab__id": [
-        "../ta/api/analytics/occupancy_analytics.py:695"
+        "../ta/api/analytics/occupancy_analytics.py:696:        ).distinct().order_by('prefab__id' if order_by_time_asc else '-prefab__id',"
+    ],
+    "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ": [
+        "../ta/api/bookables/validators/prefab_validator.py:30:        alphabet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'"
     ],
     "?scope=account&duration=alltime&id={0}&aggregator=avg_booking_duration": [
-        "../ta/api/analytics/_deprecated_tests_api.py:200"
+        "../ta/api/analytics/_deprecated_tests_api.py:200:                               '?scope=account&duration=alltime&id={0}&aggregator=avg_booking_duration'.format("
     ],
     "?scope=account&duration=month&from={0}&id={1}&aggregator=avg_booking_duration": [
-        "../ta/api/analytics/_deprecated_tests_api.py:192"
+        "../ta/api/analytics/_deprecated_tests_api.py:192:                               '?scope=account&duration=month&from={0}&id={1}&aggregator=avg_booking_duration'.format("
     ],
     "?scope=table&duration=alltime&identifier={0}&aggregator=avg_booking_duration": [
-        "../ta/api/analytics/_deprecated_tests_api.py:207"
+        "../ta/api/analytics/_deprecated_tests_api.py:207:                               '?scope=table&duration=alltime&identifier={0}&aggregator=avg_booking_duration'.format("
+    ],
+    "AND": [
+        "../ta/api/analytics/occupancy_analytics.py:52:    for newline_mark in ['INNER', \"ON\", \"LEFT OUTER\", \"FROM\", \"WHERE\", \"SELECT\", \"GROUP BY\", \"ORDER BY\", \"AND\"]:"
     ],
     "AUTH_USER_MODEL": [
-        "../ta/api/accounts/models.py:134"
+        "../ta/api/accounts/models.py:134:        swappable = 'AUTH_USER_MODEL'"
     ],
     "CHECKIN_CATEGORY": [
-        "../ta/api/booking/notifications.py:63",
-        "../ta/api/booking/notifications.py:72"
+        "../ta/api/booking/notifications.py:64:                                            category='CHECKIN_CATEGORY'),",
+        "../ta/api/booking/notifications.py:73:                                            category='CHECKIN_CATEGORY'),"
     ],
     "ClassDef DOCSTRING -- \n       **/api/accounts/<pk>/teams/<url>/**\n        manages account's participation in team\n    ": [
-        "../ta/api/accounts/views.py:203"
+        "../ta/api/accounts/views.py:204:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    **/api/accounts/**\n    ": [
-        "../ta/api/accounts/views.py:33"
+        "../ta/api/accounts/views.py:34:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    **/api/accounts/<account_id>/teams/**\n    gets teams that the account participates in\n    ": [
-        "../ta/api/accounts/views.py:167"
+        "../ta/api/accounts/views.py:168:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    **/api/accounts/<pk>/**\n    ": [
-        "../ta/api/accounts/views.py:53",
-        "../ta/api/accounts/views.py:101"
+        "../ta/api/accounts/views.py:54:    \"\"\"",
+        "../ta/api/accounts/views.py:102:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    **/api/accounts/<pk>/forgot/**\n    request password reset\n    ": [
-        "../ta/api/accounts/views.py:138"
+        "../ta/api/accounts/views.py:139:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    **/api/accounts/<pk>/venues/<pk>/booking/**\n    returns bookings for a given venue\n    ": [
-        "../ta/api/accounts/views.py:184"
+        "../ta/api/accounts/views.py:185:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    **/api/accounts/confirm-email-change/<hash>/**\n    ": [
-        "../ta/api/accounts/views.py:127"
+        "../ta/api/accounts/views.py:128:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    **/api/accounts/confirm-forgot/<hash>/**\n    change the password with given hash\n    ": [
-        "../ta/api/accounts/views.py:153"
+        "../ta/api/accounts/views.py:154:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    **/api/accounts/confirm-registration/<hash>/**\n    ": [
-        "../ta/api/accounts/views.py:117"
+        "../ta/api/accounts/views.py:118:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    **api/accounts/<account_pk>/sync/**\n    ": [
-        "../ta/api/sync/views.py:18"
+        "../ta/api/sync/views.py:18:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    **api/logs/**\n    ": [
-        "../ta/api/logging/views.py:14"
+        "../ta/api/logging/views.py:14:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    **api/teams/<team_url>/participants/**\n    ": [
-        "../ta/api/teams/views.py:32"
+        "../ta/api/teams/views.py:32:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    **api/teams/<team_url>/requests/**\n    ": [
-        "../ta/api/requests/views.py:18"
+        "../ta/api/requests/views.py:18:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    **api/teams/<team_url>/venues/**\n    ": [
-        "../ta/api/teams/views.py:17"
+        "../ta/api/teams/views.py:17:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    **api/venues/<pk>/tables/**\n    ": [
-        "../ta/api/venues/views.py:15"
+        "../ta/api/venues/views.py:15:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    A form for creating new users.\n\n    Includes all the required fields, plus a repeated password.\n    ": [
-        "../ta/api/accounts/forms.py:12"
+        "../ta/api/accounts/forms.py:12:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    Account admin model.\n    ": [
-        "../ta/api/accounts/admin.py:12"
+        "../ta/api/accounts/admin.py:12:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    Aggregator implementations\n    ": [
-        "../ta/api/analytics/aggregators.py:371"
+        "../ta/api/analytics/aggregators.py:372:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    An abstract user model that is an alternative to the standard AbstractUser. The\n    sole difference is that AbstractAccount does not have a username field, and uses\n    the email field as the primary identifier by default.\n\n    Email and password are required. Other fields are optional.\n    ": [
-        "../ta/api/accounts/models.py:66"
+        "../ta/api/accounts/models.py:66:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    Deprecated\n    ": [
-        "../ta/api/iot/views.py:22"
+        "../ta/api/iot/views.py:22:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    Field validators\n    ": [
-        "../ta/api/teams/validators/team_validator.py:18"
+        "../ta/api/teams/validators/team_validator.py:19:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    Global validators\n    ": [
-        "../ta/api/teams/validators/team_validator.py:50"
+        "../ta/api/teams/validators/team_validator.py:51:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    Helpers\n    ": [
-        "../ta/api/analytics/occupancy_analytics.py:283"
+        "../ta/api/analytics/occupancy_analytics.py:284:    '''"
     ],
     "ClassDef DOCSTRING -- \n    Instance helper functions\n    ": [
-        "../ta/api/booking/validators/booking_validators.py:106"
+        "../ta/api/booking/validators/booking_validators.py:107:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    Lists possible aggregators <function_name>, [<allowed_scope>, ...]\n    ": [
-        "../ta/api/analytics/aggregators.py:61",
-        "../ta/api/analytics/occupancy_analytics.py:99"
+        "../ta/api/analytics/aggregators.py:62:    \"\"\"",
+        "../ta/api/analytics/occupancy_analytics.py:100:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    Lists possible selectors {<name>, <default_value>}\n    ": [
-        "../ta/api/analytics/aggregators.py:38",
-        "../ta/api/analytics/occupancy_analytics.py:64"
+        "../ta/api/analytics/aggregators.py:39:    \"\"\"",
+        "../ta/api/analytics/occupancy_analytics.py:65:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    Participation intermediary model.\n    Connects Team with Account as many to many.\n    ": [
-        "../ta/api/teams/models.py:73"
+        "../ta/api/teams/models.py:74:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    Perspectives\n    ": [
-        "../ta/api/analytics/occupancy_analytics.py:345"
+        "../ta/api/analytics/occupancy_analytics.py:346:    '''"
     ],
     "ClassDef DOCSTRING -- \n    Primitives\n    ": [
-        "../ta/api/bookables/validators/bookable_validator.py:30",
-        "../ta/api/booking/validators/booking_validators.py:138",
-        "../ta/api/booking/validators/repeating_booking_validators.py:150"
+        "../ta/api/bookables/validators/bookable_validator.py:31:    \"\"\"",
+        "../ta/api/booking/validators/booking_validators.py:139:    \"\"\"",
+        "../ta/api/booking/validators/repeating_booking_validators.py:151:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    Team service model.\n    ": [
-        "../ta/api/teams/models.py:34"
+        "../ta/api/teams/models.py:35:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    Validates participant attendance states (accept/decline)\n    ": [
-        "../ta/api/room_booking/validators.py:30"
+        "../ta/api/room_booking/validators.py:31:    \"\"\""
     ],
     "ClassDef DOCSTRING -- \n    Validates participant invitation (invite/remove)\n    ": [
-        "../ta/api/room_booking/validators.py:74"
+        "../ta/api/room_booking/validators.py:75:    \"\"\""
     ],
     "ClassDef DOCSTRING -- A form for updating users.\n\n    Includes all the fields on the user, but replaces the password field\n    with admin's password hash display field.\n\n    ": [
-        "../ta/api/accounts/forms.py:87"
+        "../ta/api/accounts/forms.py:87:    \"\"\""
     ],
     "ClassDef DOCSTRING -- https://tableair.slack.com/archives/C0GBXFB0X/p1516972939000060\n    esminis parametras yra 'po' ir 'no'\n    'po' -> previous occupancy, 'no' -> new occupancy\n\n    tai jeigu 'po': 0 ir 'no': 1   tai rei\u0161kia stalas (sensorius) tuo metu tapo u\u017eimtas\n    o jeigu 'po': 1 ir 'no': 0, tai nuo stalo (sensoriaus) ka\u017ekas nu\u0117jo\n    jeigu 'po': 1 ir 'no': 1, tai jis tiesiog toliau yra u\u017eimtas, b\u016bsena nesikei\u010dia\n\n": [
-        "../ta/api/bookables/activity/occupancy.py:21"
+        "../ta/api/bookables/activity/occupancy.py:21:\"\"\""
+    ],
+    "FROM": [
+        "../ta/api/analytics/occupancy_analytics.py:52:    for newline_mark in ['INNER', \"ON\", \"LEFT OUTER\", \"FROM\", \"WHERE\", \"SELECT\", \"GROUP BY\", \"ORDER BY\", \"AND\"]:"
     ],
     "FunctionDef DOCSTRING -- \n            jei from yra 1mad -- 0 -trinti-> 5, 6\n            jei from yra 2mad -- 1 -trinti-> 4, 5\n            jei from yra 3mad -- 2 -trinti-> 3, 4\n\n            jei from yra 6mad -- 5 -trinti-> 0, 1\n            jei from yra 7mad -- 6 -trinti-> -1, 0\n            ": [
-        "../ta/api/analytics/occupancy_analytics.py:473"
+        "../ta/api/analytics/occupancy_analytics.py:474:            \"\"\""
     ],
     "FunctionDef DOCSTRING -- \n            params:  interval of activity\n                     part   of partitioning (day/hour or so)\n            ": [
-        "../ta/api/analytics/occupancy_analytics.py:295"
+        "../ta/api/analytics/occupancy_analytics.py:296:            \"\"\""
     ],
     "FunctionDef DOCSTRING -- \n        :return: average booking duration in minutes\n        ": [
-        "../ta/api/analytics/aggregators.py:376"
+        "../ta/api/analytics/aggregators.py:377:        \"\"\""
     ],
     "FunctionDef DOCSTRING -- \n        :return: average booking end time 'HH:MM'\n        ": [
-        "../ta/api/analytics/aggregators.py:551"
+        "../ta/api/analytics/aggregators.py:552:        \"\"\""
     ],
     "FunctionDef DOCSTRING -- \n        :return: average check-in time 'HH:MM'\n        ": [
-        "../ta/api/analytics/aggregators.py:557"
+        "../ta/api/analytics/aggregators.py:558:        \"\"\""
     ],
     "FunctionDef DOCSTRING -- \n        :return: average room booking duration with at least one check-in\n        ": [
-        "../ta/api/analytics/aggregators.py:615"
+        "../ta/api/analytics/aggregators.py:616:        \"\"\""
     ],
     "FunctionDef DOCSTRING -- \n        :return: average sitting and standing heights\n        ": [
-        "../ta/api/analytics/aggregators.py:388"
+        "../ta/api/analytics/aggregators.py:389:        \"\"\""
     ],
     "FunctionDef DOCSTRING -- \n        :return: minutes booked by day for a time period\n        ": [
-        "../ta/api/analytics/aggregators.py:661"
+        "../ta/api/analytics/aggregators.py:662:        \"\"\""
     ],
     "FunctionDef DOCSTRING -- \n        :return: the account id of the longest total check-in attendance\n        ": [
-        "../ta/api/analytics/aggregators.py:627"
+        "../ta/api/analytics/aggregators.py:628:        \"\"\""
     ],
     "FunctionDef DOCSTRING -- \n        :return: the percentage of checked-in participants over invited\n        ": [
-        "../ta/api/analytics/aggregators.py:644"
+        "../ta/api/analytics/aggregators.py:645:        \"\"\""
     ],
     "FunctionDef DOCSTRING -- \n        Adopted from SitStandAnalyticsAggregator\n        :return:\n        ": [
-        "../ta/api/analytics/occupancy_analytics.py:669"
+        "../ta/api/analytics/occupancy_analytics.py:670:        \"\"\""
     ],
     "FunctionDef DOCSTRING -- \n        EP4 by Rokas\n        https://tableair.slack.com/files/U8YH9D5K6/F8YKP6DU2/workoccupancy_endpoint_spec_description.txt\n        ?page=1\n        ": [
-        "../ta/api/analytics/occupancy_analytics.py:587"
+        "../ta/api/analytics/occupancy_analytics.py:588:        \"\"\""
     ],
     "FunctionDef DOCSTRING -- \n        For DEV purposes\n                # most activity:\n        {\n        \"prefab\": 152,\n        \"venue__name\": \"Approved house of cards\",\n        \"cnt\": 223,\n        \"prefab__identifier\": \"SP000000A\",\n        \"venue\": 9\n        },\n        \"prefab\": 155,             \"cnt\": 211,             \"prefab__identifier\": \"SP000000C\",             \"venue\": 9\n        \"prefab\": 156,                   \"cnt\": 30,          \"prefab__identifier\": \"SP0200000\",            \"venue\": 8\n        \"prefab\": 157,            \"venue__name\": \"euneV\",            \"cnt\": 4,            \"prefab__identifier\": \"SP0200001\",            \"venue\": 16\n        \"prefab\": 14,            \"venue__name\": \"Demo Venue\",            \"cnt\": 1,            \"prefab__identifier\": \"X0000000E\",            \"venue\": 5\n\n\n        ": [
-        "../ta/api/analytics/occupancy_analytics.py:648"
+        "../ta/api/analytics/occupancy_analytics.py:649:        \"\"\""
     ],
     "FunctionDef DOCSTRING -- \n        Name and URL uniqueness checks. Moved here from DB layer due to is_historic presence.\n        ": [
-        "../ta/api/teams/validators/team_validator.py:36"
+        "../ta/api/teams/validators/team_validator.py:37:        \"\"\""
     ],
     "FunctionDef DOCSTRING -- \n        Object instance -> Dict of primitive datatypes.\n        ": [
-        "../ta/api/accounts/serializers.py:40"
+        "../ta/api/accounts/serializers.py:41:        \"\"\""
     ],
     "FunctionDef DOCSTRING -- \n        Performs a single calculation based of context kwargs\n        :return:\n        ": [
-        "../ta/api/bookables/sitstand/aggregators.py:92"
+        "../ta/api/bookables/sitstand/aggregators.py:93:        \"\"\""
     ],
     "FunctionDef DOCSTRING -- \n        Send an email to this User.\n        ": [
-        "../ta/api/accounts/models.py:117"
+        "../ta/api/accounts/models.py:117:        \"\"\""
     ],
     "FunctionDef DOCSTRING -- \n        finds the first free spot to place table in\n        :return: pair (column, row)\n        ": [
-        "../ta/api/bookables/utils.py:59"
+        "../ta/api/bookables/utils.py:59:        \"\"\""
     ],
     "FunctionDef DOCSTRING -- \n        register\n        ": [
-        "../ta/api/accounts/views.py:46"
+        "../ta/api/accounts/views.py:47:        \"\"\""
     ],
     "FunctionDef DOCSTRING -- \n        retrieve list\n        ": [
-        "../ta/api/accounts/views.py:39"
+        "../ta/api/accounts/views.py:40:        \"\"\""
     ],
     "FunctionDef DOCSTRING -- \n        the percentage of daily time relative to venue.work_start, venue.work_end spent booked\n        :return: average table utilization [0.0, 1.0]\n        ": [
-        "../ta/api/analytics/aggregators.py:564"
+        "../ta/api/analytics/aggregators.py:565:        \"\"\""
     ],
     "FunctionDef DOCSTRING -- \n    Renames a given filename to a unique one\n    :param extension: (optional) use this parameter when you have the extension ready\n    :param original_filename: original full filename (file.ext)\n    :return: a random UUID filename with original lowercased extension\n    ": [
-        "../ta/api/teams/models.py:23",
-        "../ta/api/venues/models.py:107"
+        "../ta/api/teams/models.py:24:    \"\"\"",
+        "../ta/api/venues/models.py:108:    \"\"\""
     ],
     "FunctionDef DOCSTRING -- \"\n            if missing the very first interval start\n            or very last interval end\n            delete them or\n\n            replace with week start and end respectively (with idea, that timestamps were outside query)\n            but should keep in mind to substract weekends... # TODO\n            ": [
-        "../ta/api/analytics/occupancy_analytics.py:814"
+        "../ta/api/analytics/occupancy_analytics.py:815:            \"\"\""
     ],
     "FunctionDef DOCSTRING -- Check that the two password entries match.\n\n        :return str password2: cleaned password2\n        :raise forms.ValidationError: password2 != password1\n\n        ": [
-        "../ta/api/accounts/forms.py:56"
+        "../ta/api/accounts/forms.py:56:        \"\"\""
     ],
     "FunctionDef DOCSTRING -- Clean form email.\n\n        :return str email: cleaned email\n        :raise forms.ValidationError: Email is duplicated\n\n        ": [
-        "../ta/api/accounts/forms.py:37"
+        "../ta/api/accounts/forms.py:37:        \"\"\""
     ],
     "FunctionDef DOCSTRING -- Clean password.\n\n        Regardless of what the user provides, return the initial value.\n        This is done here, rather than on the field, because the\n        field does not have access to the initial value.\n\n        :return str password:\n\n        ": [
-        "../ta/api/accounts/forms.py:114"
+        "../ta/api/accounts/forms.py:114:        \"\"\""
     ],
     "FunctionDef DOCSTRING -- EP1 by Rokas\n        https://tableair.slack.com/files/U8YH9D5K6/F8YKP6DU2/workoccupancy_endpoint_spec_description.txt\n        ": [
-        "../ta/api/analytics/occupancy_analytics.py:352"
+        "../ta/api/analytics/occupancy_analytics.py:353:        \"\"\""
     ],
     "FunctionDef DOCSTRING -- EP2 by Rokas\n        https://tableair.slack.com/files/U8YH9D5K6/F8YKP6DU2/workoccupancy_endpoint_spec_description.txt\n        ": [
-        "../ta/api/analytics/occupancy_analytics.py:505"
+        "../ta/api/analytics/occupancy_analytics.py:506:        \"\"\""
     ],
     "FunctionDef DOCSTRING -- Helper function to help debug/analyse queries.\n    Can also be used to return query in rest api (as list of lines)": [
-        "../ta/api/analytics/occupancy_analytics.py:49"
+        "../ta/api/analytics/occupancy_analytics.py:50:    Can also be used to return query in rest api (as list of lines)\"\"\""
     ],
     "FunctionDef DOCSTRING -- If include_empty_days=False, skip days with no info (should be weekends and so)  ": [
-        "../ta/api/analytics/occupancy_analytics.py:549"
+        "../ta/api/analytics/occupancy_analytics.py:550:                \"\"\"If include_empty_days=False, skip days with no info (should be weekends and so)  \"\"\""
     ],
     "FunctionDef DOCSTRING -- Init the form.": [
-        "../ta/api/accounts/forms.py:99"
+        "../ta/api/accounts/forms.py:99:        \"\"\"Init the form.\"\"\""
     ],
     "FunctionDef DOCSTRING -- Partition intervals to weekdays (or hours)\n        expects that intervals doesn't span over few parts...\n        ": [
-        "../ta/api/analytics/occupancy_analytics.py:289"
+        "../ta/api/analytics/occupancy_analytics.py:290:        \"\"\""
     ],
     "FunctionDef DOCSTRING -- Save user.\n\n        Save the provided password in hashed format.\n\n        :return custom_user.models.EmailUser: user\n\n        ": [
-        "../ta/api/accounts/forms.py:73"
+        "../ta/api/accounts/forms.py:73:        \"\"\""
     ],
     "FunctionDef DOCSTRING -- Take work starts and ends in each partition (weekday)": [
-        "../ta/api/analytics/occupancy_analytics.py:548"
+        "../ta/api/analytics/occupancy_analytics.py:549:                \"\"\"Take work starts and ends in each partition (weekday)\"\"\""
     ],
     "FunctionDef DOCSTRING -- function that distributes interval among the parts of partition\n                example:\n                partition = (start_time, part_size, parts_count)\n                workday = (9*60, 60, 8)  # in minutes: starts 9:00, and split into 8 hours\n                9  10  11  12  13  14  15  16  (17)\n\n                initial partitioned sums:\n                0   0   0   0   0   0   0   0\n\n                if interval:  9:20  9:30\n                10   0   0   0   0   0   0   0\n\n                if interval:  9:20  10:00\n                40   0   0   0   0   0   0   0\n\n                if interval:  9:20  10:20\n                40   20   0   0   0   0   0   0\n\n                if interval:  9:20  11:45\n                40   60   45   0   0   0   0   0\n\n                edge cases:\n                if interval:  None  9:30\n                30   0   0   0   0   0   0   0\n\n                if interval:  9:20 None\n                40  60  60  60  60  60  60  60\n\n                if interval:  10:00  10:00\n                0   0   0   0   0   0   0   0\n\n                error cases\n\n                if interval:  8:30  9:30  (if earlier than workday start, should get None)\n                30   0   0   0   0   0   0   0\n\n                if interval:  10:00  9:40\n                30   0   0   0   0   0   0   0\n                ": [
-        "../ta/api/analytics/occupancy_analytics.py:431"
+        "../ta/api/analytics/occupancy_analytics.py:432:                \"\"\""
     ],
     "FunctionDef DOCSTRING -- gets date in parameter \"from\"\n        if <duration> is week: imagines week starts on it (though it might be not monday)\n        ": [
-        "../ta/api/analytics/occupancy_analytics.py:493"
+        "../ta/api/analytics/occupancy_analytics.py:494:        \"\"\""
     ],
     "FunctionDef DOCSTRING -- returns avg start and end of work": [
-        "../ta/api/analytics/occupancy_analytics.py:537"
+        "../ta/api/analytics/occupancy_analytics.py:538:                \"\"\"returns avg start and end of work\"\"\""
     ],
     "FunctionDef DOCSTRING -- translates intervals to timedeltas, so the starting (from) point is 0": [
-        "../ta/api/analytics/occupancy_analytics.py:379"
+        "../ta/api/analytics/occupancy_analytics.py:380:            \"\"\"translates intervals to timedeltas, so the starting (from) point is 0\"\"\""
+    ],
+    "GET": [
+        "../ta/api/mux/views.py:82:@api_view(['GET'])",
+        "../ta/api/mux/views.py:87:@api_view(['GET'])"
+    ],
+    "GROUP BY": [
+        "../ta/api/analytics/occupancy_analytics.py:52:    for newline_mark in ['INNER', \"ON\", \"LEFT OUTER\", \"FROM\", \"WHERE\", \"SELECT\", \"GROUP BY\", \"ORDER BY\", \"AND\"]:"
     ],
     "HTTP_HOST": [
-        "../ta/api/analytics/_deprecated_tests_api.py:19"
+        "../ta/api/analytics/_deprecated_tests_api.py:19:api_request_headers = {'HTTP_HOST': 'api.tableair.xx'}"
+    ],
+    "INNER": [
+        "../ta/api/analytics/occupancy_analytics.py:52:    for newline_mark in ['INNER', \"ON\", \"LEFT OUTER\", \"FROM\", \"WHERE\", \"SELECT\", \"GROUP BY\", \"ORDER BY\", \"AND\"]:"
     ],
     "LEFT OUTER": [
-        "../ta/api/analytics/occupancy_analytics.py:51"
+        "../ta/api/analytics/occupancy_analytics.py:52:    for newline_mark in ['INNER', \"ON\", \"LEFT OUTER\", \"FROM\", \"WHERE\", \"SELECT\", \"GROUP BY\", \"ORDER BY\", \"AND\"]:"
     ],
     "Module DOCSTRING -- \n    Bookable Handlers\n": [
-        "../ta/api/bookables/endpoints.py:17"
+        "../ta/api/bookables/endpoints.py:18:\"\"\""
     ],
     "Module DOCSTRING -- \n    Composite booking handlers\n": [
-        "../ta/api/booking/endpoints.py:96"
+        "../ta/api/booking/endpoints.py:96:\"\"\""
     ],
     "Module DOCSTRING -- \n    Main booking handlers\n": [
-        "../ta/api/booking/endpoints.py:18"
+        "../ta/api/booking/endpoints.py:18:\"\"\""
     ],
     "Module DOCSTRING -- \n    Prefab Handlers\n": [
-        "../ta/api/bookables/endpoints.py:115"
+        "../ta/api/bookables/endpoints.py:116:\"\"\""
     ],
     "Module DOCSTRING -- \n    Prefab Usage Handlers\n": [
-        "../ta/api/bookables/endpoints.py:181"
+        "../ta/api/bookables/endpoints.py:182:\"\"\""
     ],
     "Module DOCSTRING -- \nInvitation endpoint\n": [
-        "../ta/api/teams/endpoints.py:77"
+        "../ta/api/teams/endpoints.py:78:\"\"\""
     ],
     "Module DOCSTRING -- \nInvitation endpoints\n": [
-        "../ta/api/teams/endpoints.py:53"
+        "../ta/api/teams/endpoints.py:54:\"\"\""
     ],
     "Module DOCSTRING -- \nRoom booking\n": [
-        "../ta/api/room_booking/endpoints.py:21"
+        "../ta/api/room_booking/endpoints.py:21:\"\"\""
     ],
     "Module DOCSTRING -- \nRoom booking attendance\n": [
-        "../ta/api/room_booking/endpoints.py:122"
+        "../ta/api/room_booking/endpoints.py:122:\"\"\""
     ],
     "Module DOCSTRING -- \nRoom booking composite endpoints\n": [
-        "../ta/api/room_booking/endpoints.py:162"
+        "../ta/api/room_booking/endpoints.py:162:\"\"\""
     ],
     "Module DOCSTRING -- \nRoom booking participation\n": [
-        "../ta/api/room_booking/endpoints.py:87"
+        "../ta/api/room_booking/endpoints.py:87:\"\"\""
     ],
     "Module DOCSTRING -- \nTeam endpoints\n": [
-        "../ta/api/teams/endpoints.py:13"
+        "../ta/api/teams/endpoints.py:14:\"\"\""
     ],
     "Module DOCSTRING -- \nclass OccupancySerializer(serializers.ModelSerializer):\n    def __init__(self, instance=None, data=empty, account_pk=None, **kwargs):\n        if account_pk is None:\n            raise AttributeError('No account ID was provided')\n        self.account_pk = account_pk\n        queryset = WorkspaceOccupancy.objects.filter(account_id=account_pk)\n        super().__init__(instance, data, **kwargs)\n\n    def validate(self, attrs):\n        attrs['account_id'] = self.account_pk\n        if 'timestamp' in attrs:\n            invalid_if(timezone.now() - attrs['timestamp'] > timedelta(days=365), 'timestamp', 'Timestamp cannot be more than a year old')\n        return attrs\n\n    def create(self, validated_data):\n        instance = WorkspaceOccupancy(**validated_data)\n        instance.validate_and_save()\n        return instance\n\n    class Meta:\n        model = WorkspaceOccupancy\n        fields = ('activity', 'timestamp', 'duration')\n\n": [
-        "../ta/api/analytics/serializers.py:58"
+        "../ta/api/analytics/serializers.py:59:\"\"\""
     ],
     "Module DOCSTRING -- \nrefactoring URL structure:\n\nhttp://api.tableair.xx:8000/analytics/occupancy/get_prefabs_intervals/venue/8/?duration=week&from=2018-01-07\n\n\nEP1\nhttp://api.tableair.xx:8000/analytics/occupancy/by_week_hours/venue/8/?from=2018-01-07  (from galima nera\u0161yt - defaultins \u012f duration prad\u017ei\u0105)\nhttp://api.tableair.xx:8000/analytics/occupancy/by_week_hours/prefab/SP0200000/?from=2018-01-07  (from galima nera\u0161yt - defaultins \u012f duration prad\u017ei\u0105)\n\n\nEP2\nhttp://api.tableair.xx:8000/analytics/occupancy/by_prefab/venue/8/?duration=week&from=2018-01-07  (from galima nera\u0161yt - defaultins \u012f duration prad\u017ei\u0105)\nEP3 (CSV)\nhttp://api.tableair.xx:8000/analytics/occupancy/by_prefab/venue/8/csv/?duration=week&from=2018-01-07\n\nEP4\nhttp://api.tableair.xx:8000/analytics/occupancy/by_state_changes/prefab/SP0200000/?duration=week&from=2018-01-07\n\n": [
-        "../ta/api/analytics/urls_analytics.py:34"
+        "../ta/api/analytics/urls_analytics.py:34:\"\"\""
+    ],
+    "N/A": [
+        "../ta/api/analytics/aggregators.py:486:            return 'N/A'",
+        "../ta/api/analytics/aggregators.py:498:            return 'N/A'",
+        "../ta/api/analytics/aggregators.py:510:            return 'N/A'",
+        "../ta/api/analytics/aggregators.py:522:            return 'N/A'",
+        "../ta/api/analytics/aggregators.py:534:            return 'N/A'",
+        "../ta/api/rooms/models.py:23:            venue = 'N/A'"
+    ],
+    "ON": [
+        "../ta/api/analytics/occupancy_analytics.py:52:    for newline_mark in ['INNER', \"ON\", \"LEFT OUTER\", \"FROM\", \"WHERE\", \"SELECT\", \"GROUP BY\", \"ORDER BY\", \"AND\"]:"
     ],
     "ORDER BY": [
-        "../ta/api/analytics/occupancy_analytics.py:51"
+        "../ta/api/analytics/occupancy_analytics.py:52:    for newline_mark in ['INNER', \"ON\", \"LEFT OUTER\", \"FROM\", \"WHERE\", \"SELECT\", \"GROUP BY\", \"ORDER BY\", \"AND\"]:"
+    ],
+    "POST": [
+        "../ta/api/teams/endpoints.py:81:@api_view(('POST',))"
+    ],
+    "SELECT": [
+        "../ta/api/analytics/occupancy_analytics.py:52:    for newline_mark in ['INNER', \"ON\", \"LEFT OUTER\", \"FROM\", \"WHERE\", \"SELECT\", \"GROUP BY\", \"ORDER BY\", \"AND\"]:"
     ],
     "SHORT_DATETIME_FORMAT": [
-        "../ta/api/booking/confirmation.py:13",
-        "../ta/api/booking/confirmation.py:14",
-        "../ta/api/booking/confirmation.py:25",
-        "../ta/api/booking/confirmation.py:26",
-        "../ta/api/booking/confirmation.py:38",
-        "../ta/api/booking/confirmation.py:39",
-        "../ta/api/booking/confirmation.py:51",
-        "../ta/api/booking/confirmation.py:52"
+        "../ta/api/booking/confirmation.py:14:        ).format(formats.date_format(room_booking.start, \"SHORT_DATETIME_FORMAT\"),",
+        "../ta/api/booking/confirmation.py:15:                 formats.date_format(room_booking.end, \"SHORT_DATETIME_FORMAT\"),",
+        "../ta/api/booking/confirmation.py:26:            formats.date_format(room_booking.start, \"SHORT_DATETIME_FORMAT\"),",
+        "../ta/api/booking/confirmation.py:27:            formats.date_format(room_booking.end, \"SHORT_DATETIME_FORMAT\"),",
+        "../ta/api/booking/confirmation.py:39:            formats.date_format(room_booking.start, \"SHORT_DATETIME_FORMAT\"),",
+        "../ta/api/booking/confirmation.py:40:            formats.date_format(room_booking.end, \"SHORT_DATETIME_FORMAT\"),",
+        "../ta/api/booking/confirmation.py:52:            formats.date_format(room_booking.start, \"SHORT_DATETIME_FORMAT\"),",
+        "../ta/api/booking/confirmation.py:53:            formats.date_format(room_booking.end, \"SHORT_DATETIME_FORMAT\"),"
+    ],
+    "SP02": [
+        "../ta/api/analytics/occupancy_analytics.py:628:            identifier__startswith='SP02'  # same as   type_id=6   ?"
+    ],
+    "TODO..": [
+        "../ta/api/analytics/occupancy_analytics.py:514:            raise RuntimeError(\"TODO..\")"
+    ],
+    "UTC": [
+        "../ta/api/bookables/serializers.py:61:            return datetime.utcfromtimestamp(data).replace(tzinfo=pytz.timezone('UTC'))",
+        "../ta/api/bookables/serializers.py:88:                                                    SitStandAnalyticsAggregator._tz_for_tzdata('UTC')) \\",
+        "../ta/api/bookables/sitstand/aggregators.py:141:            prefab_usage.timestamp = make_aware(prefab_usage.timestamp, cls._tz_for_tzdata('UTC'))"
+    ],
+    "WHERE": [
+        "../ta/api/analytics/occupancy_analytics.py:52:    for newline_mark in ['INNER', \"ON\", \"LEFT OUTER\", \"FROM\", \"WHERE\", \"SELECT\", \"GROUP BY\", \"ORDER BY\", \"AND\"]:"
+    ],
+    "[A-Z0-9]{9}": [
+        "../ta/api/bookables/validators/prefab_validator.py:12:    RE_IDENTIFIER = r'[A-Z0-9]{9}'"
     ],
     "_": [
-        "../ta/api/analytics/aggregators.py:231"
+        "../ta/api/analytics/aggregators.py:232:        func = getattr(self, '_' + self._get('aggregator'))"
     ],
     "__all__": [
-        "../ta/api/analytics/aggregators.py:211",
-        "../ta/api/analytics/occupancy_analytics.py:251",
-        "../ta/api/booking/serializers.py:21",
-        "../ta/api/booking/serializers.py:29",
-        "../ta/api/broker/serializers.py:11",
-        "../ta/api/groups/serializers.py:22",
-        "../ta/api/objects/serializers.py:15",
-        "../ta/api/objects/serializers.py:25",
-        "../ta/api/room_booking/serializers.py:23",
-        "../ta/api/room_booking/serializers.py:39",
-        "../ta/api/rooms/serializers.py:29",
-        "../ta/api/rooms/serializers.py:53"
+        "../ta/api/analytics/aggregators.py:212:            if '__all__' not in allowed_scopes and self._get('scope') not in allowed_scopes:",
+        "../ta/api/analytics/occupancy_analytics.py:252:            if '__all__' not in allowed_scopes and self._get('scope') not in allowed_scopes:",
+        "../ta/api/booking/serializers.py:21:        fields = '__all__'",
+        "../ta/api/booking/serializers.py:29:        fields = '__all__'",
+        "../ta/api/broker/serializers.py:11:        fields = '__all__'",
+        "../ta/api/groups/serializers.py:22:        fields = '__all__'",
+        "../ta/api/objects/serializers.py:15:        fields = '__all__'",
+        "../ta/api/objects/serializers.py:25:        fields = '__all__'",
+        "../ta/api/room_booking/serializers.py:23:        fields = '__all__'",
+        "../ta/api/room_booking/serializers.py:39:        fields = '__all__'",
+        "../ta/api/rooms/serializers.py:29:        fields = '__all__'",
+        "../ta/api/rooms/serializers.py:53:        fields = '__all__'"
     ],
     "__iter__": [
-        "../ta/api/booking/validators/repeating_booking_validators.py:187"
+        "../ta/api/booking/validators/repeating_booking_validators.py:188:        invalid_if(not hasattr(self.weekdays, '__iter__'), 'weekdays', _('List type expected (e.g. [0, 1, 6]).'))"
     ],
     "__non_field_errors__": [
-        "../ta/api/teams/endpoints.py:84"
+        "../ta/api/teams/endpoints.py:85:        return Response({'__non_field_errors__': [_('No contact email was set for the team')]}, status=400)"
     ],
     "account__email": [
-        "../ta/api/analytics/admin.py:8",
-        "../ta/api/booking/admin.py:8",
-        "../ta/api/integration/sync.py:44"
+        "../ta/api/analytics/admin.py:8:    search_fields = ('account__email',)",
+        "../ta/api/booking/admin.py:8:    search_fields = ('account__email', 'bookable__prefab__identifier')",
+        "../ta/api/integration/sync.py:44:        participants = booking.participants.exclude(account=booking.host).annotate(email=F('account__email'))"
     ],
     "account__first_name": [
-        "../ta/api/room_booking/models.py:46"
+        "../ta/api/room_booking/models.py:47:        ordering = ('account__first_name', 'account__last_name',)"
     ],
     "account__id": [
-        "../ta/api/analytics/aggregators.py:295",
-        "../ta/api/analytics/aggregators.py:411"
+        "../ta/api/analytics/aggregators.py:296:            .order_by('timestamp').order_by('account__id')",
+        "../ta/api/analytics/aggregators.py:412:        queryset.order_by('timestamp').order_by('account__id')"
     ],
     "account__last_name": [
-        "../ta/api/room_booking/models.py:46"
+        "../ta/api/room_booking/models.py:47:        ordering = ('account__first_name', 'account__last_name',)"
     ],
     "account_id": [
-        "../ta/api/analytics/aggregators.py:49",
-        "../ta/api/analytics/aggregators.py:145",
-        "../ta/api/analytics/aggregators.py:284",
-        "../ta/api/analytics/aggregators.py:287",
-        "../ta/api/analytics/aggregators.py:306",
-        "../ta/api/analytics/serializers.py:20",
-        "../ta/api/bookables/validators/bookable_validator.py:86",
-        "../ta/api/booking/endpoints.py:150",
-        "../ta/api/booking/endpoints.py:164",
-        "../ta/api/booking/endpoints.py:174",
-        "../ta/api/booking/management.py:66",
-        "../ta/api/booking/notifications.py:188",
-        "../ta/api/booking/notifications.py:190",
-        "../ta/api/groups/validators.py:54",
-        "../ta/api/room_booking/endpoints.py:62",
-        "../ta/api/room_booking/endpoints.py:107",
-        "../ta/api/room_booking/validators.py:220",
-        "../ta/api/room_booking/validators.py:222",
-        "../ta/api/room_booking/validators.py:224"
+        "../ta/api/analytics/aggregators.py:50:            {'participant': ['team_url', 'account_id']}",
+        "../ta/api/analytics/aggregators.py:146:                    participations__account__id=self._get('account_id'))).exists()",
+        "../ta/api/analytics/aggregators.py:285:                return list(filter(lambda b: b.account_id == self._get('account_id') and b.check_in is not None,",
+        "../ta/api/analytics/aggregators.py:288:            return list(filter(lambda b: b.account_id == self._get('account_id'), member_bookings))",
+        "../ta/api/analytics/aggregators.py:307:                Q(account__id=self._get('account_id')) & Q(account__team__url=self._get('team_url')))))",
+        "../ta/api/analytics/serializers.py:21:        attrs['account_id'] = self.account_pk",
+        "../ta/api/bookables/validators/bookable_validator.py:87:                .filter(bookable_id=repr_attrs['id']).current().values_list('account_id', flat=True).first()",
+        "../ta/api/booking/endpoints.py:150:                Q(account_id=url['account_id']) & Q(status=BookingStatus.CONFIRMED)",
+        "../ta/api/booking/endpoints.py:164:            return himself(request.user, url['account_id'])",
+        "../ta/api/booking/endpoints.py:174:                .filter(Q(account_id=url['account_id']) &",
+        "../ta/api/booking/management.py:67:        attrs['account'] = get_object_or_404(Account, id=attrs.pop('account_id'))",
+        "../ta/api/booking/notifications.py:189:            queryset = queryset.values('id', 'account_id')",
+        "../ta/api/booking/notifications.py:191:        ids, account_ids = set(pluck(queryset, 'id')), set(pluck(queryset, 'account_id'))",
+        "../ta/api/groups/validators.py:55:            repr_attrs['members'] = list(self.context['participants'].values_list('account_id', flat=True))",
+        "../ta/api/room_booking/endpoints.py:62:                .filter(Q(participants__account=url['account_id']) &",
+        "../ta/api/room_booking/endpoints.py:107:            room_booking_participant.objects.get(account__id=url['account_id'])",
+        "../ta/api/room_booking/validators.py:221:            participants = instance.participants.valid().values_list('account_id', flat=True)",
+        "../ta/api/room_booking/validators.py:223:                self.context['participants'].values_list('account_id', flat=True))",
+        "../ta/api/room_booking/validators.py:225:                self.context['participants'].values_list('account_id', flat=True)).difference(participants)"
     ],
     "accounts:confirm_registration": [
-        "../ta/api/accounts/serializers.py:128"
+        "../ta/api/accounts/serializers.py:129:                      s.TA_HOST_SCHEME + reverse('accounts:confirm_registration', host='front',"
     ],
     "api_settings": [
-        "../ta/api/accounts/models.py:176"
+        "../ta/api/accounts/models.py:176:    account = models.OneToOneField(Account, related_name='api_settings', primary_key=True, on_delete=models.CASCADE)"
     ],
     "app_label": [
-        "../ta/api/logging/signals.py:13"
+        "../ta/api/logging/signals.py:13:        ctypes = ContentType.objects.values_list('app_label', flat=True).distinct()"
     ],
     "app_usage": [
-        "../ta/api/analytics/models.py:47"
+        "../ta/api/analytics/models.py:48:    account = models.ForeignKey(Account, related_name='app_usage')"
     ],
     "auth:confirm_email_change": [
-        "../ta/api/accounts/serializers.py:145"
+        "../ta/api/accounts/serializers.py:146:                      s.TA_HOST_SCHEME + reverse('auth:confirm_email_change',"
     ],
     "auth:confirm_invite": [
-        "../ta/api/teams/validators/invitation_validator.py:39"
+        "../ta/api/teams/validators/invitation_validator.py:40:                s.TA_HOST_SCHEME + reverse('auth:confirm_invite', host='front', kwargs={'hash': instance.private_hash})"
     ],
     "avg_activity_times": [
-        "../ta/api/analytics/aggregators.py:63"
+        "../ta/api/analytics/aggregators.py:64:        'avg_activity_times': ['global', 'team', 'account', 'participant'],"
     ],
     "avg_booking_duration": [
-        "../ta/api/analytics/aggregators.py:64"
+        "../ta/api/analytics/aggregators.py:65:        'avg_booking_duration': ['global', 'team', 'venue', 'table', 'account', 'participant'],"
     ],
     "avg_heights": [
-        "../ta/api/analytics/aggregators.py:65"
+        "../ta/api/analytics/aggregators.py:66:        'avg_heights': ['global', 'team'],"
     ],
     "avg_minor_switches": [
-        "../ta/api/bookables/sitstand/aggregators.py:62"
+        "../ta/api/bookables/sitstand/aggregators.py:63:        'avg_minor_switches': ['team', 'venue'],"
     ],
     "avg_room_booking_attendance": [
-        "../ta/api/analytics/aggregators.py:85"
+        "../ta/api/analytics/aggregators.py:86:        'avg_room_booking_attendance': ['global', 'team', 'room', 'account', 'participant'],"
     ],
     "avg_room_booking_duration": [
-        "../ta/api/analytics/aggregators.py:79"
+        "../ta/api/analytics/aggregators.py:80:        'avg_room_booking_duration': ['global', 'team', 'account', 'room', 'participant'],"
     ],
     "avg_sitting_height": [
-        "../ta/api/bookables/sitstand/aggregators.py:60"
+        "../ta/api/bookables/sitstand/aggregators.py:61:        'avg_sitting_height': ['team', 'venue'],"
     ],
     "avg_sitting_time": [
-        "../ta/api/bookables/sitstand/aggregators.py:58"
+        "../ta/api/bookables/sitstand/aggregators.py:59:        'avg_sitting_time': ['team', 'venue'],"
     ],
     "avg_standing_height": [
-        "../ta/api/bookables/sitstand/aggregators.py:59"
+        "../ta/api/bookables/sitstand/aggregators.py:60:        'avg_standing_height': ['team', 'venue'],"
     ],
     "avg_standing_time": [
-        "../ta/api/bookables/sitstand/aggregators.py:57"
+        "../ta/api/bookables/sitstand/aggregators.py:58:        'avg_standing_time': ['team', 'venue'],"
     ],
     "avg_switches": [
-        "../ta/api/bookables/sitstand/aggregators.py:61"
+        "../ta/api/bookables/sitstand/aggregators.py:62:        'avg_switches': ['team', 'venue'],"
     ],
     "bookable__name": [
-        "../ta/api/accounts/views.py:269"
+        "../ta/api/accounts/views.py:270:                      bookable_name=F('bookable__name')) \\"
     ],
     "bookable__prefab__id": [
-        "../ta/api/booking/validators/repeating_booking_validators.py:95"
+        "../ta/api/booking/validators/repeating_booking_validators.py:96:                .values_list('bookable__prefab__id', 'start', 'end')"
     ],
     "bookable__prefab__identifier": [
-        "../ta/api/analytics/aggregators.py:264",
-        "../ta/api/booking/admin.py:8",
-        "../ta/api/room_booking/serializers.py:18",
-        "../ta/api/room_booking/serializers.py:28",
-        "../ta/api/rooms/serializers.py:13",
-        "../ta/api/rooms/serializers.py:48"
+        "../ta/api/analytics/aggregators.py:265:                                                   .annotate(bookable_identifier=F('bookable__prefab__identifier')),",
+        "../ta/api/booking/admin.py:8:    search_fields = ('account__email', 'bookable__prefab__identifier')",
+        "../ta/api/room_booking/serializers.py:18:    room = DeepRelatedField('bookable__prefab__identifier', queryset=Room.objects.all(), write_only=True)",
+        "../ta/api/room_booking/serializers.py:28:    room = DeepRelatedField('bookable__prefab__identifier', queryset=Room.objects.all())",
+        "../ta/api/rooms/serializers.py:13:    room = DeepRelatedField('bookable__prefab__identifier', queryset=Room.objects.all(), write_only=True)",
+        "../ta/api/rooms/serializers.py:48:    room = DeepRelatedField('bookable__prefab__identifier', queryset=Room.objects.all(), write_only=True)"
     ],
     "bookable__prefab__type": [
-        "../ta/api/booking/endpoints.py:178"
+        "../ta/api/booking/endpoints.py:178:                .annotate(prefab_type=F('bookable__prefab__type'))"
     ],
     "bookable__venue__id": [
-        "../ta/api/accounts/views.py:266"
+        "../ta/api/accounts/views.py:267:                      venue_id=F('bookable__venue__id'),"
     ],
     "bookable__venue__name": [
-        "../ta/api/accounts/views.py:267",
-        "../ta/api/booking/endpoints.py:153"
+        "../ta/api/accounts/views.py:268:                      venue_name=F('bookable__venue__name'),",
+        "../ta/api/booking/endpoints.py:153:                .annotate(venue_name=F('bookable__venue__name')),"
     ],
     "bookable__venue__team__url": [
-        "../ta/api/accounts/views.py:110"
+        "../ta/api/accounts/views.py:111:            .annotate(venue=F('bookable__venue_id'), team_url=F('bookable__venue__team__url'))"
     ],
     "bookable__venue__timezone": [
-        "../ta/api/accounts/views.py:268",
-        "../ta/api/analytics/aggregators.py:238",
-        "../ta/api/analytics/aggregators.py:244"
+        "../ta/api/accounts/views.py:269:                      venue_timezone=F('bookable__venue__timezone'),",
+        "../ta/api/analytics/aggregators.py:239:            .annotate(timezone=F('bookable__venue__timezone'), venue_starts=F('bookable__venue__work_starts'),",
+        "../ta/api/analytics/aggregators.py:245:            .annotate(timezone=F('bookable__venue__timezone'), venue_starts=F('bookable__venue__work_starts'),"
     ],
     "bookable__venue__work_ends": [
-        "../ta/api/accounts/views.py:265",
-        "../ta/api/analytics/aggregators.py:239",
-        "../ta/api/analytics/aggregators.py:245"
+        "../ta/api/accounts/views.py:266:                      venue_ends=F('bookable__venue__work_ends'),",
+        "../ta/api/analytics/aggregators.py:240:                      venue_ends=F('bookable__venue__work_ends'))",
+        "../ta/api/analytics/aggregators.py:246:                      venue_ends=F('bookable__venue__work_ends'))"
     ],
     "bookable__venue__work_starts": [
-        "../ta/api/accounts/views.py:264",
-        "../ta/api/analytics/aggregators.py:238",
-        "../ta/api/analytics/aggregators.py:244"
+        "../ta/api/accounts/views.py:265:            .annotate(venue_starts=F('bookable__venue__work_starts'),",
+        "../ta/api/analytics/aggregators.py:239:            .annotate(timezone=F('bookable__venue__timezone'), venue_starts=F('bookable__venue__work_starts'),",
+        "../ta/api/analytics/aggregators.py:245:            .annotate(timezone=F('bookable__venue__timezone'), venue_starts=F('bookable__venue__work_starts'),"
     ],
     "bookable__venue_id": [
-        "../ta/api/accounts/views.py:110",
-        "../ta/api/booking/endpoints.py:37",
-        "../ta/api/booking/endpoints.py:152"
+        "../ta/api/accounts/views.py:111:            .annotate(venue=F('bookable__venue_id'), team_url=F('bookable__venue__team__url'))",
+        "../ta/api/booking/endpoints.py:37:                .annotate(venue_id=F('bookable__venue_id')).first()",
+        "../ta/api/booking/endpoints.py:152:                .annotate(venue_id=F('bookable__venue_id'))"
     ],
     "bookables__name": [
-        "../ta/api/analytics/occupancy_analytics.py:527"
+        "../ta/api/analytics/occupancy_analytics.py:528:        all_prefabs = self._c(self._get_all_venue_prefabs().values_list('identifier', 'bookables__name'))"
     ],
     "booked_by": [
-        "../ta/api/bookables/validators/bookable_validator.py:43",
-        "../ta/api/bookables/validators/bookable_validator.py:85"
+        "../ta/api/bookables/validators/bookable_validator.py:44:        attrs.pop('booked_by', None)",
+        "../ta/api/bookables/validators/bookable_validator.py:86:            repr_attrs['booked_by'] = Booking.objects.confirmed().valid() \\"
     ],
     "by_prefab": [
-        "../ta/api/analytics/occupancy_analytics.py:102",
-        "../ta/api/analytics/views.py:133"
+        "../ta/api/analytics/occupancy_analytics.py:103:        'by_prefab': ['venue'],",
+        "../ta/api/analytics/views.py:133:                    if context['perspective'] == ['by_prefab']:"
     ],
     "by_state_changes": [
-        "../ta/api/analytics/occupancy_analytics.py:103",
-        "../ta/api/analytics/views.py:87",
-        "../ta/api/analytics/views.py:127",
-        "../ta/api/analytics/views.py:135"
+        "../ta/api/analytics/occupancy_analytics.py:104:        'by_state_changes': ['prefab'],",
+        "../ta/api/analytics/views.py:87:                if context['perspective'] == ['by_state_changes']:",
+        "../ta/api/analytics/views.py:127:                if context['perspective'] == ['by_state_changes']  and csv is None: # we could set it inside OccupancyAnalytics, if we pass \"csv\" parameter there",
+        "../ta/api/analytics/views.py:135:                    if context['perspective'] == ['by_state_changes']:"
     ],
     "by_week_hours": [
-        "../ta/api/analytics/occupancy_analytics.py:101",
-        "../ta/api/analytics/views.py:91"
+        "../ta/api/analytics/occupancy_analytics.py:102:        'by_week_hours': ['venue', 'prefab'],",
+        "../ta/api/analytics/views.py:91:            if context['perspective']==['by_week_hours']:"
     ],
     "c_i": [
-        "../ta/api/iot/serializers.py:14"
+        "../ta/api/iot/serializers.py:14:        fields = ('id', 's', 'e', 'c_i', 'acc')"
     ],
     "calendar_links": [
-        "../ta/api/integration/models.py:10"
+        "../ta/api/integration/models.py:11:    room = models.ForeignKey(Room, on_delete=models.CASCADE, related_name='calendar_links')"
     ],
     "calories_burned": [
-        "../ta/api/analytics/aggregators.py:66"
+        "../ta/api/analytics/aggregators.py:67:        'calories_burned': ['global', 'team', 'account', 'participant'],"
     ],
     "check_in": [
-        "../ta/api/booking/admin.py:7",
-        "../ta/api/booking/validators/booking_validators.py:49",
-        "../ta/api/booking/validators/booking_validators.py:50",
-        "../ta/api/booking/validators/booking_validators.py:51",
-        "../ta/api/booking/validators/booking_validators.py:65",
-        "../ta/api/booking/validators/booking_validators.py:146",
-        "../ta/api/booking/validators/booking_validators.py:153",
-        "../ta/api/booking/validators/booking_validators.py:153",
-        "../ta/api/booking/validators/booking_validators.py:186",
-        "../ta/api/booking/validators/booking_validators.py:187",
-        "../ta/api/booking/validators/booking_validators.py:206",
-        "../ta/api/booking/validators/booking_validators.py:247",
-        "../ta/api/iot/serializers.py:9"
+        "../ta/api/booking/admin.py:7:    list_display = ('account', 'bookable', 'start', 'end', 'check_in')",
+        "../ta/api/booking/validators/booking_validators.py:50:        invalid_if(instance.check_in is not None, 'check_in', cls.messages['check_in_once'])",
+        "../ta/api/booking/validators/booking_validators.py:51:        invalid_if(check_in < start, 'check_in', cls.messages['check_in_early'])",
+        "../ta/api/booking/validators/booking_validators.py:52:        invalid_if(check_in > end, 'check_in', cls.messages['check_in_late'])",
+        "../ta/api/booking/validators/booking_validators.py:66:        if_any_in(['start', 'end', 'check_in'], attrs, lambda d: d.astimezone(tz))",
+        "../ta/api/booking/validators/booking_validators.py:147:        if_any_in(['start', 'end', 'check_in'], attrs, self.clean_dt)",
+        "../ta/api/booking/validators/booking_validators.py:154:            invalid_if('check_in' in attrs, 'check_in', _('You cannot check-in whilst creating a booking'))",
+        "../ta/api/booking/validators/booking_validators.py:154:            invalid_if('check_in' in attrs, 'check_in', _('You cannot check-in whilst creating a booking'))",
+        "../ta/api/booking/validators/booking_validators.py:187:        if 'check_in' in attrs:",
+        "../ta/api/booking/validators/booking_validators.py:188:            self.validate_check_in(instance, start, end, attrs['check_in'])",
+        "../ta/api/booking/validators/booking_validators.py:207:            elif 'check_in' in validated_attrs:",
+        "../ta/api/booking/validators/booking_validators.py:248:        booking.save(update_fields=['check_in'])",
+        "../ta/api/iot/serializers.py:9:    c_i = serializers.DateTimeField(source='check_in')"
     ],
     "check_in_duration": [
-        "../ta/api/ui/validators.py:30"
+        "../ta/api/ui/validators.py:31:            invalid('check_in_duration', _('Value must be between {} and {} minutes').format("
     ],
     "check_in_early": [
-        "../ta/api/booking/validators/booking_validators.py:50"
+        "../ta/api/booking/validators/booking_validators.py:51:        invalid_if(check_in < start, 'check_in', cls.messages['check_in_early'])"
     ],
     "check_in_late": [
-        "../ta/api/booking/validators/booking_validators.py:51"
+        "../ta/api/booking/validators/booking_validators.py:52:        invalid_if(check_in > end, 'check_in', cls.messages['check_in_late'])"
     ],
     "check_in_once": [
-        "../ta/api/booking/validators/booking_validators.py:49"
+        "../ta/api/booking/validators/booking_validators.py:50:        invalid_if(instance.check_in is not None, 'check_in', cls.messages['check_in_once'])"
     ],
     "check_in_restrictions_exempt": [
-        "../ta/api/booking/validators/booking_validators.py:34"
+        "../ta/api/booking/validators/booking_validators.py:35:    CTX_CHECK_IN_RESTRICTIONS_EXEMPT = 'check_in_restrictions_exempt'"
     ],
     "confirm_invite": [
-        "../ta/api/accounts/serializers.py:27",
-        "../ta/api/accounts/serializers.py:30",
-        "../ta/api/accounts/serializers.py:100"
+        "../ta/api/accounts/serializers.py:28:            'confirm_invite', 'is_kiosk',",
+        "../ta/api/accounts/serializers.py:31:        extra_kwargs = {'confirm_invite': {'write_only': True}, 'first_usage': {'required': False}}",
+        "../ta/api/accounts/serializers.py:101:        confirm_invite = validated_data.pop('confirm_invite', None)"
     ],
     "contact_email": [
-        "../ta/api/teams/validators/team_validator.py:57",
-        "../ta/api/teams/validators/team_validator.py:58"
+        "../ta/api/teams/validators/team_validator.py:58:        if 'contact_email' not in attrs:",
+        "../ta/api/teams/validators/team_validator.py:59:            attrs['contact_email'] = self.context['request'].user.email"
     ],
     "content_type": [
-        "../ta/api/accounts/forms.py:103",
-        "../ta/api/logging/models.py:31",
-        "../ta/api/logging/serializers.py:9"
+        "../ta/api/accounts/forms.py:103:            f.queryset = f.queryset.select_related('content_type')",
+        "../ta/api/logging/models.py:31:    content_object = GenericForeignKey('content_type', 'object_id')",
+        "../ta/api/logging/serializers.py:9:        fields = ('content_type', 'object_id', 'object_repr', 'message', 'timestamp', 'action', 'account')"
     ],
     "create_participants": [
-        "../ta/api/room_booking/validators.py:223",
-        "../ta/api/room_booking/validators.py:228",
-        "../ta/api/room_booking/validators.py:269",
-        "../ta/api/room_booking/validators.py:272"
+        "../ta/api/room_booking/validators.py:224:            self.context['create_participants'] = set(",
+        "../ta/api/room_booking/validators.py:229:                self.context['create_participants'])",
+        "../ta/api/room_booking/validators.py:270:        if len(self.context.get('create_participants', [])):",
+        "../ta/api/room_booking/validators.py:273:                for account in Account.objects.filter(id__in=self.context['create_participants'])"
     ],
     "created_formatted": [
-        "../ta/api/bookables/admin.py:13"
+        "../ta/api/bookables/admin.py:14:    list_display = ('prefab', 'activity', 'parameters', 'timestamp_formatted', 'created_formatted')"
     ],
     "date_extrema_exempt": [
-        "../ta/api/booking/validators/booking_validators.py:31"
+        "../ta/api/booking/validators/booking_validators.py:32:    CTX_DATE_EXTREMA_EXEMPT = 'date_extrema_exempt'"
     ],
     "date_joined": [
-        "../ta/api/accounts/admin.py:18",
-        "../ta/api/accounts/serializers.py:26",
-        "../ta/api/accounts/serializers.py:29"
+        "../ta/api/accounts/admin.py:18:        (_('Important dates'), {'fields': ('last_login', 'date_joined')}),",
+        "../ta/api/accounts/serializers.py:27:            'id', 'first_name', 'last_name', 'password', 'old_password', 'email', 'date_joined', 'role',",
+        "../ta/api/accounts/serializers.py:30:        read_only_fields = ('id', 'date_joined', 'role')"
     ],
     "date_modified": [
-        "../ta/api/sync/serializers.py:12",
-        "../ta/api/sync/serializers.py:20"
+        "../ta/api/sync/serializers.py:12:        if instance.date_modified < validated_data['date_modified']:",
+        "../ta/api/sync/serializers.py:20:        fields = ('sitting_height', 'standing_height', 'unit_system', 'date_modified', 'use_12_hour_clock')"
     ],
     "duplicate_email": [
-        "../ta/api/accounts/forms.py:15",
-        "../ta/api/accounts/forms.py:46",
-        "../ta/api/accounts/forms.py:47"
+        "../ta/api/accounts/forms.py:15:        'duplicate_email': _(\"A user with that email already exists.\"),",
+        "../ta/api/accounts/forms.py:46:            self.error_messages['duplicate_email'],",
+        "../ta/api/accounts/forms.py:47:            code='duplicate_email',"
     ],
     "duration_mins": [
-        "../ta/api/bookables/sitstand/endpoints.py:74"
+        "../ta/api/bookables/sitstand/endpoints.py:75:            ('date', 'duration_mins', 'height_mm', 'is_sitting'),"
     ],
     "eligible_for_check_in": [
-        "../ta/api/booking/endpoints.py:155"
+        "../ta/api/booking/endpoints.py:155:                'eligible_for_check_in': lambda qs, cond: qs"
     ],
     "email_change": [
-        "../ta/api/accounts/models.py:161"
+        "../ta/api/accounts/models.py:161:    account = models.OneToOneField(Account, related_name='email_change', primary_key=True, on_delete=models.CASCADE)"
     ],
     "end_date": [
-        "../ta/api/booking/management.py:52",
-        "../ta/api/booking/management.py:93",
-        "../ta/api/booking/management.py:93",
-        "../ta/api/booking/management.py:94",
-        "../ta/api/booking/management.py:95",
-        "../ta/api/booking/management.py:147",
-        "../ta/api/booking/validators/repeating_booking_validators.py:73",
-        "../ta/api/booking/validators/repeating_booking_validators.py:175",
-        "../ta/api/booking/validators/repeating_booking_validators.py:176"
+        "../ta/api/booking/management.py:53:        self.end_date = attrs.pop('end_date', None)",
+        "../ta/api/booking/management.py:94:            invalid_if('end_date' not in attrs, 'end_date', _('This field is required.'))",
+        "../ta/api/booking/management.py:94:            invalid_if('end_date' not in attrs, 'end_date', _('This field is required.'))",
+        "../ta/api/booking/management.py:95:            if (attrs['end_date'] - attrs['start_date']).days > s.TA_BOOKING_MAX_START_FROM_NOW_DAYS:",
+        "../ta/api/booking/management.py:96:                invalid('end_date',",
+        "../ta/api/booking/management.py:148:                invalid('end_date',",
+        "../ta/api/booking/validators/repeating_booking_validators.py:74:                invalid('end_date', _('You cannot book for more thant {0} days into the future').format(",
+        "../ta/api/booking/validators/repeating_booking_validators.py:176:            self.end_date = get_required(attrs, 'end_date')",
+        "../ta/api/booking/validators/repeating_booking_validators.py:177:            invalid_if(self.end_date < self.start_date, 'end_date', _('End date must be greater than start date'))"
     ],
     "end_occurrences": [
-        "../ta/api/booking/management.py:53",
-        "../ta/api/booking/management.py:101",
-        "../ta/api/booking/management.py:101",
-        "../ta/api/booking/validators/repeating_booking_validators.py:178"
+        "../ta/api/booking/management.py:54:        self.end_occurrences = attrs.pop('end_occurrences', None)",
+        "../ta/api/booking/management.py:102:            invalid_if('end_occurrences' not in attrs, 'end_occurrences', _('This field is required.'))",
+        "../ta/api/booking/management.py:102:            invalid_if('end_occurrences' not in attrs, 'end_occurrences', _('This field is required.'))",
+        "../ta/api/booking/validators/repeating_booking_validators.py:179:            self.end_occurrences = get_required(attrs, 'end_occurrences')"
     ],
     "end_time": [
-        "../ta/api/booking/management.py:56",
-        "../ta/api/booking/management.py:73",
-        "../ta/api/booking/management.py:73",
-        "../ta/api/booking/management.py:78",
-        "../ta/api/booking/management.py:115",
-        "../ta/api/booking/management.py:187",
-        "../ta/api/booking/validators/repeating_booking_validators.py:111",
-        "../ta/api/booking/validators/repeating_booking_validators.py:160",
-        "../ta/api/booking/validators/repeating_booking_validators.py:160"
+        "../ta/api/booking/management.py:57:        self.end_time = attrs.pop('end_time')",
+        "../ta/api/booking/management.py:74:        end_time = _match_time(attrs['end_time'], 'end_time')",
+        "../ta/api/booking/management.py:74:        end_time = _match_time(attrs['end_time'], 'end_time')",
+        "../ta/api/booking/management.py:79:            invalid('end_time', _('A single booking cannot be shorter than {0} minutes').format(",
+        "../ta/api/booking/management.py:116:        attrs['end_time'] = end_time",
+        "../ta/api/booking/management.py:188:                           ['start_time', 'end_time'],",
+        "../ta/api/booking/validators/repeating_booking_validators.py:112:                    invalid(['start_time', 'end_time'],",
+        "../ta/api/booking/validators/repeating_booking_validators.py:161:        self.end_time = self.match_time(attrs.get('end_time'), 'end_time')",
+        "../ta/api/booking/validators/repeating_booking_validators.py:161:        self.end_time = self.match_time(attrs.get('end_time'), 'end_time')"
     ],
     "ending_at": [
-        "../ta/api/booking/management.py:58",
-        "../ta/api/booking/management.py:86",
-        "../ta/api/booking/management.py:86",
-        "../ta/api/booking/management.py:88",
-        "../ta/api/booking/management.py:88",
-        "../ta/api/booking/management.py:92",
-        "../ta/api/booking/management.py:100"
+        "../ta/api/booking/management.py:59:        self.ending_at = attrs.pop('ending_at')",
+        "../ta/api/booking/management.py:87:        invalid_if('ending_at' not in attrs, 'ending_at', _('This field is required.'))",
+        "../ta/api/booking/management.py:87:        invalid_if('ending_at' not in attrs, 'ending_at', _('This field is required.'))",
+        "../ta/api/booking/management.py:89:        invalid_if(attrs['ending_at'] not in [c[0] for c in RepeatingBookingEndingType.choices], 'ending_at',",
+        "../ta/api/booking/management.py:89:        invalid_if(attrs['ending_at'] not in [c[0] for c in RepeatingBookingEndingType.choices], 'ending_at',",
+        "../ta/api/booking/management.py:93:        if attrs['ending_at'] == RepeatingBookingEndingType.ON_DAY:",
+        "../ta/api/booking/management.py:101:        elif attrs['ending_at'] == RepeatingBookingEndingType.AFTER_OCCURRENCES:"
     ],
     "ending_type": [
-        "../ta/api/booking/validators/repeating_booking_validators.py:169",
-        "../ta/api/booking/validators/repeating_booking_validators.py:171"
+        "../ta/api/booking/validators/repeating_booking_validators.py:170:        self.ending_type = attrs.get('ending_type')",
+        "../ta/api/booking/validators/repeating_booking_validators.py:172:                   'ending_type', _('Must be a valid `ending_type` type (1 or 2)'))"
     ],
     "entity_id": [
-        "../ta/api/devices/models.py:56"
+        "../ta/api/devices/models.py:57:    entity_object = GenericForeignKey('entity_type', 'entity_id')"
     ],
     "entity_type": [
-        "../ta/api/devices/models.py:56"
+        "../ta/api/devices/models.py:57:    entity_object = GenericForeignKey('entity_type', 'entity_id')"
     ],
     "external_email": [
-        "../ta/api/integration/endpoints.py:48"
+        "../ta/api/integration/endpoints.py:48:                .annotate(room_mailbox=Subquery(exchange_link.values('external_email')[:1]))"
     ],
     "fields_from_url": [
-        "../ta/api/bookables/endpoints.py:188",
-        "../ta/api/groups/endpoints.py:11",
-        "../ta/api/groups/endpoints.py:32",
-        "../ta/api/objects/endpoints.py:13",
-        "../ta/api/objects/endpoints.py:34",
-        "../ta/api/room_booking/endpoints.py:35",
-        "../ta/api/room_booking/endpoints.py:45",
-        "../ta/api/room_booking/endpoints.py:97",
-        "../ta/api/room_booking/endpoints.py:129",
-        "../ta/api/rooms/endpoints.py:18",
-        "../ta/api/rooms/endpoints.py:44",
-        "../ta/api/rooms/endpoints.py:65",
-        "../ta/api/teams/endpoints.py:63",
-        "../ta/api/ui/endpoints.py:12",
-        "../ta/api/ui/endpoints.py:16",
-        "../ta/api/ui/endpoints.py:27",
-        "../ta/api/ui/endpoints.py:32",
-        "../ta/api/ui/endpoints.py:46"
+        "../ta/api/bookables/endpoints.py:189:            'fields_from_url': ('prefab',),",
+        "../ta/api/groups/endpoints.py:11:            'fields_from_url': ('team',)",
+        "../ta/api/groups/endpoints.py:32:            'fields_from_url': ('group', 'account',)",
+        "../ta/api/objects/endpoints.py:13:            'fields_from_url': ('venue',)",
+        "../ta/api/objects/endpoints.py:34:            'fields_from_url': ('venue',)",
+        "../ta/api/room_booking/endpoints.py:35:            'fields_from_url': ('room',)",
+        "../ta/api/room_booking/endpoints.py:45:            'fields_from_url': ('room',)",
+        "../ta/api/room_booking/endpoints.py:97:            'fields_from_url': ('room', 'room_booking',)",
+        "../ta/api/room_booking/endpoints.py:129:            'fields_from_url': ('room', 'room_booking', 'account',)",
+        "../ta/api/rooms/endpoints.py:18:            'fields_from_url': ('type', 'room')",
+        "../ta/api/rooms/endpoints.py:44:            'fields_from_url': ('bookable',)",
+        "../ta/api/rooms/endpoints.py:65:            'fields_from_url': ('room',)",
+        "../ta/api/teams/endpoints.py:64:            'fields_from_url': ('team',)",
+        "../ta/api/ui/endpoints.py:12:            'fields_from_url': ('account',)",
+        "../ta/api/ui/endpoints.py:16:            'fields_from_url': ('account',)",
+        "../ta/api/ui/endpoints.py:27:            'fields_from_url': ('account', 'team',)",
+        "../ta/api/ui/endpoints.py:32:            'fields_from_url': ('account', 'team',)",
+        "../ta/api/ui/endpoints.py:46:            'fields_from_url': ('account', 'team', 'venue',)"
     ],
     "firmware_ver": [
-        "../ta/api/bookables/serializers.py:54"
+        "../ta/api/bookables/serializers.py:54:        read_only_fields = ('identifier', 'firmware_ver')"
     ],
     "first_name": [
-        "../ta/api/accounts/_deprecated_tests_api.py:322",
-        "../ta/api/accounts/admin.py:15",
-        "../ta/api/accounts/admin.py:23",
-        "../ta/api/accounts/forms.py:29",
-        "../ta/api/accounts/models.py:24",
-        "../ta/api/accounts/models.py:24",
-        "../ta/api/accounts/models.py:101",
-        "../ta/api/accounts/serializers.py:26",
-        "../ta/api/mux/views.py:38",
-        "../ta/api/teams/views.py:39"
+        "../ta/api/accounts/_deprecated_tests_api.py:322:            {'first_name': 'John', 'last_name': 'Doe', 'email': acc.email, 'password': 'labadiena1F'})",
+        "../ta/api/accounts/admin.py:15:        (None, {'fields': ('email', 'password', 'first_name', 'last_name')}),",
+        "../ta/api/accounts/admin.py:23:                             'fields': ('email', 'password1', 'password2', 'first_name', 'last_name')",
+        "../ta/api/accounts/forms.py:29:        fields = ('email', 'first_name', 'last_name')",
+        "../ta/api/accounts/models.py:24:        if 'first_name' not in data or len(data['first_name']) == 0:",
+        "../ta/api/accounts/models.py:24:        if 'first_name' not in data or len(data['first_name']) == 0:",
+        "../ta/api/accounts/models.py:101:    REQUIRED_FIELDS = ['first_name', 'last_name']",
+        "../ta/api/accounts/serializers.py:27:            'id', 'first_name', 'last_name', 'password', 'old_password', 'email', 'date_joined', 'role',",
+        "../ta/api/mux/views.py:39:    participants = Account.objects_restricted.filter(participations__team__url=team_url).order_by('first_name')",
+        "../ta/api/teams/views.py:39:        queryset = Account.objects_restricted.filter(participations__team__url=team_url).order_by('first_name')"
     ],
     "first_usage": [
-        "../ta/api/accounts/serializers.py:28",
-        "../ta/api/accounts/serializers.py:30"
+        "../ta/api/accounts/serializers.py:29:            'first_usage')",
+        "../ta/api/accounts/serializers.py:31:        extra_kwargs = {'confirm_invite': {'write_only': True}, 'first_usage': {'required': False}}"
     ],
     "get, patch": [
-        "../ta/api/bookables/endpoints.py:50",
-        "../ta/api/bookables/endpoints.py:132"
+        "../ta/api/bookables/endpoints.py:51:        'get, patch': {",
+        "../ta/api/bookables/endpoints.py:133:        'get, patch': {"
     ],
     "get, patch, delete": [
-        "../ta/api/booking/endpoints.py:35",
-        "../ta/api/room_booking/endpoints.py:43",
-        "../ta/api/teams/endpoints.py:30",
-        "../ta/api/venues/endpoints.py:22"
+        "../ta/api/booking/endpoints.py:35:        'get, patch, delete': {",
+        "../ta/api/room_booking/endpoints.py:43:        'get, patch, delete': {",
+        "../ta/api/teams/endpoints.py:31:        'get, patch, delete': {",
+        "../ta/api/venues/endpoints.py:22:        'get, patch, delete': {"
     ],
     "get_prefabs_intervals": [
-        "../ta/api/analytics/occupancy_analytics.py:105"
+        "../ta/api/analytics/occupancy_analytics.py:106:        'get_prefabs_intervals': ['prefab', 'venue'],  # for dev purposes"
     ],
     "get_response": [
-        "../ta/api/logging/signals.py:22"
+        "../ta/api/logging/signals.py:22:        if frame_record[3] == 'get_response':"
     ],
     "graph_booking_duration": [
-        "../ta/api/analytics/aggregators.py:76"
+        "../ta/api/analytics/aggregators.py:77:        'graph_booking_duration': ['account'],"
     ],
     "grid_object": [
-        "../ta/api/kiosk/endpoints.py:24",
-        "../ta/api/kiosk/serializers.py:78",
-        "../ta/api/kiosk/validators.py:58"
+        "../ta/api/kiosk/endpoints.py:24:            'query': lambda model, **url: model.objects.get(id=url['grid_object'])",
+        "../ta/api/kiosk/serializers.py:78:        fields = ('email', 'grid_object')",
+        "../ta/api/kiosk/validators.py:59:        valid_if(instance.type in self.KIOSK_OBJECT_TYPES, 'grid_object', _('Grid object must be a kiosk'))"
     ],
     "grid_objects": [
-        "../ta/api/objects/models.py:30"
+        "../ta/api/objects/models.py:31:    venue = models.ForeignKey(Venue, related_name='grid_objects')"
     ],
     "grid_tiles": [
-        "../ta/api/objects/models.py:14",
-        "../ta/api/objects/models.py:15"
+        "../ta/api/objects/models.py:15:    venue = models.ForeignKey(Venue, related_name='grid_tiles')",
+        "../ta/api/objects/models.py:16:    room = models.ForeignKey(Room, related_name='grid_tiles', on_delete=models.CASCADE, null=True, default=None)"
     ],
     "group_memberships": [
-        "../ta/api/groups/models.py:11"
+        "../ta/api/groups/models.py:12:    members = models.ManyToManyField(Participation, related_name='group_memberships', through='GroupMember')"
     ],
     "height_mm": [
-        "../ta/api/bookables/sitstand/endpoints.py:74"
+        "../ta/api/bookables/sitstand/endpoints.py:75:            ('date', 'duration_mins', 'height_mm', 'is_sitting'),"
     ],
     "height_threshold": [
-        "../ta/api/venues/validators/venue_validator.py:33"
+        "../ta/api/venues/validators/venue_validator.py:34:            invalid('height_threshold', _('Value must not be more than 200 centimetres'))"
     ],
     "height_visuals": [
-        "../ta/api/bookables/sitstand/aggregators.py:63",
-        "../ta/api/bookables/sitstand/aggregators.py:97",
-        "../ta/api/bookables/sitstand/aggregators.py:99"
+        "../ta/api/bookables/sitstand/aggregators.py:64:        'height_visuals': ['prefab'],",
+        "../ta/api/bookables/sitstand/aggregators.py:98:        height_visuals_aggregator = 'height_visuals' in aggregators",
+        "../ta/api/bookables/sitstand/aggregators.py:100:            aggregators.remove('height_visuals')"
     ],
     "host__first_name": [
-        "../ta/api/room_booking/endpoints.py:31"
+        "../ta/api/room_booking/endpoints.py:31:                .annotate(host_first_name=F('host__first_name'), host_last_name=F('host__last_name')),"
     ],
     "host__last_name": [
-        "../ta/api/room_booking/endpoints.py:31"
+        "../ta/api/room_booking/endpoints.py:31:                .annotate(host_first_name=F('host__first_name'), host_last_name=F('host__last_name')),"
     ],
     "hosted_room_bookings": [
-        "../ta/api/room_booking/models.py:16"
+        "../ta/api/room_booking/models.py:17:    host = models.ForeignKey(Account, related_name='hosted_room_bookings', on_delete=models.CASCADE)"
     ],
     "intersecting_allowed": [
-        "../ta/api/booking/validators/booking_validators.py:131"
+        "../ta/api/booking/validators/booking_validators.py:132:                   messages['intersecting_allowed'] if s.TA_BOOKING_MAX_INTERSECTING else messages['intersecting'])"
     ],
     "intersection_exempt": [
-        "../ta/api/booking/validators/booking_validators.py:32"
+        "../ta/api/booking/validators/booking_validators.py:33:    CTX_INTERSECTION_EXEMPT = 'intersection_exempt'"
     ],
     "is_active": [
-        "../ta/api/accounts/admin.py:16",
-        "../ta/api/accounts/admin.py:35",
-        "../ta/api/devices/models.py:28",
-        "../ta/api/devices/serializers.py:10",
-        "../ta/api/devices/serializers.py:27",
-        "../ta/api/devices/serializers.py:28"
+        "../ta/api/accounts/admin.py:16:        (_('Permissions'), {'fields': ('is_active', 'is_staff', 'is_superuser',",
+        "../ta/api/accounts/admin.py:35:    list_filter = ('is_staff', 'is_superuser', 'is_active', 'groups')",
+        "../ta/api/devices/models.py:29:        ordering = ('is_active',)",
+        "../ta/api/devices/serializers.py:11:        fields = ('type', 'udid', 'name', 'push_token', 'is_active')",
+        "../ta/api/devices/serializers.py:28:            if 'is_active' not in attrs:",
+        "../ta/api/devices/serializers.py:29:                attrs['is_active'] = True"
     ],
     "is_confirmed": [
-        "../ta/api/bookables/admin.py:7",
-        "../ta/api/bookables/admin.py:9",
-        "../ta/api/bookables/serializers.py:53"
+        "../ta/api/bookables/admin.py:8:    list_display = ('identifier', 'type', 'is_confirmed', 'created', 'modified')",
+        "../ta/api/bookables/admin.py:10:    list_filter = ('is_confirmed', 'type')",
+        "../ta/api/bookables/serializers.py:53:        exclude = ('is_confirmed',)"
     ],
     "is_historic": [
-        "../ta/api/bookables/admin.py:31",
-        "../ta/api/bookables/admin.py:33",
-        "../ta/api/bookables/serializers.py:45",
-        "../ta/api/teams/serializers.py:16",
-        "../ta/api/venues/serializers.py:60",
-        "../ta/api/venues/validators/venue_validator.py:22"
+        "../ta/api/bookables/admin.py:32:    list_display = ('name', 'venue', 'prefab', 'is_historic')",
+        "../ta/api/bookables/admin.py:34:    list_filter = ('is_historic',)",
+        "../ta/api/bookables/serializers.py:45:        exclude = ('is_historic',)",
+        "../ta/api/teams/serializers.py:16:        exclude = ('id', 'is_historic',)",
+        "../ta/api/venues/serializers.py:60:        exclude = ('team', 'is_historic')",
+        "../ta/api/venues/validators/venue_validator.py:23:                qs.save(update_fields=('is_historic',))"
     ],
     "is_kiosk": [
-        "../ta/api/accounts/serializers.py:27"
+        "../ta/api/accounts/serializers.py:28:            'confirm_invite', 'is_kiosk',"
     ],
     "is_occupied": [
-        "../ta/api/rooms/validators.py:130"
+        "../ta/api/rooms/validators.py:131:        repr_attrs['is_occupied'] = RoomBooking.objects.confirmed() \\"
     ],
     "is_sitting": [
-        "../ta/api/bookables/sitstand/endpoints.py:74",
-        "../ta/api/bookables/sitstand/endpoints.py:75"
+        "../ta/api/bookables/sitstand/endpoints.py:75:            ('date', 'duration_mins', 'height_mm', 'is_sitting'),",
+        "../ta/api/bookables/sitstand/endpoints.py:76:            *map(lambda p: (p['date'], p['duration'], p['height'], p['is_sitting']),"
     ],
     "is_staff": [
-        "../ta/api/accounts/admin.py:16",
-        "../ta/api/accounts/admin.py:34",
-        "../ta/api/accounts/admin.py:35"
+        "../ta/api/accounts/admin.py:16:        (_('Permissions'), {'fields': ('is_active', 'is_staff', 'is_superuser',",
+        "../ta/api/accounts/admin.py:34:    list_display = ('email', 'is_staff')",
+        "../ta/api/accounts/admin.py:35:    list_filter = ('is_staff', 'is_superuser', 'is_active', 'groups')"
     ],
     "is_superuser": [
-        "../ta/api/accounts/admin.py:16",
-        "../ta/api/accounts/admin.py:35"
+        "../ta/api/accounts/admin.py:16:        (_('Permissions'), {'fields': ('is_active', 'is_staff', 'is_superuser',",
+        "../ta/api/accounts/admin.py:35:    list_filter = ('is_staff', 'is_superuser', 'is_active', 'groups')"
     ],
     "kiosk_plan_from": [
-        "../ta/api/licensing/admin.py:7"
+        "../ta/api/licensing/admin.py:7:    list_display = ('team', 'max_rooms', 'max_kiosks', 'room_plan_from', 'kiosk_plan_from')"
     ],
     "last_login": [
-        "../ta/api/accounts/admin.py:18"
+        "../ta/api/accounts/admin.py:18:        (_('Important dates'), {'fields': ('last_login', 'date_joined')}),"
     ],
     "last_name": [
-        "../ta/api/accounts/_deprecated_tests_api.py:322",
-        "../ta/api/accounts/admin.py:15",
-        "../ta/api/accounts/admin.py:23",
-        "../ta/api/accounts/forms.py:29",
-        "../ta/api/accounts/models.py:27",
-        "../ta/api/accounts/models.py:27",
-        "../ta/api/accounts/models.py:101",
-        "../ta/api/accounts/serializers.py:26",
-        "../ta/api/kiosk/validators.py:34"
+        "../ta/api/accounts/_deprecated_tests_api.py:322:            {'first_name': 'John', 'last_name': 'Doe', 'email': acc.email, 'password': 'labadiena1F'})",
+        "../ta/api/accounts/admin.py:15:        (None, {'fields': ('email', 'password', 'first_name', 'last_name')}),",
+        "../ta/api/accounts/admin.py:23:                             'fields': ('email', 'password1', 'password2', 'first_name', 'last_name')",
+        "../ta/api/accounts/forms.py:29:        fields = ('email', 'first_name', 'last_name')",
+        "../ta/api/accounts/models.py:27:        if 'last_name' not in data or len(data['last_name']) == 0:",
+        "../ta/api/accounts/models.py:27:        if 'last_name' not in data or len(data['last_name']) == 0:",
+        "../ta/api/accounts/models.py:101:    REQUIRED_FIELDS = ['first_name', 'last_name']",
+        "../ta/api/accounts/serializers.py:27:            'id', 'first_name', 'last_name', 'password', 'old_password', 'email', 'date_joined', 'role',",
+        "../ta/api/kiosk/validators.py:35:                          .values_list('last_name', flat=True).first() or 0) + 1"
     ],
     "last_used_venue": [
-        "../ta/api/ui/validators.py:19"
+        "../ta/api/ui/validators.py:20:                invalid('last_used_venue', 'Venue does not belong to team with url `{}`'.format(attrs['team'].url))"
     ],
     "last_week": [
-        "../ta/api/analytics/views.py:110",
-        "../ta/api/analytics/views.py:114"
+        "../ta/api/analytics/views.py:110:                if duration in ['this_week', 'last_week']:",
+        "../ta/api/analytics/views.py:114:                    if duration == 'last_week':"
     ],
     "least_time_spent": [
-        "../ta/api/analytics/aggregators.py:68"
+        "../ta/api/analytics/aggregators.py:69:        'least_time_spent': ['venue'],"
     ],
     "least_used_table": [
-        "../ta/api/analytics/aggregators.py:67"
+        "../ta/api/analytics/aggregators.py:68:        'least_used_table': ['global', 'team', 'venue', 'account', 'participant'],"
     ],
     "log_signal_http_4xx": [
-        "../ta/api/logging/apps.py:22"
+        "../ta/api/logging/apps.py:22:        pre_http_4xx.connect(signals.log_http_4xx, dispatch_uid='log_signal_http_4xx')"
     ],
     "log_signal_post_delete": [
-        "../ta/api/logging/apps.py:18"
+        "../ta/api/logging/apps.py:18:        post_delete.connect(signals.log_delete_action, dispatch_uid='log_signal_post_delete')"
     ],
     "log_signal_post_save": [
-        "../ta/api/logging/apps.py:17"
+        "../ta/api/logging/apps.py:17:        post_save.connect(signals.log_post_save_action, dispatch_uid='log_signal_post_save')"
     ],
     "log_signal_user_login": [
-        "../ta/api/logging/apps.py:20"
+        "../ta/api/logging/apps.py:20:        user_logged_in.connect(signals.log_user_login, dispatch_uid='log_signal_user_login')"
     ],
     "max_kiosks": [
-        "../ta/api/licensing/admin.py:7"
+        "../ta/api/licensing/admin.py:7:    list_display = ('team', 'max_rooms', 'max_kiosks', 'room_plan_from', 'kiosk_plan_from')"
     ],
     "max_rooms": [
-        "../ta/api/licensing/admin.py:7"
+        "../ta/api/licensing/admin.py:7:    list_display = ('team', 'max_rooms', 'max_kiosks', 'room_plan_from', 'kiosk_plan_from')"
     ],
     "member_bookings#": [
-        "../ta/api/analytics/aggregators.py:281"
+        "../ta/api/analytics/aggregators.py:282:                                                       'member_bookings#' + self._get('team_url'))"
     ],
     "most_active_room_booking_participant": [
-        "../ta/api/analytics/aggregators.py:82"
+        "../ta/api/analytics/aggregators.py:83:        'most_active_room_booking_participant': ['global', 'team', 'room', 'account', 'participant'],"
     ],
     "most_time_spent": [
-        "../ta/api/analytics/aggregators.py:69"
+        "../ta/api/analytics/aggregators.py:70:        'most_time_spent': ['venue'],"
     ],
     "most_used_table": [
-        "../ta/api/analytics/aggregators.py:70"
+        "../ta/api/analytics/aggregators.py:71:        'most_used_table': ['global', 'team', 'venue', 'account', 'participant'],"
     ],
     "new_password": [
-        "../ta/api/accounts/views.py:158"
+        "../ta/api/accounts/views.py:159:            Membership.confirm_password_change(hash, serializer.validated_data['new_password'])"
     ],
     "no_email_notifications": [
-        "../ta/api/room_booking/validators.py:75"
+        "../ta/api/room_booking/validators.py:76:    CTX_EMAIL_NOTIFICATIONS = 'no_email_notifications'"
     ],
     "notification_exempt": [
-        "../ta/api/booking/validators/booking_validators.py:35"
+        "../ta/api/booking/validators/booking_validators.py:36:    CTX_NOTIFICATION_EXEMPT = 'notification_exempt'"
     ],
     "notification_id": [
-        "../ta/api/booking/notifications.py:38",
-        "../ta/api/booking/notifications.py:198",
-        "../ta/api/broker/endpoints.py:15"
+        "../ta/api/booking/notifications.py:39:            obj['notification_id'] = notification.notification_id",
+        "../ta/api/booking/notifications.py:199:                  .values_list('notification_id', flat=True))",
+        "../ta/api/broker/endpoints.py:15:            'query': lambda notifications, **url: notifications.objects.get(notification_id=url['notification_id'])"
     ],
     "notification_record_id": [
-        "../ta/api/booking/notifications.py:37"
+        "../ta/api/booking/notifications.py:38:            obj['notification_record_id'] = notification.id"
     ],
     "object_id": [
-        "../ta/api/logging/models.py:31",
-        "../ta/api/logging/serializers.py:9"
+        "../ta/api/logging/models.py:31:    content_object = GenericForeignKey('content_type', 'object_id')",
+        "../ta/api/logging/serializers.py:9:        fields = ('content_type', 'object_id', 'object_repr', 'message', 'timestamp', 'action', 'account')"
     ],
     "object_repr": [
-        "../ta/api/logging/serializers.py:9"
+        "../ta/api/logging/serializers.py:9:        fields = ('content_type', 'object_id', 'object_repr', 'message', 'timestamp', 'action', 'account')"
     ],
     "old_password": [
-        "../ta/api/accounts/serializers.py:26",
-        "../ta/api/accounts/serializers.py:46",
-        "../ta/api/accounts/serializers.py:93",
-        "../ta/api/accounts/serializers.py:94",
-        "../ta/api/accounts/serializers.py:95",
-        "../ta/api/accounts/serializers.py:96"
+        "../ta/api/accounts/serializers.py:27:            'id', 'first_name', 'last_name', 'password', 'old_password', 'email', 'date_joined', 'role',",
+        "../ta/api/accounts/serializers.py:47:                if field.field_name == 'password' or field.field_name == 'old_password':",
+        "../ta/api/accounts/serializers.py:94:                if 'old_password' not in attrs:",
+        "../ta/api/accounts/serializers.py:95:                    raise serializers.ValidationError({'old_password': [_('This field is required')]})",
+        "../ta/api/accounts/serializers.py:96:                if not self.instance.check_password(attrs['old_password']):",
+        "../ta/api/accounts/serializers.py:97:                    raise serializers.ValidationError({'old_password': [_('Incorrect password')]})"
     ],
     "only_checked_in": [
-        "../ta/api/analytics/aggregators.py:251",
-        "../ta/api/analytics/aggregators.py:257",
-        "../ta/api/analytics/aggregators.py:267",
-        "../ta/api/analytics/aggregators.py:274",
-        "../ta/api/analytics/aggregators.py:283"
+        "../ta/api/analytics/aggregators.py:252:            if 'only_checked_in' in kwargs:",
+        "../ta/api/analytics/aggregators.py:258:            if 'only_checked_in' in kwargs:",
+        "../ta/api/analytics/aggregators.py:268:            if 'only_checked_in' in kwargs:",
+        "../ta/api/analytics/aggregators.py:275:            if 'only_checked_in' in kwargs:",
+        "../ta/api/analytics/aggregators.py:284:            if 'only_checked_in' in kwargs:"
     ],
     "other_bookables_intersection_exempt": [
-        "../ta/api/booking/validators/booking_validators.py:33"
+        "../ta/api/booking/validators/booking_validators.py:34:    CTX_OTHER_BOOKABLES_INTERSECTION_EXEMPT = 'other_bookables_intersection_exempt'"
     ],
     "page_size": [
-        "../ta/api/analytics/occupancy_analytics.py:715"
+        "../ta/api/analytics/occupancy_analytics.py:716:            self.pagination.page_size_query_param = 'page_size'"
     ],
     "participations__kiosk_grid_object": [
-        "../ta/api/kiosk/endpoints.py:36"
+        "../ta/api/kiosk/endpoints.py:36:                .annotate(grid_object=F('participations__kiosk_grid_object'))"
     ],
     "password_mismatch": [
-        "../ta/api/accounts/forms.py:16",
-        "../ta/api/accounts/forms.py:61",
-        "../ta/api/accounts/forms.py:62"
+        "../ta/api/accounts/forms.py:16:        'password_mismatch': _(\"The two password fields didn't match.\"),",
+        "../ta/api/accounts/forms.py:61:                self.error_messages['password_mismatch'],",
+        "../ta/api/accounts/forms.py:62:                code='password_mismatch',"
     ],
     "password_reset": [
-        "../ta/api/accounts/models.py:150"
+        "../ta/api/accounts/models.py:150:    account = models.OneToOneField(Account, related_name='password_reset', primary_key=True, on_delete=models.CASCADE)"
     ],
     "patch, delete": [
-        "../ta/api/broker/endpoints.py:14",
-        "../ta/api/groups/endpoints.py:22",
-        "../ta/api/kiosk/endpoints.py:23",
-        "../ta/api/objects/endpoints.py:42",
-        "../ta/api/rooms/endpoints.py:46"
+        "../ta/api/broker/endpoints.py:14:        'patch, delete': {",
+        "../ta/api/groups/endpoints.py:22:        'patch, delete': {",
+        "../ta/api/kiosk/endpoints.py:23:        'patch, delete': {",
+        "../ta/api/objects/endpoints.py:42:        'patch, delete': {",
+        "../ta/api/rooms/endpoints.py:46:        'patch, delete': {"
     ],
     "post, delete": [
-        "../ta/api/room_booking/endpoints.py:128"
+        "../ta/api/room_booking/endpoints.py:128:        'post, delete': {"
     ],
     "post, patch": [
-        "../ta/api/bookables/endpoints.py:23"
+        "../ta/api/bookables/endpoints.py:24:        'post, patch': None,"
     ],
     "prefab__bookables__name": [
-        "../ta/api/analytics/occupancy_analytics.py:125"
+        "../ta/api/analytics/occupancy_analytics.py:126:        prefab_identifier=Concat('prefab__bookables__name',"
     ],
     "prefab__bookables__venue": [
-        "../ta/api/analytics/occupancy_analytics.py:133"
+        "../ta/api/analytics/occupancy_analytics.py:134:        venue_id=F('prefab__bookables__venue'),"
     ],
     "prefab__bookables__venue__height_threshold": [
-        "../ta/api/bookables/sitstand/aggregators.py:76",
-        "../ta/api/bookables/sitstand/endpoints.py:61"
+        "../ta/api/bookables/sitstand/aggregators.py:77:                  venue_height_threshold=F('prefab__bookables__venue__height_threshold'))",
+        "../ta/api/bookables/sitstand/endpoints.py:62:            .annotate(venue_height_threshold=F('prefab__bookables__venue__height_threshold'),"
     ],
     "prefab__bookables__venue__name": [
-        "../ta/api/bookables/sitstand/aggregators.py:71"
+        "../ta/api/bookables/sitstand/aggregators.py:72:        .annotate(venue_name=F('prefab__bookables__venue__name'),"
     ],
     "prefab__bookables__venue__timezone": [
-        "../ta/api/analytics/occupancy_analytics.py:136",
-        "../ta/api/bookables/sitstand/aggregators.py:75",
-        "../ta/api/bookables/sitstand/endpoints.py:62"
+        "../ta/api/analytics/occupancy_analytics.py:137:        venue_timezone=F('prefab__bookables__venue__timezone')",
+        "../ta/api/bookables/sitstand/aggregators.py:76:                  venue_timezone=F('prefab__bookables__venue__timezone'),",
+        "../ta/api/bookables/sitstand/endpoints.py:63:                      venue_timezone=F('prefab__bookables__venue__timezone')) \\"
     ],
     "prefab__bookables__venue__work_ends": [
-        "../ta/api/analytics/occupancy_analytics.py:135",
-        "../ta/api/bookables/sitstand/aggregators.py:74"
+        "../ta/api/analytics/occupancy_analytics.py:136:        venue_work_ends=F('prefab__bookables__venue__work_ends'),",
+        "../ta/api/bookables/sitstand/aggregators.py:75:                  venue_work_ends=F('prefab__bookables__venue__work_ends'),"
     ],
     "prefab__bookables__venue__work_starts": [
-        "../ta/api/analytics/occupancy_analytics.py:134",
-        "../ta/api/bookables/sitstand/aggregators.py:73"
+        "../ta/api/analytics/occupancy_analytics.py:135:        venue_work_starts=F('prefab__bookables__venue__work_starts'),",
+        "../ta/api/bookables/sitstand/aggregators.py:74:                  venue_work_starts=F('prefab__bookables__venue__work_starts'),"
     ],
     "prefab__firmware_ver": [
-        "../ta/api/bookables/endpoints.py:94",
-        "../ta/api/iot/views.py:47",
-        "../ta/api/iot/views.py:65"
+        "../ta/api/bookables/endpoints.py:95:                'prefab': lambda qs, _: qs.annotate(firmware_ver=F('prefab__firmware_ver'),",
+        "../ta/api/iot/views.py:47:            'id', 'prefab__firmware_ver', 'prefab__firmware_ver_target',",
+        "../ta/api/iot/views.py:65:                                                  bookable['prefab__firmware_ver'],"
     ],
     "prefab__firmware_ver_target": [
-        "../ta/api/bookables/endpoints.py:96",
-        "../ta/api/iot/views.py:47",
-        "../ta/api/iot/views.py:66"
+        "../ta/api/bookables/endpoints.py:97:                                                    firmware_ver_target=F('prefab__firmware_ver_target'))",
+        "../ta/api/iot/views.py:47:            'id', 'prefab__firmware_ver', 'prefab__firmware_ver_target',",
+        "../ta/api/iot/views.py:66:                                                  bookable['prefab__firmware_ver_target'],"
     ],
     "prefab__id": [
-        "../ta/api/analytics/occupancy_analytics.py:695"
+        "../ta/api/analytics/occupancy_analytics.py:696:        ).distinct().order_by('prefab__id' if order_by_time_asc else '-prefab__id',"
     ],
     "prefab__identifier": [
-        "../ta/api/analytics/occupancy_analytics.py:126",
-        "../ta/api/analytics/occupancy_analytics.py:660",
-        "../ta/api/bookables/admin.py:14",
-        "../ta/api/bookables/admin.py:32",
-        "../ta/api/bookables/sitstand/aggregators.py:72",
-        "../ta/api/booking/management.py:165",
-        "../ta/api/booking/serializers.py:14",
-        "../ta/api/rooms/serializers.py:22"
+        "../ta/api/analytics/occupancy_analytics.py:127:                                 V(' ('), 'prefab__identifier', V(')'),",
+        "../ta/api/analytics/occupancy_analytics.py:661:              .values('prefab', 'prefab__identifier', 'venue__name', 'venue', 'cnt')",
+        "../ta/api/bookables/admin.py:15:    search_fields = ('prefab__identifier',)",
+        "../ta/api/bookables/admin.py:33:    search_fields = ('name', 'prefab__identifier')",
+        "../ta/api/bookables/sitstand/aggregators.py:73:                  prefab_identifier=F('prefab__identifier'),",
+        "../ta/api/booking/management.py:166:                      .values_list('prefab__identifier', 'start', 'end'))",
+        "../ta/api/booking/serializers.py:14:    bookable = DeepRelatedField(field='prefab__identifier', queryset=Bookable.objects.all())",
+        "../ta/api/rooms/serializers.py:22:    bookable = DeepRelatedField('prefab__identifier', queryset=Bookable.objects.all(), write_only=True)"
     ],
     "prefab__type": [
-        "../ta/api/bookables/endpoints.py:95"
+        "../ta/api/bookables/endpoints.py:96:                                                    prefab_type=F('prefab__type'),"
     ],
     "prefab__usage_set": [
-        "../ta/api/analytics/occupancy_analytics.py:657"
+        "../ta/api/analytics/occupancy_analytics.py:658:              .annotate(cnt=Count('prefab__usage_set'))"
     ],
     "prefab_identifier": [
-        "../ta/api/analytics/occupancy_analytics.py:706",
-        "../ta/api/analytics/occupancy_analytics.py:741",
-        "../ta/api/bookables/sitstand/aggregators.py:109"
+        "../ta/api/analytics/occupancy_analytics.py:707:            'prefab_identifier',",
+        "../ta/api/analytics/occupancy_analytics.py:742:                combined_intervals = data_combined_start_end[x['prefab_identifier']]",
+        "../ta/api/bookables/sitstand/aggregators.py:110:        for prefab_identifier, usages in OrderedDict(group_by(self.query, 'prefab_identifier')).items():"
     ],
     "push_token": [
-        "../ta/api/booking/notifications.py:92",
-        "../ta/api/booking/notifications.py:104",
-        "../ta/api/booking/notifications.py:131",
-        "../ta/api/devices/serializers.py:10",
-        "../ta/api/devices/serializers.py:12"
+        "../ta/api/booking/notifications.py:93:            agent_push_tokens=pluck(agents, 'push_token'),",
+        "../ta/api/booking/notifications.py:105:                agents = booking.account.agents.filter(is_active=True).values('id', 'type', 'push_token')",
+        "../ta/api/booking/notifications.py:132:            agents = booking.account.agents.filter(is_active=True).values('id', 'type', 'push_token')",
+        "../ta/api/devices/serializers.py:11:        fields = ('type', 'udid', 'name', 'push_token', 'is_active')",
+        "../ta/api/devices/serializers.py:13:        extra_kwargs = {'push_token': {'write_only': True}}"
     ],
     "put, delete": [
-        "../ta/api/rooms/endpoints.py:15"
+        "../ta/api/rooms/endpoints.py:15:        'put, delete': {"
     ],
     "read_only": [
-        "../ta/api/booking/serializers.py:23",
-        "../ta/api/room_booking/serializers.py:14",
-        "../ta/api/room_booking/serializers.py:24",
-        "../ta/api/room_booking/serializers.py:40"
+        "../ta/api/booking/serializers.py:23:        extra_kwargs = {'status': {'read_only': True}}",
+        "../ta/api/room_booking/serializers.py:14:        extra_kwargs = {'status': {'read_only': True}}",
+        "../ta/api/room_booking/serializers.py:24:        extra_kwargs = {'status': {'read_only': True}}",
+        "../ta/api/room_booking/serializers.py:40:        extra_kwargs = {'status': {'read_only': True}}"
     ],
     "recurring_invitation": [
-        "../ta/api/teams/serializers.py:28",
-        "../ta/api/teams/validators/invitation_validator.py:30"
+        "../ta/api/teams/serializers.py:28:        instance = validated_data.pop('recurring_invitation', None)",
+        "../ta/api/teams/validators/invitation_validator.py:31:                attrs['recurring_invitation'] = invitation"
     ],
     "release_date": [
-        "../ta/api/firmware/models.py:15"
+        "../ta/api/firmware/models.py:16:        ordering = ('release_date',)"
     ],
     "remove_participants": [
-        "../ta/api/room_booking/validators.py:221",
-        "../ta/api/room_booking/validators.py:227",
-        "../ta/api/room_booking/validators.py:279",
-        "../ta/api/room_booking/validators.py:281"
+        "../ta/api/room_booking/validators.py:222:            self.context['remove_participants'] = set(participants).difference(",
+        "../ta/api/room_booking/validators.py:228:            count = len(participants) - len(self.context['remove_participants']) + len(",
+        "../ta/api/room_booking/validators.py:280:        if len(self.context.get('remove_participants', [])):",
+        "../ta/api/room_booking/validators.py:282:            validator.will_delete(instance.participants.filter(account_id__in=self.context['remove_participants']))"
     ],
     "repeat_every": [
-        "../ta/api/booking/management.py:48",
-        "../ta/api/booking/validators/repeating_booking_validators.py:162"
+        "../ta/api/booking/management.py:49:        self.repeat_every = int(attrs.pop('repeat_every'))",
+        "../ta/api/booking/validators/repeating_booking_validators.py:163:        self.repeat_every = attrs.get('repeat_every')"
     ],
     "replace_participants": [
-        "../ta/api/room_booking/validators.py:219"
+        "../ta/api/room_booking/validators.py:220:        if self.context['request'].GET.get('replace_participants', False) == 'true':"
     ],
     "room__bookable__venue__name": [
-        "../ta/api/room_booking/endpoints.py:195"
+        "../ta/api/room_booking/endpoints.py:195:                .annotate(venue_name=F('room__bookable__venue__name'))"
     ],
     "room_booking": [
-        "../ta/api/room_booking/apps.py:6",
-        "../ta/api/room_booking/emails.py:42",
-        "../ta/api/room_booking/emails.py:44",
-        "../ta/api/room_booking/endpoints.py:97",
-        "../ta/api/room_booking/endpoints.py:129",
-        "../ta/api/room_booking/managers.py:24",
-        "../ta/api/room_booking/managers.py:39",
-        "../ta/api/room_booking/models.py:45",
-        "../ta/api/room_booking/serializers.py:13",
-        "../ta/api/room_booking/validators.py:34",
-        "../ta/api/room_booking/validators.py:34",
-        "../ta/api/room_booking/validators.py:42",
-        "../ta/api/room_booking/validators.py:88",
-        "../ta/api/room_booking/validators.py:88",
-        "../ta/api/room_booking/validators.py:94",
-        "../ta/api/room_booking/validators.py:100"
+        "../ta/api/room_booking/apps.py:7:    label = 'room_booking'",
+        "../ta/api/room_booking/emails.py:43:                'room_booking': participant.room_booking_id, 'account': participant.account_id}),",
+        "../ta/api/room_booking/emails.py:45:                'room_booking': participant.room_booking_id, 'account': participant.account_id})",
+        "../ta/api/room_booking/endpoints.py:97:            'fields_from_url': ('room', 'room_booking',)",
+        "../ta/api/room_booking/endpoints.py:129:            'fields_from_url': ('room', 'room_booking', 'account',)",
+        "../ta/api/room_booking/managers.py:24:                Q(account=attrs['account']) & Q(room_booking=attrs['room_booking']))",
+        "../ta/api/room_booking/managers.py:39:                                             room_booking__in=((a['room_booking'] for a in list_of_attrs)))",
+        "../ta/api/room_booking/models.py:46:        unique_together = ('account', 'room_booking',)",
+        "../ta/api/room_booking/serializers.py:13:        exclude = ('id', 'room_booking',)",
+        "../ta/api/room_booking/validators.py:35:        room, booking = attrs['room_booking'].room, attrs['room_booking']",
+        "../ta/api/room_booking/validators.py:35:        room, booking = attrs['room_booking'].room, attrs['room_booking']",
+        "../ta/api/room_booking/validators.py:43:        account, booking = attrs['account'], attrs['room_booking']",
+        "../ta/api/room_booking/validators.py:89:            booking, room = attrs['room_booking'], attrs['room_booking'].room",
+        "../ta/api/room_booking/validators.py:89:            booking, room = attrs['room_booking'], attrs['room_booking'].room",
+        "../ta/api/room_booking/validators.py:95:            team = attrs['room_booking'].room.bookable.venue.team",
+        "../ta/api/room_booking/validators.py:101:        account, booking = attrs['account'], attrs['room_booking']"
     ],
     "room_booking:accept": [
-        "../ta/api/room_booking/emails.py:43"
+        "../ta/api/room_booking/emails.py:44:            s.TA_HOST_SCHEME + reverse('room_booking:accept', host='front', kwargs={"
     ],
     "room_booking:decline": [
-        "../ta/api/room_booking/emails.py:41"
+        "../ta/api/room_booking/emails.py:42:            s.TA_HOST_SCHEME + reverse('room_booking:decline', host='front', kwargs={"
     ],
     "room_booking__host": [
-        "../ta/api/room_booking/validators.py:127",
-        "../ta/api/room_booking/validators.py:288"
+        "../ta/api/room_booking/validators.py:128:                queryset = list(queryset.exclude(Q(account=F('room_booking__host'))",
+        "../ta/api/room_booking/validators.py:289:                Q(status=AttendanceStatus.REMOVED) | Q(account=F('room_booking__host'))))"
     ],
     "room_bookings": [
-        "../ta/api/room_booking/models.py:15",
-        "../ta/api/room_booking/models.py:36"
+        "../ta/api/room_booking/models.py:16:    room = models.ForeignKey(Room, related_name='room_bookings', on_delete=models.CASCADE)",
+        "../ta/api/room_booking/models.py:37:    account = models.ForeignKey(Account, related_name='room_bookings', on_delete=models.CASCADE)"
     ],
     "room_objects": [
-        "../ta/api/rooms/models.py:28"
+        "../ta/api/rooms/models.py:29:    room = models.ForeignKey(Room, related_name='room_objects', on_delete=models.CASCADE)"
     ],
     "room_plan_from": [
-        "../ta/api/licensing/admin.py:7"
+        "../ta/api/licensing/admin.py:7:    list_display = ('team', 'max_rooms', 'max_kiosks', 'room_plan_from', 'kiosk_plan_from')"
     ],
     "scale_factor": [
-        "../ta/api/ui/validators.py:37"
+        "../ta/api/ui/validators.py:38:            invalid('scale_factor', _('Value must be between 0.3 and 1.5'))"
     ],
     "sender_email": [
-        "../ta/api/teams/endpoints.py:88"
+        "../ta/api/teams/endpoints.py:89:        text = '{}\\n\\nSender address: {}'.format(serializer.data['text'], serializer.data['sender_email'])"
     ],
     "sitting_height": [
-        "../ta/api/analytics/aggregators.py:397",
-        "../ta/api/analytics/aggregators.py:406",
-        "../ta/api/sync/serializers.py:20"
+        "../ta/api/analytics/aggregators.py:398:            queryset = queryset.values_list('sitting_height', 'standing_height')",
+        "../ta/api/analytics/aggregators.py:407:            \"sitting_height\": avg_sitting,",
+        "../ta/api/sync/serializers.py:20:        fields = ('sitting_height', 'standing_height', 'unit_system', 'date_modified', 'use_12_hour_clock')"
     ],
     "sitting_time": [
-        "../ta/api/analytics/aggregators.py:457",
-        "../ta/api/analytics/aggregators.py:479"
+        "../ta/api/analytics/aggregators.py:458:            \"sitting_time\": standing_avg",
+        "../ta/api/analytics/aggregators.py:480:            \"sitting_time\": si_tot // 60"
     ],
     "skip_booking_checks": [
-        "../ta/api/room_booking/validators.py:37"
+        "../ta/api/room_booking/validators.py:38:        if not self.context.get('skip_booking_checks', False):"
     ],
     "skip_capacity_checks": [
-        "../ta/api/room_booking/validators.py:87"
+        "../ta/api/room_booking/validators.py:88:        if not self.context.get('skip_capacity_checks', False):"
     ],
     "skip_eligibility_checks": [
-        "../ta/api/room_booking/validators.py:93"
+        "../ta/api/room_booking/validators.py:94:        if not self.context.get('skip_eligibility_checks', False):"
     ],
     "skip_img_checks": [
-        "../ta/api/venues/validators/venue_image_validator.py:21",
-        "../ta/api/venues/validators/venue_image_validator.py:28"
+        "../ta/api/venues/validators/venue_image_validator.py:22:        if len(url) > s.IMAGE_MAX_SIZE and not self.context.get('skip_img_checks', False):",
+        "../ta/api/venues/validators/venue_image_validator.py:29:        if url != '' and not self.context.get('skip_img_checks', False):"
     ],
     "skip_participation_construction": [
-        "../ta/api/ui/validators.py:22"
+        "../ta/api/ui/validators.py:23:        if not self.context.get('skip_participation_construction', False):"
     ],
     "skip_tile_continuity_check": [
-        "../ta/api/rooms/validators.py:36"
+        "../ta/api/rooms/validators.py:37:        if self.context.get('skip_tile_continuity_check', False):"
     ],
     "skip_unique_check": [
-        "../ta/api/room_booking/validators.py:110"
+        "../ta/api/room_booking/validators.py:111:        if not self.context.get('skip_unique_check', False):"
     ],
     "skip_venue_assignment_check": [
-        "../ta/api/ui/validators.py:17"
+        "../ta/api/ui/validators.py:18:        if not self.context.get('skip_venue_assignment_check', False):"
     ],
     "standing_height": [
-        "../ta/api/analytics/aggregators.py:397",
-        "../ta/api/analytics/aggregators.py:407",
-        "../ta/api/sync/models.py:46",
-        "../ta/api/sync/serializers.py:20"
+        "../ta/api/analytics/aggregators.py:398:            queryset = queryset.values_list('sitting_height', 'standing_height')",
+        "../ta/api/analytics/aggregators.py:408:            \"standing_height\": avg_standing",
+        "../ta/api/sync/models.py:47:            raise ValidationError({'standing_height': [_('Standing height must be higher than sitting height')]})",
+        "../ta/api/sync/serializers.py:20:        fields = ('sitting_height', 'standing_height', 'unit_system', 'date_modified', 'use_12_hour_clock')"
     ],
     "standing_time": [
-        "../ta/api/analytics/aggregators.py:456",
-        "../ta/api/analytics/aggregators.py:478"
+        "../ta/api/analytics/aggregators.py:457:            \"standing_time\": sitting_avg,",
+        "../ta/api/analytics/aggregators.py:479:            \"standing_time\": st_tot // 60,"
     ],
     "start, end": [
-        "../ta/api/booking/validators/booking_validators.py:56"
+        "../ta/api/booking/validators/booking_validators.py:57:        invalid_if(different_day, ['start, end'], _(\"Your booking cannot span for multiple days\"))"
     ],
     "start_date": [
-        "../ta/api/booking/management.py:51",
-        "../ta/api/booking/management.py:94",
-        "../ta/api/booking/validators/repeating_booking_validators.py:158"
+        "../ta/api/booking/management.py:52:        self.start_date = attrs.pop('start_date')",
+        "../ta/api/booking/management.py:95:            if (attrs['end_date'] - attrs['start_date']).days > s.TA_BOOKING_MAX_START_FROM_NOW_DAYS:",
+        "../ta/api/booking/validators/repeating_booking_validators.py:159:        self.start_date = attrs.get('start_date')"
     ],
     "start_now": [
-        "../ta/api/room_booking/validators.py:159"
+        "../ta/api/room_booking/validators.py:160:        if attrs.pop('start_now', False):"
     ],
     "start_time": [
-        "../ta/api/booking/management.py:55",
-        "../ta/api/booking/management.py:72",
-        "../ta/api/booking/management.py:72",
-        "../ta/api/booking/management.py:114",
-        "../ta/api/booking/management.py:187",
-        "../ta/api/booking/validators/repeating_booking_validators.py:111",
-        "../ta/api/booking/validators/repeating_booking_validators.py:159",
-        "../ta/api/booking/validators/repeating_booking_validators.py:159"
+        "../ta/api/booking/management.py:56:        self.start_time = attrs.pop('start_time')",
+        "../ta/api/booking/management.py:73:        start_time = _match_time(attrs['start_time'], 'start_time')",
+        "../ta/api/booking/management.py:73:        start_time = _match_time(attrs['start_time'], 'start_time')",
+        "../ta/api/booking/management.py:115:        attrs['start_time'] = start_time",
+        "../ta/api/booking/management.py:188:                           ['start_time', 'end_time'],",
+        "../ta/api/booking/validators/repeating_booking_validators.py:112:                    invalid(['start_time', 'end_time'],",
+        "../ta/api/booking/validators/repeating_booking_validators.py:160:        self.start_time = self.match_time(attrs.get('start_time'), 'start_time')",
+        "../ta/api/booking/validators/repeating_booking_validators.py:160:        self.start_time = self.match_time(attrs.get('start_time'), 'start_time')"
     ],
     "start_time end_time": [
-        "../ta/api/booking/management.py:216",
-        "../ta/api/booking/validators/repeating_booking_validators.py:141"
+        "../ta/api/booking/management.py:217:                    invalid(['start_time end_time'],",
+        "../ta/api/booking/validators/repeating_booking_validators.py:142:                    invalid(['start_time end_time'],"
     ],
     "start_time, end_time": [
-        "../ta/api/booking/management.py:194",
-        "../ta/api/booking/validators/repeating_booking_validators.py:117"
+        "../ta/api/booking/management.py:195:                        invalid('start_time, end_time', _('At one point in the schedule there were no free spots found'))",
+        "../ta/api/booking/validators/repeating_booking_validators.py:118:                        invalid('start_time, end_time', _('At one point in the schedule there were no free spots found'))"
     ],
     "ta.api.room_booking": [
-        "../ta/api/room_booking/apps.py:5"
+        "../ta/api/room_booking/apps.py:6:    name = 'ta.api.room_booking'"
     ],
     "ta.api.room_booking.apps.RoomBookingConfig": [
-        "../ta/api/room_booking/__init__.py:1"
+        "../ta/api/room_booking/__init__.py:1:default_app_config = 'ta.api.room_booking.apps.RoomBookingConfig'"
     ],
     "ta_account": [
-        "../ta/api/accounts/models.py:133"
+        "../ta/api/accounts/models.py:133:        db_table = 'ta_account'"
     ],
     "ta_accounts": [
-        "../ta/api/accounts/apps.py:7",
-        "../ta/api/accounts/models.py:135"
+        "../ta/api/accounts/apps.py:7:    label = 'ta_accounts'",
+        "../ta/api/accounts/models.py:135:        app_label = 'ta_accounts'"
     ],
     "ta_agent": [
-        "../ta/api/devices/models.py:25"
+        "../ta/api/devices/models.py:26:        db_table = 'ta_agent'"
     ],
     "ta_api_logging": [
-        "../ta/api/logging/apps.py:11",
-        "../ta/api/logging/signals.py:6"
+        "../ta/api/logging/apps.py:11:    label = 'ta_api_logging'",
+        "../ta/api/logging/signals.py:6:_not_logged_app_labels = ['admin', 'auth', 'contenttypes', 'sessions', 'ta_api_logging']"
     ],
     "ta_api_settings": [
-        "../ta/api/accounts/models.py:179"
+        "../ta/api/accounts/models.py:179:        db_table = 'ta_api_settings'"
     ],
     "ta_app_usage": [
-        "../ta/api/analytics/models.py:50"
+        "../ta/api/analytics/models.py:51:        db_table = 'ta_app_usage'"
     ],
     "ta_bookable": [
-        "../ta/api/bookables/models.py:85"
+        "../ta/api/bookables/models.py:85:        db_table = 'ta_bookable'"
     ],
     "ta_booking": [
-        "../ta/api/booking/models.py:89"
+        "../ta/api/booking/models.py:90:        db_table = 'ta_booking'"
     ],
     "ta_calendar_link": [
-        "../ta/api/integration/models.py:15"
+        "../ta/api/integration/models.py:16:        db_table = 'ta_calendar_link'"
     ],
     "ta_email_change": [
-        "../ta/api/accounts/models.py:165"
+        "../ta/api/accounts/models.py:165:        db_table = 'ta_email_change'"
     ],
     "ta_firmware": [
-        "../ta/api/firmware/models.py:12"
+        "../ta/api/firmware/models.py:13:        db_table = 'ta_firmware'"
     ],
     "ta_group": [
-        "../ta/api/groups/models.py:16"
+        "../ta/api/groups/models.py:17:        db_table = 'ta_group'"
     ],
     "ta_group_member": [
-        "../ta/api/groups/models.py:30"
+        "../ta/api/groups/models.py:31:        db_table = 'ta_group_member'"
     ],
     "ta_invitation": [
-        "../ta/api/teams/models.py:124"
+        "../ta/api/teams/models.py:125:        db_table = 'ta_invitation'"
     ],
     "ta_license": [
-        "../ta/api/licensing/models.py:15"
+        "../ta/api/licensing/models.py:16:        db_table = 'ta_license'"
     ],
     "ta_log": [
-        "../ta/api/logging/models.py:56"
+        "../ta/api/logging/models.py:56:        db_table = 'ta_log'"
     ],
     "ta_notification": [
-        "../ta/api/devices/models.py:59"
+        "../ta/api/devices/models.py:60:        db_table = 'ta_notification'"
     ],
     "ta_object": [
-        "../ta/api/objects/models.py:34"
+        "../ta/api/objects/models.py:35:        db_table = 'ta_object'"
     ],
     "ta_participant_permission": [
-        "../ta/api/teams/models.py:112"
+        "../ta/api/teams/models.py:113:        db_table = 'ta_participant_permission'"
     ],
     "ta_participation": [
-        "../ta/api/teams/models.py:97"
+        "../ta/api/teams/models.py:98:        db_table = 'ta_participation'"
     ],
     "ta_password_reset": [
-        "../ta/api/accounts/models.py:153"
+        "../ta/api/accounts/models.py:153:        db_table = 'ta_password_reset'"
     ],
     "ta_prefab": [
-        "../ta/api/bookables/models.py:39"
+        "../ta/api/bookables/models.py:39:        db_table = 'ta_prefab'"
     ],
     "ta_prefab_type": [
-        "../ta/api/bookables/models.py:21"
+        "../ta/api/bookables/models.py:21:        db_table = 'ta_prefab_type'"
     ],
     "ta_prefab_usage": [
-        "../ta/api/bookables/models.py:55"
+        "../ta/api/bookables/models.py:55:        db_table = 'ta_prefab_usage'"
     ],
     "ta_registration": [
-        "../ta/api/accounts/models.py:142"
+        "../ta/api/accounts/models.py:142:        db_table = 'ta_registration'"
     ],
     "ta_request": [
-        "../ta/api/requests/models.py:36"
+        "../ta/api/requests/models.py:37:        db_table = 'ta_request'"
     ],
     "ta_room": [
-        "../ta/api/rooms/models.py:16"
+        "../ta/api/rooms/models.py:17:        db_table = 'ta_room'"
     ],
     "ta_room_booking": [
-        "../ta/api/room_booking/models.py:27"
+        "../ta/api/room_booking/models.py:28:        db_table = 'ta_room_booking'"
     ],
     "ta_room_booking_participant": [
-        "../ta/api/room_booking/models.py:44"
+        "../ta/api/room_booking/models.py:45:        db_table = 'ta_room_booking_participant'"
     ],
     "ta_room_object": [
-        "../ta/api/rooms/models.py:33"
+        "../ta/api/rooms/models.py:34:        db_table = 'ta_room_object'"
     ],
     "ta_settings": [
-        "../ta/api/sync/models.py:53"
+        "../ta/api/sync/models.py:54:        db_table = 'ta_settings'"
     ],
     "ta_team": [
-        "../ta/api/teams/models.py:62"
+        "../ta/api/teams/models.py:63:        db_table = 'ta_team'"
     ],
     "ta_tile": [
-        "../ta/api/objects/models.py:19"
+        "../ta/api/objects/models.py:20:        db_table = 'ta_tile'"
     ],
     "ta_ui_settings": [
-        "../ta/api/ui/models.py:20"
+        "../ta/api/ui/models.py:21:        db_table = 'ta_ui_settings'"
     ],
     "ta_ui_team_settings": [
-        "../ta/api/ui/models.py:30"
+        "../ta/api/ui/models.py:31:        db_table = 'ta_ui_team_settings'"
     ],
     "ta_ui_venue_settings": [
-        "../ta/api/ui/models.py:51"
+        "../ta/api/ui/models.py:52:        db_table = 'ta_ui_venue_settings'"
     ],
     "ta_venue": [
-        "../ta/api/venues/models.py:96"
+        "../ta/api/venues/models.py:97:        db_table = 'ta_venue'"
     ],
     "ta_venue_back_img": [
-        "../ta/api/venues/models.py:126"
+        "../ta/api/venues/models.py:127:        db_table = 'ta_venue_back_img'"
     ],
     "table_identifier": [
-        "../ta/api/booking/management.py:69",
-        "../ta/api/booking/management.py:70"
+        "../ta/api/booking/management.py:70:        if 'table_identifier' in attrs:",
+        "../ta/api/booking/management.py:71:            attrs['table'] = get_object_or_404(Bookable, prefab__identifier=attrs.pop('table_identifier'))"
     ],
     "table_utilization": [
-        "../ta/api/analytics/aggregators.py:71"
+        "../ta/api/analytics/aggregators.py:72:        'table_utilization': ['global', 'team', 'venue', 'table', 'account', 'participant'],"
     ],
     "tableair-prefab_occupancy": [
-        "../ta/api/analytics/views.py:138"
+        "../ta/api/analytics/views.py:138:                    return make_csv_response('tableair-prefab_occupancy', columns , *rows)"
     ],
     "team__name": [
-        "../ta/api/licensing/admin.py:8"
+        "../ta/api/licensing/admin.py:8:    search_fields = ('team__url', 'team__name')"
     ],
     "team__url": [
-        "../ta/api/licensing/admin.py:8"
+        "../ta/api/licensing/admin.py:8:    search_fields = ('team__url', 'team__name')"
     ],
     "team_id": [
-        "../ta/api/requests/serializers.py:28"
+        "../ta/api/requests/serializers.py:29:            validated_data['team_id'] = team_id"
     ],
     "team_settings": [
-        "../ta/api/ui/serializers.py:28",
-        "../ta/api/ui/validators.py:47"
+        "../ta/api/ui/serializers.py:28:        exclude = ('id', 'team_settings',)",
+        "../ta/api/ui/validators.py:48:        attrs['team_settings'] = team_settings"
     ],
     "team_tables#": [
-        "../ta/api/analytics/aggregators.py:265"
+        "../ta/api/analytics/aggregators.py:266:                                                   'team_tables#' + self._get('team_url'))"
     ],
     "team_url": [
-        "../ta/api/accounts/serializers.py:53",
-        "../ta/api/analytics/aggregators.py:42",
-        "../ta/api/analytics/aggregators.py:49",
-        "../ta/api/analytics/aggregators.py:139",
-        "../ta/api/analytics/aggregators.py:253",
-        "../ta/api/analytics/aggregators.py:254",
-        "../ta/api/analytics/aggregators.py:263",
-        "../ta/api/analytics/aggregators.py:265",
-        "../ta/api/analytics/aggregators.py:280",
-        "../ta/api/analytics/aggregators.py:281",
-        "../ta/api/analytics/aggregators.py:300",
-        "../ta/api/analytics/aggregators.py:306",
-        "../ta/api/analytics/aggregators.py:317",
-        "../ta/api/analytics/aggregators.py:326",
-        "../ta/api/bookables/endpoints.py:92",
-        "../ta/api/bookables/sitstand/aggregators.py:31",
-        "../ta/api/bookables/sitstand/endpoints.py:28",
-        "../ta/api/booking/endpoints.py:175",
-        "../ta/api/booking/endpoints.py:192",
-        "../ta/api/mux/views.py:31",
-        "../ta/api/mux/views.py:33",
-        "../ta/api/requests/serializers.py:64",
-        "../ta/api/room_booking/endpoints.py:64",
-        "../ta/api/room_booking/endpoints.py:80",
-        "../ta/api/teams/endpoints.py:31",
-        "../ta/api/venues/permissions.py:10"
+        "../ta/api/accounts/serializers.py:54:                            raise serializers.ValidationError({'team_url': [_('Team with a given URL doesn\\'t exist')]})",
+        "../ta/api/analytics/aggregators.py:43:            {'team': ['team_url']},",
+        "../ta/api/analytics/aggregators.py:50:            {'participant': ['team_url', 'account_id']}",
+        "../ta/api/analytics/aggregators.py:140:                team = self._c(Team.objects.filter(url=self._get('team_url')))",
+        "../ta/api/analytics/aggregators.py:254:                    queryset.filter(bookable__venue__team__url=self._get('team_url')).exclude(check_in__isnull=True))",
+        "../ta/api/analytics/aggregators.py:255:            return self._c(queryset.filter(bookable__venue__team__url=self._get('team_url')))",
+        "../ta/api/analytics/aggregators.py:264:                                                   .filter(bookable__venue__team__url=self._get('team_url'))",
+        "../ta/api/analytics/aggregators.py:266:                                                   'team_tables#' + self._get('team_url'))",
+        "../ta/api/analytics/aggregators.py:281:                                                       .filter(bookable__venue__team__url=self._get('team_url')),",
+        "../ta/api/analytics/aggregators.py:282:                                                       'member_bookings#' + self._get('team_url'))",
+        "../ta/api/analytics/aggregators.py:301:            return self._c(suffix(AppUsage.objects.filter(account__team__url=self._get('team_url'))))",
+        "../ta/api/analytics/aggregators.py:307:                Q(account__id=self._get('account_id')) & Q(account__team__url=self._get('team_url')))))",
+        "../ta/api/analytics/aggregators.py:318:            return self._c(suffix(Bookable.objects.filter(venue__team__url=self._get('team_url'))))",
+        "../ta/api/analytics/aggregators.py:327:                venue__team__url=self._get('team_url'))))",
+        "../ta/api/bookables/endpoints.py:93:            'query': lambda bookable, **url: bookable.objects.filter(venue__team__url=url['team_url']),",
+        "../ta/api/bookables/sitstand/aggregators.py:32:            'team': 'team_url',",
+        "../ta/api/bookables/sitstand/endpoints.py:29:            return at_least_participant(request.user, team=Team.objects.get(url=query['team_url']))",
+        "../ta/api/booking/endpoints.py:175:                        Q(bookable__venue__team__url=url['team_url']) &",
+        "../ta/api/booking/endpoints.py:192:            return at_least_participant(request.user, team=Team.objects.get(url=url['team_url']))",
+        "../ta/api/mux/views.py:32:        team_url = request.query_params.get('team_url', None)",
+        "../ta/api/mux/views.py:34:        return Response({'team_url': [_('Required query parameter')]}, status=status.HTTP_400_BAD_REQUEST)",
+        "../ta/api/requests/serializers.py:65:                          'entry', host='teams', host_kwargs={'team_url': self.team_url}",
+        "../ta/api/room_booking/endpoints.py:64:                        Q(room__bookable__venue__team__url=url['team_url']) &",
+        "../ta/api/room_booking/endpoints.py:80:            return at_least_participant(request.user, team=Team.objects.get(url=url['team_url']))",
+        "../ta/api/teams/endpoints.py:32:            'query': lambda team, **url: team.objects.get(url=url['team_url'])",
+        "../ta/api/venues/permissions.py:10:        team_url = req.data['team_url']"
     ],
     "this_week": [
-        "../ta/api/analytics/views.py:110",
-        "../ta/api/analytics/views.py:112"
+        "../ta/api/analytics/views.py:110:                if duration in ['this_week', 'last_week']:",
+        "../ta/api/analytics/views.py:112:                    if duration == 'this_week':"
     ],
     "tiles_to_delete": [
-        "../ta/api/rooms/validators.py:30",
-        "../ta/api/rooms/validators.py:70",
-        "../ta/api/rooms/validators.py:71",
-        "../ta/api/rooms/validators.py:121",
-        "../ta/api/rooms/validators.py:127"
+        "../ta/api/rooms/validators.py:31:                self.context['tiles_to_delete'] = tiles",
+        "../ta/api/rooms/validators.py:71:        if 'tiles_to_delete' in self.context:",
+        "../ta/api/rooms/validators.py:72:            self.context['tiles_to_delete'].delete()",
+        "../ta/api/rooms/validators.py:122:        self.context['tiles_to_delete'] = room.grid_tiles.all()",
+        "../ta/api/rooms/validators.py:128:        self.context['tiles_to_delete'].delete()"
     ],
     "time_changed": [
-        "../ta/api/room_booking/validators.py:217",
-        "../ta/api/room_booking/validators.py:263"
+        "../ta/api/room_booking/validators.py:218:            self.context['time_changed'] = True",
+        "../ta/api/room_booking/validators.py:264:        if self.context.get('time_changed', False) and instance.should_notify:"
     ],
     "timestamp_formatted": [
-        "../ta/api/bookables/admin.py:13"
+        "../ta/api/bookables/admin.py:14:    list_display = ('prefab', 'activity', 'parameters', 'timestamp_formatted', 'created_formatted')"
     ],
     "too_early": [
-        "../ta/api/booking/validators/booking_validators.py:43"
+        "../ta/api/booking/validators/booking_validators.py:44:                   'start', cls.messages['too_early'] if s.TA_BOOKING_TOLERANCE_MINS else cls.messages['too_early_0'])"
     ],
     "too_early_0": [
-        "../ta/api/booking/validators/booking_validators.py:43"
+        "../ta/api/booking/validators/booking_validators.py:44:                   'start', cls.messages['too_early'] if s.TA_BOOKING_TOLERANCE_MINS else cls.messages['too_early_0'])"
     ],
     "too_late": [
-        "../ta/api/booking/validators/booking_validators.py:45"
+        "../ta/api/booking/validators/booking_validators.py:46:                   'start', cls.messages['too_late'])"
     ],
     "too_long": [
-        "../ta/api/booking/validators/booking_validators.py:40"
+        "../ta/api/booking/validators/booking_validators.py:41:        invalid_if((end - start).days >= s.TA_BOOKING_MAX_DURATION_DAYS, 'end', cls.messages['too_long'])"
     ],
     "too_short": [
-        "../ta/api/booking/validators/booking_validators.py:41"
+        "../ta/api/booking/validators/booking_validators.py:42:        invalid_if(end < start + timedelta(minutes=s.TA_BOOKING_MIN_DURATION_MINS), 'end', cls.messages['too_short'])"
     ],
     "total_activity_times": [
-        "../ta/api/analytics/aggregators.py:72"
+        "../ta/api/analytics/aggregators.py:73:        'total_activity_times': ['global', 'team', 'account', 'participant'],"
     ],
     "total_room_bookings": [
-        "../ta/api/analytics/aggregators.py:88"
+        "../ta/api/analytics/aggregators.py:89:        'total_room_bookings': ['global', 'team', 'room', 'account', 'participant'],"
     ],
     "unit_system": [
-        "../ta/api/sync/serializers.py:20"
+        "../ta/api/sync/serializers.py:20:        fields = ('sitting_height', 'standing_height', 'unit_system', 'date_modified', 'use_12_hour_clock')"
     ],
     "usage_end": [
-        "../ta/api/analytics/aggregators.py:73"
+        "../ta/api/analytics/aggregators.py:74:        'usage_end': ['global', 'team', 'venue', 'table', 'account', 'participant'],"
     ],
     "usage_set": [
-        "../ta/api/bookables/models.py:51"
+        "../ta/api/bookables/models.py:51:    prefab = models.ForeignKey(Prefab, related_name='usage_set', on_delete=models.CASCADE)"
     ],
     "usage_start": [
-        "../ta/api/analytics/aggregators.py:74"
+        "../ta/api/analytics/aggregators.py:75:        'usage_start': ['global', 'team', 'venue', 'table', 'account', 'participant'],"
     ],
     "use_12_hour_clock": [
-        "../ta/api/sync/serializers.py:20"
+        "../ta/api/sync/serializers.py:20:        fields = ('sitting_height', 'standing_height', 'unit_system', 'date_modified', 'use_12_hour_clock')"
     ],
     "use_random_bookable": [
-        "../ta/api/booking/validators/repeating_booking_validators.py:180"
+        "../ta/api/booking/validators/repeating_booking_validators.py:181:        self.use_random_bookable = attrs.get('use_random_bookable', None)"
     ],
     "use_random_table": [
-        "../ta/api/booking/management.py:60",
-        "../ta/api/booking/management.py:111",
-        "../ta/api/booking/management.py:111"
+        "../ta/api/booking/management.py:61:        self.use_random_table = attrs.pop('use_random_table', None)",
+        "../ta/api/booking/management.py:112:        invalid_if(('use_random_table' not in attrs or attrs.get('use_random_table') == False) and 'table' not in attrs,",
+        "../ta/api/booking/management.py:112:        invalid_if(('use_random_table' not in attrs or attrs.get('use_random_table') == False) and 'table' not in attrs,"
     ],
     "user_permissions": [
-        "../ta/api/accounts/admin.py:17",
-        "../ta/api/accounts/admin.py:38",
-        "../ta/api/accounts/forms.py:101"
+        "../ta/api/accounts/admin.py:17:                                       'groups', 'user_permissions')}),",
+        "../ta/api/accounts/admin.py:38:    filter_horizontal = ('groups', 'user_permissions',)",
+        "../ta/api/accounts/forms.py:101:        f = self.fields.get('user_permissions', None)"
     ],
     "user_random_bookable": [
-        "../ta/api/booking/validators/repeating_booking_validators.py:184"
+        "../ta/api/booking/validators/repeating_booking_validators.py:185:            invalid_if(not self.bookable, ['user_random_bookable', 'bookable'], _('One of these fields is required.'))"
     ],
     "validate_missing_timepoints": [
-        "../ta/api/analytics/occupancy_analytics.py:832"
+        "../ta/api/analytics/occupancy_analytics.py:833:        validate_missing_timepoints = self.http_query_parameters.get('validate_missing_timepoints', ['true'])[0]"
     ],
     "venue__name": [
-        "../ta/api/analytics/occupancy_analytics.py:660"
+        "../ta/api/analytics/occupancy_analytics.py:661:              .values('prefab', 'prefab__identifier', 'venue__name', 'venue', 'cnt')"
     ],
     "venue__timezone": [
-        "../ta/api/iot/views.py:48",
-        "../ta/api/iot/views.py:58"
+        "../ta/api/iot/views.py:48:            'venue__work_starts', 'venue__work_ends', 'venue__timezone')[:1]",
+        "../ta/api/iot/views.py:58:        now = datetime.now(pytz.timezone(bookable['venue__timezone']))"
     ],
     "venue__work_ends": [
-        "../ta/api/iot/views.py:48",
-        "../ta/api/iot/views.py:60"
+        "../ta/api/iot/views.py:48:            'venue__work_starts', 'venue__work_ends', 'venue__timezone')[:1]",
+        "../ta/api/iot/views.py:60:        e_h, e_min, = Venue.get_hours(bookable['venue__work_ends'])"
     ],
     "venue__work_starts": [
-        "../ta/api/iot/views.py:48",
-        "../ta/api/iot/views.py:59"
+        "../ta/api/iot/views.py:48:            'venue__work_starts', 'venue__work_ends', 'venue__timezone')[:1]",
+        "../ta/api/iot/views.py:59:        st_h, st_min, = Venue.get_hours(bookable['venue__work_starts'])"
     ],
     "venue_id": [
-        "../ta/api/bookables/sitstand/aggregators.py:32",
-        "../ta/api/bookables/sitstand/endpoints.py:30",
-        "../ta/api/booking/management.py:67",
-        "../ta/api/venues/permissions.py:19"
+        "../ta/api/bookables/sitstand/aggregators.py:33:            'venue': 'venue_id',",
+        "../ta/api/bookables/sitstand/endpoints.py:31:            return at_least_participant(request.user, venue=Venue.objects.get(id=query['venue_id']))",
+        "../ta/api/booking/management.py:68:        attrs['venue'] = get_object_or_404(Venue, id=attrs.pop('venue_id'))",
+        "../ta/api/venues/permissions.py:19:        venue_id = req.data['venue_id']"
     ],
     "venue_settings": [
-        "../ta/api/ui/models.py:48",
-        "../ta/api/ui/serializers.py:41"
+        "../ta/api/ui/models.py:49:    team_settings = models.ForeignKey(UiTeamSettings, on_delete=models.CASCADE, related_name='venue_settings')",
+        "../ta/api/ui/serializers.py:41:        read_only_fields = ('venue_settings',)"
     ],
     "work_ends": [
-        "../ta/api/venues/validators/venue_validator.py:29",
-        "../ta/api/venues/validators/venue_validator.py:36",
-        "../ta/api/venues/validators/venue_validator.py:47"
+        "../ta/api/venues/validators/venue_validator.py:30:            invalid('work_ends', _(\"Venue can't close earlier than an hour after it opens\"))",
+        "../ta/api/venues/validators/venue_validator.py:37:        self.validate_work_hours(attrs['work_starts'], attrs['work_ends'])",
+        "../ta/api/venues/validators/venue_validator.py:48:            coal(attrs.get('work_ends', None), instance.work_ends))"
     ],
     "work_starts": [
-        "../ta/api/venues/models.py:25",
-        "../ta/api/venues/validators/venue_validator.py:36",
-        "../ta/api/venues/validators/venue_validator.py:46"
+        "../ta/api/venues/models.py:26:        raise ValidationError({'work_starts': [_('Incorrect time format, accepted HH:mm')]})",
+        "../ta/api/venues/validators/venue_validator.py:37:        self.validate_work_hours(attrs['work_starts'], attrs['work_ends'])",
+        "../ta/api/venues/validators/venue_validator.py:47:            coal(attrs.get('work_starts', None), instance.work_starts),"
     ],
     "write_only": [
-        "../ta/api/accounts/serializers.py:30",
-        "../ta/api/devices/serializers.py:12"
+        "../ta/api/accounts/serializers.py:31:        extra_kwargs = {'confirm_invite': {'write_only': True}, 'first_usage': {'required': False}}",
+        "../ta/api/devices/serializers.py:13:        extra_kwargs = {'push_token': {'write_only': True}}"
     ]
 }

@@ -5,6 +5,10 @@ from main import find_strings_tokenize
 INJECTION_PATTERN = "_(%s)"
 IMPORT_PATTERN = IMPORT_STATEMENT = "from django.utils.translation import ugettext_lazy as _"
 
+with  open("manually_IGNORED_BY_VAL.json") as f: MANUALLY_IGNORED_BY_VAL_asTxt = f.read()
+
+
+
 INJECTION_FAILED = []
 def gettext_inject_to_code_line(code_line, msg):
     # found = False
@@ -15,12 +19,12 @@ def gettext_inject_to_code_line(code_line, msg):
     if msg_token in code_line:
         code_line = code_line.replace( msg_token, 
                                         INJECTION_PATTERN % msg_token )  
-    #     found = True
-    # if not found:
+        return code_line
+
     else:
         # INJECTION_FAILED.append( [msg, code_line] ) 
         raise RuntimeError("INJECTION_FAILED") 
-    return code_line
+    
 
 
 with open("found_strings.json") as f:
@@ -55,7 +59,16 @@ with open("found_strings.json") as f:
                 # print( "\"%s\", line %s    -- %s" % (file, line_nr, string[:20] ) )
                 code_line = code_lines[ line_nr-1 ]
                 try:
-                    code_lines[ line_nr-1 ] =  gettext_inject_to_code_line( code_line, msg )
+                    code_lines[ line_nr-1 ] =  new_code_line = gettext_inject_to_code_line( code_line, msg )
+                    
+                    # Hook update in file manually_IGNORED_BY_VAL.json
+                    src_link = "%s:%s:%s" % (file, line_nr , code_line)
+                    if src_link in MANUALLY_IGNORED_BY_VAL_asTxt:
+                        MANUALLY_IGNORED_BY_VAL_asTxt = MANUALLY_IGNORED_BY_VAL_asTxt.replace(
+                                src_link, 
+                                "%s:%s:%s" % (file, line_nr , new_code_line) # new_src_link
+                                )
+
                 except RuntimeError:
                     INJECTION_FAILED.append( (("%s:%s" %(file, line_nr)) ,  msg, code_line )  )
 
@@ -72,3 +85,5 @@ with open("found_strings.json") as f:
 print ("INJECTION_FAILED", len(INJECTION_FAILED))
 # print(  json.dumps(INJECTION_FAILED, indent=4))
 with open("INJECTION_FAILED.json", 'w') as f: json.dump(INJECTION_FAILED, f, indent=4)
+
+with  open("manually_IGNORED_BY_VAL.json", 'w') as f: f.write( MANUALLY_IGNORED_BY_VAL_asTxt )

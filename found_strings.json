@@ -1,507 +1,123 @@
 {
-    "../ta/api/accounts/models.py": {
-        "16": "Account must have an email",
-        "22": "Account must have a password",
-        "25": "Account must have a first name",
-        "28": "Account must have a last name",
-        "70": "Required. Standard email address",
-        "126": "Account is not a kiosk",
-        "127": "Invalid kiosk setup. Kiosk with no participations",
-        "129": "Invalid kiosk setup",
-        "143": "account registrations",
-        "146": "Registration confirmation for {0}",
-        "154": "account password resets",
-        "157": "Password reset request for {0}",
-        "162": "Required. Standard email address",
-        "166": "account email change",
-        "167": "account email changes",
-        "170": "Email change to {1} request for {0}",
-        "180": "api settings",
-        "183": "API settings of "
-    },
     "../ta/api/accounts/serializers.py": {
-        "53": "Team with a given URL doesn't exist",
-        "77": "This is your current email!",
-        "86": "Account with this email already exists",
-        "90": "You need at least 8 symbols, with one lowercase, one uppercase letter and a number",
-        "94": "This field is required",
-        "96": "Incorrect password",
-        "126": "Confirm your TableAir Registration",
-        "127": "Click the link below to confirm your registration.\n{0}",
-        "143": "Confirm your TableAir Email Change",
-        "144": "Click the link below to confirm your email change\n{}"
-    },
-    "../ta/api/accounts/views.py": {
-        "234": "You do not have permission to do this",
-        "249": "You can't leave the team if you're the owner"
+        "91": "You need at least 8 symbols, with one lowercase, one uppercase letter and a number"
     },
     "../ta/api/analytics/aggregators.py": {
-        "117": "You must be logged in",
-        "122": "Global scope is visible only with special rights",
-        "126": "Only participated teams can be accessed",
-        "130": "Only venues in participated teams can be accessed",
-        "134": "Only tables within a participated team's venues can be accessed",
-        "137": "Cannot access other accounts",
-        "148": "You must have administrative access for given team",
-        "170": "This field is required",
-        "173": "This field is required",
-        "177": "Unknown aggregator '{0}'",
-        "181": "This field is required",
-        "183": "Multiple values for key: {0}",
-        "196": "Unknown value '{0}' for selector '{1}'",
-        "203": "Selector {0}={1} requires additional selectors {2}",
-        "208": "Unknown aggregator '{0}'",
-        "213": "Aggregator '{0}' does not support scope '{1}'",
-        "289": "Unknown scope {0}",
-        "308": "Unknown scope {0}",
-        "328": "Unknown scope",
-        "608": "This scope cannot be used"
+        "214": "Aggregator '{0}' does not support scope '{1}'"
     },
     "../ta/api/analytics/models.py": {
-        "28": "Check out",
-        "30": "Log out",
-        "31": "Check in",
-        "32": "Create booking",
-        "33": "Cancel booking",
-        "34": "Update booking",
-        "35": "Initiate standing program",
-        "36": "Cancel standing program",
-        "37": "Switch height",
-        "38": "Select color",
-        "39": "Select animation",
-        "51": "mobile app usage",
-        "52": "mobile app usage logs",
-        "55": "{0}: {1} on {2}"
+        "26": "Sitting",
+        "27": "Standing",
+        "28": "Break"
     },
     "../ta/api/analytics/occupancy_analytics.py": {
-        "51": "GROUP BY",
-        "194": "You must be logged in",
-        "199": "Global scope is visible only with special rights",
-        "203": "Only venues in participated teams can be accessed",
-        "210": "This field is required",
-        "213": "This field is required",
-        "217": "Unknown perspective '{0}'",
-        "221": "This field is required",
-        "223": "Multiple values for key: {0}",
-        "236": "Unknown value '{0}' for selector '{1}'",
-        "243": "Selector {0}={1} requires additional selectors {2}",
-        "248": "Unknown perspective '{0}'",
-        "253": "Aggregator '{0}' does not support scope '{1}'",
-        "322": "intervals should be sorted.\n            if we don't fit  interval  to current part, we goto next part",
-        "328": "ERROR when partitioning. Interval #%s/%s  (%s); \n      Partition counts: %s\n      timewindow_start: %s, part_count: %s, part_size: %s",
-        "354": "only week duration is accepted for graph",
-        "364": "No prefabs are present in this venue (ID: %s)",
-        "438": "for each part, we add appropriate timedelta",
-        "480": "Deleting meaningfull info: when excluding weekend from results. \n   relative_day_nr: %s, weekday__of_start: %s",
-        "596": "prefab not found (maybe it is not OcupancyActivity type)    ",
-        "598": " too many prefabs...\n%s",
-        "759": "Error: interval start is later than end: %s, %s ",
-        "769": "Error: Overlaping time intervals for prefab %s, end (%s) is more than start (%s) of next (nr %s).",
-        "781": "Missing data: timestamp for START %s (when end was: %s)",
-        "789": "Missing data: timestamp for END %s (when start was: %s)",
-        "799": "Deleting incorrect data intervals for"
-    },
-    "../ta/api/analytics/serializers.py": {
-        "14": "No account ID was provided",
-        "22": "Timestamp cannot be more than a year old"
-    },
-    "../ta/api/bookables/admin.py": {
-        "19": "%Y-%m-%d %H:%M:%S",
-        "22": "Timestamp Sent by the Sensor",
-        "25": "%Y-%m-%d %H:%M:%S"
-    },
-    "../ta/api/bookables/endpoints.py": {
-        "38": "Invalid prefab identifier",
-        "150": "This field accepting type `list` is required.",
-        "154": "All prefabs must be confirmed to be upgraded",
-        "156": "All prefabs must be assigned to be upgraded"
-    },
-    "../ta/api/bookables/enums.py": {
-        "45": "Sensor reset",
-        "46": "WiFi connected",
-        "47": "WiFi connection failed",
-        "48": "Request to cloud via WiFi failed",
-        "49": "WiFi disconnected",
-        "50": "Bluetooth device connected",
-        "51": "Bluetooth device disconnected by force",
-        "52": "Bluetooth device disconnected",
-        "53": "Bluetooth height up",
-        "54": "Bluetooth height down",
-        "55": "Bluetooth height stop",
-        "56": "Bluetooth posture switched",
-        "57": "Bluetooth colour selected",
-        "58": "Bluetooth animation selected",
-        "59": "Bluetooth calibration",
-        "60": "Bluetooth name changed",
-        "61": "Bluetooth password toggle",
-        "62": "Manual height up",
-        "63": "Manual height down",
-        "64": "Manual stop",
-        "65": "Manual colour selection",
-        "66": "Manual colour disabled",
-        "67": "Leg error",
-        "68": "Booking cancel request sent",
-        "69": "Laser sensor error",
-        "70": "Sound speaker error",
-        "71": "Firmware update over Bluetooth request sent",
-        "72": "Firmware update over Bluetooth successful",
-        "73": "Firmware update over Bluetooth failed",
-        "74": "Temperature step 8C",
-        "75": "General info message",
-        "76": "General info message (dynamic)",
-        "77": "Event list overload",
-        "78": "Significant time update",
-        "79": "Firmware update over WiFi request",
-        "80": "Firmware update over WiFi successful",
-        "81": "Firmware update over WiFi failed",
-        "82": "Manual calibration",
-        "83": "Bluetooth emergency stop",
-        "84": "Sit-stand Linak analytics received",
-        "85": "Occupancy sensor presence change"
-    },
-    "../ta/api/bookables/models.py": {
-        "15": "Used when generating identifiers, \"#\" denotes generated part. Example: \"SB1######\"",
-        "18": "WARNING! Changing this might affect DB integrity",
-        "60": "[{}] {}: {} ({}), (received: {})",
-        "61": "%Y-%m-%d %H:%M:%S %Z",
-        "63": "%Y-%m-%d %H:%M:%S %Z"
+        "254": "Aggregator '{0}' does not support scope '{1}'"
     },
     "../ta/api/bookables/sitstand/aggregators.py": {
-        "95": "Unsupported aggregator type, allowed: `{}`"
+        "96": "Unsupported aggregator type, allowed: `{}`"
     },
-    "../ta/api/bookables/sitstand/endpoints.py": {
-        "35": "All parameters must be set once"
-    },
-    "../ta/api/bookables/validators/bookable_validator.py": {
-        "33": "A name cannot contain #",
-        "37": "Name may contain only ASCII characters",
-        "40": "This prefab is not confirmed yet",
-        "52": "A bookable with this identifier already exists",
-        "58": "This type is reserved and can't be used",
-        "71": "This bookable was converted to a room and can't be moved"
-    },
-    "../ta/api/bookables/validators/prefab_validator.py": {
-        "44": "JSON must be of type `list` or `object`",
-        "49": "Value must be of type `list` or `object`",
-        "54": "You cannot create a safe prefab directly."
+    "../ta/api/booking/choices.py": {
+        "8": "confirmed",
+        "9": "removed",
+        "10": "tentative",
+        "11": "unknown"
     },
     "../ta/api/booking/confirmation.py": {
-        "9": "Invitation to a meeting",
-        "11": "You have been invited to participate at a meeting.\nThe meeting will take place on {} until {} at {}.",
-        "20": "Meeting was rescheduled",
-        "22": "The meeting you have been invited to was rescheduled.\nThe meeting will take place on {} until {} at {}.",
-        "33": "Meeting was scheduled",
-        "35": "You have created a meeting.\nThe meeting will take place on {0} until {1} at {2}.",
-        "46": "Meeting was canceled",
-        "48": "The meeting you have been invited to was canceled.\nThe meeting was to take place on {0} until {1} at {2}."
-    },
-    "../ta/api/booking/management.py": {
-        "34": "Use hh:mm format for time",
-        "64": "At least one weekday is required.",
-        "78": "A single booking cannot be shorter than {0} minutes",
-        "85": "At least one weekday is required.",
-        "86": "This field is required.",
-        "89": "Only values 1 and 2 are allowed.",
-        "93": "This field is required.",
-        "96": "You cannot book for more thant {0} days into the future",
-        "101": "This field is required.",
-        "112": "Either select to randomize tables or choose a table from the map.",
-        "148": "You cannot book for more thant {0} days into the future",
-        "188": "At one point in the schedule you already have an intersecting booking",
-        "194": "At one point in the schedule there were no free spots found",
-        "217": "At one point in the schedule there were no free spots found"
+        "12": "You have been invited to participate at a meeting.\nThe meeting will take place on {} until {} at {}.",
+        "23": "The meeting you have been invited to was rescheduled.\nThe meeting will take place on {} until {} at {}.",
+        "36": "You have created a meeting.\nThe meeting will take place on {0} until {1} at {2}.",
+        "49": "The meeting you have been invited to was canceled.\nThe meeting was to take place on {0} until {1} at {2}."
     },
     "../ta/api/booking/models.py": {
-        "96": "{3} by {2} at {0} - {1}"
-    },
-    "../ta/api/booking/notifications.py": {
-        "18": "Your booking of {} begins in an 10 mins!",
-        "21": "Your table {0} booking begins in an hour!",
-        "24": "Your table {0} is available for checking-in.",
-        "27": "You are {1} minutes late for your booking at table {0}.",
-        "31": "You were {1} minutes late for your booking at table {0}, so it got cancelled."
+        "91": "booking",
+        "92": "bookings"
     },
     "../ta/api/booking/validators/booking_validators.py": {
-        "18": "A booking cannot be shorter than {0} minutes",
-        "19": "A single booking cannot exceed {0} days in duration. Select a shorter booking time interval.",
-        "21": "Your booking cannot begin less than {0} minutes in advance.",
-        "23": "Your booking cannot begin in the past",
-        "24": "Your booking cannot start later than in {0} days.",
-        "26": "You can only check-in once",
-        "27": "You cannot check-in before your booking starts",
-        "28": "You cannot check-in after your booking ends",
-        "56": "Your booking cannot span for multiple days",
-        "58": "Your booking cannot start before venue opening time {}",
-        "60": "Your booking cannot end after venue closing time {}",
-        "110": "There's a booking at that time. Please choose another time. Visit the dashboard to manage your bookings.",
-        "112": "You have reached the maximum amount of intersecting bookings. Please choose another time.",
-        "142": "A bookable must be assigned to a venue before booking",
-        "143": "This is a room. Only bookables can be booked this way",
-        "153": "You cannot check-in whilst creating a booking",
-        "164": "You have reached the maximum amount of bookings",
-        "169": "A booking that is not in a confirmed status cannot be updated",
-        "174": "You cannot change booking details after it has started",
-        "190": "You can only edit the booking time interval in the range of the current day",
-        "213": "This booking has already ended",
-        "245": "This booking hasn't started yet"
-    },
-    "../ta/api/booking/validators/repeating_booking_validators.py": {
-        "43": "Use hh:mm format for time",
-        "46": "Time was out of range",
-        "73": "You cannot book for more thant {0} days into the future",
-        "112": "At one point in the schedule you already have an intersecting booking",
-        "117": "At one point in the schedule there were no free spots found",
-        "142": "At one point in the schedule there were no free spots found",
-        "167": "1-index int list type expected (e.g. [1, 2, 3]).",
-        "171": "Must be a valid `ending_type` type (1 or 2)",
-        "176": "End date must be greater than start date",
-        "184": "One of these fields is required.",
-        "187": "List type expected (e.g. [0, 1, 6]).",
-        "188": "At least one weekday is required.",
-        "189": "Weekday must be in range 0..6",
-        "199": "No bookings were created"
+        "111": "There's a booking at that time. Please choose another time. Visit the dashboard to manage your bookings.",
+        "113": "You have reached the maximum amount of intersecting bookings. Please choose another time."
     },
     "../ta/api/devices/models.py": {
-        "31": "Agent {0} belonging to {1}",
-        "41": "Booking reminder",
-        "42": "Booking started",
-        "43": "Booking late",
-        "44": "Booking cancelled",
-        "64": "Notification for agent {0} ({1}): {2}"
-    },
-    "../ta/api/devices/serializers.py": {
-        "24": "No more than 15 agents can be registered"
-    },
-    "../ta/api/firmware/models.py": {
-        "9": "Additional info that helps differentiate versions",
-        "13": "firmware version",
-        "14": "firmware versions",
-        "18": "{}: ({})"
+        "27": "agent",
+        "28": "agents",
+        "61": "notification",
+        "62": "notifications"
     },
     "../ta/api/groups/models.py": {
-        "20": "{0} in team {1}",
-        "28": "group member",
-        "29": "group members",
-        "33": "{0} in group {1}"
-    },
-    "../ta/api/groups/validators.py": {
-        "19": "Account with id {} does not exist or belong to team {}",
-        "25": "This account is already a member of this group",
-        "41": "An account in members list was not found or does not belong in group's team"
-    },
-    "../ta/api/integration/choices.py": {
-        "8": "Google Calendar",
-        "9": "Lotus Notes",
-        "10": "Microsoft Exchange Server",
-        "11": "Microsoft Office"
-    },
-    "../ta/api/integration/models.py": {
-        "13": "calendar integration link",
-        "14": "calendar integration links",
-        "19": "External calendar integration link with {0} with room {1}"
+        "15": "group",
+        "16": "groups"
     },
     "../ta/api/kiosk/validators.py": {
-        "27": "Grid object must be a kiosk",
-        "47": "You need to purchase a license to create kiosks! You can easily do that by visiting shoptableair.com",
-        "50": "Your current licensing only allows you to have a maximum of {} kiosks. Visit shoptableair.com to purchase a new license.",
-        "58": "Grid object must be a kiosk"
-    },
-    "../ta/api/licensing/models.py": {
-        "5": "Maximum amount of rooms that can be created within a team",
-        "7": "Maximum amount of kiosks that can be created within a team",
-        "9": "Date from which the room license starts",
-        "10": "Date from which the kiosk license starts",
-        "18": "License for {}, max rooms: {}, max kiosks: {}"
-    },
-    "../ta/api/logging/management.py": {
-        "16": "Given model content type for logging does not exist"
+        "48": "You need to purchase a license to create kiosks! You can easily do that by visiting shoptableair.com",
+        "51": "Your current licensing only allows you to have a maximum of {} kiosks. Visit shoptableair.com to purchase a new license."
     },
     "../ta/api/logging/models.py": {
-        "20": "API Error",
-        "61": "{0} committed a {1} action on {2}"
-    },
-    "../ta/api/mux/views.py": {
-        "33": "Required query parameter"
+        "17": "Create",
+        "18": "Update",
+        "19": "Delete",
+        "57": "logging",
+        "58": "logs"
     },
     "../ta/api/objects/models.py": {
-        "24": "Tile at {0}:{1} in venue {2}",
-        "39": "{} at {}:{} in venue {}"
-    },
-    "../ta/api/objects/validators.py": {
-        "14": "Invalid object type",
-        "18": "An object already exists in this spot",
-        "24": "An tile already exists in this spot"
-    },
-    "../ta/api/requests/management.py": {
-        "11": "You have been approved to become a member of team \"{}\""
+        "21": "tile",
+        "22": "tiles",
+        "36": "object",
+        "37": "objects"
     },
     "../ta/api/requests/models.py": {
-        "29": "A request cannot be issued more than {0} times",
-        "37": "team access request",
-        "38": "team access requests",
-        "41": "Invitation for {0} to team {1}"
+        "17": "Pending",
+        "18": "Accepted",
+        "19": "Rejected"
     },
-    "../ta/api/requests/serializers.py": {
-        "24": "Team URL was not provided",
-        "38": "This request has already been approved",
-        "40": "This request has already been rejected",
-        "52": "This account already belong to the requested team",
-        "59": "{} ({}) is requesting to join your team \"{}\"",
-        "62": "Visit the cloud system to manage pending requests:\n{}",
-        "68": "Team does not exist"
-    },
-    "../ta/api/room_booking/apps.py": {
-        "7": "Room Booking"
+    "../ta/api/room_booking/choices.py": {
+        "10": "pending",
+        "11": "accepted",
+        "12": "declined",
+        "13": "removed",
+        "14": "tentative",
+        "15": "unknown"
     },
     "../ta/api/room_booking/emails.py": {
-        "14": "\n<!doctype html><html><head>\n<!--[if !mso]><!-- -->\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&subset=latin\">\n<!--<![endif]-->\n<style>{style}</style>\n</head><body>{content}</body></html>\n",
-        "16": "div{margin-top:15px}body{margin:0;padding:10px}h2,h3,p{font-family:\"Open Sans\",Helvetica,Arial,sans-serif;font-weight:400}a,strong{font-family:\"Open Sans\",Arial,sans-serif;font-weight:700}a{background-color:#00c4de;color:#fff !important;border-radius:25px;font-size:.875em;display:inline-block;margin:10px 5px 5px;outline:0;padding:12px 20px;text-decoration:none;text-transform:uppercase}",
-        "21": "{} {}",
-        "36": "\n<h2>You have been invited to a room booking by <strong>{}</strong>. Details:</h2>\n<p>Title: <strong>{}</strong></p>\n<strong>Booking starts {}</strong>\n<br/>\n<strong>Booking ends {}</strong>\n<div>\n    <a style=\"background-color: #b73746;\" href='{}'>Decline</a>\n    <a href='{}'>Accept</a>\n</div>\n",
-        "50": "You have been invited to a room booking",
-        "64": "\n<h2>You have been removed from a room booking. Details:</h2>\n<p>Title: <strong>{}</strong></p>\n<strong>Booking starts {}</strong>\n<br/>\n<strong>Booking ends {}</strong>\n",
-        "72": "You have been removed from a room booking",
-        "86": "\n<h2>Date/time of a room booking you are attending were changed. Details:</h2>\n<p>Title: <strong>{}</strong></p>\n<strong>Booking starts {}</strong>\n<br/>\n<strong>Booking ends {}</strong>\n",
-        "94": "A room booking you've been invited to has been updated",
-        "108": "\n<h2>A room booking you were invited to has been cancelled. Details:</h2>\n<p>Title: <strong>{}</strong></p>\n<strong>Booking starts {}</strong>\n<br/>\n<strong>Booking ends {}</strong>\n    ",
-        "116": "A room booking you've been invited to has been cancelled"
-    },
-    "../ta/api/room_booking/models.py": {
-        "25": "room booking",
-        "26": "room bookings",
-        "30": "{} {} - {}, hosted by {} at {}",
-        "42": "room booking participant",
-        "43": "room booking participants",
-        "49": "Room booking participant {} ({}) at room booking {}"
-    },
-    "../ta/api/room_booking/validators.py": {
-        "31": "Room booking must have a confirmed status",
-        "39": "This room booking is not confirmed",
-        "46": "{0} wasn't invited to this room booking",
-        "49": "{0} must have a pending or declined state, not {1}",
-        "63": "{0} must have a pending or accepted state, not {1}",
-        "90": "Room is overcapacity",
-        "96": "Account must be in the same team as room",
-        "112": "Account was already invited to this booking",
-        "156": "There must be at least one participant",
-        "165": "A booking in this room cannot start more than {} days in advance",
-        "181": "This room is not available at this time.",
-        "188": "This room does not exist",
-        "196": "An account in participant list was not found or does not belong in room's team",
-        "204": "Host must belong to the same team as the room",
-        "210": "Room is overcapacity",
-        "229": "Room is overcapacity"
+        "15": "\n<!doctype html><html><head>\n<!--[if !mso]><!-- -->\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&subset=latin\">\n<!--<![endif]-->\n<style>{style}</style>\n</head><body>{content}</body></html>\n",
+        "17": "div{margin-top:15px}body{margin:0;padding:10px}h2,h3,p{font-family:\"Open Sans\",Helvetica,Arial,sans-serif;font-weight:400}a,strong{font-family:\"Open Sans\",Arial,sans-serif;font-weight:700}a{background-color:#00c4de;color:#fff !important;border-radius:25px;font-size:.875em;display:inline-block;margin:10px 5px 5px;outline:0;padding:12px 20px;text-decoration:none;text-transform:uppercase}",
+        "22": "{} {}",
+        "37": "\n<h2>You have been invited to a room booking by <strong>{}</strong>. Details:</h2>\n<p>Title: <strong>{}</strong></p>\n<strong>Booking starts {}</strong>\n<br/>\n<strong>Booking ends {}</strong>\n<div>\n    <a style=\"background-color: #b73746;\" href='{}'>Decline</a>\n    <a href='{}'>Accept</a>\n</div>\n",
+        "65": "\n<h2>You have been removed from a room booking. Details:</h2>\n<p>Title: <strong>{}</strong></p>\n<strong>Booking starts {}</strong>\n<br/>\n<strong>Booking ends {}</strong>\n",
+        "87": "\n<h2>Date/time of a room booking you are attending were changed. Details:</h2>\n<p>Title: <strong>{}</strong></p>\n<strong>Booking starts {}</strong>\n<br/>\n<strong>Booking ends {}</strong>\n",
+        "109": "\n<h2>A room booking you were invited to has been cancelled. Details:</h2>\n<p>Title: <strong>{}</strong></p>\n<strong>Booking starts {}</strong>\n<br/>\n<strong>Booking ends {}</strong>\n    "
     },
     "../ta/api/rooms/models.py": {
-        "11": "Value in days",
-        "23": "{} ({}) in venue {}",
-        "31": "room object",
-        "32": "room objects",
-        "36": "{0} in room {1}"
+        "15": "room",
+        "16": "rooms"
     },
     "../ta/api/rooms/validators.py": {
-        "22": "Maximum row allowed is ",
-        "23": "Maximum col allowed is ",
-        "28": "A tile at this location is occupied",
-        "33": "There is a bookable on this tile",
-        "44": "Your room cannot have more than 100 tiles",
-        "52": "Tile must have at least one neighbouring edge with its room",
-        "67": "This tile cannot be deleted because it splits the room's space",
-        "76": "Your room cannot have less than 2 tiles",
-        "85": "Room with this name already exists in the venue",
-        "88": "Must be between 2 and 1000",
-        "92": "A bookable must be assigned to a venue before converting it to a room",
-        "93": "This bookable has already been converted into a room",
-        "94": "Move the bookable to another location first",
-        "102": "Your current licensing only allows you to have a maximum of {} rooms. Visit shoptableair.com to purchase a new license."
-    },
-    "../ta/api/support/views.py": {
-        "14": "This field is required",
-        "16": "{0} has Sent a Support Inquiry",
-        "17": "User: {0}\nEmail: {1}\nMessage: {2}"
+        "103": "Your current licensing only allows you to have a maximum of {} rooms. Visit shoptableair.com to purchase a new license."
     },
     "../ta/api/sync/models.py": {
-        "13": "Height must not be less than {0}cm ({2}in) and not more than {1}cm ({3}in)",
-        "46": "Standing height must be higher than sitting height",
-        "54": "settings synchronization",
-        "57": "Settings of {0}"
+        "26": "Imperial"
     },
     "../ta/api/teams/choices.py": {
-        "17": "manage bookings of other team participants"
+        "8": "Participant",
+        "9": "Administrator",
+        "10": "Owner"
     },
     "../ta/api/teams/endpoints.py": {
-        "84": "No contact email was set for the team",
-        "88": "{}\n\nSender address: {}"
-    },
-    "../ta/api/teams/management.py": {
-        "22": "Invitation confirmation token expired.",
-        "45": "You must make someone else the owner before demoting",
-        "49": "Only owners can make others owners"
+        "89": "{}\n\nSender address: {}"
     },
     "../ta/api/teams/models.py": {
-        "26": "You must provide either a filename or an extension",
-        "36": "Characters not allowed. Name must compose of 'A-Za-z0-9 .,_-\"'",
-        "38": "Characters not allowed. URL must compose of 'A-Za-z0-9_-",
-        "102": "{0} is {2} in team {1}",
-        "110": "participant permission",
-        "111": "participant permissions",
-        "115": "{} can {}",
-        "125": "team invitation",
-        "126": "team invitations",
-        "130": "Invitation for {} to team {}"
-    },
-    "../ta/api/teams/validators/invitation_validator.py": {
-        "20": "Account is already in the team",
-        "26": "You can't reinvite more than {0} times",
-        "35": "You have been invited to join \"{0}\" on TableAir Cloud!",
-        "38": "Click the link below to accept this invitation\n{}"
-    },
-    "../ta/api/teams/validators/team_validator.py": {
-        "24": "File size exceeds limit of {0}",
-        "39": "The provided name or URL is already taken",
-        "41": "The provided URL is already taken",
-        "43": "The provided name is already taken",
-        "46": "This URL cannot be used"
+        "64": "teams",
+        "80": "Participant",
+        "81": "Administrator",
+        "82": "Owner",
+        "99": "participations"
     },
     "../ta/api/ui/models.py": {
-        "17": "{}'s UI settings",
-        "21": "UI Settings",
-        "31": "UI Team Settings",
-        "34": " team UI settings",
-        "52": "UI Venue Settings",
-        "55": " UI settings"
+        "56": " venue "
     },
     "../ta/api/ui/validators.py": {
-        "19": "Venue does not belong to team with url `{}`",
-        "30": "Value must be between {} and {} minutes",
-        "37": "Value must be between 0.3 and 1.5"
-    },
-    "../ta/api/validators/serializers.py": {
-        "13": "Team with this name already exists",
-        "15": "Team with this URL already exists"
+        "20": "Venue does not belong to team with url `{}`"
     },
     "../ta/api/venues/models.py": {
-        "20": "Timezone '{0}' is not a valid tz identifier",
-        "25": "Incorrect time format, accepted HH:mm",
-        "38": "In millimetres",
-        "52": "Team cannot have more than {0} venues",
-        "93": "{} of team {}",
-        "110": "You must provide either a filename or an extension",
-        "117": "in interval [0.0, 1.0]",
-        "118": "in interval [0.0, 1.0]",
-        "119": "in pixels",
-        "120": "in pixels",
-        "121": "in degrees",
-        "127": "venue background image",
-        "128": "venue background images",
-        "131": "{} image x: {}, y: {}, rot: {}, scale: {}, opacity: {}"
-    },
-    "../ta/api/venues/validators/venue_image_validator.py": {
-        "22": "File size exceeds limit of {}"
-    },
-    "../ta/api/venues/validators/venue_validator.py": {
-        "29": "Venue can't close earlier than an hour after it opens",
-        "33": "Value must not be more than 200 centimetres",
-        "44": "Team can only be chosen on creation"
+        "98": "venue",
+        "99": "venues"
     }
 }
