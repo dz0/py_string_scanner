@@ -1,8 +1,29 @@
 {
+    "../ta/api/accounts/serializers.py": {
+        "91": "password"
+    },
+    "../ta/api/analytics/aggregators.py": {
+        "214": [
+            "scope",
+            "scope"
+        ]
+    },
     "../ta/api/analytics/models.py": {
         "26": "Sitting",
         "27": "Standing",
         "28": "Break"
+    },
+    "../ta/api/analytics/occupancy_analytics.py": {
+        "254": [
+            "scope",
+            "scope"
+        ]
+    },
+    "../ta/api/bookables/sitstand/aggregators.py": {
+        "96": [
+            "aggregators",
+            ", "
+        ]
     },
     "../ta/api/booking/choices.py": {
         "8": "confirmed",
@@ -62,6 +83,9 @@
         "9": "Administrator",
         "10": "Owner"
     },
+    "../ta/api/teams/endpoints.py": {
+        "89": "text"
+    },
     "../ta/api/teams/models.py": {
         "64": "teams",
         "80": "Participant",
@@ -69,8 +93,8 @@
         "82": "Owner",
         "99": "participations"
     },
-    "../ta/api/ui/models.py": {
-        "56": " venue "
+    "../ta/api/ui/validators.py": {
+        "20": "team"
     },
     "../ta/api/venues/models.py": {
         "98": "venue",

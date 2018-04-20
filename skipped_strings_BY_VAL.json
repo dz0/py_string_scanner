@@ -857,7 +857,7 @@
         "../ta/api/kiosk/validators.py:35:                          .values_list('last_name', flat=True).first() or 0) + 1"
     ],
     "last_used_venue": [
-        "../ta/api/ui/validators.py:20:                invalid('last_used_venue', 'Venue does not belong to team with url `{}`'.format(attrs['team'].url))"
+        "../ta/api/ui/validators.py:20:                invalid('last_used_venue', _('Venue does not belong to team with url `{}`').format(attrs['team'].url))"
     ],
     "last_week": [
         "../ta/api/analytics/views.py:110:                if duration in ['this_week', 'last_week']:",
@@ -1109,7 +1109,7 @@
         "../ta/api/ui/validators.py:38:            invalid('scale_factor', _('Value must be between 0.3 and 1.5'))"
     ],
     "sender_email": [
-        "../ta/api/teams/endpoints.py:89:        text = '{}\\n\\nSender address: {}'.format(serializer.data['text'], serializer.data['sender_email'])"
+        "../ta/api/teams/endpoints.py:89:        text = _('{}\\n\\nSender address: {}').format(serializer.data['text'], serializer.data['sender_email'])"
     ],
     "sitting_height": [
         "../ta/api/analytics/aggregators.py:398:            queryset = queryset.values_list('sitting_height', 'standing_height')",

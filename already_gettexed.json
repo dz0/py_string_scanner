@@ -54,6 +54,7 @@
         "54": "Team with a given URL doesn't exist",
         "78": "This is your current email!",
         "87": "Account with this email already exists",
+        "91": "You need at least 8 symbols, with one lowercase, one uppercase letter and a number",
         "95": "This field is required",
         "97": "Incorrect password",
         "127": "Confirm your TableAir Registration",
@@ -81,6 +82,7 @@
         "197": "Unknown value '{0}' for selector '{1}'",
         "204": "Selector {0}={1} requires additional selectors {2}",
         "209": "Unknown aggregator '{0}'",
+        "214": "Aggregator '{0}' does not support scope '{1}'",
         "290": "Unknown scope {0}",
         "309": "Unknown scope {0}",
         "329": "Unknown scope",
@@ -115,6 +117,7 @@
         "237": "Unknown value '{0}' for selector '{1}'",
         "244": "Selector {0}={1} requires additional selectors {2}",
         "249": "Unknown perspective '{0}'",
+        "254": "Aggregator '{0}' does not support scope '{1}'",
         "355": "only week duration is accepted for graph",
         "365": "No prefabs are present in this venue (ID: %s)",
         "439": "for each part, we add appropriate timedelta",
@@ -198,6 +201,9 @@
         "86": "bookable",
         "87": "bookables"
     },
+    "../ta/api/bookables/sitstand/aggregators.py": {
+        "96": "Unsupported aggregator type, allowed: `{}`"
+    },
     "../ta/api/bookables/sitstand/endpoints.py": {
         "36": "All parameters must be set once"
     },
@@ -216,9 +222,13 @@
     },
     "../ta/api/booking/confirmation.py": {
         "10": "Invitation to a meeting",
+        "12": "You have been invited to participate at a meeting.\nThe meeting will take place on {} until {} at {}.",
         "21": "Meeting was rescheduled",
+        "23": "The meeting you have been invited to was rescheduled.\nThe meeting will take place on {} until {} at {}.",
         "34": "Meeting was scheduled",
-        "47": "Meeting was canceled"
+        "36": "You have created a meeting.\nThe meeting will take place on {0} until {1} at {2}.",
+        "47": "Meeting was canceled",
+        "49": "The meeting you have been invited to was canceled.\nThe meeting was to take place on {0} until {1} at {2}."
     },
     "../ta/api/booking/management.py": {
         "35": "Use hh:mm format for time",
@@ -258,6 +268,8 @@
         "57": "Your booking cannot span for multiple days",
         "59": "Your booking cannot start before venue opening time {}",
         "61": "Your booking cannot end after venue closing time {}",
+        "111": "There's a booking at that time. Please choose another time. Visit the dashboard to manage your bookings.",
+        "113": "You have reached the maximum amount of intersecting bookings. Please choose another time.",
         "143": "A bookable must be assigned to a venue before booking",
         "144": "This is a room. Only bookables can be booked this way",
         "154": "You cannot check-in whilst creating a booking",
@@ -325,6 +337,8 @@
     },
     "../ta/api/kiosk/validators.py": {
         "28": "Grid object must be a kiosk",
+        "48": "You need to purchase a license to create kiosks! You can easily do that by visiting shoptableair.com",
+        "51": "Your current licensing only allows you to have a maximum of {} kiosks. Visit shoptableair.com to purchase a new license.",
         "59": "Grid object must be a kiosk"
     },
     "../ta/api/licensing/models.py": {
@@ -380,9 +394,13 @@
         "8": "Room Booking"
     },
     "../ta/api/room_booking/emails.py": {
+        "37": "\n<h2>You have been invited to a room booking by <strong>{}</strong>. Details:</h2>\n<p>Title: <strong>{}</strong></p>\n<strong>Booking starts {}</strong>\n<br/>\n<strong>Booking ends {}</strong>\n<div>\n    <a style=\"background-color: #b73746;\" href='{}'>Decline</a>\n    <a href='{}'>Accept</a>\n</div>\n",
         "51": "You have been invited to a room booking",
+        "65": "\n<h2>You have been removed from a room booking. Details:</h2>\n<p>Title: <strong>{}</strong></p>\n<strong>Booking starts {}</strong>\n<br/>\n<strong>Booking ends {}</strong>\n",
         "73": "You have been removed from a room booking",
+        "87": "\n<h2>Date/time of a room booking you are attending were changed. Details:</h2>\n<p>Title: <strong>{}</strong></p>\n<strong>Booking starts {}</strong>\n<br/>\n<strong>Booking ends {}</strong>\n",
         "95": "A room booking you've been invited to has been updated",
+        "109": "\n<h2>A room booking you were invited to has been cancelled. Details:</h2>\n<p>Title: <strong>{}</strong></p>\n<strong>Booking starts {}</strong>\n<br/>\n<strong>Booking ends {}</strong>\n    ",
         "117": "A room booking you've been invited to has been cancelled"
     },
     "../ta/api/room_booking/models.py": {
@@ -431,7 +449,8 @@
         "89": "Must be between 2 and 1000",
         "93": "A bookable must be assigned to a venue before converting it to a room",
         "94": "This bookable has already been converted into a room",
-        "95": "Move the bookable to another location first"
+        "95": "Move the bookable to another location first",
+        "103": "Your current licensing only allows you to have a maximum of {} rooms. Visit shoptableair.com to purchase a new license."
     },
     "../ta/api/support/views.py": {
         "15": "This field is required",
@@ -454,7 +473,8 @@
         "18": "manage bookings of other team participants"
     },
     "../ta/api/teams/endpoints.py": {
-        "85": "No contact email was set for the team"
+        "85": "No contact email was set for the team",
+        "89": "{}\n\nSender address: {}"
     },
     "../ta/api/teams/management.py": {
         "23": "Invitation confirmation token expired.",
@@ -495,9 +515,13 @@
         "32": "UI Team Settings",
         "35": " team UI settings",
         "53": "UI Venue Settings",
-        "56": " UI settings"
+        "56": [
+            " venue ",
+            " UI settings"
+        ]
     },
     "../ta/api/ui/validators.py": {
+        "20": "Venue does not belong to team with url `{}`",
         "31": "Value must be between {} and {} minutes",
         "38": "Value must be between 0.3 and 1.5"
     },

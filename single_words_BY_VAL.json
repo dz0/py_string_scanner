@@ -1,6 +1,6 @@
 {
-    " venue ": [
-        "../ta/api/ui/models.py:56:        return str(self.team_settings.participation) + ' venue ' + str(self.venue) + _(' UI settings')"
+    ", ": [
+        "../ta/api/bookables/sitstand/aggregators.py:96:            invalid('aggregators', _('Unsupported aggregator type, allowed: `{}`').format(', '.join(self.AGGREGATORS)))"
     ],
     "Accepted": [
         "../ta/api/requests/models.py:18:        (STATUS_ACCEPTED, 'Accepted'),"
@@ -53,6 +53,9 @@
     "agents": [
         "../ta/api/devices/models.py:28:        verbose_name_plural = 'agents'"
     ],
+    "aggregators": [
+        "../ta/api/bookables/sitstand/aggregators.py:96:            invalid('aggregators', _('Unsupported aggregator type, allowed: `{}`').format(', '.join(self.AGGREGATORS)))"
+    ],
     "booking": [
         "../ta/api/booking/models.py:91:        verbose_name = 'booking'"
     ],
@@ -92,6 +95,9 @@
     "participations": [
         "../ta/api/teams/models.py:99:        verbose_name_plural = 'participations'"
     ],
+    "password": [
+        "../ta/api/accounts/serializers.py:91:                raise serializers.ValidationError({'password': [_('You need at least 8 symbols, '"
+    ],
     "pending": [
         "../ta/api/room_booking/choices.py:10:        (PENDING, 'pending'),"
     ],
@@ -105,12 +111,24 @@
     "rooms": [
         "../ta/api/rooms/models.py:16:        verbose_name_plural = 'rooms'"
     ],
+    "scope": [
+        "../ta/api/analytics/aggregators.py:214:                    {'scope': _(\"Aggregator '{0}' does not support scope '{1}'\").format(aggregator, self._get('scope'))})",
+        "../ta/api/analytics/aggregators.py:214:                    {'scope': _(\"Aggregator '{0}' does not support scope '{1}'\").format(aggregator, self._get('scope'))})",
+        "../ta/api/analytics/occupancy_analytics.py:254:                    {'scope': _(\"Aggregator '{0}' does not support scope '{1}'\").format(perspective, self._get('scope'))})",
+        "../ta/api/analytics/occupancy_analytics.py:254:                    {'scope': _(\"Aggregator '{0}' does not support scope '{1}'\").format(perspective, self._get('scope'))})"
+    ],
+    "team": [
+        "../ta/api/ui/validators.py:20:                invalid('last_used_venue', _('Venue does not belong to team with url `{}`').format(attrs['team'].url))"
+    ],
     "teams": [
         "../ta/api/teams/models.py:64:        verbose_name_plural = 'teams'"
     ],
     "tentative": [
         "../ta/api/booking/choices.py:10:        (TENTATIVE, 'tentative'),",
         "../ta/api/room_booking/choices.py:14:        (TENTATIVE, 'tentative'),"
+    ],
+    "text": [
+        "../ta/api/teams/endpoints.py:89:        text = _('{}\\n\\nSender address: {}').format(serializer.data['text'], serializer.data['sender_email'])"
     ],
     "tile": [
         "../ta/api/objects/models.py:21:        verbose_name = 'tile'"

@@ -130,13 +130,7 @@
     "Kiosk": [
         "../ta/api/kiosk/validators.py:37:            first_name='Kiosk',"
     ],
-    "Login": [
-        "../ta/api/analytics/models.py:30:        (LOGIN, 'Login'),",
-        "../ta/api/logging/models.py:21:        (ACTION_LOGIN, 'Login'),"
-    ],
-    "Metric": [
-        "../ta/api/sync/models.py:25:        (UNIT_SYSTEM_METRIC, 'Metric'),"
-    ],
+   
     "N/A": [
         "../ta/api/analytics/aggregators.py:486:            return 'N/A'",
         "../ta/api/analytics/aggregators.py:498:            return 'N/A'",
@@ -1788,10 +1782,6 @@
     "ERROR when partitioning. Interval #%s/%s  (%s); \n      Partition counts: %s\n      timewindow_start: %s, part_count: %s, part_size: %s": [
         "../ta/api/analytics/occupancy_analytics.py:329:                    raise RuntimeError(\"ERROR when partitioning. Interval #%s/%s  (%s); \""
     ],
-     "Used when generating identifiers, \"#\" denotes generated part. Example: \"SB1######\"": [
-        "../ta/api/bookables/models.py:15:                                         help_text='Used when generating identifiers, \"#\" denotes generated part. '"
-    ],
-
     
     "intervals should be sorted.\n            if we don't fit  interval  to current part, we goto next part": [
         "../ta/api/analytics/occupancy_analytics.py:323:            if we don't fit  interval  to current part, we goto next part\"\"\""

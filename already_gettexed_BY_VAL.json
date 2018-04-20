@@ -1,12 +1,27 @@
 {
+    "\n<h2>A room booking you were invited to has been cancelled. Details:</h2>\n<p>Title: <strong>{}</strong></p>\n<strong>Booking starts {}</strong>\n<br/>\n<strong>Booking ends {}</strong>\n    ": [
+        "../ta/api/room_booking/emails.py:109:    \"\"\").format("
+    ],
+    "\n<h2>Date/time of a room booking you are attending were changed. Details:</h2>\n<p>Title: <strong>{}</strong></p>\n<strong>Booking starts {}</strong>\n<br/>\n<strong>Booking ends {}</strong>\n": [
+        "../ta/api/room_booking/emails.py:87:\"\"\").format("
+    ],
+    "\n<h2>You have been invited to a room booking by <strong>{}</strong>. Details:</h2>\n<p>Title: <strong>{}</strong></p>\n<strong>Booking starts {}</strong>\n<br/>\n<strong>Booking ends {}</strong>\n<div>\n    <a style=\"background-color: #b73746;\" href='{}'>Decline</a>\n    <a href='{}'>Accept</a>\n</div>\n": [
+        "../ta/api/room_booking/emails.py:37:\"\"\").format("
+    ],
+    "\n<h2>You have been removed from a room booking. Details:</h2>\n<p>Title: <strong>{}</strong></p>\n<strong>Booking starts {}</strong>\n<br/>\n<strong>Booking ends {}</strong>\n": [
+        "../ta/api/room_booking/emails.py:65:\"\"\").format("
+    ],
     " UI settings": [
-        "../ta/api/ui/models.py:56:        return str(self.team_settings.participation) + ' venue ' + str(self.venue) + _(' UI settings')"
+        "../ta/api/ui/models.py:56:        return str(self.team_settings.participation) + _(' venue ') + str(self.venue) + _(' UI settings')"
     ],
     " team UI settings": [
         "../ta/api/ui/models.py:35:        return str(self.participation) + _(' team UI settings')"
     ],
     " too many prefabs...\n%s": [
         "../ta/api/analytics/occupancy_analytics.py:599:            raise RuntimeError(_(\" too many prefabs...\\n%s\") % prefabs)"
+    ],
+    " venue ": [
+        "../ta/api/ui/models.py:56:        return str(self.team_settings.participation) + _(' venue ') + str(self.venue) + _(' UI settings')"
     ],
     "%Y-%m-%d %H:%M:%S": [
         "../ta/api/bookables/admin.py:20:        return obj.timestamp.strftime(_('%Y-%m-%d %H:%M:%S'))",
@@ -105,6 +120,10 @@
     ],
     "Agent {0} belonging to {1}": [
         "../ta/api/devices/models.py:32:        return _('Agent {0} belonging to {1}').format(self.name, self.account.get_full_name())"
+    ],
+    "Aggregator '{0}' does not support scope '{1}'": [
+        "../ta/api/analytics/aggregators.py:214:                    {'scope': _(\"Aggregator '{0}' does not support scope '{1}'\").format(aggregator, self._get('scope'))})",
+        "../ta/api/analytics/occupancy_analytics.py:254:                    {'scope': _(\"Aggregator '{0}' does not support scope '{1}'\").format(perspective, self._get('scope'))})"
     ],
     "All parameters must be set once": [
         "../ta/api/bookables/sitstand/endpoints.py:36:        invalid_if(any(len(l) != 1 for l in query.values()), None, _('All parameters must be set once'))"
@@ -607,6 +626,12 @@
     "Temperature step 8C": [
         "../ta/api/bookables/enums.py:75:        (TEMPERATURE_STEP_8C, _('Temperature step 8C')),"
     ],
+    "The meeting you have been invited to was canceled.\nThe meeting was to take place on {0} until {1} at {2}.": [
+        "../ta/api/booking/confirmation.py:49:            'The meeting you have been invited to was canceled.\\n'"
+    ],
+    "The meeting you have been invited to was rescheduled.\nThe meeting will take place on {} until {} at {}.": [
+        "../ta/api/booking/confirmation.py:23:            'The meeting you have been invited to was rescheduled.\\n'"
+    ],
     "The provided URL is already taken": [
         "../ta/api/teams/validators/team_validator.py:42:            invalid('url', _('The provided URL is already taken'))"
     ],
@@ -624,6 +649,9 @@
     ],
     "There must be at least one participant": [
         "../ta/api/room_booking/validators.py:157:        valid_if(len(value), 'participants', _('There must be at least one participant'))"
+    ],
+    "There's a booking at that time. Please choose another time. Visit the dashboard to manage your bookings.": [
+        "../ta/api/booking/validators/booking_validators.py:111:            intersecting=_('There\\'s a booking at that time. Please choose another time. '"
     ],
     "This URL cannot be used": [
         "../ta/api/teams/validators/team_validator.py:47:        invalid_if(url in s.TA_RESERVED_URLS, 'url', _('This URL cannot be used'))"
@@ -746,6 +774,9 @@
         "../ta/api/analytics/aggregators.py:197:                        {key: _(\"Unknown value \\'{0}\\' for selector \\'{1}\\'\").format(value, key)})",
         "../ta/api/analytics/occupancy_analytics.py:237:                        {key: _(\"Unknown value \\'{0}\\' for selector \\'{1}\\'\").format(value, key)})"
     ],
+    "Unsupported aggregator type, allowed: `{}`": [
+        "../ta/api/bookables/sitstand/aggregators.py:96:            invalid('aggregators', _('Unsupported aggregator type, allowed: `{}`').format(', '.join(self.AGGREGATORS)))"
+    ],
     "Update booking": [
         "../ta/api/analytics/models.py:35:        (BOOKING_UPDATED, _('Update booking')),"
     ],
@@ -773,6 +804,9 @@
     ],
     "Venue can't close earlier than an hour after it opens": [
         "../ta/api/venues/validators/venue_validator.py:30:            invalid('work_ends', _(\"Venue can't close earlier than an hour after it opens\"))"
+    ],
+    "Venue does not belong to team with url `{}`": [
+        "../ta/api/ui/validators.py:20:                invalid('last_used_venue', _('Venue does not belong to team with url `{}`').format(attrs['team'].url))"
     ],
     "Visit the cloud system to manage pending requests:\n{}": [
         "../ta/api/requests/serializers.py:63:                  _('Visit the cloud system to manage pending requests:\\n{}').format("
@@ -839,11 +873,20 @@
     "You have been invited to join \"{0}\" on TableAir Cloud!": [
         "../ta/api/teams/validators/invitation_validator.py:36:            _('You have been invited to join \"{0}\" on TableAir Cloud!').format("
     ],
+    "You have been invited to participate at a meeting.\nThe meeting will take place on {} until {} at {}.": [
+        "../ta/api/booking/confirmation.py:12:            'You have been invited to participate at a meeting.\\n'"
+    ],
     "You have been removed from a room booking": [
         "../ta/api/room_booking/emails.py:73:            subject=_(\"You have been removed from a room booking\"),"
     ],
+    "You have created a meeting.\nThe meeting will take place on {0} until {1} at {2}.": [
+        "../ta/api/booking/confirmation.py:36:            'You have created a meeting.\\n'"
+    ],
     "You have reached the maximum amount of bookings": [
         "../ta/api/booking/validators/booking_validators.py:165:                       _('You have reached the maximum amount of bookings'))"
+    ],
+    "You have reached the maximum amount of intersecting bookings. Please choose another time.": [
+        "../ta/api/booking/validators/booking_validators.py:113:            intersecting_allowed=_('You have reached the maximum amount of intersecting bookings. '"
     ],
     "You must be logged in": [
         "../ta/api/analytics/aggregators.py:118:                raise PermissionDenied(_('You must be logged in'))",
@@ -858,6 +901,12 @@
     "You must provide either a filename or an extension": [
         "../ta/api/teams/models.py:27:            raise ValueError(_('You must provide either a filename or an extension'))",
         "../ta/api/venues/models.py:111:            raise ValueError(_('You must provide either a filename or an extension'))"
+    ],
+    "You need at least 8 symbols, with one lowercase, one uppercase letter and a number": [
+        "../ta/api/accounts/serializers.py:91:                raise serializers.ValidationError({'password': [_('You need at least 8 symbols, '"
+    ],
+    "You need to purchase a license to create kiosks! You can easily do that by visiting shoptableair.com": [
+        "../ta/api/kiosk/validators.py:48:                msg_text = _('You need to purchase a license to create kiosks! ' \\"
     ],
     "You were {1} minutes late for your booking at table {0}, so it got cancelled.": [
         "../ta/api/booking/notifications.py:32:        lambda bookable_name, minutes: _('You were {1} minutes late for your booking at table {0}, so it got cancelled.')"
@@ -882,6 +931,12 @@
     ],
     "Your booking of {} begins in an 10 mins!": [
         "../ta/api/booking/notifications.py:19:    dummy_reminder_text = (lambda bookable_name: _('Your booking of {} begins in an 10 mins!')"
+    ],
+    "Your current licensing only allows you to have a maximum of {} kiosks. Visit shoptableair.com to purchase a new license.": [
+        "../ta/api/kiosk/validators.py:51:                msg_text = _('Your current licensing only allows you to have a maximum of {} kiosks. ' \\"
+    ],
+    "Your current licensing only allows you to have a maximum of {} rooms. Visit shoptableair.com to purchase a new license.": [
+        "../ta/api/rooms/validators.py:103:            invalid(None, _('Your current licensing only allows you to have a maximum of {} rooms. '"
     ],
     "Your room cannot have less than 2 tiles": [
         "../ta/api/rooms/validators.py:77:        invalid_if(len(tiles) <= 2, None, _('Your room cannot have less than 2 tiles'))"
@@ -1095,6 +1150,9 @@
     ],
     "{3} by {2} at {0} - {1}": [
         "../ta/api/booking/models.py:97:        return _(\"{3} by {2} at {0} - {1}\").format(str(self.start), str(self.end), str(self.account.get_full_name()),"
+    ],
+    "{}\n\nSender address: {}": [
+        "../ta/api/teams/endpoints.py:89:        text = _('{}\\n\\nSender address: {}').format(serializer.data['text'], serializer.data['sender_email'])"
     ],
     "{} ({}) in venue {}": [
         "../ta/api/rooms/models.py:24:        return _('{} ({}) in venue {}').format(self.name, self.capacity, venue)"
